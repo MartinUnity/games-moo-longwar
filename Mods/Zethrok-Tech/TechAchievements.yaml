@@ -1,0 +1,206 @@
+﻿---
+- collection: &Backend.Civilizations.TechAchievement
+    items:
+        #Scanners
+          - key: techachievement_space_scanner
+            name: TECH_ACHIEVEMENT_SPACE_SCANNER_NAME
+            description: TECH_ACHIEVEMENT_SPACE_SCANNER_DESCRIPTION
+            icon: assets/structures/SpaceScanner.png
+            value: 2.5
+          - key: techachievement_neutron_scanner
+            name: TECH_ACHIEVEMENT_NEUTRON_SCANNER_NAME
+            description: TECH_ACHIEVEMENT_NEUTRON_SCANNER_DESCRIPTION
+            icon: assets/structures/NeutronScanner.png
+            value: 3
+          - key: techachievement_tachyon_scanner
+            name: TECH_ACHIEVEMENT_TACHYON_SCANNER_NAME
+            description: TECH_ACHIEVEMENT_TACHYON_SCANNER_DESCRIPTION
+            icon: assets/structures/TachyonScanner.png
+            value: 4
+          - key: techachievement_hyperspace_sensors
+            name: TECH_ACHIEVEMENT_HYPERSPACE_SENSORS_NAME
+            description: TECH_ACHIEVEMENT_HYPERSPACE_SENSORS_DESCRIPTION
+            icon: assets/structures/HyperspaceSensors.png
+            value: 5
+          - key: techachievement_deep_scanner
+            name: TECH_ACHIEVEMENT_DEEP_SCANNER_NAME
+            description: TECH_ACHIEVEMENT_DEEP_SCANNER_DESCRIPTION
+            icon: assets/structures/DeepScanner.png
+            value: 0
+        #Command Points
+          - key: techachievement_tachyon_communications
+            name: TECH_ACHIEVEMENT_TACHYON_COMMUNICATIONS_NAME
+            description: TECH_ACHIEVEMENT_TACHYON_COMMUNICATIONS_DESCRIPTION
+            icon: assets/structures/tachyon_comunications.png
+            value: 2
+          - key: techachievement_subspace_communications
+            name: TECH_ACHIEVEMENT_SUBSPACE_COMMUNICATIONS_NAME
+            description: TECH_ACHIEVEMENT_SUBSPACE_COMMUNICATIONS_DESCRIPTION
+            icon: assets/structures/subspace_comunications.png
+            value: 3
+          - key: techachievement_hyperspace_communications
+            name: TECH_ACHIEVEMENT_HYPERSPACE_COMMUNICATIONS_NAME
+            description: TECH_ACHIEVEMENT_HYPERSPACE_COMMUNICATIONS_DESCRIPTION
+            icon: assets/structures/hyperspace_comunications.png
+            value: 5
+        #Espionage
+          - key: techachievement_psionics
+            name: TECH_ACHIEVEMENT_PSIONICS_NAME
+            description: TECH_ACHIEVEMENT_PSIONICS_DESCRIPTION
+            icon: assets/structures/psionics.png
+            value: 4
+          - key: techachievement_stealth_suit
+            name: TECH_ACHIEVEMENT_STEALTH_SUIT_NAME
+            description: TECH_ACHIEVEMENT_STEALTH_SUIT_DESCRIPTION
+            icon: assets/structures/stealth_suit.png
+            value: 0.25
+          - key: techachievement_neural_scanner
+            name: TECH_ACHIEVEMENT_NEURAL_SCANNER_NAME
+            description: TECH_ACHIEVEMENT_NEURAL_SCANNER_DESCRIPTION
+            icon: assets/structures/neural_scanner.png
+            value: 0.15
+          - key: techachievement_telekinesis
+            name: TECH_ACHIEVEMENT_TELEKINESIS_NAME
+            description: TECH_ACHIEVEMENT_TELEKINSIS_DESCRIPTION
+            icon: assets/structures/neural_scanner.png
+            value: 0.20
+          - key: techachievement_cyber_security_link
+            name: TECH_ACHIEVEMENT_CYBER_SECURITY_LINK_NAME
+            description: TECH_ACHIEVEMENT_CYBER_SECURITY_LINK_DESCRIPTION
+            icon: assets/structures/cyber_security_link.png
+            value: 5
+          - key: techachievement_telepathic_training
+            name: TECH_ACHIEVEMENT_TELEPATHIC_TRAINING_NAME
+            description: TECH_ACHIEVEMENT_TELEPATHIC_TRAINING_DESCRIPTION
+            icon: assets/structures/telephatic_training.png
+            value: 0.5
+        #Population Growth
+          - key: techachievement_microbiotics
+            name: TECH_ACHIEVEMENT_MICROBIOTICS_NAME
+            description: TECH_ACHIEVEMENT_MICROBIOTICS_DESCRIPTION
+            icon: assets/structures/microbiotics.png
+            value: 0.15
+          - key: techachievement_universal_antidote
+            name: TECH_ACHIEVEMENT_UNIVERSAL_ANTIDOTE_NAME
+            description: TECH_ACHIEVEMENT_UNIVERSAL_ANTIDOTE_DESCRIPTION
+            icon: assets/structures/universal_antidote.png
+            value: 0.25
+          - key: techachievement_bioaccelerant
+            name: TECH_ACHIEVEMENT_BIOACCELERANT_NAME
+            description: TECH_ACHIEVEMENT_BIOACCELERANT_DESCRIPTION
+            icon: assets/structures/universal_antidote.png
+            value: 0.40
+          - key: techachievement_biomorphic_fungi
+            name: TECH_ACHIEVEMENT_BIOMORPHIC_FUNGI_NAME
+            description: TECH_ACHIEVEMENT_BIOMORPHIC_FUNGI_DESCRIPTION
+            icon: assets/structures/biomorphic_fungi.png
+            value: 0
+          - key: techachievement_advanced_city_planning
+            name: TECH_ACHIEVEMENT_ADVANCED_CITY_PLANNING_NAME
+            description: TECH_ACHIEVEMENT_ADVANCED_CITY_PLANNING_DESCRIPTION
+            icon: assets/structures/advanced_city_planning.png
+            value: 5
+          - key: techachievement_underground_city
+            name: TECH_ACHIEVEMENT_ADVANCED_CITY_PLANNING_NAME
+            description: TECH_ACHIEVEMENT_ADVANCED_CITY_PLANNING_DESCRIPTION
+            icon: assets/structures/advanced_city_planning.png
+            value: 3
+        #Others
+          - key: techachievement_heightened_intelligence
+            name: TECH_ACHIEVEMENT_HEIGHTENED_INTELLIGENCE_NAME
+            description: TECH_ACHIEVEMENT_HEIGHTENED_INTELLIGENCE_DESCRIPTION
+            icon: assets/structures/heightened_intelligence.png
+            value: 1
+          - key: techachievement_interplanetary_administration
+            name: TECH_ACHIEVEMENT_INTERPLANETARY_ADMINISTRATION_NAME
+            description: TECH_ACHIEVEMENT_INTERPLANETARY_ADMINISTRATION_DESCRIPTION
+            # icon: assets/structures/heightened_intelligence.png
+          - key: techachievement_virtual_reality_network
+            name: TECH_ACHIEVEMENT_VIRTUAL_REALITY_NETWORK_NAME
+            description: TECH_ACHIEVEMENT_VIRTUAL_REALITY_NETWORK_DESCRIPTION
+            icon: assets/structures/virtual_reality_network.png
+            value: 0.1
+          - key: techachievement_advanced_navigation
+            name: TECH_ACHIEVEMENT_ADVANCED_NAVIGATION_NAME
+            description: TECH_ACHIEVEMENT_ADVANCED_NAVIGATION_DESCRIPTION
+            icon: assets/structures/multistate_insulator.png
+            value: 0
+        ## Custom - 12% more production
+          - key: techachievement_nanobots
+            name: TECH_ACHIEVEMENT_NANOBOTS_NAME
+            description: TECH_ACHIEVEMENT_NANOBOTS_DESCRIPTION
+            icon: assets/structures/microlite_construction.png
+            value: -0.12
+          - key: techachievement_microlite_construction
+            name: TECH_ACHIEVEMENT_MICROLITE_CONSTRUCTION_NAME
+            description: TECH_ACHIEVEMENT_MICROLITE_CONSTRUCTION_DESCRIPTION
+            icon: assets/structures/microlite_construction.png
+            value: -0.25
+          - key: techachievement_future_technologies
+            name: TECH_ACHIEVEMENT_FUTURE_TECHNOLOGIES_NAME
+            description: TECH_ACHIEVEMENT_FUTURE_TECHNOLOGIES_DESCRIPTION
+            icon: assets/structures/microlite_construction.png
+            value: -0.25
+        # Unknown working status
+          - key: techachievement_xeno_diplomacy
+            name: TECH_ACHIEVEMENT_XENO_DIPLOMACY_NAME
+            description: TECH_ACHIEVEMENT_XENO_DIPLOMACY_DESCRIPTION
+            icon: assets/structures/xeno_diplomacy.png
+            value: 0.1
+          - key: techachievement_xeno_psychology
+            name: TECH_ACHIEVEMENT_XENO_PSYCHOLOGY_NAME
+            description: TECH_ACHIEVEMENT_XENO_PSYCHOLOGY_DESCRIPTION
+            icon: assets/structures/alien_psychology.png
+          - key: techachievement_megafluxers
+            name: TECH_ACHIEVEMENT_MEGAFLUXERS_NAME
+            description: TECH_ACHIEVEMENT_MEGAFLUXERS_DESCRIPTION
+            icon: assets/structures/megafluxers.png
+            value: 0.15
+            forceAutoUpgrade: true
+          - key: techachievement_minifluxers
+            name: TECH_ACHIEVEMENT_MINIFLUXERS_NAME
+            description: TECH_ACHIEVEMENT_MINIFLUXERS_DESCRIPTION
+            icon: assets/structures/megafluxers.png
+            value: 0.10
+            forceAutoUpgrade: true
+          - key: techachievement_troop_pods
+            name: TECH_ACHIEVEMENT_TROOP_PODS_NAME
+            description: TECH_ACHIEVEMENT_TROOP_PODS_DESCRIPTION
+            icon: assets/structures/battle_pods.png
+            value: 6.0
+        #To be designed
+          - key: techachievement_advanced_damage_control
+            name: TECH_ACHIEVEMENT_ADVANCED_DAMAGE_CONTROL_NAME
+            description: TECH_ACHIEVEMENT_ADVANCED_DAMAGE_CONTROL_DESCRIPTION
+            icon: assets/structures/advanced_damage_control.png
+            value: 0.10
+          - key: techachievement_survival_pods
+            name: TECH_ACHIEVEMENT_SURVIVAL_PODS_NAME
+            description: TECH_ACHIEVEMENT_SURVIVAL_PODS_DESCRIPTION
+            icon: assets/ship_modules/transporters.png
+        # Deprecated
+          - key: techachievement_star_gate
+            name: TECH_ACHIEVEMENT_STAR_GATE_NAME
+            description: TECH_ACHIEVEMENT_STAR_GATE_DESCRIPTION
+          - key: techachievement_jump_gate
+            name: TECH_ACHIEVEMENT_STAR_GATE_NAME
+            description: TECH_ACHIEVEMENT_STAR_GATE_DESCRIPTION
+          - key: techachievement_evolutionary_mutation
+            name: TECH_ACHIEVEMENT_EVOLUTIONARY_MUTATION_NAME
+            description: TECH_ACHIEVEMENT_EVOLUTIONARY_MUTATION_DESCRIPTION
+          - key: techachievement_smart_interphases
+            name: TECH_ACHIEVEMENT_SMART_INTERPHASES_NAME
+            description: TECH_ACHIEVEMENT_SMART_INTERPHASES_DESCRIPTION
+          - key: techachievement_nano_disassemblers
+            name: TECH_ACHIEVEMENT_NANO_DISASSEMBLERS_NAME
+            description: TECH_ACHIEVEMENT_NANO_DISASSEMBLERS_DESCRIPTION
+        # - techachievement: &techachievement_dauntless_guidance_system
+            # name: TECH_ACHIEVEMENT_DAUNTLESS_GUIDANCE_SYSTEM_NAME
+            # description: TECH_ACHIEVEMENT_DAUNTLESS_GUIDANCE_SYSTEM_DESCRIPTION
+            # icon: assets/structures/microlite_construction.png
+          - key: techachievement_omnitron
+            name: TECH_ACHIEVEMENT_OMNITRON_NAME
+            description: TECH_ACHIEVEMENT_OMNITRON_DESCRIPTION
+            icon: assets/structures/megafluxers.png
+            value: 5
+...

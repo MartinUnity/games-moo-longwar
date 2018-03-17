@@ -1,0 +1,1779 @@
+---
+- collection: &Backend.Fleets.WeaponType
+    items:
+          - key: weapontype_null
+            className: TacticalNullProjectile
+            model: null
+            weaponRange: 5
+            ignoreByBattleHighlights: true
+          - key: weapontype_ramming
+            className: TacticalNullProjectile
+            model: ramming_impact
+            weaponRange: 5
+            ignoreByBattleHighlights: true
+        #BEAMS
+          - key: weapontype_repair_cannon
+            className: TacticalRepairBeam
+            model: repair_beam
+            visualScale: 2.0
+            tacticalCooldown: 4.0
+            rateOfFire: 0.3
+            volleySize: 1
+            maxDamage: 1.25
+            weaponSteps: 6
+            weaponStepDuration: 0.5
+            rangeDissipation: false
+            weaponAccuracy: 1.0
+            weaponRange: 15
+            warmupTime: 0.4
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 60.0
+            maxVelocityVariance: 0.1
+            ignoreByBattleHighlights: true
+          - key: weapontype_fusion_beam
+            className: TacticalBeam
+            model: fusion_beam
+            visualScale: 2.0
+            tacticalCooldown: 12.0
+            rateOfFire: 0.15
+            volleySize: 1
+            maxDamage: 5
+            weaponSteps: 4
+            weaponStepDuration: 0.5
+            armorPenetration: 10.0
+            weaponRange: 55
+            rangeDecayFactor: 0.55
+            decayRate: 2.0
+            weaponAccuracy: 1.0
+            rangeLoss: 0.15
+            warmupTime: 1.3
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 70.0
+            maxVelocityVariance: 0.1
+            modifiers:
+                - modifier: modifier_continuous_fire_beams
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                - modifier: modifier_enveloping
+          - key: weapontype_ion_pulse_beam
+            className: TacticalBeam
+            model: ion_pulse_beam
+            visualScale: 2.0
+            tacticalCooldown: 13.0
+            rateOfFire: 0.3
+            volleySize: 1
+            maxDamage: 12
+            weaponSteps: 5
+            weaponStepDuration: 0.5
+            armorPenetration: 5.0
+            # shieldPenetration: false
+            weaponRange: 55
+            rangeDecayFactor: 0.60
+            decayRate: 3.0
+            weaponAccuracy: 1.0
+            rangeLoss: 0.2
+            warmupTime: 0.4
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 60.0
+            maxVelocityVariance: 0.1
+            modifiers:
+                - modifier: modifier_continuous_fire_beams
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                - modifier: modifier_enveloping
+          - key: weapontype_plasma_cannon
+            className: TacticalBeam
+            # Changed Plasma Cannon to a Beam to better accomodate Tech Tree Layout. Swapped out models with Graviton Beam.
+            model: graviton_beam
+            visualScale: 2.0
+            tacticalCooldown: 16.0
+            rateOfFire: 0.3
+            volleySize: 1
+            maxDamage: 30
+            weaponSteps: 5
+            weaponStepDuration: 0.5
+            armorPenetration: 30.0
+            # shieldPenetration: false
+            weaponRange: 60
+            rangeDecayFactor: 0.45
+            decayRate: 2.5
+            weaponAccuracy: 1.0
+            rangeLoss: 0.1
+            warmupTime: 0.7
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 60.0
+            maxVelocityVariance: 0.1
+            modifiers:
+                - modifier: modifier_continuous_fire_beams
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                - modifier: modifier_enveloping
+          - key: weapontype_stellar_converter
+            className: TacticalBeam
+            model: stellar_converter
+            visualScale: 1.0
+            tacticalCooldown: 30.0
+            rateOfFire: 0.3
+            volleySize: 1
+            maxDamage: 600
+            weaponSteps: 10
+            weaponStepDuration: 0.25
+            armorPenetration: 0.0
+            # shieldPenetration: false
+            rangeDissipation: false
+            weaponAccuracy: 1.0
+            weaponRange: 100
+            warmupTime: 2.0
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 60.0
+            maxVelocityVariance: 0.1
+            modifiers:
+                - modifier: modifier_continuous_fire_beams
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                - modifier: modifier_enveloping
+          - key: weapontype_death_ray
+            className: TacticalBeam
+            model: death_ray
+            visualScale: 2.0
+            tacticalCooldown: 10.0
+            rateOfFire: 0.3
+            volleySize: 1
+            maxDamage: 20
+            weaponSteps: 3
+            weaponStepDuration: 0.5
+            armorPenetration: 20.0
+            # shieldPenetration: false
+            # rangeDissipation: false
+            weaponRange: 60
+            rangeDecayFactor: 0.7
+            decayRate: 7.0
+            weaponAccuracy: 1.0
+            rangeLoss: 0.05
+            warmupTime: 2.0
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 60.0
+            maxVelocityVariance: 0.1
+            useAttackAnimation: true
+            modifiers:
+                - modifier: modifier_continuous_fire_beams
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                - modifier: modifier_enveloping
+        #CANNONS
+        ## Custom - Lazer
+          - key: weapontype_lazer_cannon
+            className: TacticalLaser
+            model: laser_cannon
+            visualScale: 2.0
+            tacticalCooldown: 5.0
+            rateOfFire: 0.20
+            volleySize: 1
+            maxDamage: 18
+            armorPenetration: 5.0
+            shieldPenetration: false
+            rangeDissipation: false
+            rangeDecayFactor: 0.4
+            decayRate: 1.5
+            weaponAccuracy: 1.0
+            rangeDissipation: false
+            weaponRange: 80
+            warmupTime: 0.1
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 80.0
+            maxVelocityVariance: 0.1
+            modifiers:
+                - modifier: modifier_point_defense
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                - modifier: modifier_enveloping
+          - key: weapontype_laser_cannon
+            className: TacticalLaser
+            model: laser_cannon
+            visualScale: 2.0
+            tacticalCooldown: 5.0
+            rateOfFire: 0.20
+            volleySize: 1
+            maxDamage: 8
+            armorPenetration: 0.0
+            shieldPenetration: false
+            rangeDissipation: false
+            rangeDecayFactor: 0.4
+            decayRate: 1.5
+            weaponAccuracy: 1.0
+            rangeLoss: 0.25
+            weaponRange: 50
+            warmupTime: 0.4
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 60.0
+            maxVelocityVariance: 0.1
+            modifiers:
+                - modifier: modifier_point_defense
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                - modifier: modifier_enveloping
+        ## Custom - tier 13
+          - key: weapontype_particle_beam
+            className: TacticalLaser
+            model: mass_driver
+            visualScale: 2.0
+            tacticalCooldown: 12.0
+            rateOfFire: 0.30
+            volleySize: 1
+            maxDamage: 180
+            armorPenetration: 50
+            shieldPenetration: true
+            rangeDissipation: false
+            weaponAccuracy: 1.0
+            rangeLoss: 0.5
+            weaponRange: 90
+            warmupTime: 0.2
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 90.0
+            maxVelocityVariance: 0.1
+            modifiers:
+                - modifier: modifier_point_defense
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                - modifier: modifier_enveloping
+          - key: weapontype_mass_driver
+            className: TacticalLaser
+            model: mass_driver
+            visualScale: 2.0
+            tacticalCooldown: 5.0
+            rateOfFire: 0.20
+            volleySize: 1
+            maxDamage: 18
+            armorPenetration: 10
+            shieldPenetration: true
+            rangeDissipation: false
+            weaponAccuracy: 1.0
+            rangeLoss: 0.5
+            weaponRange: 75
+            warmupTime: 0.2
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 75.0
+            maxVelocityVariance: 0.1
+            modifiers:
+                - modifier: modifier_point_defense
+                - modifier: modifier_continuous_fire_lasers
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                # - modifier: modifier_enveloping
+          - key: weapontype_neutron_blaster
+            className: TacticalLaser
+            model: neutron_blaster
+            visualScale: 2.0
+            tacticalCooldown: 7.0
+            rateOfFire: 0.3
+            volleySize: 1
+            maxDamage: 9
+            armorPenetration: 5.0
+            # shieldPenetration: false
+            rangeDecayFactor: 0.85
+            decayRate: 4.5
+            weaponAccuracy: 1.0
+            rangeLoss: 0.25
+            weaponRange: 50
+            warmupTime: 1
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 60.0
+            maxVelocityVariance: 0.1
+            modifiers:
+                - modifier: modifier_continuous_fire_lasers
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                - modifier: modifier_enveloping
+          - key: weapontype_graviton_beam
+            className: TacticalLaser
+            # Changed Graviton Beam to a Cannon Type to better accomodate TechTree Layout. Swapped out models with Plasma Cannon.
+            model: plasma_cannon
+            visualScale: 2.0
+            tacticalCooldown: 10.0
+            rateOfFire: 0.3
+            volleySize: 1
+            maxDamage: 25
+            armorPenetration: 30.0
+            # shieldPenetration: false
+            rangeDecayFactor: 0.75
+            decayRate: 2.0
+            weaponAccuracy: 1.0
+            rangeLoss: 0.5
+            weaponRange: 50
+            warmupTime: 2
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 60.0
+            maxVelocityVariance: 0.1
+            modifiers:
+                - modifier: modifier_continuous_fire_lasers
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                - modifier: modifier_enveloping
+          - key: weapontype_phasors
+            className: TacticalLaser
+            model: phasors
+            visualScale: 2.0
+            tacticalCooldown: 8.0
+            rateOfFire: 0.3
+            volleySize: 1
+            maxDamage: 30
+            armorPenetration: 20.0
+            # shieldPenetration: false
+            # rangeDissipation: false
+            rangeDecayFactor: 0.3
+            decayRate: 0.8
+            weaponAccuracy: 1.0
+            rangeLoss: 0.1
+            weaponRange: 50
+            warmupTime: 0.2
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 60.0
+            maxVelocityVariance: 0.1
+            modifiers:
+                - modifier: modifier_point_defense
+                - modifier: modifier_continuous_fire_lasers
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                - modifier: modifier_enveloping
+          - key: weapontype_gauss_cannon
+            className: TacticalLaser
+            model: gauss_cannon
+            visualScale: 2.0
+            tacticalCooldown: 9.0
+            rateOfFire: 0.3
+            volleySize: 1
+            maxDamage: 40
+            armorPenetration: 20.0
+            shieldPenetration: true
+            rangeDissipation: false
+            weaponAccuracy: 1.0
+            rangeLoss: 0.5
+            weaponRange: 50
+            warmupTime: 0.2
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 60.0
+            maxVelocityVariance: 0.1
+            modifiers:
+                - modifier: modifier_continuous_fire_lasers
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                # - modifier: modifier_enveloping
+          - key: weapontype_disruptor_cannon
+            className: TacticalLaser
+            model: disruptor_cannon
+            visualScale: 2.0
+            tacticalCooldown: 12.0
+            rateOfFire: 0.3
+            volleySize: 1
+            maxDamage: 90
+            armorPenetration: 20.0
+            # shieldPenetration: false
+            rangeDecayFactor: 0.4
+            decayRate: 1.5
+            weaponAccuracy: 1.0
+            rangeLoss: 0
+            weaponRange: 60
+            warmupTime: 0.4
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 60.0
+            maxVelocityVariance: 0.1
+            modifiers:
+                - modifier: modifier_continuous_fire_lasers
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                - modifier: modifier_enveloping
+          - key: weapontype_mauler_device
+            className: TacticalLaser
+            model: mauler_device
+            visualScale: 2.0
+            tacticalCooldown: 25.0
+            rateOfFire: 0.3
+            volleySize: 1
+            maxDamage: 450
+            armorPenetration: 15.0
+            # shieldPenetration: false
+            rangeDecayFactor: 0.35
+            decayRate: 0.7
+            weaponAccuracy: 1.0
+            rangeLoss: 0.0
+            weaponRange: 20
+            warmupTime: 0.4
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 60.0
+            maxVelocityVariance: 0.1
+            modifiers:
+                - modifier: modifier_continuous_fire_lasers
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                - modifier: modifier_enveloping
+        #MISSILES
+          - key: weapontype_nuclear_missile
+            className: TacticalMissile
+            model: nuclear_missile
+            hasFacing: false
+            visualScale: 5.0
+            tacticalCooldown: 18.0
+            rateOfFire: 0.5
+            timeToLive: 20.0
+            volleySize: 1
+            maxDamage: 20
+            missileAttack: 30
+            armorPenetration: 5.0
+            weaponAccuracy: 1.0
+            weaponRange: 60
+            splashArea: 15
+            weaponHp: 2.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 35.0
+            maxVelocity: 11.0
+            maxVelocityVariance: 0.1
+            angularAcceleration: 24.0
+            maxAngularVelocity: 18.0
+            velocityFriction: 0.05
+            angularFriction: 0.05
+            isPDBlockeable: true
+            isToggleable: true
+            modifiers:
+                - modifier: modifier_heavy_armor
+                - modifier: modifier_eccm
+                - modifier: modifier_fast
+                - modifier: modifier_mirv
+          - key: weapontype_merculite_missile
+            className: TacticalMissile
+            model: merculite_missile
+            hasFacing: false
+            visualScale: 8.0
+            tacticalCooldown: 16.0
+            timeToLive: 20.0
+            rateOfFire: 0.5
+            volleySize: 1
+            maxDamage: 25
+            missileAttack: 40
+            armorPenetration: 10.0
+            weaponAccuracy: 1.0
+            weaponRange: 60
+            splashArea: 1
+            weaponHp: 3.5
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 35.0
+            maxVelocity: 11.0
+            maxVelocityVariance: 0.1
+            angularAcceleration: 24.0
+            maxAngularVelocity: 18.0
+            velocityFriction: 0.05
+            angularFriction: 0.05
+            isPDBlockeable: true
+            isToggleable: true
+            modifiers:
+                - modifier: modifier_heavy_armor
+                - modifier: modifier_eccm
+                - modifier: modifier_fast
+                - modifier: modifier_mirv
+          - key: weapontype_pulson_missile
+            className: TacticalMissile
+            model: pulson_missile
+            hasFacing: false
+            visualScale: 8.0
+            tacticalCooldown: 16.0
+            rateOfFire: 0.5
+            timeToLive: 20.0
+            volleySize: 1
+            maxDamage: 40
+            missileAttack: 50
+            armorPenetration: 20.0
+            weaponAccuracy: 1.0
+            weaponRange: 60
+            splashArea: 1
+            weaponHp: 6.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 35.0
+            maxVelocity: 11.0
+            maxVelocityVariance: 0.1
+            angularAcceleration: 24.0
+            maxAngularVelocity: 18.0
+            velocityFriction: 0.05
+            angularFriction: 0.05
+            isPDBlockeable: true
+            isToggleable: true
+            modifiers:
+                - modifier: modifier_heavy_armor
+                - modifier: modifier_eccm
+                - modifier: modifier_fast
+                - modifier: modifier_mirv
+          - key: weapontype_zeon_missile
+            className: TacticalMissile
+            model: zeon_missile
+            hasFacing: false
+            visualScale: 7.0
+            tacticalCooldown: 15.0
+            rateOfFire: 0.5
+            timeToLive: 20.0
+            volleySize: 1
+            maxDamage: 60
+            missileAttack: 60
+            armorPenetration: 25.0
+            weaponAccuracy: 1.0
+            weaponRange: 60
+            splashArea: 1
+            weaponHp: 10.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 35.0
+            maxVelocity: 11.0
+            maxVelocityVariance: 0.1
+            angularAcceleration: 24.0
+            maxAngularVelocity: 18.0
+            velocityFriction: 0.05
+            angularFriction: 0.05
+            isPDBlockeable: true
+            isToggleable: true
+            modifiers:
+                - modifier: modifier_heavy_armor
+                - modifier: modifier_eccm
+                - modifier: modifier_fast
+                - modifier: modifier_mirv
+        #TORPEDOES
+          - key: weapontype_proton_torpedo
+            className: TacticalTorpedo
+            model: proton_torpedo
+            visualScale: 6.0
+            tacticalCooldown: 15.0
+            rateOfFire: 1.0
+            volleySize: 1
+            maxDamage: 50
+            armorPenetration: 15.0
+            weaponAccuracy: 1.0
+            weaponRange: 70
+            distanceToLive: 125
+            splashArea: 1
+            weaponHp: 50.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 7.0
+            maxVelocity: 6.0
+            maxVelocityVariance: 0.0
+            angularAcceleration: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.05
+            isToggleable: true
+            isTargeteable: true
+            modifiers:
+                - modifier: modifier_enveloping
+                - modifier: modifier_overloaded
+                - modifier: modifier_fast
+                - modifier: modifier_semi_guided
+          - key: weapontype_antimatter_torpedo
+            className: TacticalTorpedo
+            model: antimatter_torpedo
+            visualScale: 6.0
+            tacticalCooldown: 15.0
+            rateOfFire: 1.0
+            volleySize: 1
+            maxDamage: 85
+            armorPenetration: 25.0
+            weaponAccuracy: 1.0
+            weaponRange: 70
+            distanceToLive: 125
+            splashArea: 1
+            weaponHp: 50.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 7.0
+            maxVelocity: 8.0
+            maxVelocityVariance: 0.0
+            angularAcceleration: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.05
+            isToggleable: true
+            isTargeteable: true
+            modifiers:
+                - modifier: modifier_enveloping
+                - modifier: modifier_overloaded
+                - modifier: modifier_fast
+                - modifier: modifier_semi_guided
+          - key: weapontype_plasma_torpedo
+            className: TacticalTorpedo
+            model: plasma_torpedo
+            visualScale: 5.0
+            tacticalCooldown: 15.0
+            rateOfFire: 1.0
+            volleySize: 1
+            maxDamage: 140
+            armorPenetration: 35.0
+            weaponAccuracy: 1.0
+            weaponRange: 70
+            distanceToLive: 125
+            splashArea: 1
+            weaponHp: 50.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 7.0
+            maxVelocity: 10.0
+            maxVelocityVariance: 0.0
+            angularAcceleration: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.05
+            isToggleable: true
+            isTargeteable: true
+            modifiers:
+                - modifier: modifier_enveloping
+                - modifier: modifier_overloaded
+                - modifier: modifier_fast
+                - modifier: modifier_semi_guided
+        #SPLASH
+          - key: weapontype_mine
+            className: TacticalSplashProjectile
+            model: null
+            visualScale: 1.0
+            tacticalCooldown: 10.0
+            rateOfFire: 1.0
+            volleySize: 1
+            maxDamage: 750
+            maxVelocity: 50
+            armorPenetration: 20.0
+            weaponAccuracy: 1.0
+            weaponRange: 5
+            splashArea: 10
+            weaponHp: 50.0
+            armTime: 1.7
+            warmupTime: 0.0
+            distanceToLive: 50
+            radius: 1.0
+          - key: weapontype_self_destruct
+            className: TacticalSplashProjectile
+            model: self_destruct
+            visualScale: 1.0
+            tacticalCooldown: 10.0
+            rateOfFire: 1.0
+            volleySize: 1
+            maxDamage: 2500
+            armorPenetration: 0.0
+            weaponAccuracy: 1.0
+            weaponRange: 22
+            distanceToLive: 50
+            splashArea: 5
+            weaponHp: 50.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 7.0
+            maxVelocity: 6.0
+            maxVelocityVariance: 0.0
+            angularAcceleration: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.05
+            ignoreByBattleHighlights: true
+        #SpecialModules
+          - key: weapontype_fighter_bay
+            className: TacticalFighter
+            dronesPerGroup: 3
+            tacticalCooldown: 8.0
+            weaponRange: 60.0
+            onUseFunc: FighterBay
+            isToggleable: true
+            hasFacing: false
+            canUseBombs: false
+          - key: weapontype_bomber_bay
+            className: TacticalFighter
+            dronesPerGroup: 3
+            tacticalCooldown: 8.0
+            weaponRange: 60.0
+            onUseFunc: FighterBay
+            isToggleable: true
+            hasFacing: false
+            isBomberSquadron: true
+          - key: weapontype_heavy_fighter_bay
+            className: TacticalFighter
+            dronesPerGroup: 3
+            tacticalCooldown: 8.0
+            weaponRange: 60.0
+            onUseFunc: FighterBay
+            isToggleable: true
+            hasFacing: false
+          - key: weapontype_automated_repair_unit
+            #className used only as identifier
+            className: TacticalRepairDrone
+            dronesPerGroup: 1
+            tacticalCooldown: 24.0
+            weaponRange: 60.0
+            splashArea: 40
+            timeToLive: 10.0
+            onUseFunc: AutomatedRepairUnit
+            onEvalueteFunc: EvaluateRepairUnitUse
+            isToggleable: false
+            hasFacing: false
+            canUseBombs: false
+            statusTitle: ID_AUTOMATED_REPAIR_UNIT_TITLE
+            statusDescription: ID_AUTOMATED_REPAIR_UNIT_DESCRIPTION
+            statusIcon: assets/tactical/automated_repair_unit_heal.png
+          - key: weapontype_black_hole
+            className: TacticalBlackHole
+            model: black_hole
+            tacticalCooldown: 40.0
+            weaponRange: 35.0
+            #should be renamed to "castRange" // // // <- still not going to change not pretty sure whats the best solution for this
+            isToggleable: true
+            onEvalueteFunc: EvaluateBlackHoleUse
+            timeToLive: 10.0
+            duration: 10.0
+            splashArea: 6
+            maxVelocity: 7.0
+            statusTitle: ID_BLACK_HOLE_TITLE
+            statusDescription: ID_BLACK_HOLE_DESCRIPTION
+            statusIcon: assets/tactical/black_hole_generator.png
+        #BOMBS
+          - key: weapontype_nuclear_bomb
+            className: TacticalMissile
+            model: nuclear_bomb
+            hasFacing: false
+            visualScale: 5.0
+            tacticalCooldown: 7.0
+            rateOfFire: 0.5
+            timeToLive: 8.0
+            volleySize: 1
+            maxDamage: 20
+            missileAttack: 50
+            bombHitChance: 60
+            armorPenetration: 10.0
+            weaponAccuracy: 1.0
+            weaponRange: 15
+            # splashArea: 15
+            weaponHp: 10.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 35.0
+            maxVelocity: 11.0
+            maxVelocityVariance: 0.1
+            angularAcceleration: 24.0
+            maxAngularVelocity: 18.0
+            velocityFriction: 0.05
+            angularFriction: 0.05
+            isPDBlockeable: true
+            isToggleable: true
+          - key: weapontype_fusion_bomb
+            className: TacticalMissile
+            model: nuclear_bomb
+            hasFacing: false
+            visualScale: 5.0
+            tacticalCooldown: 7.0
+            rateOfFire: 0.5
+            timeToLive: 8.0
+            volleySize: 1
+            maxDamage: 30
+            missileAttack: 55
+            bombHitChance: 65
+            armorPenetration: 15.0
+            weaponAccuracy: 1.0
+            weaponRange: 15
+            # splashArea: 15
+            weaponHp: 10.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 35.0
+            maxVelocity: 11.0
+            maxVelocityVariance: 0.1
+            angularAcceleration: 24.0
+            maxAngularVelocity: 18.0
+            velocityFriction: 0.05
+            angularFriction: 0.05
+            isPDBlockeable: true
+            isToggleable: true
+          - key: weapontype_antimatter_bomb
+            className: TacticalMissile
+            model: nuclear_bomb
+            hasFacing: false
+            visualScale: 5.0
+            tacticalCooldown: 7.0
+            rateOfFire: 0.5
+            timeToLive: 8.0
+            volleySize: 1
+            maxDamage: 40
+            missileAttack: 60
+            bombHitChance: 70
+            armorPenetration: 20.0
+            weaponAccuracy: 1.0
+            weaponRange: 15
+            # splashArea: 15
+            weaponHp: 10.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 35.0
+            maxVelocity: 11.0
+            maxVelocityVariance: 0.1
+            angularAcceleration: 24.0
+            maxAngularVelocity: 18.0
+            velocityFriction: 0.05
+            angularFriction: 0.05
+            isPDBlockeable: true
+            isToggleable: true
+          - key: weapontype_neutronium_bomb
+            className: TacticalMissile
+            model: nuclear_bomb
+            hasFacing: false
+            visualScale: 5.0
+            tacticalCooldown: 7.0
+            rateOfFire: 0.5
+            timeToLive: 8.0
+            volleySize: 1
+            maxDamage: 50
+            missileAttack: 65
+            bombHitChance: 75
+            armorPenetration: 25.0
+            weaponAccuracy: 1.0
+            weaponRange: 15
+            # splashArea: 15
+            weaponHp: 10.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 35.0
+            maxVelocity: 11.0
+            maxVelocityVariance: 0.1
+            angularAcceleration: 24.0
+            maxAngularVelocity: 18.0
+            velocityFriction: 0.05
+            angularFriction: 0.05
+            isPDBlockeable: true
+            isToggleable: true
+          - key: weapontype_death_spores
+            className: TacticalMissile
+            model: nuclear_bomb
+            hasFacing: false
+            visualScale: 5.0
+            tacticalCooldown: 7.0
+            rateOfFire: 0.5
+            timeToLive: 8.0
+            volleySize: 1
+            maxDamage: 10
+            missileAttack: 50
+            bombHitChance: 50
+            armorPenetration: 30.0
+            weaponAccuracy: 1.0
+            weaponRange: 15
+            # splashArea: 15
+            weaponHp: 10.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 35.0
+            maxVelocity: 11.0
+            maxVelocityVariance: 0.1
+            angularAcceleration: 24.0
+            maxAngularVelocity: 18.0
+            velocityFriction: 0.05
+            angularFriction: 0.05
+            isPDBlockeable: true
+            isToggleable: true
+          - key: weapontype_bio_terminator
+            className: TacticalMissile
+            model: nuclear_bomb
+            hasFacing: false
+            visualScale: 5.0
+            tacticalCooldown: 7.0
+            rateOfFire: 0.5
+            timeToLive: 8.0
+            volleySize: 1
+            maxDamage: 10
+            missileAttack: 50
+            bombHitChance: 75
+            armorPenetration: 0.0
+            weaponAccuracy: 1.0
+            weaponRange: 15
+            # splashArea: 15
+            weaponHp: 10.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 35.0
+            maxVelocity: 11.0
+            maxVelocityVariance: 0.1
+            angularAcceleration: 24.0
+            maxAngularVelocity: 18.0
+            velocityFriction: 0.05
+            angularFriction: 0.05
+            isPDBlockeable: true
+            isToggleable: true
+          - key: weapontype_generic_bomb
+            className: TacticalTorpedo
+            model: antimatter_torpedo
+            hasFacing: false
+            visualScale: 5.0
+            tacticalCooldown: 999.0
+            rateOfFire: 1.0
+            volleySize: 1
+            maxDamage: 60
+            bombHitChance: 65
+            armorPenetration: 0.0
+            weaponAccuracy: 1.0
+            weaponRange: 0
+            distanceToLive: 50
+            splashArea: 1
+            weaponHp: 50.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 7.0
+            maxVelocity: 6.0
+            maxVelocityVariance: 0.0
+            angularAcceleration: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.05
+        #Specials
+          - key: weapontype_augmented_engines
+            onUseFunc: ActivateAfterburner
+            onEvalueteFunc: EvaluateAfterBurnerUse
+            tacticalCooldown: 20.0
+            bonusAcceleration: 3.0
+            duration: 7.0
+            isToggleable: true
+            statusTitle: ID_AUGMENTED_ENGINES_TITLE
+            statusDescription: ID_AUGMENTED_ENGINES_DESCRIPTION
+            statusIcon: assets/tactical/augmented_engine_speed_boost.png
+          - key: weapontype_displacement_device
+            onUseFunc: FTLJumpTo
+            onEvalueteFunc: EvaluateFTLJumpUse
+            tacticalCooldown: 30.0
+            weaponRange: 45.0
+            warmupTime: 0.75
+            isToggleable: true
+          - key: weapontype_subspace_teleporter
+            onUseFunc: FTLJumpTo
+            onEvalueteFunc: EvaluateFTLJumpUse
+            tacticalCooldown: 20.0
+            weaponRange: 60.0
+            warmupTime: 0.5
+            isToggleable: true
+          - key: weapontype_shield_capacitor
+            onUseFunc: SetMatrixShield
+            onEvalueteFunc: EvaluateMatrixShieldUse
+            tacticalCooldown: 30.0
+            bonusSP: 0.2
+            duration: 10
+            isToggleable: true
+            statusTitle: ID_SHIELD_CAPACITOR_TITLE
+            statusDescription: ID_SHIELD_CAPACITOR_DESCRIPTION
+            statusIcon: assets/tactical/shield_capacitor_boost.png
+          - key: weapontype_energy_absorber
+            onUseFunc: AbsorbEnergyDamage
+            tacticalCooldown: 25.0
+            damageToShield: 0.5
+            duration: 10
+            isToggleable: true
+            statusTitle: ID_ENERGY_ABSORBER_TITLE
+            statusDescription: ID_ENERGY_ABSORBER_DESCRIPTION
+            statusIcon: assets/tactical/energy_absorber_protection.png
+          - key: weapontype_special_passive
+            mass: 1.0
+          - key: weapontype_pulsar
+            className: TacticalPulsar
+            model: pulsar
+            splashArea: 30
+            visualScale: 2.0
+            tacticalCooldown: 40
+            rateOfFire: 0.3
+            volleySize: 1
+            maxDamage: 13
+            armorPenetration: 0.0
+            # shieldPenetration: false
+            weaponAccuracy: 1.0
+            weaponRange: 40
+            warmupTime: 1.5
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 60.0
+            maxVelocityVariance: 0.1
+            isToggleable: true
+            onEvalueteFunc: EvaluatePulsarUse
+        #MISSING SPECIALS WEAPONTYPES
+          - key: weapontype_cloaking_device
+            onEvalueteFunc: EvaluateCloakingUse
+            tacticalCooldown: 10.0
+            statusTitle: ID_CLOAKING_DEVICE_TITLE
+            statusDescription: ID_CLOAKING_DEVICE_DESCRIPTION
+            statusIcon: assets/tactical/cloaked.png
+          - key: weapontype_anticloaking_device
+            className: TacticalAnticloakingDevice
+            model: anticloaking_device
+            tacticalCooldown: 10.0
+            weaponRange: 50.0
+            duration: 10
+            splashArea: 30.0
+            visualScale: 6.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 7.0
+            maxVelocity: 6.0
+            maxVelocityVariance: 0.0
+            angularAcceleration: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.05
+            statusTitle: ID_ANTICLOAKING_DEVICE_TITLE
+            statusDescription: ID_ANTICLOAKING_DEVICE_DESCRIPTION
+            statusIcon: assets/tactical/revealed_by_anticloaking.png
+          - key: weapontype_phasing_cloak
+            onEvalueteFunc: EvaluateCloakingUse
+            tacticalCooldown: 10.0
+            statusTitle: ID_PHASING_CLOAK_TITLE
+            statusDescription: ID_PHASING_CLOAK_DESCRIPTION
+            statusIcon: assets/tactical/cloaked.png
+          - key: weapontype_lightning_field
+            className: TacticalLightningField
+            model: lightning_field
+            tacticalCooldown: 30
+            antiWeaponDamage: 9999
+            weaponRange: 10
+            weaponAccuracy: 0.5
+            onEvalueteFunc: EvaluateLightningFieldUse
+            duration: 0.75
+          - key: weapontype_antimissile_rockets
+            className: TacticalMissile
+            model: antimissile_rocket
+            hasFacing: false
+            visualScale: 1.5
+            timeToLive: 2.0
+            tacticalCooldown: 2
+            maxDamage: 5
+            minDamage: 5
+            weaponRange: 10
+            acceleration: 200.0
+            maxVelocity: 18.0
+            maxVelocityVariance: 0.1
+            angularAcceleration: 200.0
+            maxAngularVelocity: 100.0
+            mass: 1.0
+          - key: weapontype_plasma_web
+            className: TacticalPlasmaWeb
+            model: plasma_web
+            tacticalCooldown: 30
+            duration: 5
+            weaponRange: 20
+            minDamage: 5
+            maxDamage: 5
+            weaponSteps: 20
+            weaponStepDuration: 0.25
+            splashArea: 5
+            statusTitle: ID_PLASMA_WEB_TITLE
+            statusDescription: ID_PLASMA_WEB_DESCRIPTION
+            statusIcon: assets/tactical/under_plasma_web_effect.png
+            onEvalueteFunc: EvaluatePlasmaWebUse
+          - key: weapontype_tractor_beam
+            className: TacticalTractorBeam
+            model: tractor_beam
+            tacticalCooldown: 30
+            duration: 5
+            weaponRange: 20
+            maxVelocity: 70.0
+            slowFactor: 0.4
+            onEvalueteFunc: EvaluateTractorBeamUse
+            ignoreByBattleHighlights: true
+        ##PIRATE WEAPONTYPES
+          - key: weapontype_pirate_cannon
+            className: TacticalLaser
+            model: laser_cannon
+            visualScale: 2.0
+            tacticalCooldown: 6.0
+            rateOfFire: 0.3
+            volleySize: 1
+            maxDamage: 4
+            armorPenetration: 5.0
+            # shieldPenetration: false
+            rangeDecayFactor: 0.8
+            decayRate: 3.0
+            weaponAccuracy: 1.0
+            weaponRange: 50
+            warmupTime: 0.4
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 60.0
+            maxVelocityVariance: 0.1
+            modifiers:
+                - modifier: modifier_point_defense
+                - modifier: modifier_continuous_fire_lasers
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                - modifier: modifier_enveloping
+          - key: weapontype_pirate_beam
+            className: TacticalBeam
+            model: fusion_beam
+            visualScale: 2.0
+            tacticalCooldown: 10.0
+            rateOfFire: 0.15
+            volleySize: 1
+            maxDamage: 2.0
+            weaponSteps: 6
+            weaponStepDuration: 0.25
+            armorPenetration: 10.0
+            rangeDecayFactor: 0.95
+            decayRate: 6.0
+            weaponAccuracy: 1.0
+            weaponRange: 25
+            warmupTime: 1.3
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 70.0
+            maxVelocityVariance: 0.1
+            modifiers:
+                - modifier: modifier_continuous_fire_lasers
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                - modifier: modifier_enveloping
+          - key: weapontype_pirate_missile
+            className: TacticalMissile
+            model: nuclear_missile
+            hasFacing: false
+            visualScale: 5.0
+            tacticalCooldown: 8.0
+            rateOfFire: 0.5
+            timeToLive: 8.0
+            volleySize: 1
+            maxDamage: 10
+            armorPenetration: 10.0
+            weaponAccuracy: 1.0
+            weaponRange: 60
+            splashArea: 15
+            weaponHp: 1.5
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 35.0
+            maxVelocity: 11.0
+            maxVelocityVariance: 0.1
+            angularAcceleration: 24.0
+            maxAngularVelocity: 18.0
+            velocityFriction: 0.05
+            angularFriction: 0.05
+            isPDBlockeable: true
+            isToggleable: true
+            modifiers:
+                - modifier: modifier_heavy_armor
+                - modifier: modifier_eccm
+                - modifier: modifier_fast
+                - modifier: modifier_mirv
+        ##MONSTER WEAPONTYPES
+        #AMOEBA
+          - key: weapontype_lightning_field_amoeba
+            className: TacticalLightningField
+            model: lightning_field
+            tacticalCooldown: 10
+            antiWeaponDamage: 9999
+            weaponRange: 10
+            weaponAccuracy: 0.5
+            onEvalueteFunc: EvaluateLightningFieldUse
+            duration: 0.75
+          - key: weapontype_pulsar_amoeba_large
+            className: TacticalPulsar
+            model: pulsar
+            tacticalCooldown: 10.0
+            splashArea: 18
+            visualScale: 2.0
+            rateOfFire: 0.3
+            volleySize: 1
+            maxDamage: 50
+            armorPenetration: 15.0
+            # shieldPenetration: false
+            weaponAccuracy: 1.0
+            weaponRange: 15
+            warmupTime: 1.5
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 60.0
+            maxVelocityVariance: 0.1
+            rangeDissipation: false
+            isToggleable: true
+            onEvalueteFunc: EvaluatePulsarUse
+          - key: weapontype_pulsar_amoeba_medium
+            className: TacticalPulsar
+            model: pulsar
+            tacticalCooldown: 8.0
+            splashArea: 12
+            visualScale: 2.0
+            rateOfFire: 0.3
+            volleySize: 1
+            maxDamage: 30
+            armorPenetration: 15.0
+            # shieldPenetration: false
+            weaponAccuracy: 1.0
+            weaponRange: 10
+            warmupTime: 1.5
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 60.0
+            maxVelocityVariance: 0.1
+            rangeDissipation: false
+            isToggleable: true
+            onEvalueteFunc: EvaluatePulsarUse
+          - key: weapontype_pulsar_amoeba_small
+            className: TacticalPulsar
+            model: pulsar
+            tacticalCooldown: 6.0
+            splashArea: 6
+            visualScale: 2.0
+            rateOfFire: 0.3
+            volleySize: 1
+            maxDamage: 20
+            armorPenetration: 15.0
+            # shieldPenetration: false
+            weaponAccuracy: 1.0
+            weaponRange: 5
+            warmupTime: 1.5
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 60.0
+            maxVelocityVariance: 0.1
+            rangeDissipation: false
+            isToggleable: true
+            onEvalueteFunc: EvaluatePulsarUse
+          - key: weapontype_plasma_web_amoeba_large
+            className: TacticalPlasmaWeb
+            model: plasma_web
+            tacticalCooldown: 8
+            duration: 5
+            weaponRange: 40
+            minDamage: 5
+            maxDamage: 5
+            weaponSteps: 10
+            weaponStepDuration: 0.5
+            rangeDissipation: false
+            armorPenetration: 25
+            splashArea: 15
+            onEvalueteFunc: EvaluatePlasmaWebUse
+            statusTitle: ID_AMOEBA_PLASMA_WEB_TITLE
+            statusDescription: ID_AMOEBA_PLASMA_WEB_DESCRIPTION
+            statusIcon: assets/tactical/amoeba_plasma_web.png
+          - key: weapontype_plasma_web_amoeba_medium
+            className: TacticalPlasmaWeb
+            model: plasma_web
+            tacticalCooldown: 9
+            duration: 5
+            weaponRange: 35
+            minDamage: 4
+            maxDamage: 4
+            weaponSteps: 10
+            weaponStepDuration: 0.5
+            rangeDissipation: false
+            armorPenetration: 25
+            splashArea: 15
+            onEvalueteFunc: EvaluatePlasmaWebUse
+            statusTitle: ID_AMOEBA_PLASMA_WEB_TITLE
+            statusDescription: ID_AMOEBA_PLASMA_WEB_DESCRIPTION
+            statusIcon: assets/tactical/amoeba_plasma_web.png
+          - key: weapontype_plasma_web_amoeba_small
+            className: TacticalPlasmaWeb
+            model: plasma_web
+            tacticalCooldown: 10
+            duration: 5
+            weaponRange: 30
+            minDamage: 3
+            maxDamage: 3
+            weaponSteps: 10
+            weaponStepDuration: 0.5
+            rangeDissipation: false
+            armorPenetration: 25
+            splashArea: 15
+            onEvalueteFunc: EvaluatePlasmaWebUse
+            statusTitle: ID_AMOEBA_PLASMA_WEB_TITLE
+            statusDescription: ID_AMOEBA_PLASMA_WEB_DESCRIPTION
+            statusIcon: assets/tactical/amoeba_plasma_web.png
+          - key: weapontype_amoeba_bomb
+            className: TacticalMissile
+            model: nuclear_bomb
+            hasFacing: false
+            visualScale: 5.0
+            tacticalCooldown: 7.0
+            rateOfFire: 0.5
+            timeToLive: 8.0
+            volleySize: 1
+            maxDamage: 50
+            missileAttack: 65
+            bombHitChance: 75
+            armorPenetration: 25.0
+            weaponAccuracy: 1.0
+            weaponRange: 15
+            # splashArea: 15
+            weaponHp: 10.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 35.0
+            maxVelocity: 11.0
+            maxVelocityVariance: 0.1
+            angularAcceleration: 24.0
+            maxAngularVelocity: 18.0
+            velocityFriction: 0.05
+            angularFriction: 0.05
+            isPDBlockeable: true
+            isToggleable: true
+        #SQUID
+          - key: weapontype_melee_squid
+            className: TacticalNullProjectile
+            model: null
+            visualScale: 2.0
+            tacticalCooldown: 3.0
+            rateOfFire: 0.3
+            volleySize: 1
+            maxDamage: 60
+            armorPenetration: 25.0
+            # shieldPenetration: false
+            rangeDecayFactor: 0.65
+            decayRate: 3.5
+            weaponAccuracy: 1.0
+            weaponRange: 5
+            warmupTime: 0.2
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 60.0
+            maxVelocityVariance: 0.1
+            useAttackAnimation: true
+            rangeDissipation: false
+            attackTrigger: Melee
+          - key: weapontype_phasors_squid
+            className: TacticalLaser
+            model: phasors
+            visualScale: 2.0
+            tacticalCooldown: 7.0
+            rateOfFire: 0.3
+            volleySize: 1
+            maxDamage: 13
+            armorPenetration: 15.0
+            # shieldPenetration: false
+            rangeDecayFactor: 0.65
+            decayRate: 3.5
+            weaponAccuracy: 1.0
+            weaponRange: 40
+            warmupTime: 0.2
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 60.0
+            maxVelocityVariance: 0.1
+            useAttackAnimation: true
+            modifiers:
+                - modifier: modifier_point_defense
+                - modifier: modifier_continuous_fire_lasers
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                - modifier: modifier_enveloping
+          - key: weapontype_missile_squid
+            className: TacticalMissile
+            model: monster_squid_missile
+            hasFacing: false
+            visualScale: 5.0
+            tacticalCooldown: 10.0
+            rateOfFire: 0.5
+            timeToLive: 8.0
+            volleySize: 1
+            maxDamage: 45
+            armorPenetration: 20.0
+            weaponAccuracy: 1.0
+            weaponRange: 50
+            splashArea: 15
+            weaponHp: 25.0
+            warmupTime: 0.7
+            radius: 1.0
+            mass: 1.0
+            acceleration: 35.0
+            maxVelocity: 11.0
+            maxVelocityVariance: 0.1
+            angularAcceleration: 24.0
+            maxAngularVelocity: 18.0
+            velocityFriction: 0.05
+            angularFriction: 0.05
+            isPDBlockeable: true
+            isToggleable: true
+            useAttackAnimation: true
+            modifiers:
+                - modifier: modifier_heavy_armor
+                - modifier: modifier_eccm
+                - modifier: modifier_fast
+                - modifier: modifier_mirv
+          - key: weapontype_sprint_squid
+            onUseFunc: ActivateAfterburner
+            onEvalueteFunc: EvaluateAfterBurnerUse
+            tacticalCooldown: 10.0
+            bonusAcceleration: 7.0
+            duration: 1.5
+            isToggleable: true
+            statusTitle: ID_SQUID_AUGMENTEND_ENGINE_TITLE
+            statusDescription: ID_SQUID_AUGMENTEND_ENGINE_DESCRIPTION
+            statusIcon: assets/tactical/squid_sprint.png
+          - key: weapontype_squid_bomb
+            className: TacticalMissile
+            model: nuclear_bomb
+            hasFacing: false
+            visualScale: 5.0
+            tacticalCooldown: 7.0
+            rateOfFire: 0.5
+            timeToLive: 8.0
+            volleySize: 1
+            maxDamage: 50
+            missileAttack: 65
+            bombHitChance: 75
+            armorPenetration: 25.0
+            weaponAccuracy: 1.0
+            weaponRange: 15
+            # splashArea: 15
+            weaponHp: 10.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 35.0
+            maxVelocity: 11.0
+            maxVelocityVariance: 0.1
+            angularAcceleration: 24.0
+            maxAngularVelocity: 18.0
+            velocityFriction: 0.05
+            angularFriction: 0.05
+            isPDBlockeable: true
+            isToggleable: true
+        #EEL
+          - key: weapontype_fusion_beam_eel
+            className: TacticalBeam
+            model: fusion_beam
+            visualScale: 2.0
+            tacticalCooldown: 8.0
+            rateOfFire: 0.15
+            volleySize: 1
+            maxDamage: 15
+            weaponSteps: 4
+            weaponStepDuration: 0.25
+            armorPenetration: 20.0
+            rangeDecayFactor: 0.9
+            decayRate: 5.5
+            weaponAccuracy: 1.0
+            weaponRange: 17
+            warmupTime: 1.3
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 70.0
+            maxVelocityVariance: 0.1
+            useAttackAnimation: true
+            modifiers:
+                - modifier: modifier_continuous_fire_lasers
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                - modifier: modifier_enveloping
+          - key: weapontype_plasma_torpedo_eel
+            className: TacticalTorpedo
+            model: monster_eel_torpedo
+            visualScale: 5.0
+            tacticalCooldown: 12.0
+            rateOfFire: 1.0
+            volleySize: 1
+            maxDamage: 75
+            armorPenetration: 25.0
+            weaponAccuracy: 1.0
+            weaponRange: 60
+            distanceToLive: 125
+            splashArea: 1
+            weaponHp: 50.0
+            warmupTime: 1.2
+            radius: 1.0
+            mass: 1.0
+            acceleration: 7.0
+            maxVelocity: 10.0
+            maxVelocityVariance: 0.0
+            angularAcceleration: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.05
+            isToggleable: true
+            isTargeteable: true
+            useAttackAnimation: true
+            modifiers:
+                - modifier: modifier_enveloping
+                - modifier: modifier_overloaded
+                - modifier: modifier_fast
+                - modifier: modifier_semi_guided
+          - key: weapontype_eel_bomb
+            className: TacticalMissile
+            model: nuclear_bomb
+            hasFacing: false
+            visualScale: 5.0
+            tacticalCooldown: 7.0
+            rateOfFire: 0.5
+            timeToLive: 8.0
+            volleySize: 1
+            maxDamage: 50
+            missileAttack: 65
+            bombHitChance: 75
+            armorPenetration: 25.0
+            weaponAccuracy: 1.0
+            weaponRange: 15
+            # splashArea: 15
+            weaponHp: 10.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 35.0
+            maxVelocity: 11.0
+            maxVelocityVariance: 0.1
+            angularAcceleration: 24.0
+            maxAngularVelocity: 18.0
+            velocityFriction: 0.05
+            angularFriction: 0.05
+            isPDBlockeable: true
+            isToggleable: true
+          - key: weapontype_sprint_eel
+            onUseFunc: ActivateAfterburner
+            onEvalueteFunc: EvaluateAfterBurnerUse
+            tacticalCooldown: 10.0
+            bonusAcceleration: 7.0
+            duration: 1.5
+            isToggleable: true
+            statusTitle: ID_EEL_AUGMENTEND_ENGINE_TITLE
+            statusDescription: ID_EEL_AUGMENTEND_ENGINE_DESCRIPTION
+            statusIcon: assets/tactical/squid_sprint.png
+        #ORION
+          - key: weapontype_sprint_orion
+            onUseFunc: ActivateAfterburner
+            onEvalueteFunc: EvaluateAfterBurnerUse
+            tacticalCooldown: 10.0
+            bonusAcceleration: 7.0
+            duration: 1.5
+            isToggleable: true
+            statusTitle: ID_ORION_AUGMENTEND_ENGINE_TITLE
+            statusDescription: ID_ORION_AUGMENTEND_ENGINE_DESCRIPTION
+            statusIcon: assets/tactical/squid_sprint.png
+        #DRAGON
+          - key: weapontype_phasors_dragon
+            className: TacticalLaser
+            model: phasors
+            visualScale: 2.0
+            tacticalCooldown: 8.0
+            rateOfFire: 0.3
+            volleySize: 1
+            maxDamage: 13
+            armorPenetration: 20.0
+            # shieldPenetration: false
+            rangeDecayFactor: 0.65
+            decayRate: 3.5
+            weaponAccuracy: 1.0
+            weaponRange: 40
+            warmupTime: 0.2
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 60.0
+            maxVelocityVariance: 0.1
+            useAttackAnimation: true
+            modifiers:
+                - modifier: modifier_point_defense
+                - modifier: modifier_continuous_fire_lasers
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                - modifier: modifier_enveloping
+          - key: weapontype_missile_dragon
+            className: TacticalMissile
+            model: monster_dragon_missile
+            hasFacing: false
+            visualScale: 5.0
+            tacticalCooldown: 12.0
+            rateOfFire: 0.5
+            timeToLive: 8.0
+            volleySize: 1
+            maxDamage: 25
+            armorPenetration: 15.0
+            weaponAccuracy: 1.0
+            weaponRange: 50
+            splashArea: 15
+            weaponHp: 5.0
+            warmupTime: 0.9
+            radius: 1.0
+            mass: 1.0
+            acceleration: 35.0
+            maxVelocity: 11.0
+            maxVelocityVariance: 0.1
+            angularAcceleration: 24.0
+            maxAngularVelocity: 18.0
+            velocityFriction: 0.05
+            angularFriction: 0.05
+            isPDBlockeable: true
+            isToggleable: true
+            useAttackAnimation: true
+            modifiers:
+                - modifier: modifier_heavy_armor
+                - modifier: modifier_eccm
+                - modifier: modifier_fast
+                - modifier: modifier_mirv
+          - key: weapontype_phasors_parasite
+            className: TacticalLaser
+            model: phasors
+            visualScale: 2.0
+            tacticalCooldown: 4.0
+            rateOfFire: 0.3
+            volleySize: 1
+            maxDamage: 20
+            armorPenetration: 15.0
+            # shieldPenetration: false
+            rangeDecayFactor: 0.65
+            decayRate: 3.5
+            weaponAccuracy: 1.0
+            weaponRange: 40
+            warmupTime: 0.2
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 60.0
+            maxVelocityVariance: 0.1
+            useAttackAnimation: true
+            modifiers:
+                - modifier: modifier_point_defense
+                - modifier: modifier_continuous_fire_lasers
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                - modifier: modifier_enveloping
+          - key: weapontype_plasma_torpedo_dragon
+            className: TacticalTorpedo
+            model: monster_dragon_torpedo
+            visualScale: 5.0
+            tacticalCooldown: 15.0
+            rateOfFire: 1.0
+            volleySize: 1
+            maxDamage: 120
+            armorPenetration: 20.0
+            weaponAccuracy: 1.0
+            weaponRange: 60
+            distanceToLive: 125
+            splashArea: 1
+            weaponHp: 50.0
+            warmupTime: 0.9
+            radius: 1.0
+            mass: 1.0
+            acceleration: 7.0
+            maxVelocity: 10.0
+            maxVelocityVariance: 0.0
+            angularAcceleration: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.05
+            isToggleable: true
+            isTargeteable: true
+            useAttackAnimation: true
+            modifiers:
+                - modifier: modifier_enveloping
+                - modifier: modifier_overloaded
+                - modifier: modifier_fast
+                - modifier: modifier_semi_guided
+          - key: weapontype_fighter_bay_dragon
+            className: TacticalDragonParasite
+            tacticalCooldown: 14.0
+            weaponRange: 60.0
+            onUseFunc: FighterBay
+            isToggleable: true
+            hasFacing: false
+            canUseBombs: false
+          - key: weapontype_dragon_bomb
+            className: TacticalMissile
+            model: nuclear_bomb
+            hasFacing: false
+            visualScale: 5.0
+            tacticalCooldown: 7.0
+            rateOfFire: 0.5
+            timeToLive: 8.0
+            volleySize: 1
+            maxDamage: 50
+            missileAttack: 65
+            bombHitChance: 75
+            armorPenetration: 25.0
+            weaponAccuracy: 1.0
+            weaponRange: 15
+            # splashArea: 15
+            weaponHp: 10.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 35.0
+            maxVelocity: 11.0
+            maxVelocityVariance: 0.1
+            angularAcceleration: 24.0
+            maxAngularVelocity: 18.0
+            velocityFriction: 0.05
+            angularFriction: 0.05
+            isPDBlockeable: true
+            isToggleable: true
+          - key: weapontype_ramming
+            tacticalCooldown: 0.01
+            weaponRange: 40.0
+            isToggleable: false
+            onEvalueteFunc: EvaluateRammingUse
+            onUseFunc: Ramming
+            rammingSpeedFactor: 1
+            autoAimForceY: 1.2
+            autoAimForceXZ: 0.3
+            statusTitle: ID_RAMMING_POSITIVE_TITLE
+            statusDescription: ID_RAMMING_POSITIVE_DESCRIPTION
+            statusIcon: assets/tactical/ramming_buff.png
+            ignoreByBattleHighlights: true
+          - key: weapontype_nebulae
+            statusTitle: ID_NEBULA_TITLE
+            statusDescription: ID_NEBULA_DESCRIPTION
+            statusIcon: assets/tactical/under_nebula_effect.png
+          - key: weapontype_warp_dissipater
+            statusTitle: ID_WARP_DISSIPATER_TITLE
+            statusDescription: ID_WARP_DISSIPATER_DESCRIPTION
+            statusIcon: assets/tactical/warp_dissipater.png
+          - key: weapontype_wide_area_jammer
+            statusTitle: ID_WIDE_AREA_JAMMER_TITLE
+            statusDescription: ID_WIDE_AREA_JAMMER_DESCRIPTION
+            statusIcon: assets/tactical/wide_area_jammer_buff.png
+...
