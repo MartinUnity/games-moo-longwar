@@ -59,6 +59,35 @@
                 - modifier: modifier_auto_fire
                 - modifier: modifier_heavy_mount
                 - modifier: modifier_enveloping
+        ## Custom - pulse weaponry
+          - key: weapontype_pulse_beam
+            className: TacticalBeam
+            model: graviton_beam
+            visualScale: 2.0
+            tacticalCooldown: 4
+            rateOfFire: 0.15
+            volleySize: 1
+            maxDamage: 3
+            weaponSteps: 10
+            weaponStepDuration: 0.5
+            armorPenetration: 10.0
+            weaponRange: 85
+            rangeDecayFactor: 0.7
+            decayRate: 2.0
+            rangeLoss: 0.05
+            weaponAccuracy: 1.0
+            rangeLoss: 0.15
+            warmupTime: 1.3
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 70.0
+            maxVelocityVariance: 0.1
+            modifiers:
+                - modifier: modifier_continuous_fire_beams
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                - modifier: modifier_enveloping
           - key: weapontype_ion_pulse_beam
             className: TacticalBeam
             model: ion_pulse_beam
@@ -179,9 +208,9 @@
             model: laser_cannon
             visualScale: 2.0
             tacticalCooldown: 5.0
-            rateOfFire: 0.20
+            rateOfFire: 0.25
             volleySize: 1
-            maxDamage: 18
+            maxDamage: 15
             armorPenetration: 5.0
             shieldPenetration: false
             rangeDissipation: false
@@ -206,9 +235,9 @@
             model: laser_cannon
             visualScale: 2.0
             tacticalCooldown: 5.0
-            rateOfFire: 0.20
+            rateOfFire: 0.25
             volleySize: 1
-            maxDamage: 8
+            maxDamage: 6
             armorPenetration: 0.0
             shieldPenetration: false
             rangeDissipation: false
@@ -258,16 +287,16 @@
             className: TacticalLaser
             model: mass_driver
             visualScale: 2.0
-            tacticalCooldown: 5.0
-            rateOfFire: 0.20
+            tacticalCooldown: 7.0
+            rateOfFire: 0.25
             volleySize: 1
-            maxDamage: 18
+            maxDamage: 12
             armorPenetration: 10
             shieldPenetration: true
             rangeDissipation: false
             weaponAccuracy: 1.0
             rangeLoss: 0.5
-            weaponRange: 75
+            weaponRange: 65
             warmupTime: 0.2
             radius: 1.0
             mass: 1.0
@@ -444,7 +473,7 @@
             model: nuclear_missile
             hasFacing: false
             visualScale: 5.0
-            tacticalCooldown: 18.0
+            tacticalCooldown: 14.0
             rateOfFire: 0.5
             timeToLive: 20.0
             volleySize: 1
@@ -576,7 +605,7 @@
             className: TacticalTorpedo
             model: proton_torpedo
             visualScale: 6.0
-            tacticalCooldown: 15.0
+            tacticalCooldown: 13.0
             rateOfFire: 1.0
             volleySize: 1
             maxDamage: 50
