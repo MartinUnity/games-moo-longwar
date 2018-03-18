@@ -26,8 +26,8 @@
             slot: shipslot_weapon
             subType: shipmodulesubtype_cannon
             weaponType: weapontype_lazer_cannon
-            cost: 3
-            size: 6
+            cost: 4
+            size: 8
             icon: assets/ship_modules/laser_cannon.png
           - key: shipmodule_particle_beam
             name: Particle_Beam
@@ -47,7 +47,7 @@
             subType: shipmodulesubtype_cannon
             weaponType: weapontype_laser_cannon
             cost: 2
-            size: 6
+            size: 5
             icon: assets/ship_modules/laser_cannon.png
           - key: shipmodule_mass_driver
             name: $SHIP_MODULE_MASS_DRIVER_NAME
@@ -57,7 +57,7 @@
             subType: shipmodulesubtype_cannon
             weaponType: weapontype_mass_driver
             cost: 5
-            size: 10
+            size: 12
             icon: assets/ship_modules/mass_driver.png
           - key: shipmodule_neutron_blaster
             name: $SHIP_MODULE_NEUTRON_BLASTER_NAME
@@ -120,6 +120,16 @@
             weaponType: weapontype_fusion_beam
             cost: 8
             size: 15
+            icon: assets/ship_modules/fusion_beam.png
+          - key: shipmodule_pulse_beam
+            name: Pulse Cannon
+            shortDescription: Pulse cannon sends unmodulated light
+            description: Pulse weaponry bypass armor
+            slot: shipslot_weapon
+            subType: shipmodulesubtype_beam
+            weaponType: weapontype_pulse_beam
+            cost: 8
+            size: 10
             icon: assets/ship_modules/fusion_beam.png
           - key: shipmodule_antaran_fusion_beam
             name: $SHIP_MODULE_FUSION_BEAM_NAME

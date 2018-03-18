@@ -5,7 +5,7 @@
             name: COLONY_STRUCTURE_STAR_BASE_NAME
             description: COLONY_STRUCTURE_STAR_BASE_DESCRIPTION
             icon: assets/structures/star_base.png
-            cost: 120
+            cost: 180
             upkeep: 1
             scannerRangeBonus: 1
             fleetSupportBonus: 5
@@ -21,7 +21,7 @@
             description: COLONY_STRUCTURE_BATTLE_STATION_DESCRIPTION
             icon: assets/structures/battlestation.png
             upgrades: structure_star_base
-            cost: 320
+            cost: 380
             upkeep: 2
             scannerRangeBonus: 2
             fleetSupportBonus: 7
@@ -37,7 +37,7 @@
             description: COLONY_STRUCTURE_STAR_FORTRESS_DESCRIPTION
             icon: assets/structures/starfortress.png
             upgrades: structure_battlestation
-            cost: 600
+            cost: 800
             upkeep: 8
             scannerRangeBonus: 3
             repairFactor: 0.10
@@ -93,7 +93,7 @@
             upkeep: 2
             baseLifeSupportBonus: 1
             # baseResearchBonus: 1
-            # baseProductionBonus: 1
+            baseProductionBonus: 1
             nonBuildable: true
             structureTypes:
                 - 1
@@ -132,9 +132,9 @@
             baseResearchBonus: 2
             baseLifeSupportBonus: 2
             baseProductionBonus: 2
-            securityBonus: 0.40
+            securityBonus: 0.30
             influencesMinorCivs: capitol_influence
-            moraleMultiplierBonusSystem: 0.50
+            moraleMultiplierBonusSystem: 0.30
             enableTaxation: true
             isTransferable: false
             upgrades: structure_government_building
@@ -172,8 +172,8 @@
             name: Automated Factory 1
             description: COLONY_STRUCTURE_AUTOMATED_FACTORY_DESCRIPTION
             icon: assets/structures/automated_factory.png
-            cost: 75
-            upkeep: 1
+            cost: 100
+            upkeep: 3
             upgrades: structure_automated_factory
             baseProductionBonus: 4
             structureTypes:
@@ -183,8 +183,8 @@
             name: Automated Factory 2
             description: COLONY_STRUCTURE_AUTOMATED_FACTORY_DESCRIPTION
             icon: assets/structures/automated_factory.png
-            cost: 175
-            upkeep: 1
+            cost: 200
+            upkeep: 4
             upgrades: structure_automated_factory_1
             baseProductionBonus: 8
             structureTypes:
@@ -194,8 +194,8 @@
             name: Automated Factory 3
             description: COLONY_STRUCTURE_AUTOMATED_FACTORY_DESCRIPTION
             icon: assets/structures/automated_factory.png
-            cost: 250
-            upkeep: 1
+            cost: 400
+            upkeep: 5
             upgrades: structure_automated_factory_2
             baseProductionBonus: 16
             structureTypes:
@@ -205,8 +205,8 @@
             name: Automated Factory 4
             description: COLONY_STRUCTURE_AUTOMATED_FACTORY_DESCRIPTION
             icon: assets/structures/automated_factory.png
-            cost: 650
-            upkeep: 1
+            cost: 800
+            upkeep: 6
             upgrades: structure_automated_factory_3
             baseProductionBonus: 32
             structureTypes:
@@ -238,7 +238,7 @@
             name: Colonial Revenue Services 2
             description: COLONY_STRUCTURE_COLONIAL_REVENUE_SERVICES_DESCRIPTION
             icon: assets/structures/colonial_revenue_services.png
-            cost: 260
+            cost: 360
             upkeep: 0
             workerIncomeBonus: 2
             creditIncomeBonus: 4
@@ -251,7 +251,7 @@
             name: COLONY_STRUCTURE_CRUST_PROSPECTING_NAME
             description: COLONY_STRUCTURE_CRUST_PROSPECTING_DESCRIPTION
             icon: assets/structures/crust_prospecting.png
-            cost: 30
+            cost: 25
             upkeep: 2
             baseProductionBonus: 5
             creditIncomeBonus: 2
@@ -266,7 +266,7 @@
             name: Crust Prospecting 1
             description: COLONY_STRUCTURE_CRUST_PROSPECTING_DESCRIPTION
             icon: assets/structures/crust_prospecting.png
-            cost: 60
+            cost: 50
             upkeep: 4
             upgrades: structure_crust_prospecting
             baseProductionBonus: 10
@@ -282,7 +282,7 @@
             name: Crust Prospecting 2
             description: COLONY_STRUCTURE_CRUST_PROSPECTING_DESCRIPTION
             icon: assets/structures/crust_prospecting.png
-            cost: 120
+            cost: 100
             upkeep: 6
             upgrades: structure_crust_prospecting_1
             baseProductionBonus: 15
@@ -298,7 +298,7 @@
             name: Crust Prospecting 3
             description: COLONY_STRUCTURE_CRUST_PROSPECTING_DESCRIPTION
             icon: assets/structures/crust_prospecting.png
-            cost: 180
+            cost: 200
             upkeep: 8
             upgrades: structure_crust_prospecting_2
             baseProductionBonus: 20
@@ -315,9 +315,9 @@
             description: COLONY_STRUCTURE_SPACE_PORT_DESCRIPTION
             icon: assets/structures/space_port.png
             cost: 260
-            upkeep: 0
+            upkeep: 1
             workerIncomeBonus: 1
-            creditIncomeBonus: 4
+            creditIncomeBonus: 2
             structureTypes:
                 - 3
             workingStatus: true
@@ -325,8 +325,8 @@
             name: TradeStation 2
             description: COLONY_STRUCTURE_SPACE_PORT_2_DESCRIPTION
             icon: assets/structures/space_port.png
-            cost: 260
-            upkeep: 0
+            cost: 520
+            upkeep: 4
             upgrades: structure_tradestation
             workerIncomeBonus: 2
             creditIncomeBonus: 8
@@ -340,9 +340,22 @@
             cost: 210
             upkeep: 0
             # workerIncomeBonus: 1
-            creditIncomeBonus: 5
+            creditIncomeBonus: 6
             influencesMinorCivs: space_port_influence
             # requires: structure_government_building
+            structureTypes:
+                - 3
+            workingStatus: true
+        ## Spaceport 2
+          - key: structure_space_port_2
+            name: COLONY_STRUCTURE_SPACE_PORT_NAME
+            description: COLONY_STRUCTURE_SPACE_PORT_DESCRIPTION
+            icon: assets/structures/space_port.png
+            cost: 510
+            upkeep: 0
+            upgrades: structure_space_port
+            creditIncomeBonus: 13
+            influencesMinorCivs: space_port_influence
             structureTypes:
                 - 3
             workingStatus: true
@@ -376,6 +389,32 @@
             cost: 320
             upkeep: 0
             totalEmpireMultiplierBonus: 1.0
+            structureTypes:
+                - 3
+            workingStatus: true
+            isTransferable: false
+            empireUnique: true
+        ## Custom - Tomb
+          - key: structure_tomb_1
+            description: Tomb of Money
+            name: Tomb of Money
+            icon: assets/structures/galactic_currency_exchange.png
+            cost: 160
+            upkeep: 0
+            totalEmpireMultiplierBonus: 0.20
+            structureTypes:
+                - 3
+            workingStatus: true
+            isTransferable: false
+            empireUnique: true
+        ## Custom - Tomb
+          - key: structure_tomb_2
+            description: Tomb of Money - 2
+            name: Tomb of Money - 2
+            icon: assets/structures/galactic_currency_exchange.png
+            cost: 320
+            upkeep: 0
+            totalEmpireMultiplierBonus: 0.40
             structureTypes:
                 - 3
             workingStatus: true
@@ -461,7 +500,7 @@
             icon: assets/structures/recyclotron.png
             cost: 140
             upkeep: 4
-            pollutionCleaningRate: 150
+            pollutionCleaningRate: 100
             structureTypes:
                 - 6
             workingStatus: true
@@ -504,7 +543,7 @@
             cost: 60
             upkeep: 2
             # pollutionMultiplierReduction: 0.25
-            pollutionCleaningRate: 50
+            pollutionCleaningRate: 30
             structureTypes:
                - 6
             workingStatus: true
@@ -515,7 +554,7 @@
             cost: 180
             upkeep: 2
             upgrades: structure_atmospheric_renewer
-            pollutionCleaningRate: 100
+            pollutionCleaningRate: 60
             structureTypes:
                - 6
             workingStatus: true
@@ -525,9 +564,9 @@
             icon: assets/structures/pollution_processor.png
             cost: 140
             upkeep: 3
-            upgrades: structure_atmospheric_renewer
+            upgrades: structure_atmospheric_renewer_1
             # pollutionMultiplierReduction: 0.5
-            pollutionCleaningRate: 150
+            pollutionCleaningRate: 120
             structureTypes:
                 - 6
             workingStatus: true
@@ -539,7 +578,7 @@
             upkeep: 5
             upgrades: structure_pollution_processor
             # pollutionMultiplierReduction: 1
-            pollutionCleaningRate: 550
+            pollutionCleaningRate: 200
             structureTypes:
                 - 6
             workingStatus: true
@@ -558,7 +597,7 @@
             name: COLONY_STRUCTURE_HYDROPONIC_FARM_NAME
             description: COLONY_STRUCTURE_HYDROPONIC_FARM_DESCRIPTION
             icon: assets/structures/hydroponic_farm.png
-            cost: 60
+            cost: 50
             upkeep: 2
             baseLifeSupportBonus: 3
             structureTypes:
@@ -569,8 +608,8 @@
             name: Hydroponic Farm 1
             description: Hydroponic Farm 1
             icon: assets/structures/hydroponic_farm.png
-            cost: 80
-            upkeep: 1
+            cost: 100
+            upkeep: 3
             upgrades: structure_hydroponic_farm
             baseLifeSupportBonus: 6
             structureTypes:
@@ -580,8 +619,8 @@
             name: Hydroponic Farm 2
             description: Hydroponic Farm 2
             icon: assets/structures/hydroponic_farm.png
-            cost: 160
-            upkeep: 1
+            cost: 200
+            upkeep: 4
             upgrades: structure_hydroponic_farm_1
             baseLifeSupportBonus: 12
             structureTypes:
@@ -591,8 +630,8 @@
             name: Hydroponic Farm 3
             description: Hydroponic Farm 3
             icon: assets/structures/hydroponic_farm.png
-            cost: 360
-            upkeep: 1
+            cost: 400
+            upkeep: 5
             upgrades: structure_hydroponic_farm_2
             baseLifeSupportBonus: 24
             structureTypes:
@@ -626,6 +665,17 @@
             cost: 240
             upkeep: 4
             totalFoodMultiplierBonus: 0.25
+            structureTypes:
+                - 1
+            workingStatus: true
+        ## Custom - foodinator
+          - key: structure_foodinator_1
+            name: Foodinator
+            description: Foodinator creates food from waste
+            icon: assets/structures/weather_controller.png
+            cost: 100
+            upkeep: 2
+            totalFoodMultiplierBonus: 0.20
             structureTypes:
                 - 1
             workingStatus: true
@@ -742,7 +792,7 @@
             name: COLONY_STRUCTURE_RESEARCH_LABORATORY_NAME
             description: COLONY_STRUCTURE_RESEARCH_LABORATORY_DESCRIPTION
             icon: assets/structures/research_laboratory.png
-            cost: 35
+            cost: 50
             upkeep: 2
             baseResearchBonus: 3
             structureTypes:
@@ -752,8 +802,8 @@
             name: Research Laboratory 1
             description: Research Laboratory 1
             icon: assets/structures/research_laboratory.png
-            cost: 35
-            upkeep: 1
+            cost: 100
+            upkeep: 3
             upgrades: structure_research_laboratory
             baseResearchBonus: 6
             structureTypes:
@@ -763,8 +813,8 @@
             name: Research Laboratory 2
             description: Research Laboratory 2
             icon: assets/structures/research_laboratory.png
-            cost: 75
-            upkeep: 1
+            cost: 200
+            upkeep: 4
             upgrades: structure_research_laboratory_1
             baseResearchBonus: 12
             structureTypes:
@@ -774,8 +824,8 @@
             name: Research Laboratory 3
             description: Research Laboratory 3
             icon: assets/structures/research_laboratory.png
-            cost: 180
-            upkeep: 1
+            cost: 400
+            upkeep: 5
             upgrades: structure_research_laboratory_2
             baseResearchBonus: 24
             structureTypes:
@@ -785,8 +835,8 @@
             name: Research Laboratory 4
             description: Research Laboratory 4
             icon: assets/structures/research_laboratory.png
-            cost: 380
-            upkeep: 1
+            cost: 800
+            upkeep: 6
             upgrades: structure_research_laboratory_3
             baseResearchBonus: 48
             structureTypes:
@@ -842,6 +892,21 @@
             isTransferable: false
             workingStatus: true
             empireSecurityBonus: 0.20
+        ## Custom - TechNet
+          - key: structure_technet_1
+            name: TechNet
+            description: TechNet
+            icon: assets/structures/galactic_cybernet_node.png
+            cost: 120
+            upkeep: 3
+            totalResearchMultiplierBonus: 0.20
+            structureTypes:
+                - 2
+                - 5
+            empireUnique: true
+            isTransferable: false
+            workingStatus: true
+            empireSecurityBonus: 0.05
         # - structure: &structure_special_funding_tribunal
             # name: COLONY_STRUCTURE_SPECIAL_FUNDING_TRIBUNAL_NAME
             # description: COLONY_STRUCTURE_SPECIAL_FUNDING_TRIBUNAL_DESCRIPTION
@@ -901,7 +966,7 @@
             name: COLONY_STRUCTURE_BIOSPHERES_NAME
             description: COLONY_STRUCTURE_BIOSPHERES_DESCRIPTION
             icon: assets/structures/biospheres.png
-            cost: 45
+            cost: 50
             upkeep: 1
             baseLifeSupportBonus: 1
             baseResearchBonus: 1
@@ -913,8 +978,8 @@
             name: Biospheres 1
             description: Biospheres 1
             icon: assets/structures/biospheres.png
-            cost: 65
-            upkeep: 1
+            cost: 100
+            upkeep: 2
             upgrades: structure_biospheres
             baseLifeSupportBonus: 2
             baseResearchBonus: 4
@@ -926,8 +991,8 @@
             name: Biospheres 2
             description: Biospheres 2
             icon: assets/structures/biospheres.png
-            cost: 135
-            upkeep: 1
+            cost: 200
+            upkeep: 3
             upgrades: structure_biospheres_1
             baseLifeSupportBonus: 4
             baseResearchBonus: 8
@@ -939,8 +1004,8 @@
             name: Biospheres 3
             description: Biospheres 3
             icon: assets/structures/biospheres.png
-            cost: 235
-            upkeep: 1
+            cost: 400
+            upkeep: 4
             upgrades: structure_biospheres_2
             baseLifeSupportBonus: 8
             baseResearchBonus: 16
@@ -952,8 +1017,8 @@
             name: Biospheres 4
             description: Biospheres 4
             icon: assets/structures/biospheres.png
-            cost: 635
-            upkeep: 1
+            cost: 800
+            upkeep: 5
             upgrades: structure_biospheres_3
             baseLifeSupportBonus: 16
             baseResearchBonus: 32
@@ -1055,7 +1120,7 @@
             icon: assets/structures/moon_laboratory.png
             cost: 100
             upkeep: 4
-            baseResearchBonus: 6
+            baseResearchBonus: 8
             requiresMoon: true
             structureTypes:
                 - 2
@@ -1067,6 +1132,29 @@
             cost: 220
             upkeep: 5
             shipCostModifier: -0.30
+            structureTypes:
+                - 0
+            workingStatus: true
+        ## Custom - fluxtube
+          - key: structure_fluxtube_1
+            name: FluxTube
+            description: FluxTube assembles antimatter
+            icon: assets/structures/space_elevator.png
+            cost: 110
+            upkeep: 2
+            shipCostModifier: -0.20
+            structureTypes:
+                - 0
+            workingStatus: true
+        ## Custom - fluxtube
+          - key: structure_fluxtube_2
+            name: FluxTube 2
+            description: FluxTube assembles antimatter
+            icon: assets/structures/space_elevator.png
+            cost: 410
+            upkeep: 4
+            upgrades: structure_fluxtube_1
+            shipCostModifier: -0.40
             structureTypes:
                 - 0
             workingStatus: true
@@ -1084,9 +1172,9 @@
             # workingStatus: true
           - key: structure_caves
             name: Multihub
-            description: "Multihub brings recreation"
+            description: Multihub brings recreation
             icon: assets/structures/cloning_center.png
-            cost: 55
+            cost: 80
             upkeep: 1
             structureTypes:
                 - 1
@@ -1094,26 +1182,26 @@
             creditIncomeBonus: 1
             baseProductionBonus: 1
             baseResearchBonus: 1
-            moraleMultiplierBonusSystem: 0.10
+            moraleMultiplierBonusSystem: 0.05
             populationGrowthMultiplierBonus: 0.10
             workingStatus: true
           - key: structure_caves_2
-            name: Tradehub
+            name: Multihub - 2
             description: Tradehub facilitates trade
             icon: assets/structures/cloning_center.png
-            cost: 85
+            cost: 160
             upkeep: 2
             structureTypes:
                 - 1
             workerIncomeBonus: 1
-            moraleMultiplierBonusSystem: 0.15
+            moraleMultiplierBonusSystem: 0.10
             populationGrowthMultiplierBonus: 0.15
             baseResearchBonus: 2
             baseLifeSupportBonus: 2
             baseProductionBonus: 2
             workingStatus: true
           - key: structure_caves_3
-            name: CryptoExchange
+            name: Multihub - 3
             description: CryptoExchange owns trade
             icon: assets/structures/cloning_center.png
             cost: 480
@@ -1121,7 +1209,7 @@
             structureTypes:
                 - 1
             workerIncomeBonus: 2
-            moraleMultiplierBonusSystem: 0.20
+            moraleMultiplierBonusSystem: 0.15
             populationGrowthMultiplierBonus: 0.20
             baseResearchBonus: 4
             baseLifeSupportBonus: 4
@@ -1336,7 +1424,7 @@
             icon: assets/structures/super_scalar_gas_harvester.png
             cost: 25
             upkeep: 0
-            creditIncomeBonus: 5
+            creditIncomeBonus: 6
             hasScanner: true
             structureTypes:
                 - 3

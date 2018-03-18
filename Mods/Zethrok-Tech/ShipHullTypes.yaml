@@ -35,8 +35,8 @@
             name: HULL_FRIGATE_NAME
             description: SHIP_TYPE_FRIGATE_DESCRIPTION
             cost: 3
-            space: 180
-            hp: 385
+            space: 215
+            hp: 405
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/frigate.png
             icon: assets/ships/%civ%/%type%/ship_frigate.png
             hullScale: 1
@@ -71,8 +71,8 @@
             name: HULL_DESTROYER_NAME
             description: SHIP_TYPE_DESTROYER_DESCRIPTION
             cost: 7
-            space: 255
-            hp: 580
+            space: 375
+            hp: 780
             detectionRange: 0.5
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/destroyer.png
             icon: assets/ships/%civ%/%type%/ship_destroyer.png
@@ -109,8 +109,8 @@
             name: HULL_CRUISER_NAME
             description: SHIP_TYPE_CRUISER_DESCRIPTION
             cost: 15
-            space: 715
-            hp: 975
+            space: 815
+            hp: 1275
             detectionRange: 1
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/cruiser.png
             icon: assets/ships/%civ%/%type%/ship_cruiser.png
@@ -148,7 +148,7 @@
             description: SHIP_TYPE_BATTLESHIP_DESCRIPTION
             cost: 40
             space: 1325
-            hp: 2125
+            hp: 2425
             detectionRange: 1.5
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/battleship.png
             icon: assets/ships/%civ%/%type%/ship_battleship.png
@@ -188,7 +188,7 @@
             description: SHIP_TYPE_TITAN_DESCRIPTION
             cost: 80
             space: 3700
-            hp: 5575
+            hp: 6575
             detectionRange: 2
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/titan.png
             icon: assets/ships/%civ%/%type%/ship_titan.png
@@ -228,7 +228,7 @@
             description: SHIP_TYPE_DOOM_STAR_DESCRIPTION
             cost: 160
             space: 12250
-            hp: 16075
+            hp: 19075
             detectionRange: 3
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/doomstar.png
             icon: assets/ships/%civ%/%type%/ship_doomstar.png

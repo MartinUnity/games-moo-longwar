@@ -339,6 +339,60 @@
                - structure_tradestation_2
             tags:
                  - Economy
+        ## Custom - tomb
+          - key: techapp_tomb_1
+            icon: assets/tech_apps/tech_building_credits.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_port.prefab
+            unlocks:
+               - structure_tomb_1
+            tags:
+                 - Economy
+        ## Custom - tomb - 2
+          - key: techapp_tomb_2
+            icon: assets/tech_apps/tech_building_credits.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_port.prefab
+            unlocks:
+               - structure_tomb_2
+            tags:
+                 - Economy
+        ## Custom - Foodinator
+          - key: techapp_foodinator_1
+            icon: assets/tech_apps/tech_building_food.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/neutron_collider.prefab
+            unlocks:
+               - structure_foodinator_1
+            tags:
+                 - Population
+        ## Custom - technet
+          - key: techapp_technet_1
+            icon: assets/tech_apps/tech_building_research.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/research_laboratory.prefab
+            unlocks:
+               - structure_technet_1
+            tags:
+                 - Research
+        ## Custom - fluxtube
+          - key: techapp_fluxtube_1
+            icon: assets/tech_apps/tech_building_production.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/automated_repair_unit.prefab
+            unlocks:
+               - structure_fluxtube_1
+            tags:
+                 - Production
+        ## Custom - fluxtube - 2
+          - key: techapp_fluxtube_2
+            icon: assets/tech_apps/tech_building_production.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/automated_repair_unit.prefab
+            unlocks:
+               - structure_fluxtube_2
+            tags:
+                 - Production
           - key: techapp_space_port
             #name: TECH_APPLICATION_TYPE_SPACE_PORT_NAME
             #description: TECH_APPLICATION_TYPE_SPACE_PORT_DESCRIPTION
@@ -347,6 +401,16 @@
             hologram: ContentPrefabs/Research/space_port.prefab
             unlocks:
                - structure_space_port
+            tags:
+                 - Economy
+          - key: techapp_space_port_2
+            #name: TECH_APPLICATION_TYPE_SPACE_PORT_NAME
+            #description: TECH_APPLICATION_TYPE_SPACE_PORT_DESCRIPTION
+            icon: assets/tech_apps/tech_building_credits.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_port.prefab
+            unlocks:
+               - structure_space_port_2
             tags:
                  - Economy
           - key: techapp_colonial_revenue_services
@@ -1862,6 +1926,15 @@
                - shipmodule_lazer_cannon
             tags:
                  - Military
+        ## Custom - pulse
+          - key: techapp_pulse_beam
+            icon: assets/tech_apps/tech_cannon.png
+            type: techapptype_shipmodule
+            hologram: ContentPrefabs/Research/graviton_beam.prefab
+            unlocks:
+               - shipmodule_pulse_beam
+            tags:
+                 - Military
           - key: techapp_particle_beam
             icon: assets/tech_apps/tech_cannon.png
             type: techapptype_shipmodule
@@ -2925,6 +2998,60 @@
             tags:
                  - Military
         ## Custom
+          - key: techapp_miniaturization_pulse_1
+            icon: assets/tech_apps/tech_miniaturization_lasers.png
+            type: techapptype_miniaturization
+            hologram: ContentPrefabs/Research/miniaturization_beams.prefab
+            unlocks:
+               - miniaturization_pulse_1
+            tags:
+                 - Military
+        ## Custom
+          - key: techapp_miniaturization_pulse_2
+            icon: assets/tech_apps/tech_miniaturization_lasers.png
+            type: techapptype_miniaturization
+            hologram: ContentPrefabs/Research/miniaturization_beams.prefab
+            unlocks:
+               - miniaturization_pulse_2
+            tags:
+                 - Military
+        ## Custom
+          - key: techapp_miniaturization_pulse_3
+            icon: assets/tech_apps/tech_miniaturization_lasers.png
+            type: techapptype_miniaturization
+            hologram: ContentPrefabs/Research/miniaturization_beams.prefab
+            unlocks:
+               - miniaturization_pulse_3
+            tags:
+                 - Military
+        ## Custom
+          - key: techapp_miniaturization_pulse_4
+            icon: assets/tech_apps/tech_miniaturization_lasers.png
+            type: techapptype_miniaturization
+            hologram: ContentPrefabs/Research/miniaturization_beams.prefab
+            unlocks:
+               - miniaturization_pulse_4
+            tags:
+                 - Military
+        ## Custom
+          - key: techapp_miniaturization_pulse_5
+            icon: assets/tech_apps/tech_miniaturization_lasers.png
+            type: techapptype_miniaturization
+            hologram: ContentPrefabs/Research/miniaturization_beams.prefab
+            unlocks:
+               - miniaturization_pulse_5
+            tags:
+                 - Military
+        ## Custom
+          - key: techapp_miniaturization_pulse_6
+            icon: assets/tech_apps/tech_miniaturization_lasers.png
+            type: techapptype_miniaturization
+            hologram: ContentPrefabs/Research/miniaturization_beams.prefab
+            unlocks:
+               - miniaturization_pulse_6
+            tags:
+                 - Military
+        ## Custom
           - key: techapp_miniaturization_nuclear_1
             icon: assets/tech_apps/tech_miniaturization_missiles.png
             type: techapptype_miniaturization
@@ -3034,6 +3161,14 @@
             hologram: ContentPrefabs/Research/miniaturization_torpedoes.prefab
             unlocks:
                - miniaturization_torpedoes_2
+            tags:
+                 - Military
+          - key: techapp_miniaturization_torpedoes_3
+            icon: assets/tech_apps/tech_miniaturization_torpedoes.png
+            type: techapptype_miniaturization
+            hologram: ContentPrefabs/Research/miniaturization_torpedoes.prefab
+            unlocks:
+               - miniaturization_torpedoes_3
             tags:
                  - Military
           - key: techapp_miniaturization_beams_1
@@ -3151,13 +3286,24 @@
                  - Military
         ## Custom - modifier - lazer
           - key: techapp_modifications_lazer
-            name: TECH_APPLICATION_TYPE_MODS_LAZER_NAME
-            description: TECH_APPLICATION_TYPE_MODS_LAZER_DESCRIPTION
+            name: Lazer modification
+            description: Lazor pew pew
             icon: assets/tech_apps/tech_modifier.png
             type: techapptype_modifier
             hologram: ContentPrefabs/Research/laser_cannon.prefab
             unlocks:
                - shipmodule_lazer_cannon
+            tags:
+                 - Military
+        ## Custom - modifier - pulse
+          - key: techapp_modifications_pulse
+            name: Pulse Weaponry modification
+            description: Pulse weaponry modification
+            icon: assets/tech_apps/tech_modifier.png
+            type: techapptype_modifier
+            hologram: ContentPrefabs/Research/graviton_beam.prefab
+            unlocks:
+               - shipmodule_pulse_beam
             tags:
                  - Military
           - key: techapp_modifications_ion_pulse_cannon

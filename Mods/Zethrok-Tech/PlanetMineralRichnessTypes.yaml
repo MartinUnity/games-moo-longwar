@@ -14,16 +14,16 @@
           - key: planetmineralrichness_abundant
             name: PLANET_MINERAL_RICHNESS_TYPE_ABUNDANT
             mineralProductionFactor: 2.3
-            lithovoreLifePointProduction: 2.3
+            lithovoreLifePointProduction: 2.6
             color: 0x856438
           - key: planetmineralrichness_rich
             name: PLANET_MINERAL_RICHNESS_TYPE_RICH
             mineralProductionFactor: 2.8
-            lithovoreLifePointProduction: 2.8
+            lithovoreLifePointProduction: 3.5
             color: 0xa67737
           - key: planetmineralrichness_ultra_rich
             name: PLANET_MINERAL_RICHNESS_TYPE_ULTRA_RICH
             mineralProductionFactor: 4.1
-            lithovoreLifePointProduction: 3.5
+            lithovoreLifePointProduction: 4.5
             color: 0xc68832
 ...
