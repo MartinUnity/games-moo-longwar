@@ -51,10 +51,8 @@
               recommendedPlayerCount: 4
               earlyGamePlanetCount: 1
               sectors:
-                - minStarCount: 24
-                  # minStarCount: 32 -- orig
-                  maxStarCount: 27
-                  # maxStarCount: 35 -- orig
+                - minStarCount: 32
+                  maxStarCount: 35
                   starLaneReach: 4
                   maxWarpGates: 5
                   minGateProximity: 30
