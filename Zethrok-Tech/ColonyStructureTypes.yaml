@@ -843,8 +843,8 @@
                 - 2
             workingStatus: true
         ## Custom - technode 1
-          - key: structure_technode_1
-            name: Technode 1 - Decentralized knowledge
+          - key: structure_technet_1
+            name: Technet 1 - Decentralized knowledge
             description: Hub for combining all knowledge
             icon: assets/structures/autolab.png
             cost: 280
@@ -904,11 +904,11 @@
             workingStatus: true
             empireSecurityBonus: 0.20
         ## Custom - TechNet
-          - key: structure_technet_1
+          - key: structure_technet_2
             name: TechNet
             description: TechNet
             icon: assets/structures/galactic_cybernet_node.png
-            cost: 120
+            cost: 420
             upkeep: 3
             totalResearchMultiplierBonus: 0.20
             structureTypes:
