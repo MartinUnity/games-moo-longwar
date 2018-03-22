@@ -256,7 +256,7 @@
             spaceDecreaseFactor: 0.10
             costDecreaseFactor: 0.10
             affectedModules:
-                - shipmodule_pulse_cannon
+                - shipmodule_pulse_beam
           - key: miniaturization_pulse_2
             name: Pulse - Miniaturization
             description: Pulse weaponry
@@ -264,7 +264,7 @@
             spaceDecreaseFactor: 0.10
             costDecreaseFactor: 0.10
             affectedModules:
-                - shipmodule_pulse_cannon
+                - shipmodule_pulse_beam
           - key: miniaturization_pulse_3
             name: Pulse - Miniaturization
             description: Pulse weaponry
@@ -272,7 +272,7 @@
             spaceDecreaseFactor: 0.10
             costDecreaseFactor: 0.10
             affectedModules:
-                - shipmodule_pulse_cannon
+                - shipmodule_pulse_beam
           - key: miniaturization_pulse_4
             name: Pulse - Miniaturization
             description: Pulse weaponry
@@ -280,7 +280,7 @@
             spaceDecreaseFactor: 0.10
             costDecreaseFactor: 0.10
             affectedModules:
-                - shipmodule_pulse_cannon
+                - shipmodule_pulse_beam
           - key: miniaturization_pulse_5
             name: Pulse - Miniaturization
             description: Pulse weaponry
@@ -288,7 +288,7 @@
             spaceDecreaseFactor: 0.15
             costDecreaseFactor: 0.15
             affectedModules:
-                - shipmodule_pulse_cannon
+                - shipmodule_pulse_beam
           - key: miniaturization_pulse_6
             name: Pulse - Miniaturization
             description: Pulse weaponry
@@ -296,7 +296,7 @@
             spaceDecreaseFactor: 0.15
             costDecreaseFactor: 0.15
             affectedModules:
-                - shipmodule_pulse_cannon
+                - shipmodule_pulse_beam
         ## Custom
           - key: miniaturization_nuclear_1
             name: MINIATURIZATION_NUCLEAR_1_NAME

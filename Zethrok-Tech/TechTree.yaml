@@ -781,7 +781,7 @@
             requires:
                 - technology: technode_tachyon_physics
             unlocks:
-                - application: techapp_fluxtube_1
+                - application: techapp_technode_1
           - key: technode_optronics
             name: TECHNOLOGY_OPTRONICS_NAME
             description: TECHNOLOGY_OPTRONICS_DESCRIPTION

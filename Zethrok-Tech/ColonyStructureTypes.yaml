@@ -842,6 +842,17 @@
             structureTypes:
                 - 2
             workingStatus: true
+        ## Custom - technode 1
+          - key: structure_technode_1
+            name: Technode 1 - Decentralized knowledge
+            description: Hub for combining all knowledge
+            icon: assets/structures/autolab.png
+            cost: 280
+            upkeep: 3
+            baseResearchBonus: 7
+            structureTypes:
+                - 2
+            workingStatus: true
           - key: structure_autolab
             name: COLONY_STRUCTURE_AUTOLAB_NAME
             description: COLONY_STRUCTURE_AUTOLAB_DESCRIPTION
