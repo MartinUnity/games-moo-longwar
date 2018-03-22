@@ -370,9 +370,18 @@
           - key: techapp_technet_1
             icon: assets/tech_apps/tech_building_research.png
             type: techapptype_structure
-            hologram: ContentPrefabs/Research/research_laboratory.prefab
+            hologram: ContentPrefabs/Research/autolab.prefab
             unlocks:
                - structure_technet_1
+            tags:
+                 - Research
+        ## Custom - technet
+          - key: techapp_technet_2
+            icon: assets/tech_apps/tech_building_research.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/autolab.prefab
+            unlocks:
+               - structure_technet_2
             tags:
                  - Research
         ## Custom - fluxtube
