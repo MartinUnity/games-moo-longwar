@@ -1519,6 +1519,15 @@
                - structure_research_laboratory
             tags:
                  - Research
+        ## Custom - technode - 1
+          - key: techapp_technode_1
+            icon: assets/tech_apps/tech_building_research.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/autolab.prefab
+            unlocks:
+               - structure_technode_1
+            tags:
+                 - Research
           - key: techapp_radiotelescopic_observatory
             #name: TECH_APPLICATION_TYPE_RADIOTELESCOPIC_OBSERVATORY_NAME
             #description: TECH_APPLICATION_TYPE_RADIOTELESCOPIC_OBSERVATORY_DESCRIPTION

@@ -68,10 +68,10 @@
             rateOfFire: 0.15
             volleySize: 1
             maxDamage: 3
-            weaponSteps: 10
+            weaponSteps: 8
             weaponStepDuration: 0.5
-            armorPenetration: 10.0
-            weaponRange: 85
+            armorPenetration: 3.0
+            weaponRange: 80
             rangeDecayFactor: 0.7
             decayRate: 2.0
             rangeLoss: 0.05
