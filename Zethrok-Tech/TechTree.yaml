@@ -403,6 +403,18 @@
             unlocks:
                 - application: techapp_proton_torpedoes
                 - application: techapp_displacement_device
+        ## Custom
+          - key: technode_weapon_2_1
+            name: Weapon 2 - Meson Missile
+            description: Weapon 2 - Meson missile
+            cost: 75
+            x: 3
+            y: 6
+            icon: assets/techs/molecular_control.png
+            requires:
+                - technology: technode_weapon_1
+            unlocks:
+                - application: techapp_meson_missile
           - key: technode_xenobiotic
             name: TECHNOLOGY_XENOBIOTIC_NAME
             description: TECHNOLOGY_XENOBIOTIC_DESCRIPTION
@@ -644,8 +656,8 @@
                 # - application: techapp_psionics
         ## Custom
           - key: technode_pulse_4
-            name: Pulse Weaponry
-            description: Pulse weaponry
+            name: Pulse Weaponry and Meson mod
+            description: Pulse weaponry and Meson mod
             cost: 500
             x: 4
             y: 9
@@ -654,6 +666,7 @@
                 - technology: technode_positron_physics
             unlocks:
                 - application: techapp_pulse_beam
+                - application: techapp_modifications_meson_missile
           - key: technode_advanced_construction
             name: TECHNOLOGY_ADVANCED_CONSTRUCTION_NAME
             description: TECHNOLOGY_ADVANCED_CONSTRUCTION_DESCRIPTION

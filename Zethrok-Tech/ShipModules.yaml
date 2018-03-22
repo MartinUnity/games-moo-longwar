@@ -238,6 +238,18 @@
             cost: 10
             size: 10
             icon: assets/ship_modules/pulson_missile.png
+        ## Custom - meson missile
+          - key: shipmodule_meson_missile
+            name: Meson Missile - fractral
+            shortDescription: Meson Missile - COB
+            description: Meson Missile - combustionable gas
+            slot: shipslot_weapon
+            subType: shipmodulesubtype_missile
+            weaponType: weapontype_meson_missile
+            cost: 8
+            size: 5
+            icon: assets/ship_modules/zeon_missile.png
+            techTreeIcon: assets/tech_apps/tech_missiles.png
           - key: shipmodule_zeon_missile
             name: $SHIP_MODULE_ZEON_MISSILE_NAME
             shortDescription: $SHIP_MODULE_ZEON_MISSILE_DESCRIPTION_SHORT

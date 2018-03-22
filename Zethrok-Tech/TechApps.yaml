@@ -2952,6 +2952,26 @@
             tags:
                  - Population
         ##MINIATURIZATION
+        ## Custom - meson
+          - key: techapp_meson_missile
+            icon: assets/tech_apps/tech_missiles.png
+            type: techapptype_shipmodule
+            hologram: ContentPrefabs/Research/zeon_missile.prefab
+            unlocks:
+               - shipmodule_meson_missile
+            tags:
+                 - Military
+        ## Custom - meson - mod
+          - key: techapp_modifications_meson_missile
+            name: Meson missile Mod
+            description: Meson missile mod
+            icon: assets/tech_apps/tech_modifier.png
+            type: techapptype_modifier
+            hologram: ContentPrefabs/Research/zeon_missile.prefab
+            unlocks:
+               - shipmodule_meson_missile
+            tags:
+                 - Military
         ## Custom
           - key: techapp_miniaturization_weapon_2
             icon: assets/tech_apps/tech_miniaturization_lasers.png

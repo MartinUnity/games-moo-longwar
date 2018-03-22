@@ -65,7 +65,7 @@
             model: graviton_beam
             visualScale: 2.0
             tacticalCooldown: 4
-            rateOfFire: 0.15
+            rateOfFire: 0.10
             volleySize: 1
             maxDamage: 3
             weaponSteps: 8
@@ -81,7 +81,7 @@
             radius: 1.0
             mass: 1.0
             physicsEnabled: false
-            maxVelocity: 70.0
+            maxVelocity: 80.0
             maxVelocityVariance: 0.1
             modifiers:
                 - modifier: modifier_continuous_fire_beams
@@ -591,6 +591,40 @@
             maxVelocityVariance: 0.1
             angularAcceleration: 24.0
             maxAngularVelocity: 18.0
+            velocityFriction: 0.05
+            angularFriction: 0.05
+            isPDBlockeable: true
+            isToggleable: true
+            modifiers:
+                - modifier: modifier_heavy_armor
+                - modifier: modifier_eccm
+                - modifier: modifier_fast
+                - modifier: modifier_mirv
+        ## Custom - meson missile
+          - key: weapontype_meson_missile
+            className: TacticalMissile
+            model: zeon_missile
+            hasFacing: false
+            visualScale: 7.0
+            tacticalCooldown: 8.0
+            rateOfFire: 0.25
+            timeToLive: 20.0
+            volleySize: 1
+            maxDamage: 15
+            missileAttack: 50
+            armorPenetration: 12.0
+            weaponAccuracy: 1.0
+            weaponRange: 90
+            splashArea: 1
+            weaponHp: 5.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 55.0
+            maxVelocity: 30.0
+            maxVelocityVariance: 0.1
+            angularAcceleration: 34.0
+            maxAngularVelocity: 28.0
             velocityFriction: 0.05
             angularFriction: 0.05
             isPDBlockeable: true
