@@ -1114,7 +1114,7 @@
             icon: assets/structures/fungal_farms.png
             cost: 60
             upkeep: 2
-            baseLifeSupportBonus: 4
+            baseLifeSupportBonus: 3
             compatibleBiomes:
                 - biome_tundra
                 - biome_desert
@@ -1132,7 +1132,7 @@
             icon: assets/structures/fungal_farms.png
             cost: 120
             upkeep: 3
-            baseLifeSupportBonus: 8
+            baseLifeSupportBonus: 6
             compatibleBiomes:
                 - biome_tundra
                 - biome_desert
@@ -1150,7 +1150,7 @@
             icon: assets/structures/fungal_farms.png
             cost: 240
             upkeep: 4
-            baseLifeSupportBonus: 16
+            baseLifeSupportBonus: 9
             compatibleBiomes:
                 - biome_tundra
                 - biome_desert
