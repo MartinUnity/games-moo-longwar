@@ -156,6 +156,7 @@
             unlocks:
                 # - application: techapp_trade_goods
                 - application: techapp_colonial_revenue_services
+                - application: techapp_cryptoexchange_1
           - key: technode_deep_space_exploration
             name: TECHNOLOGY_DEEP_SPACE_EXPLORATION_NAME
             description: TECHNOLOGY_DEEP_SPACE_EXPLORATION_DESCRIPTION
@@ -522,6 +523,7 @@
             unlocks:
                 - application: techapp_geosynchronic_wharf
                 - application: techapp_recyclotron
+                - application: techapp_cryptoexchange_2
         ## Custom
           - key: technode_basicupgrades_4
             name: BasicUpgrades - 4
@@ -1083,6 +1085,7 @@
                 - application: techapp_metro
                 - application: techapp_interplanetary_security_transmitter
                 - application: techapp_advanced_colony_ship
+                - application: techapp_cryptoexchange_3
                 # - application: techapp_stock_exchange
                 #- application: techapp_interstellar_stock_exchange
         ## Custom
@@ -1542,6 +1545,18 @@
                 - technology: technode_galactic_economics
             unlocks:
                 - application: techapp_tradestation_2
+        ## Custom
+          - key: technode_cryptoexchange_10
+            name: CryptoExchange 4
+            description: CryptoExchange 4
+            cost: 7600
+            x: 10
+            y: 1
+            icon: assets/techs/molecular_compression.png
+            requires:
+                - technology: technode_galactic_economics
+            unlocks:
+                - application: techapp_cryptoexchange_4
           - key: technode_multi_dimensional_physics
             name: TECHNOLOGY_MULTI_DIMENSIONAL_PHYSICS_NAME
             description: TECHNOLOGY_MULTI_DIMENSIONAL_PHYSICS_DESCRIPTION

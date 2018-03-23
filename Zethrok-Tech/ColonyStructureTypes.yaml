@@ -315,7 +315,7 @@
             description: COLONY_STRUCTURE_SPACE_PORT_DESCRIPTION
             icon: assets/structures/space_port.png
             cost: 260
-            upkeep: 1
+            upkeep: 0
             workerIncomeBonus: 1
             creditIncomeBonus: 2
             structureTypes:
@@ -326,7 +326,7 @@
             description: COLONY_STRUCTURE_SPACE_PORT_2_DESCRIPTION
             icon: assets/structures/space_port.png
             cost: 520
-            upkeep: 1
+            upkeep: 0
             upgrades: structure_tradestation
             workerIncomeBonus: 2
             creditIncomeBonus: 6
@@ -1272,6 +1272,54 @@
             baseResearchBonus: 4
             baseLifeSupportBonus: 4
             baseProductionBonus: 4
+            workingStatus: true
+        ## Custom - cryptoexchange
+          - key: structure_cryptoexchange_1
+            name: CryptoExchange
+            description: CryptoExchange owns trade
+            icon: assets/structures/cloning_center.png
+            cost: 60
+            upkeep: 0
+            structureTypes:
+                - 1
+#            workerIncomeBonus: 1
+            creditIncomeBonus: 3
+            workingStatus: true
+        ## Custom - cryptoexchange - 2
+          - key: structure_cryptoexchange_2
+            name: CryptoExchange 2
+            description: CryptoExchange owns trade
+            icon: assets/structures/cloning_center.png
+            cost: 120
+            upkeep: 0
+            structureTypes:
+                - 1
+            workerIncomeBonus: 1
+            creditIncomeBonus: 3
+            workingStatus: true
+        ## Custom - cryptoexchange - 3
+          - key: structure_cryptoexchange_3
+            name: CryptoExchange 3
+            description: CryptoExchange owns trade
+            icon: assets/structures/cloning_center.png
+            cost: 240
+            upkeep: 0
+            structureTypes:
+                - 1
+            workerIncomeBonus: 1
+            creditIncomeBonus: 6
+            workingStatus: true
+        ## Custom - cryptoexchange - 4
+          - key: structure_cryptoexchange_4
+            name: CryptoExchange 4
+            description: CryptoExchange owns trade
+            icon: assets/structures/cloning_center.png
+            cost: 500
+            upkeep: 0
+            structureTypes:
+                - 1
+            workerIncomeBonus: 2
+            creditIncomeBonus: 6
             workingStatus: true
 #          - key: structure_caves_3
 #            name: COLONY_STRUCTURE_CAVES_NAME_3

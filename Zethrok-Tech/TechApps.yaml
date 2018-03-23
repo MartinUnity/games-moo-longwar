@@ -339,6 +339,42 @@
                - structure_tradestation_2
             tags:
                  - Economy
+        ## Custom - CryptoExchange
+          - key: techapp_cryptoexchange_1
+            icon: assets/tech_apps/tech_building_credits.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_port.prefab
+            unlocks:
+               - structure_cryptoexchange_1
+            tags:
+                 - Economy
+        ## Custom - CryptoExchange -2
+          - key: techapp_cryptoexchange_2
+            icon: assets/tech_apps/tech_building_credits.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_port.prefab
+            unlocks:
+               - structure_cryptoexchange_2
+            tags:
+                 - Economy
+        ## Custom - CryptoExchange -3
+          - key: techapp_cryptoexchange_3
+            icon: assets/tech_apps/tech_building_credits.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_port.prefab
+            unlocks:
+               - structure_cryptoexchange_3
+            tags:
+                 - Economy
+        ## Custom - CryptoExchange - 4
+          - key: techapp_cryptoexchange_4
+            icon: assets/tech_apps/tech_building_credits.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_port.prefab
+            unlocks:
+               - structure_cryptoexchange_4
+            tags:
+                 - Economy
         ## Custom - tomb
           - key: techapp_tomb_1
             icon: assets/tech_apps/tech_building_credits.png
