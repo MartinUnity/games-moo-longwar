@@ -350,6 +350,7 @@
             unlocks:
                 - application: techapp_tomb_1
                 - application: techapp_fluxtube_1
+                - application: techapp_fungal_farms_2
           - key: technode_military_tactics
             name: TECHNOLOGY_MILITARY_TACTICS_NAME
             description: TECHNOLOGY_MILITARY_TACTICS_DESCRIPTION
@@ -793,6 +794,7 @@
                 - technology: technode_tachyon_physics
             unlocks:
                 - application: techapp_technet_1
+                - application: techapp_fungal_farms_3                
           - key: technode_optronics
             name: TECHNOLOGY_OPTRONICS_NAME
             description: TECHNOLOGY_OPTRONICS_DESCRIPTION

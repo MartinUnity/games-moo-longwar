@@ -1125,6 +1125,42 @@
             structureTypes:
                 - 1
             workingStatus: true
+        ## Custom fungal 2
+          - key: structure_fungal_farms_2
+            name: Fungal farm 2
+            description: Fungal farm 2 - moah food
+            icon: assets/structures/fungal_farms.png
+            cost: 120
+            upkeep: 3
+            baseLifeSupportBonus: 8
+            compatibleBiomes:
+                - biome_tundra
+                - biome_desert
+                - biome_barren
+                - biome_volcanic
+                - biome_toxic
+                - biome_radiated
+            structureTypes:
+                - 1
+            workingStatus: true
+        ## Custom fungal 3
+          - key: structure_fungal_farms_3
+            name: Fungal farm 3
+            description: Fungal farm 3 - moah food
+            icon: assets/structures/fungal_farms.png
+            cost: 240
+            upkeep: 4
+            baseLifeSupportBonus: 16
+            compatibleBiomes:
+                - biome_tundra
+                - biome_desert
+                - biome_barren
+                - biome_volcanic
+                - biome_toxic
+                - biome_radiated
+            structureTypes:
+                - 1
+            workingStatus: true
           - key: structure_moon_laboratory
             name: COLONY_STRUCTURE_MOON_LABORATORY_NAME
             description: COLONY_STRUCTURE_MOON_LABORATORY_DESCRIPTION

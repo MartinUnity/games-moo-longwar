@@ -1746,6 +1746,24 @@
                - structure_fungal_farms
             tags:
                  - Population
+        ## Custom - fungal 2
+          - key: techapp_fungal_farms_2
+            icon: assets/tech_apps/tech_building_food.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/fungal_farms.prefab
+            unlocks:
+               - structure_fungal_farms_2
+            tags:
+                 - Population
+        ## Custom - fungal 3
+          - key: techapp_fungal_farms_3
+            icon: assets/tech_apps/tech_building_food.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/fungal_farms.prefab
+            unlocks:
+               - structure_fungal_farms_3
+            tags:
+                 - Population
         ## Custom - caves
           - key: techapp_caves
             icon: assets/tech_apps/tech_building_food.png
