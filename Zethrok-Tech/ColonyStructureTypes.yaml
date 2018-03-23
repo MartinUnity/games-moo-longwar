@@ -1296,6 +1296,7 @@
                 - 1
             workerIncomeBonus: 1
             creditIncomeBonus: 3
+            upgrades: structure_cryptoexchange_1
             workingStatus: true
         ## Custom - cryptoexchange - 3
           - key: structure_cryptoexchange_3
@@ -1308,6 +1309,7 @@
                 - 1
             workerIncomeBonus: 1
             creditIncomeBonus: 6
+            upgrades: structure_cryptoexchange_2
             workingStatus: true
         ## Custom - cryptoexchange - 4
           - key: structure_cryptoexchange_4
@@ -1320,6 +1322,7 @@
                 - 1
             workerIncomeBonus: 2
             creditIncomeBonus: 6
+            upgrades: structure_cryptoexchange_3            
             workingStatus: true
 #          - key: structure_caves_3
 #            name: COLONY_STRUCTURE_CAVES_NAME_3
