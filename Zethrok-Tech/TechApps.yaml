@@ -339,6 +339,42 @@
                - structure_tradestation_2
             tags:
                  - Economy
+        ## Custom - CryptoExchange
+          - key: techapp_cryptoexchange_1
+            icon: assets/tech_apps/tech_building_credits.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_port.prefab
+            unlocks:
+               - structure_cryptoexchange_1
+            tags:
+                 - Economy
+        ## Custom - CryptoExchange -2
+          - key: techapp_cryptoexchange_2
+            icon: assets/tech_apps/tech_building_credits.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_port.prefab
+            unlocks:
+               - structure_cryptoexchange_2
+            tags:
+                 - Economy
+        ## Custom - CryptoExchange -3
+          - key: techapp_cryptoexchange_3
+            icon: assets/tech_apps/tech_building_credits.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_port.prefab
+            unlocks:
+               - structure_cryptoexchange_3
+            tags:
+                 - Economy
+        ## Custom - CryptoExchange - 4
+          - key: techapp_cryptoexchange_4
+            icon: assets/tech_apps/tech_building_credits.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_port.prefab
+            unlocks:
+               - structure_cryptoexchange_4
+            tags:
+                 - Economy
         ## Custom - tomb
           - key: techapp_tomb_1
             icon: assets/tech_apps/tech_building_credits.png
@@ -412,9 +448,8 @@
                - structure_space_port
             tags:
                  - Economy
+        ## Custom - space_port 2
           - key: techapp_space_port_2
-            #name: TECH_APPLICATION_TYPE_SPACE_PORT_NAME
-            #description: TECH_APPLICATION_TYPE_SPACE_PORT_DESCRIPTION
             icon: assets/tech_apps/tech_building_credits.png
             type: techapptype_structure
             hologram: ContentPrefabs/Research/space_port.prefab
@@ -1744,6 +1779,24 @@
             hologram: ContentPrefabs/Research/fungal_farms.prefab
             unlocks:
                - structure_fungal_farms
+            tags:
+                 - Population
+        ## Custom - fungal 2
+          - key: techapp_fungal_farms_2
+            icon: assets/tech_apps/tech_building_food.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/fungal_farms.prefab
+            unlocks:
+               - structure_fungal_farms_2
+            tags:
+                 - Populationtechapp_space_port_2
+        ## Custom - fungal 3
+          - key: techapp_fungal_farms_3
+            icon: assets/tech_apps/tech_building_food.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/fungal_farms.prefab
+            unlocks:
+               - structure_fungal_farms_3
             tags:
                  - Population
         ## Custom - caves

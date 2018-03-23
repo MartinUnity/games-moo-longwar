@@ -156,6 +156,7 @@
             unlocks:
                 # - application: techapp_trade_goods
                 - application: techapp_colonial_revenue_services
+                - application: techapp_cryptoexchange_1
           - key: technode_deep_space_exploration
             name: TECHNOLOGY_DEEP_SPACE_EXPLORATION_NAME
             description: TECHNOLOGY_DEEP_SPACE_EXPLORATION_DESCRIPTION
@@ -350,6 +351,7 @@
             unlocks:
                 - application: techapp_tomb_1
                 - application: techapp_fluxtube_1
+                - application: techapp_fungal_farms_2
           - key: technode_military_tactics
             name: TECHNOLOGY_MILITARY_TACTICS_NAME
             description: TECHNOLOGY_MILITARY_TACTICS_DESCRIPTION
@@ -521,6 +523,7 @@
             unlocks:
                 - application: techapp_geosynchronic_wharf
                 - application: techapp_recyclotron
+                - application: techapp_cryptoexchange_2
         ## Custom
           - key: technode_basicupgrades_4
             name: BasicUpgrades - 4
@@ -793,6 +796,7 @@
                 - technology: technode_tachyon_physics
             unlocks:
                 - application: techapp_technet_1
+                - application: techapp_fungal_farms_3
           - key: technode_optronics
             name: TECHNOLOGY_OPTRONICS_NAME
             description: TECHNOLOGY_OPTRONICS_DESCRIPTION
@@ -1081,6 +1085,7 @@
                 - application: techapp_metro
                 - application: techapp_interplanetary_security_transmitter
                 - application: techapp_advanced_colony_ship
+                - application: techapp_cryptoexchange_3
                 # - application: techapp_stock_exchange
                 #- application: techapp_interstellar_stock_exchange
         ## Custom
@@ -1398,6 +1403,18 @@
                      - application: techapp_advanced_city_planning
                 # - application: techapp_galactic_currency_exchange
                 #- application: techapp_interplanetary_administration
+        ## Custom
+          - key: technode_technet_3
+            name: Technet - Add 25% research
+            description: Technet - research hub 3
+            cost: 3990
+            x: 9
+            y: 2
+            icon: assets/techs/galactic_networking.png
+            requires:
+                - technology: technode_advanced_tactics
+            unlocks:
+                - application: techapp_technet_3
           - key: technode_plasma_physics
             name: TECHNOLOGY_PLASMA_PHYSICS_NAME
             description: TECHNOLOGY_PLASMA_PHYSICS_DESCRIPTION
@@ -1528,6 +1545,18 @@
                 - technology: technode_galactic_economics
             unlocks:
                 - application: techapp_tradestation_2
+        ## Custom
+          - key: technode_cryptoexchange_10
+            name: CryptoExchange 4
+            description: CryptoExchange 4
+            cost: 7600
+            x: 10
+            y: 1
+            icon: assets/techs/molecular_compression.png
+            requires:
+                - technology: technode_galactic_economics
+            unlocks:
+                - application: techapp_cryptoexchange_4
           - key: technode_multi_dimensional_physics
             name: TECHNOLOGY_MULTI_DIMENSIONAL_PHYSICS_NAME
             description: TECHNOLOGY_MULTI_DIMENSIONAL_PHYSICS_DESCRIPTION
