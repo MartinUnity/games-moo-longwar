@@ -162,9 +162,9 @@
             name: COLONY_STRUCTURE_AUTOMATED_FACTORY_NAME
             description: COLONY_STRUCTURE_AUTOMATED_FACTORY_DESCRIPTION
             icon: assets/structures/automated_factory.png
-            cost: 50
+            cost: 40
             upkeep: 2
-            baseProductionBonus: 2
+            baseProductionBonus: 3
             structureTypes:
                 - 0
             workingStatus: true
@@ -172,10 +172,10 @@
             name: Automated Factory 1
             description: COLONY_STRUCTURE_AUTOMATED_FACTORY_DESCRIPTION
             icon: assets/structures/automated_factory.png
-            cost: 100
+            cost: 80
             upkeep: 3
             upgrades: structure_automated_factory
-            baseProductionBonus: 4
+            baseProductionBonus: 6
             structureTypes:
                 - 0
             workingStatus: true
@@ -183,10 +183,10 @@
             name: Automated Factory 2
             description: COLONY_STRUCTURE_AUTOMATED_FACTORY_DESCRIPTION
             icon: assets/structures/automated_factory.png
-            cost: 200
+            cost: 160
             upkeep: 4
             upgrades: structure_automated_factory_1
-            baseProductionBonus: 8
+            baseProductionBonus: 9
             structureTypes:
                 - 0
             workingStatus: true
@@ -194,10 +194,10 @@
             name: Automated Factory 3
             description: COLONY_STRUCTURE_AUTOMATED_FACTORY_DESCRIPTION
             icon: assets/structures/automated_factory.png
-            cost: 400
+            cost: 320
             upkeep: 5
             upgrades: structure_automated_factory_2
-            baseProductionBonus: 16
+            baseProductionBonus: 12
             structureTypes:
                 - 0
             workingStatus: true
@@ -205,10 +205,10 @@
             name: Automated Factory 4
             description: COLONY_STRUCTURE_AUTOMATED_FACTORY_DESCRIPTION
             icon: assets/structures/automated_factory.png
-            cost: 800
+            cost: 640
             upkeep: 6
             upgrades: structure_automated_factory_3
-            baseProductionBonus: 32
+            baseProductionBonus: 15
             structureTypes:
                 - 0
             workingStatus: true
@@ -326,10 +326,10 @@
             description: COLONY_STRUCTURE_SPACE_PORT_2_DESCRIPTION
             icon: assets/structures/space_port.png
             cost: 520
-            upkeep: 4
+            upkeep: 1
             upgrades: structure_tradestation
             workerIncomeBonus: 2
-            creditIncomeBonus: 8
+            creditIncomeBonus: 6
             structureTypes:
                 - 3
             workingStatus: true
@@ -348,7 +348,7 @@
             workingStatus: true
         ## Spaceport 2
           - key: structure_space_port_2
-            name: COLONY_STRUCTURE_SPACE_PORT_NAME
+            name: Space Port 2
             description: COLONY_STRUCTURE_SPACE_PORT_DESCRIPTION
             icon: assets/structures/space_port.png
             cost: 510
@@ -597,7 +597,7 @@
             name: COLONY_STRUCTURE_HYDROPONIC_FARM_NAME
             description: COLONY_STRUCTURE_HYDROPONIC_FARM_DESCRIPTION
             icon: assets/structures/hydroponic_farm.png
-            cost: 50
+            cost: 40
             upkeep: 2
             baseLifeSupportBonus: 3
             structureTypes:
@@ -608,7 +608,7 @@
             name: Hydroponic Farm 1
             description: Hydroponic Farm 1
             icon: assets/structures/hydroponic_farm.png
-            cost: 100
+            cost: 80
             upkeep: 3
             upgrades: structure_hydroponic_farm
             baseLifeSupportBonus: 6
@@ -619,10 +619,10 @@
             name: Hydroponic Farm 2
             description: Hydroponic Farm 2
             icon: assets/structures/hydroponic_farm.png
-            cost: 200
+            cost: 160
             upkeep: 4
             upgrades: structure_hydroponic_farm_1
-            baseLifeSupportBonus: 12
+            baseLifeSupportBonus: 9
             structureTypes:
                 - 1
             workingStatus: true
@@ -630,10 +630,10 @@
             name: Hydroponic Farm 3
             description: Hydroponic Farm 3
             icon: assets/structures/hydroponic_farm.png
-            cost: 400
+            cost: 320
             upkeep: 5
             upgrades: structure_hydroponic_farm_2
-            baseLifeSupportBonus: 24
+            baseLifeSupportBonus: 12
             structureTypes:
                 - 1
             workingStatus: true
@@ -641,7 +641,7 @@
             name: COLONY_STRUCTURE_SUBTERRANEAN_FARMS_NAME
             description: COLONY_STRUCTURE_SUBTERRANEAN_FARMS_DESCRIPTION
             icon: assets/structures/subterranean_farms.png
-            cost: 240
+            cost: 640
             upkeep: 4
             baseLifeSupportBonus: 2
             foodTileBonus: 1
@@ -792,7 +792,7 @@
             name: COLONY_STRUCTURE_RESEARCH_LABORATORY_NAME
             description: COLONY_STRUCTURE_RESEARCH_LABORATORY_DESCRIPTION
             icon: assets/structures/research_laboratory.png
-            cost: 50
+            cost: 40
             upkeep: 2
             baseResearchBonus: 3
             structureTypes:
@@ -802,7 +802,7 @@
             name: Research Laboratory 1
             description: Research Laboratory 1
             icon: assets/structures/research_laboratory.png
-            cost: 100
+            cost: 80
             upkeep: 3
             upgrades: structure_research_laboratory
             baseResearchBonus: 6
@@ -813,10 +813,10 @@
             name: Research Laboratory 2
             description: Research Laboratory 2
             icon: assets/structures/research_laboratory.png
-            cost: 200
+            cost: 160
             upkeep: 4
             upgrades: structure_research_laboratory_1
-            baseResearchBonus: 12
+            baseResearchBonus: 9
             structureTypes:
                 - 2
             workingStatus: true
@@ -824,10 +824,10 @@
             name: Research Laboratory 3
             description: Research Laboratory 3
             icon: assets/structures/research_laboratory.png
-            cost: 400
+            cost: 320
             upkeep: 5
             upgrades: structure_research_laboratory_2
-            baseResearchBonus: 24
+            baseResearchBonus: 12
             structureTypes:
                 - 2
             workingStatus: true
@@ -835,10 +835,10 @@
             name: Research Laboratory 4
             description: Research Laboratory 4
             icon: assets/structures/research_laboratory.png
-            cost: 800
+            cost: 640
             upkeep: 6
             upgrades: structure_research_laboratory_3
-            baseResearchBonus: 48
+            baseResearchBonus: 15
             structureTypes:
                 - 2
             workingStatus: true
@@ -847,12 +847,38 @@
             name: Technet 1 - Decentralized knowledge
             description: Hub for combining all knowledge
             icon: assets/structures/autolab.png
-            cost: 280
+            cost: 160
             upkeep: 3
             baseResearchBonus: 7
             structureTypes:
                 - 2
             workingStatus: true
+        ## Custom - technode 2
+          - key: structure_technet_2
+            name: Technet 2 - Decentralized knowledge
+            description: Hub for combining all knowledge
+            icon: assets/structures/autolab.png
+            cost: 320
+            upkeep: 6
+            baseResearchBonus: 15
+            structureTypes:
+                - 2
+            workingStatus: true
+        ## Custom - TechNet
+          - key: structure_technet_3
+            name: TechNet
+            description: TechNet
+            icon: assets/structures/galactic_cybernet_node.png
+            cost: 480
+            upkeep: 10
+            totalResearchMultiplierBonus: 0.25
+            structureTypes:
+                - 2
+                - 5
+            empireUnique: true
+            isTransferable: false
+            workingStatus: true
+            empireSecurityBonus: 0.05
           - key: structure_autolab
             name: COLONY_STRUCTURE_AUTOLAB_NAME
             description: COLONY_STRUCTURE_AUTOLAB_DESCRIPTION
@@ -903,21 +929,6 @@
             isTransferable: false
             workingStatus: true
             empireSecurityBonus: 0.20
-        ## Custom - TechNet
-          - key: structure_technet_2
-            name: TechNet
-            description: TechNet
-            icon: assets/structures/galactic_cybernet_node.png
-            cost: 420
-            upkeep: 3
-            totalResearchMultiplierBonus: 0.20
-            structureTypes:
-                - 2
-                - 5
-            empireUnique: true
-            isTransferable: false
-            workingStatus: true
-            empireSecurityBonus: 0.05
         # - structure: &structure_special_funding_tribunal
             # name: COLONY_STRUCTURE_SPECIAL_FUNDING_TRIBUNAL_NAME
             # description: COLONY_STRUCTURE_SPECIAL_FUNDING_TRIBUNAL_DESCRIPTION
@@ -977,9 +988,9 @@
             name: COLONY_STRUCTURE_BIOSPHERES_NAME
             description: COLONY_STRUCTURE_BIOSPHERES_DESCRIPTION
             icon: assets/structures/biospheres.png
-            cost: 50
+            cost: 40
             upkeep: 1
-            baseLifeSupportBonus: 1
+            baseLifeSupportBonus: 2
             baseResearchBonus: 1
             structureTypes:
                 - 1
@@ -989,11 +1000,11 @@
             name: Biospheres 1
             description: Biospheres 1
             icon: assets/structures/biospheres.png
-            cost: 100
+            cost: 80
             upkeep: 2
             upgrades: structure_biospheres
-            baseLifeSupportBonus: 2
-            baseResearchBonus: 4
+            baseLifeSupportBonus: 3
+            baseResearchBonus: 3
             structureTypes:
                 - 1
                 - 2
@@ -1002,11 +1013,11 @@
             name: Biospheres 2
             description: Biospheres 2
             icon: assets/structures/biospheres.png
-            cost: 200
+            cost: 160
             upkeep: 3
             upgrades: structure_biospheres_1
-            baseLifeSupportBonus: 4
-            baseResearchBonus: 8
+            baseLifeSupportBonus: 5
+            baseResearchBonus: 4
             structureTypes:
                 - 1
                 - 2
@@ -1015,11 +1026,11 @@
             name: Biospheres 3
             description: Biospheres 3
             icon: assets/structures/biospheres.png
-            cost: 400
+            cost: 320
             upkeep: 4
             upgrades: structure_biospheres_2
-            baseLifeSupportBonus: 8
-            baseResearchBonus: 16
+            baseLifeSupportBonus: 6
+            baseResearchBonus: 6
             structureTypes:
                 - 1
                 - 2
@@ -1028,11 +1039,11 @@
             name: Biospheres 4
             description: Biospheres 4
             icon: assets/structures/biospheres.png
-            cost: 800
+            cost: 640
             upkeep: 5
             upgrades: structure_biospheres_3
-            baseLifeSupportBonus: 16
-            baseResearchBonus: 32
+            baseLifeSupportBonus: 8
+            baseResearchBonus: 8
             structureTypes:
                 - 1
                 - 2
@@ -1312,7 +1323,7 @@
             description: Soil Enrichment 1
             icon: assets/structures/soil_enrichment.png
             cost: 260
-            upkeep: 2
+            upkeep: 4
             upgrades: structure_soil_enrichment
             foodTileBonus: 2
             baseLifeSupportBonus: 2

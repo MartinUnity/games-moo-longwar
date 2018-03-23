@@ -412,9 +412,8 @@
                - structure_space_port
             tags:
                  - Economy
+        ## Custom - space_port 2
           - key: techapp_space_port_2
-            #name: TECH_APPLICATION_TYPE_SPACE_PORT_NAME
-            #description: TECH_APPLICATION_TYPE_SPACE_PORT_DESCRIPTION
             icon: assets/tech_apps/tech_building_credits.png
             type: techapptype_structure
             hologram: ContentPrefabs/Research/space_port.prefab
@@ -1754,7 +1753,7 @@
             unlocks:
                - structure_fungal_farms_2
             tags:
-                 - Population
+                 - Populationtechapp_space_port_2
         ## Custom - fungal 3
           - key: techapp_fungal_farms_3
             icon: assets/tech_apps/tech_building_food.png

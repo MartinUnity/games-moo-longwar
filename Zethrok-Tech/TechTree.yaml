@@ -794,7 +794,7 @@
                 - technology: technode_tachyon_physics
             unlocks:
                 - application: techapp_technet_1
-                - application: techapp_fungal_farms_3                
+                - application: techapp_fungal_farms_3
           - key: technode_optronics
             name: TECHNOLOGY_OPTRONICS_NAME
             description: TECHNOLOGY_OPTRONICS_DESCRIPTION
@@ -1400,6 +1400,18 @@
                      - application: techapp_advanced_city_planning
                 # - application: techapp_galactic_currency_exchange
                 #- application: techapp_interplanetary_administration
+        ## Custom
+          - key: technode_technet_3
+            name: Technet - Add 25% research
+            description: Technet - research hub 3
+            cost: 3990
+            x: 9
+            y: 2
+            icon: assets/techs/galactic_networking.png
+            requires:
+                - technology: technode_advanced_tactics
+            unlocks:
+                - application: techapp_technet_3
           - key: technode_plasma_physics
             name: TECHNOLOGY_PLASMA_PHYSICS_NAME
             description: TECHNOLOGY_PLASMA_PHYSICS_DESCRIPTION
