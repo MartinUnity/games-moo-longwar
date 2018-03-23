@@ -64,7 +64,7 @@
             className: TacticalBeam
             model: graviton_beam
             visualScale: 2.0
-            tacticalCooldown: 4
+            tacticalCooldown: 3.5
             rateOfFire: 0.10
             volleySize: 1
             maxDamage: 3
