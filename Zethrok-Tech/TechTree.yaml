@@ -130,6 +130,7 @@
             unlocks:
                 - application: techapp_hydroponic_farm
                 - application: techapp_biospheres
+                - application: techapp_biodome_1
           - key: technode_engineering
             name: TECHNOLOGY_ENGINEERING_NAME
             description: TECHNOLOGY_ENGINEERING_DESCRIPTION
@@ -273,6 +274,7 @@
             unlocks:
                 - application: techapp_fungal_farms
                 - application: techapp_death_spores
+                - application: techapp_biodome_2
         ## Custom
           - key: technode_caves_2
             name: Multihub 1

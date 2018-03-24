@@ -1172,6 +1172,36 @@
             structureTypes:
                 - 1
             workingStatus: true
+        ## Custom biodome - 1
+          - key: structure_biodome_1
+            name: Biodome 1
+            description: Biodome 1
+            icon: assets/structures/fungal_farms.png
+            cost: 40
+            upkeep: 2
+            baseLifeSupportBonus: 5
+            compatibleBiomes:
+                - biome_volcanic
+                - biome_toxic
+                - biome_radiated
+            structureTypes:
+                - 1
+            workingStatus: true
+        ## Custom biodome - 2
+          - key: structure_biodome_2
+            name: Biodome 2
+            description: Biodome 2
+            icon: assets/structures/fungal_farms.png
+            cost: 60
+            upkeep: 3
+            baseLifeSupportBonus: 10
+            compatibleBiomes:
+                - biome_volcanic
+                - biome_toxic
+                - biome_radiated
+            structureTypes:
+                - 1
+            workingStatus: true
           - key: structure_moon_laboratory
             name: COLONY_STRUCTURE_MOON_LABORATORY_NAME
             description: COLONY_STRUCTURE_MOON_LABORATORY_DESCRIPTION
@@ -1322,7 +1352,7 @@
                 - 1
             workerIncomeBonus: 2
             creditIncomeBonus: 6
-            upgrades: structure_cryptoexchange_3            
+            upgrades: structure_cryptoexchange_3
             workingStatus: true
 #          - key: structure_caves_3
 #            name: COLONY_STRUCTURE_CAVES_NAME_3
