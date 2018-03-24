@@ -1179,7 +1179,7 @@
             icon: assets/structures/fungal_farms.png
             cost: 40
             upkeep: 2
-            baseLifeSupportBonus: 4
+            baseLifeSupportBonus: 5
             compatibleBiomes:
                 - biome_volcanic
                 - biome_toxic
@@ -1194,7 +1194,7 @@
             icon: assets/structures/fungal_farms.png
             cost: 60
             upkeep: 3
-            baseLifeSupportBonus: 8
+            baseLifeSupportBonus: 10
             compatibleBiomes:
                 - biome_volcanic
                 - biome_toxic
