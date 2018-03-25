@@ -610,7 +610,7 @@
             rateOfFire: 0.25
             timeToLive: 20.0
             volleySize: 1
-            maxDamage: 15
+            maxDamage: 10
             missileAttack: 50
             armorPenetration: 12.0
             weaponAccuracy: 1.0
