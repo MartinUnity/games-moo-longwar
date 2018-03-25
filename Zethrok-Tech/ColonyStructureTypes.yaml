@@ -1177,7 +1177,7 @@
             name: Biodome 1
             description: Biodome 1
             icon: assets/structures/fungal_farms.png
-            cost: 40
+            cost: 20
             upkeep: 2
             baseLifeSupportBonus: 5
             compatibleBiomes:
@@ -1192,7 +1192,7 @@
             name: Biodome 2
             description: Biodome 2
             icon: assets/structures/fungal_farms.png
-            cost: 60
+            cost: 40
             upkeep: 3
             baseLifeSupportBonus: 10
             compatibleBiomes:
@@ -1308,7 +1308,7 @@
             name: CryptoExchange
             description: CryptoExchange owns trade
             icon: assets/structures/cloning_center.png
-            cost: 60
+            cost: 50
             upkeep: 0
             structureTypes:
                 - 1
@@ -1320,7 +1320,7 @@
             name: CryptoExchange 2
             description: CryptoExchange owns trade
             icon: assets/structures/cloning_center.png
-            cost: 120
+            cost: 100
             upkeep: 0
             structureTypes:
                 - 1
@@ -1333,7 +1333,7 @@
             name: CryptoExchange 3
             description: CryptoExchange owns trade
             icon: assets/structures/cloning_center.png
-            cost: 240
+            cost: 200
             upkeep: 0
             structureTypes:
                 - 1
@@ -1346,7 +1346,7 @@
             name: CryptoExchange 4
             description: CryptoExchange owns trade
             icon: assets/structures/cloning_center.png
-            cost: 500
+            cost: 400
             upkeep: 0
             structureTypes:
                 - 1
