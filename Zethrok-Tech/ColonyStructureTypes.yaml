@@ -1365,6 +1365,29 @@
 #            structureTypes:
 #                - 0
 #            workingStatus: true
+        ## Custom - Fertility lab 1
+          - key: structure_fertilitylab_1
+            name: Fertility Lab - 1
+            description: Fertility lab 1
+            icon: assets/structures/soil_enrichment.png
+            cost: 60
+            upkeep: 2
+            structureTypes:
+                - 1
+            populationGrowthMultiplierBonus: 0.15
+            workingStatus: true
+        ## Custom - Fertility lab 2
+          - key: structure_fertilitylab_2
+            name: Fertility Lab - 2
+            description: Fertility lab 2
+            icon: assets/structures/soil_enrichment.png
+            cost: 60
+            upkeep: 2
+            structureTypes:
+                - 1
+            populationGrowthMultiplierBonus: 0.30
+            upgrades: structure_fertilitylab_1            
+            workingStatus: true
           - key: structure_cloning_center
             name: COLONY_STRUCTURE_CLONING_CENTER_NAME
             description: COLONY_STRUCTURE_CLONING_CENTER_DESCRIPTION
