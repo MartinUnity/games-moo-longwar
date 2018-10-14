@@ -353,6 +353,7 @@
             unlocks:
                 - application: techapp_tomb_1
                 - application: techapp_fluxtube_1
+                - application: techapp_fertilitylab_1
                 - application: techapp_fungal_farms_2
           - key: technode_military_tactics
             name: TECHNOLOGY_MILITARY_TACTICS_NAME
@@ -883,6 +884,7 @@
                 - technology: technode_advanced_construction
             unlocks:
                 - application: techapp_quantum_computer
+                - application: techapp_fertilitylab_2
           - key: technode_weapon_6
             name: Weapon 6 - Pulse mod
             description: Weapon Pulse mod
