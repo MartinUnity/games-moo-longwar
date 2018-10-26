@@ -35,8 +35,8 @@
             name: HULL_FRIGATE_NAME
             description: SHIP_TYPE_FRIGATE_DESCRIPTION
             cost: 3
-            space: 215
-            hp: 405
+            space: 245
+            hp: 455
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/frigate.png
             icon: assets/ships/%civ%/%type%/ship_frigate.png
             hullScale: 1
@@ -71,8 +71,8 @@
             name: HULL_DESTROYER_NAME
             description: SHIP_TYPE_DESTROYER_DESCRIPTION
             cost: 7
-            space: 375
-            hp: 780
+            space: 425
+            hp: 845
             detectionRange: 0.5
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/destroyer.png
             icon: assets/ships/%civ%/%type%/ship_destroyer.png
@@ -109,8 +109,8 @@
             name: HULL_CRUISER_NAME
             description: SHIP_TYPE_CRUISER_DESCRIPTION
             cost: 15
-            space: 815
-            hp: 1275
+            space: 945
+            hp: 1575
             detectionRange: 1
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/cruiser.png
             icon: assets/ships/%civ%/%type%/ship_cruiser.png
@@ -147,8 +147,8 @@
             name: HULL_BATTESHIP_NAME
             description: SHIP_TYPE_BATTLESHIP_DESCRIPTION
             cost: 40
-            space: 1325
-            hp: 2425
+            space: 1525
+            hp: 2825
             detectionRange: 1.5
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/battleship.png
             icon: assets/ships/%civ%/%type%/ship_battleship.png
@@ -187,8 +187,8 @@
             name: HULL_TITAN_NAME
             description: SHIP_TYPE_TITAN_DESCRIPTION
             cost: 80
-            space: 3700
-            hp: 6575
+            space: 4125
+            hp: 7275
             detectionRange: 2
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/titan.png
             icon: assets/ships/%civ%/%type%/ship_titan.png
@@ -227,8 +227,8 @@
             name: HULL_DOOMSTAR_NAME
             description: SHIP_TYPE_DOOM_STAR_DESCRIPTION
             cost: 160
-            space: 12250
-            hp: 19075
+            space: 15250
+            hp: 26075
             detectionRange: 3
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/doomstar.png
             icon: assets/ships/%civ%/%type%/ship_doomstar.png
@@ -545,7 +545,7 @@
           - key: hull_outpost
             cost: 100
             space: 220
-            hp: 1000
+            hp: 1250
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/outpost.png
             icon: assets/ships/%civ%/%type%/ship_outpost.png
             fleetSupportCost: 0
@@ -563,8 +563,8 @@
             name: HULL_MISSILE_BASE_NAME
             description: SHIP_TYPE_MISSILE_BASE_DESCRIPTION
             cost: 120
-            space: 400
-            hp: 1480
+            space: 500
+            hp: 1680
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/planetary_defense.png
             icon: assets/ships/%civ%/%type%/ship_missile_base.png
             hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_missile_base.prefab
@@ -590,8 +590,8 @@
             name: HULL_GROUND_BATTERIES_NAME
             description: SHIP_TYPE_GROUND_BATTERIES_DESCRIPTION
             cost: 120
-            space: 400
-            hp: 1480
+            space: 500
+            hp: 1680
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/planetary_defense.png
             icon: assets/ships/%civ%/%type%/ship_ground_batteries.png
             hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_ground_batteries.prefab
@@ -617,8 +617,8 @@
             name: HULL_FIGHTER_GARRISON_NAME
             description: SHIP_TYPE_FIGHTER_GARRISON_DESCRIPTION
             cost: 120
-            space: 400
-            hp: 1480
+            space: 500
+            hp: 1680
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/planetary_defense.png
             icon: assets/ships/%civ%/%type%/ship_missile_base.png
             hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_missile_base.prefab
@@ -657,8 +657,8 @@
           - key: hull_military_outpost
             description: SHIP_TYPE_MILITARY_OUTPOST_DESCRIPTION
             cost: 100
-            space: 350
-            hp: 800
+            space: 375
+            hp: 950
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/outpost.png
             icon: assets/ships/%civ%/%type%/ship_starbase.png
             name: HULL_MILITARY_OUTPOST_NAME
@@ -679,8 +679,8 @@
           - key: hull_advanced_military_outpost
             description: SHIP_TYPE_ADVANCED_MILITARY_OUTPOST_DESCRIPTION
             cost: 100
-            space: 850
-            hp: 2100
+            space: 975
+            hp: 2400
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/outpost.png
             icon: assets/ships/%civ%/%type%/ship_starbase.png
             name: HULL_MILITARY_OUTPOST_NAME
@@ -702,8 +702,8 @@
             name: HULL_STAR_BASE_NAME
             description: SHIP_TYPE_STAR_BASE_DESCRIPTION
             cost: 120
-            space: 1050
-            hp: 1600
+            space: 1325
+            hp: 1900
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/starbase.png
             icon: assets/ships/%civ%/%type%/ship_starbase.png
             hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_starbase.prefab
@@ -729,8 +729,8 @@
             name: HULL_BATTLE_STATION_NAME
             description: SHIP_TYPE_BATTLE_STATION_DESCRIPTION
             cost: 320
-            space: 1500
-            hp: 3200
+            space: 1800
+            hp: 3800
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/starbase.png
             icon: assets/ships/%civ%/%type%/ship_starbase.png
             hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_battlestation.prefab
@@ -756,8 +756,8 @@
             name: HULL_STAR_FORTRESS_NAME
             description: SHIP_TYPE_STAR_FORTRESS_DESCRIPTION
             cost: 600
-            space: 3000
-            hp: 7250
+            space: 3750
+            hp: 9150
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/starbase.png
             icon: assets/ships/%civ%/%type%/ship_starbase.png
             hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_starfortress.prefab
@@ -1073,8 +1073,8 @@
             name: HULL_FRIGATE_NAME
             description: SHIP_TYPE_FRIGATE_DESCRIPTION
             cost: 30
-            space: 30
-            hp: 30
+            space: 50
+            hp: 50
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/frigate.png
             icon: assets/ships/%civ%/%type%/ship_frigate.png
             hullScale: 1.4
@@ -1106,8 +1106,8 @@
             description: SHIP_TYPE_DESTROYER_DESCRIPTION
             cost: 75
             upkeep: 8
-            space: 90
-            hp: 110
+            space: 120
+            hp: 180
             detectionRange: 1
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/destroyer.png
             icon: assets/ships/%civ%/%type%/ship_destroyer.png
@@ -1141,8 +1141,8 @@
             description: SHIP_TYPE_DESTROYER_DESCRIPTION
             cost: 75
             upkeep: 8
-            space: 175
-            hp: 250
+            space: 255
+            hp: 350
             detectionRange: 1
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/cruiser.png
             icon: assets/ships/%civ%/%type%/ship_cruiser.png
