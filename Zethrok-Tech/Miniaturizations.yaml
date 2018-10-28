@@ -59,16 +59,16 @@
                 - shipmodule_antimatter_bomb
         ###TORPEDOES
           - key: miniaturization_torpedoes_1
-            name: MINIATURIZATION_TORPEDOES_1_NAME
-            description: MINIATURIZATION_TORPEDOES_1_DESCRIPTION
+            name: Torpedoes 1
+            description: Torpedoes 1 - mini
             icon: assets/ship_modules/miniaturization_torpedoes.png
             spaceDecreaseFactor: 0.1
             costDecreaseFactor: 0.1
             affectedModules:
                 - shipmodule_proton_torpedoes
           - key: miniaturization_torpedoes_2
-            name: MINIATURIZATION_TORPEDOES_2_NAME
-            description: MINIATURIZATION_TORPEDOES_2_DESCRIPTION
+            name: Torpedoes 2
+            description: Torpedoes 2 - mini
             icon: assets/ship_modules/miniaturization_torpedoes.png
             spaceDecreaseFactor: 0.1
             costDecreaseFactor: 0.1
@@ -76,8 +76,8 @@
                 - shipmodule_proton_torpedoes
                 - shipmodule_antimatter_torpedoes
           - key: miniaturization_torpedoes_3
-            name: MINIATURIZATION_TORPEDOES_3_NAME
-            description: MINIATURIZATION_TORPEDOES_3_DESCRIPTION
+            name: Torpedoes 3
+            description: Torpedoes 3 - mini
             icon: assets/ship_modules/miniaturization_torpedoes.png
             spaceDecreaseFactor: 0.1
             costDecreaseFactor: 0.1
