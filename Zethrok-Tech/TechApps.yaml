@@ -1767,6 +1767,15 @@
                - shipmodule_biogenic_computer
             tags:
                  - Military
+        ## Custom - Selfreplication
+          - key: techapp_selfreplication
+            icon: assets/tech_apps/tech_building_food.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/pleasure_dome.prefab
+            unlocks:
+               - structure_selfreplication
+            tags:
+                 - Population
           - key: techapp_achilles_targeting_unit
             #name: TECH_APPLICATION_TYPE_ACHILLES_TARGETING_UNIT_NAME
             #description: TECH_APPLICATION_TYPE_ACHILLES_TARGETING_UNIT_DESCRIPTION

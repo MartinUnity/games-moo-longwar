@@ -1876,6 +1876,17 @@
                 - technology: technode_planar_transcendence
             unlocks:
                 - application: techapp_future_technologies
+          - key: technode_growth_100
+            name: Self Replication
+            description: Self Replication - 100% growth
+            cost: 60000
+            x: 14
+            y: 2
+            icon: assets/techs/bio_technology.png
+            requires:
+                - technology: technode_computer_13
+            unlocks:
+                - application: techapp_selfreplication
         # - technology: &technode_advanced_communications
             # name: TECHNOLOGY_ADVANCED_COMMUNICATIONS_NAME
             # description: TECHNOLOGY_ADVANCED_COMMUNICATIONS_DESCRIPTION

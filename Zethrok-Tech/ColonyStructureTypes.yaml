@@ -1386,7 +1386,17 @@
             structureTypes:
                 - 1
             populationGrowthMultiplierBonus: 0.30
-            upgrades: structure_fertilitylab_1            
+            upgrades: structure_fertilitylab_1
+            workingStatus: true
+          - key: structure_selfreplication
+            name: SelfReplication
+            description: SelfReplication Dome
+            icon: assets/structures/soil_enrichment.png
+            cost: 800
+            upkeep: 6
+            structureTypes:
+                - 1
+            populationGrowthMultiplierBonus: 1.00
             workingStatus: true
           - key: structure_cloning_center
             name: COLONY_STRUCTURE_CLONING_CENTER_NAME
