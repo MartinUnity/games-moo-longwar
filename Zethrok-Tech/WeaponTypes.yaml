@@ -71,10 +71,10 @@
             weaponSteps: 8
             weaponStepDuration: 0.5
             armorPenetration: 3.0
-            weaponRange: 80
+            weaponRange: 60
             rangeDecayFactor: 0.7
             decayRate: 2.0
-            rangeLoss: 0.05
+            rangeLoss: 0.15
             weaponAccuracy: 1.0
             rangeLoss: 0.15
             warmupTime: 1.3
@@ -218,12 +218,12 @@
             decayRate: 1.5
             weaponAccuracy: 1.0
             rangeDissipation: false
-            weaponRange: 80
-            warmupTime: 0.1
+            weaponRange: 65
+            warmupTime: 0.2
             radius: 1.0
             mass: 1.0
             physicsEnabled: false
-            maxVelocity: 80.0
+            maxVelocity: 70.0
             maxVelocityVariance: 0.1
             modifiers:
                 - modifier: modifier_point_defense
@@ -234,10 +234,10 @@
             className: TacticalLaser
             model: laser_cannon
             visualScale: 2.0
-            tacticalCooldown: 5.0
-            rateOfFire: 0.25
+            tacticalCooldown: 6.0
+            rateOfFire: 0.3
             volleySize: 1
-            maxDamage: 6
+            maxDamage: 5
             armorPenetration: 0.0
             shieldPenetration: false
             rangeDissipation: false
@@ -271,12 +271,12 @@
             rangeDissipation: false
             weaponAccuracy: 1.0
             rangeLoss: 0.5
-            weaponRange: 90
+            weaponRange: 60
             warmupTime: 0.2
             radius: 1.0
             mass: 1.0
             physicsEnabled: false
-            maxVelocity: 90.0
+            maxVelocity: 70.0
             maxVelocityVariance: 0.1
             modifiers:
                 - modifier: modifier_point_defense
@@ -287,21 +287,21 @@
             className: TacticalLaser
             model: mass_driver
             visualScale: 2.0
-            tacticalCooldown: 7.0
-            rateOfFire: 0.25
+            tacticalCooldown: 8.0
+            rateOfFire: 0.3
             volleySize: 1
             maxDamage: 12
-            armorPenetration: 10
+            armorPenetration: 10.0
             shieldPenetration: true
             rangeDissipation: false
             weaponAccuracy: 1.0
             rangeLoss: 0.5
-            weaponRange: 65
+            weaponRange: 50
             warmupTime: 0.2
             radius: 1.0
             mass: 1.0
             physicsEnabled: false
-            maxVelocity: 75.0
+            maxVelocity: 60.0
             maxVelocityVariance: 0.1
             modifiers:
                 - modifier: modifier_point_defense
@@ -473,7 +473,7 @@
             model: nuclear_missile
             hasFacing: false
             visualScale: 5.0
-            tacticalCooldown: 14.0
+            tacticalCooldown: 18.0
             rateOfFire: 0.5
             timeToLive: 20.0
             volleySize: 1
@@ -612,9 +612,9 @@
             volleySize: 1
             maxDamage: 10
             missileAttack: 50
-            armorPenetration: 12.0
+            armorPenetration: 10.0
             weaponAccuracy: 1.0
-            weaponRange: 90
+            weaponRange: 75
             splashArea: 1
             weaponHp: 5.0
             warmupTime: 0.0
@@ -639,7 +639,7 @@
             className: TacticalTorpedo
             model: proton_torpedo
             visualScale: 6.0
-            tacticalCooldown: 13.0
+            tacticalCooldown: 15.0
             rateOfFire: 1.0
             volleySize: 1
             maxDamage: 50

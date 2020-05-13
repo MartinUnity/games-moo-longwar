@@ -4,26 +4,26 @@
           - key: planetmineralrichness_ultra_poor
             name: PLANET_MINERAL_RICHNESS_TYPE_ULTRA_POOR
             mineralProductionFactor: 1.2
-            lithovoreLifePointProduction: 3.3
+            lithovoreLifePointProduction: 1.5
             color: 0x4f473d
           - key: planetmineralrichness_poor
             name: PLANET_MINERAL_RICHNESS_TYPE_POOR
-            mineralProductionFactor: 1.6
-            lithovoreLifePointProduction: 4.5
+            mineralProductionFactor: 1.4
+            lithovoreLifePointProduction: 2.3
             color: 0x766248
           - key: planetmineralrichness_abundant
             name: PLANET_MINERAL_RICHNESS_TYPE_ABUNDANT
             mineralProductionFactor: 2.3
-            lithovoreLifePointProduction: 5.8
+            lithovoreLifePointProduction: 2.8
             color: 0x856438
           - key: planetmineralrichness_rich
             name: PLANET_MINERAL_RICHNESS_TYPE_RICH
-            mineralProductionFactor: 2.8
-            lithovoreLifePointProduction: 7.5
+            mineralProductionFactor: 3.3
+            lithovoreLifePointProduction: 3.5
             color: 0xa67737
           - key: planetmineralrichness_ultra_rich
             name: PLANET_MINERAL_RICHNESS_TYPE_ULTRA_RICH
-            mineralProductionFactor: 4.1
-            lithovoreLifePointProduction: 9.6
+            mineralProductionFactor: 3.6
+            lithovoreLifePointProduction: 4.1
             color: 0xc68832
 ...

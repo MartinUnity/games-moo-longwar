@@ -63,7 +63,7 @@
             name: TECH_ACHIEVEMENT_TELEKINESIS_NAME
             description: TECH_ACHIEVEMENT_TELEKINSIS_DESCRIPTION
             icon: assets/structures/neural_scanner.png
-            value: 0.20
+            value: 0.10
           - key: techachievement_cyber_security_link
             name: TECH_ACHIEVEMENT_CYBER_SECURITY_LINK_NAME
             description: TECH_ACHIEVEMENT_CYBER_SECURITY_LINK_DESCRIPTION
@@ -89,7 +89,7 @@
             name: TECH_ACHIEVEMENT_BIOACCELERANT_NAME
             description: TECH_ACHIEVEMENT_BIOACCELERANT_DESCRIPTION
             icon: assets/structures/universal_antidote.png
-            value: 0.40
+            value: 0.20
           - key: techachievement_biomorphic_fungi
             name: TECH_ACHIEVEMENT_BIOMORPHIC_FUNGI_NAME
             description: TECH_ACHIEVEMENT_BIOMORPHIC_FUNGI_DESCRIPTION

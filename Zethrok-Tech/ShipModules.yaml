@@ -47,7 +47,7 @@
             subType: shipmodulesubtype_cannon
             weaponType: weapontype_laser_cannon
             cost: 2
-            size: 5
+            size: 6
             icon: assets/ship_modules/laser_cannon.png
           - key: shipmodule_mass_driver
             name: $SHIP_MODULE_MASS_DRIVER_NAME
@@ -56,8 +56,8 @@
             slot: shipslot_weapon
             subType: shipmodulesubtype_cannon
             weaponType: weapontype_mass_driver
-            cost: 5
-            size: 12
+            cost: 10
+            size: 10
             icon: assets/ship_modules/mass_driver.png
           - key: shipmodule_neutron_blaster
             name: $SHIP_MODULE_NEUTRON_BLASTER_NAME
@@ -129,7 +129,7 @@
             subType: shipmodulesubtype_beam
             weaponType: weapontype_pulse_beam
             cost: 8
-            size: 10
+            size: 15
             icon: assets/ship_modules/fusion_beam.png
           - key: shipmodule_antaran_fusion_beam
             name: $SHIP_MODULE_FUSION_BEAM_NAME
@@ -206,7 +206,7 @@
             subType: shipmodulesubtype_missile
             weaponType: weapontype_nuclear_missile
             cost: 4
-            size: 9
+            size: 10
             icon: assets/ship_modules/nuclear_missile.png
           - key: shipmodule_antaran_nuclear_missile
             name: $SHIP_MODULE_NUCLEAR_MISSILE_NAME
@@ -247,7 +247,7 @@
             subType: shipmodulesubtype_missile
             weaponType: weapontype_meson_missile
             cost: 8
-            size: 5
+            size: 10
             icon: assets/ship_modules/zeon_missile.png
             techTreeIcon: assets/tech_apps/tech_missiles.png
           - key: shipmodule_zeon_missile
@@ -270,7 +270,7 @@
             subType: shipmodulesubtype_torpedo
             weaponType: weapontype_proton_torpedo
             cost: 6
-            size: 12
+            size: 15
             icon: assets/ship_modules/proton_torpedoes.png
           - key: shipmodule_antaran_proton_torpedoes
             name: $SHIP_MODULE_PROTON_TORPEDOES_NAME
@@ -342,7 +342,7 @@
             subType: shipmodulesubtype_bomb
             weaponType: weapontype_nuclear_bomb
             cost: 4
-            size: 7
+            size: 10
             icon: assets/ship_modules/nuclear_bomb.png
           - key: shipmodule_fusion_bomb
             name: $SHIP_MODULE_FUSION_BOMB_NAME
@@ -430,7 +430,7 @@
             costHullFactor: 2
             baseSize: 0
             resilience: 7
-            tacticalArmorMultiplier: 1.6
+            tacticalArmorMultiplier: 1.3
             missileArmorMultiplier: 1.1
             icon: assets/ship_modules/neutronium_armor.png
             groundDefenseCombatBonus: 0.05
@@ -444,7 +444,7 @@
             costHullFactor: 2
             baseSize: 0
             resilience: 10
-            tacticalArmorMultiplier: 2.25
+            tacticalArmorMultiplier: 1.5
             missileArmorMultiplier: 1.2
             icon: assets/ship_modules/tritanium_armor.png
             groundDefenseCombatBonus: 0.1
@@ -459,10 +459,10 @@
             baseSize: 0
             requiredResource: tradeable_resource_neutronium
             resilience: 40
-            tacticalArmorMultiplier: 7.0
-            missileArmorMultiplier: 4.4
+            tacticalArmorMultiplier: 4.0
+            missileArmorMultiplier: 2.6
             icon: assets/ship_modules/neutronium_armor.png
-            groundDefenseCombatBonus: 0.5
+            groundDefenseCombatBonus: 0.4
           - key: shipmodule_neutronium_armor
             name: $SHIP_MODULE_NEUTRONIUM_ARMOR_NAME
             shortDescription: $SHIP_MODULE_NEUTRONIUM_ARMOR_DESCRIPTION_SHORT
@@ -473,7 +473,7 @@
             baseSize: 0
             requiredResource: tradeable_resource_neutronium
             resilience: 15
-            tacticalArmorMultiplier: 3.0
+            tacticalArmorMultiplier: 2.0
             missileArmorMultiplier: 1.4
             icon: assets/ship_modules/neutronium_armor.png
             groundDefenseCombatBonus: 0.15
@@ -487,7 +487,7 @@
             baseSize: 0
             requiredResource: tradeable_resource_zortrium
             resilience: 20
-            tacticalArmorMultiplier: 3.75
+            tacticalArmorMultiplier: 2.5
             missileArmorMultiplier: 1.6
             icon: assets/ship_modules/zortrium_armor.png
             groundDefenseCombatBonus: 0.2
@@ -501,7 +501,7 @@
             baseSize: 0
             requiredResource: tradeable_resource_adamantium
             resilience: 25
-            tacticalArmorMultiplier: 4.5
+            tacticalArmorMultiplier: 3.0
             missileArmorMultiplier: 1.8
             icon: assets/ship_modules/adamantium_armor.png
             groundDefenseCombatBonus: 0.25
@@ -515,7 +515,7 @@
             baseSize: 0
             requiredResource: tradeable_resource_xentronium
             resilience: 30
-            tacticalArmorMultiplier: 3.4
+            tacticalArmorMultiplier: 2.25
             missileArmorMultiplier: 2
             icon: assets/ship_modules/xentronium_armor.png
             groundDefenseCombatBonus: 0.3
@@ -540,13 +540,13 @@
             shortDescription: Shield II
             description: Shield II
             slot: shipslot_shield
-            baseCost: 6
+            baseCost: 5
             costHullFactor: 1.5
             baseSize: 4.25
             sizeHullFactor: 2.4
-            shieldStrengthMultiplier: 1.0
-            shieldDamageAbsorption: 4
-            shieldRechargeRate: 2.2
+            shieldStrengthMultiplier: 0.8
+            shieldDamageAbsorption: 2
+            shieldRechargeRate: 2.25
             shieldCooldown: 5.0
             icon: assets/ship_modules/class_v_shield.png
           - key: shipmodule_class_iii_shield
@@ -558,8 +558,8 @@
             costHullFactor: 1.5
             baseSize: 4.5
             sizeHullFactor: 2.4
-            shieldStrengthMultiplier: 1.2
-            shieldDamageAbsorption: 5
+            shieldStrengthMultiplier: 0.7
+            shieldDamageAbsorption: 4
             shieldRechargeRate: 2.5
             shieldCooldown: 5.0
             icon: assets/ship_modules/class_iii_shield.png
@@ -573,9 +573,9 @@
             costHullFactor: 1.5
             baseSize: 4.75
             sizeHullFactor: 2.4
-            shieldStrengthMultiplier: 1.6
+            shieldStrengthMultiplier: 0.9
             shieldDamageAbsorption: 7
-            shieldRechargeRate: 2.5
+            shieldRechargeRate: 2.75
             shieldCooldown: 5.0
             icon: assets/ship_modules/class_i_shield.png
           - key: shipmodule_class_v_shield
@@ -587,7 +587,7 @@
             costHullFactor: 1.5
             baseSize: 5
             sizeHullFactor: 2.3
-            shieldStrengthMultiplier: 2.0
+            shieldStrengthMultiplier: 1.0
             shieldDamageAbsorption: 9
             shieldRechargeRate: 3.0
             shieldCooldown: 5.0
@@ -601,7 +601,7 @@
             costHullFactor: 1.5
             baseSize: 5.5
             sizeHullFactor: 2.2
-            shieldStrengthMultiplier: 2.75
+            shieldStrengthMultiplier: 1.4
             shieldDamageAbsorption: 16
             shieldRechargeRate: 3.5
             shieldCooldown: 5.0
@@ -615,7 +615,7 @@
             costHullFactor: 1.5
             baseSize: 6
             sizeHullFactor: 2.1
-            shieldStrengthMultiplier: 3.5
+            shieldStrengthMultiplier: 2.0
             shieldDamageAbsorption: 25
             shieldRechargeRate: 4.0
             shieldCooldown: 5.0
@@ -629,10 +629,10 @@
             costHullFactor: 1.5
             baseSize: 7
             sizeHullFactor: 2.0
-            shieldStrengthMultiplier: 6.0
-            shieldDamageAbsorption: 40
-            shieldRechargeRate: 8.0
-            shieldCooldown: 4.0
+            shieldStrengthMultiplier: 3.0
+            shieldDamageAbsorption: 32
+            shieldRechargeRate: 5.5
+            shieldCooldown: 5.0
             icon: assets/ship_modules/class_v_shield.png
         #COMPUTERS
           - key: shipmodule_electronic_computer
@@ -711,7 +711,7 @@
             costHullFactor: 1.25
             size: 0
             requiredResource: tradeable_resource_silicon
-            accuracyBonus: 175
+            accuracyBonus: 150
             icon: assets/ship_modules/moleculartronic_computer.png
         #DRIVES
           - key: shipmodule_nuclear_drive
