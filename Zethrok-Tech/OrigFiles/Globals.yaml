@@ -1,0 +1,762 @@
+﻿---
+- globals: &Backend.Galaxy.AdvancedGalaxyGenerator
+    CIV_SEPPARATION_FACTOR: 1.0
+    MIN_SEPPARATION_DISTANCE: 2.5
+- globals: &Backend.Galaxy.SolarSystemGenerator
+    PLANETARY_ORBITS:
+        - minOrbitRadius: 0.40
+          maxOrbitRadius: 0.40
+          bodyCapacity: 1
+        - minOrbitRadius: 0.55
+          maxOrbitRadius: 0.55
+          bodyCapacity: 2
+        - minOrbitRadius: 0.70
+          maxOrbitRadius: 0.70
+          bodyCapacity: 3
+        - minOrbitRadius: 0.85
+          maxOrbitRadius: 0.85
+          bodyCapacity: 3
+        - minOrbitRadius: 1.00
+          maxOrbitRadius: 1.00
+          bodyCapacity: 3
+    LUNAR_ORBITS:
+        - minOrbitRadius: 0.125
+          maxOrbitRadius: 0.125
+          bodyCapacity: 1
+        - minOrbitRadius: 0.20
+          maxOrbitRadius: 0.20
+          bodyCapacity: 1
+    WARPGATE_ORBIT_RADIUS_OFFSET: 0.20
+- globals: &Backend.Galaxy.NavigationNode
+    STAR_DETECTION_DISTANCE: 1
+- globals: &Backend.Diplomacy.Relationship
+    FATIGUE_CEASE_FIRE_NEGATIVE_ANSWER: 0
+    FATIGUE_WAR_DECLARATION: 20
+    FATIGUE_BREAK_ALLIANCE: 10
+    FATIGUE_DEMAND: 25
+    AI_MAX_TIME_WAIT_HUMAN_RESPONSE_IN_MULTIPLAYER: 15
+    dispositionChangeEvents:
+        - event: BORDER_TENSION_SHARED_SYSTEM
+          weight: 0
+          discountRate: 0.05
+        - event: BORDER_TENSION_SHARED_ROAD
+          weight: 0
+          discountRate: 0.05
+        - event: EMPIRE_OVERSTRETCH_CLAIMING
+          weight: 0
+          discountRate: 0.05
+        - event: EMPIRE_OVERSTRETCH_COLONIES
+          weight: 0
+          discountRate: 0.05
+        - event: ONGOING_NON_AGGRESSION_PACT
+          weight: 0.004
+          discountRate: 0.05
+        - event: ONGOING_DEFENSIVE_PACT
+          weight: 0.005
+          discountRate: 0.05
+        - event: ONGOING_RESEARCH_TREATY
+          weight: 0
+          discountRate: 0.05
+        - event: ONGOING_TRADE_TREATY
+          weight: 0
+          discountRate: 0.05
+        - event: ONGOING_OPEN_BORDERS
+          weight: 0.003
+          discountRate: 0.05
+        - event: ONGOING_EMBASSY
+          weight: 0.002
+          discountRate: 0.05
+        - event: SHARED_ENEMY
+          weight: 0.01
+          discountRate: 0.02
+        - event: SHARED_ALLY
+          weight: 0.01
+          discountRate: 0.02
+        - event: ENEMY_OF_MY_ALLY
+          weight: -0.01
+          discountRate: 0.05
+        - event: ALLY_OF_MY_ENEMY
+          weight: -0.01
+          discountRate: 0.05
+        - event: MADE_DEAL_WITH_ENEMY
+          weight: -0.2
+          discountRate: 0.05
+        - event: FLEET_IN_MY_STAR
+          weight: 0
+          discountRate: 0.05
+        - event: FLEET_IN_MY_PLANET
+          weight: -0.05
+          discountRate: 0.05
+        - event: RELATIVE_SCORE
+          weight: 0
+          discountRate: 0.05
+        - event: NEW_FOREIGN_COLONY
+          weight: -0.1
+          discountRate: 0.05
+        - event: COLONY_INVADED
+          weight: -1
+          discountRate: 0.05
+        - event: COLONY_ATTACKED
+          weight: -1
+          discountRate: 0.05
+        - event: FLEET_ATTACKED_IN_MY_SYSTEM
+          weight: -1
+          discountRate: 0.05
+        - event: FLEET_ATTACKED_IN_OTHER_SYSTEM
+          weight: -0.4
+          discountRate: 0.05
+        - event: SPY_DISCOVERED
+          weight: -0.1
+          discountRate: 0.05
+        - event: SPY_ELIMINATED
+          weight: -0.2
+          discountRate: 0.05
+        - event: DEMAND
+          weight: -0.0001
+          discountRate: 0.05
+        - event: UNFAIR_DEAL
+          weight: -0.0001
+          discountRate: 0.05
+        - event: GIFT
+          weight: 0.0001
+          discountRate: 0.02
+        - event: GALACTIC_COUNCIL_ABSTAIN
+          weight: -0.15
+          discountRate: 0.03
+        - event: GALACTIC_COUNCIL_FOR
+          weight: 0.2
+          discountRate: 0.02
+        - event: GALACTIC_COUNCIL_AGAINST
+          weight: -0.35
+          discountRate: 0.02
+        - event: GALACTIC_COUNCIL_ABSTAIN_ALLY
+          weight: -0.3
+          discountRate: 0.03
+        - event: GALACTIC_COUNCIL_FOR_ALLY
+          weight: 0.4
+          discountRate: 0.02
+        - event: GALACTIC_COUNCIL_AGAINST_ALLY
+          weight: -0.7
+          discountRate: 0.02
+        - event: DEAL_REJECTED_GENERIC
+          weight: -0.1
+          discountRate: 0.02
+        - event: DEAL_REJECTED_NOT_SPIES
+          weight: -0.2
+          discountRate: 0.05
+        - event: DEAL_REJECTED_NOT_COLONIZE
+          weight: -0.4
+          discountRate: 0.02
+        - event: DEMAND_ACCEPTED
+          weight: 0.1
+          discountRate: 0.02
+        - event: DEMAND_REJECTED
+          weight: -0.3
+          discountRate: 0.02
+        - event: BREAK_NON_AGGRESSION_PACT
+          weight: -0.005
+          discountRate: 0.03
+        - event: BREAK_DEFENSIVE_PACT
+          weight: -0.005
+          discountRate: 0.03
+        - event: BREAK_OFFENSIVE_PACT
+          weight: -0.5
+          discountRate: 0.03
+        - event: BREAK_ACCEPT_EMBASSY
+          weight: -0.0005
+          discountRate: 0.03
+        - event: BREAK_OPEN_BORDERS
+          weight: -0.0025
+          discountRate: 0.03
+        - event: BREAK_PROMISE_NON_SETTLEMENT
+          weight: -0.6
+          discountRate: 0.01
+        - event: BREAK_PROMISE_NON_SPY
+          weight: -0.6
+          discountRate: 0.01
+        - event: BREAK_VOTE_PACT
+          weight: -0.5
+          discountRate: 0.02
+        - event: VOTE_PACT_HONORED
+          weight: 0.25
+          discountRate: 0.02
+        - event: NEW_NON_AGGRESSION_PACT
+          weight: 0.15
+          discountRate: 0.02
+        - event: NEW_DEFENSIVE_PACT
+          weight: 0.20
+          discountRate: 0.02
+        - event: NEW_ACCEPT_EMBASSY
+          weight: 0.1
+          discountRate: 0.02
+        - event: NEW_OPEN_BORDERS
+          weight: 0.1
+          discountRate: 0.02
+        - event: NEW_TRADE_TREATY
+          weight: 0.15
+          discountRate: 0.02
+        - event: NEW_RESEARCH_TREATY
+          weight: 0.15
+          discountRate: 0.02
+        - event: DIPLOMATIC_SABOTAGE
+          weight: -0.1
+          discountRate: 0.05
+        - event: USE_BIOLOGICAL_BOMBS
+          weight: -0.5
+          discountRate: 0.02
+        - event: USE_STELLAR_CONVERTER
+          weight: -0.4
+          discountRate: 0.02
+        - event: NEW_ITEM_EXCHANGED
+          weight: 0
+          discountRate: 0.02
+        - event: GIFT_ACCEPTED
+          weight: 0
+          discountRate: 0.02
+        - event: GIFT_REJECTED
+          weight: -0.02
+          discountRate: 0.05
+        - event: REJECTED_NON_AGGRESSION_PACT
+          weight: -0.15
+          discountRate: 0.05
+        - event: REJECTED_DEFENSIVE_PACT
+          weight: -0.20
+          discountRate: 0.05
+        - event: REJECTED_ACCEPT_EMBASSY
+          weight: -0.1
+          discountRate: 0.05
+        - event: REJECTED_OPEN_BORDERS
+          weight: -0.1
+          discountRate: 0.05
+        - event: REJECTED_TRADE_TREATY
+          weight: -0.15
+          discountRate: 0.05
+        - event: REJECTED_RESEARCH_TREATY
+          weight: -0.15
+          discountRate: 0.05
+        - event: REJECTED_OFFENSIVE_PACT
+          weight: -0.20
+          discountRate: 0.05
+        - event: DECLARED_WAR
+          weight: -0.25
+          discountRate: 0.05
+    memory:
+        #turnsRange: 30
+        #minWeightTolerance: 0.1
+        memoryEvents:
+            - event: receivedGift
+              weight: 0.7
+              discountRate: 0.03
+            - event: wasAttacked
+              weight: 0.7
+              discountRate: 0.03
+            - event: wasBetrayed
+              weight: 0.7
+              discountRate: 0.03
+            - event: hadBetrayed
+              weight: 0.7
+              discountRate: 0.03
+            - event: dealBroken
+              weight: 0.95
+              discountRate: 0.03
+            - event: colonyDestroyed
+              weight: 0.7
+              discountRate: 0.03
+            - event: wasAttackedBioweapons
+              weight: 0.7
+              discountRate: 0.03
+            - event: wasDeclaredWar
+              weight: 0.7
+              discountRate: 0.03
+            - event: hasDoneDeals
+              weight: 0.7
+              discountRate: 0.03
+            - event: hasDoneSimilarDeal
+              weight: 0.7
+              discountRate: 0.03
+            - event: hadRejectedSimilarDeal
+              weight: 0.7
+              discountRate: 0.03
+            - event: peaceOfferAccepted
+              weight: 0.7
+              discountRate: 0.03
+            - event: hasHonoredOffPact
+              weight: 0.7
+              discountRate: 0.03
+            - event: hasHonoredDefPact
+              weight: 0.7
+              discountRate: 0.03
+            - event: isOathbreaker
+              weight: 0.7
+              discountRate: 0.03
+- globals: &Backend.Galaxy.Anomaly
+    turn_of_first_anomaly_spawn: 3
+    anomalies_over_stars_percentage: 80
+    initial_anomalies_over_players_percentage: 100
+    default_anomalies_interval: 25
+    default_anomalies_over_players_percentage: 50
+    default_treasure_type_chances:
+        - type: credits
+          chance: 70
+          min: 30
+          max: 100
+        - type: ship
+          chance: 20
+        - type: tech
+          chance: 10
+    default_ship_availability:
+       - hull_scout
+       - hull_frigate
+       - hull_destroyer
+    anomaly_intervals:
+        - interval: 20
+          anomalies_over_players_percentage: 25
+          treasure_chances:
+              - type: credits
+                chance: 20
+                min: 60
+                max: 130
+              - type: ship
+                chance: 40
+              - type: tech
+                chance: 40
+          ship_availability:
+             - hull_scout
+             - hull_frigate
+             - hull_destroyer
+        - interval: 30
+          anomalies_over_players_percentage: 50
+- globals: &Backend.Civilizations.Civilization
+    COLONY_UPKEEP_MIN: 0
+    COLONY_UPKEEP_FACTOR: 0
+    STARBASE_UPKEEP_MIN: 0
+    STARBASE_UPKEEP_FACTOR: 0
+    UPKEEP_LOGARITMIC_BASE: 2
+    PERK_MAX_SCORE: 10
+    JUMP_GATE_TRAVEL_FACTOR: 0.5
+    SCRAP_SHIP_VALUE_FACTOR: 0.25
+    SCRAP_STRUCTURE_VALUE_FACTOR: 0.25
+    PRODUCTION_GEO_FACTOR: 0.2
+    BASE_FLEET_SUPPORT: 10
+    PLAYER_BLUEPRINT_TEMPLATES:
+        - design_colony
+        - design_advanced_colony
+        - design_outpost
+        - design_transport
+        - design_freighter
+        - design_space_factory
+        - design_scout
+        - design_frigate_player
+        - design_destroyer_player
+        - design_cruiser_player
+        - design_battleship_player
+        - design_titan_player
+        - design_doomstar_player
+        - design_fighter
+        - design_bomber
+        - design_heavy_fighter
+        - design_military_outpost
+        - design_missile_base
+        - design_ground_batteries
+        - design_fighter_garrison
+        - design_star_base
+        - design_battlestation
+        - design_starfortress
+- globals: &Backend.Civilizations.PirateCivilization
+    RACE_KEY: race_space_pirates
+    RESPAWN_DELAY: 10
+    MAX_AMOUNT_OF_TURNS_FOR_RESPAWN: 350
+    TURN_OF_FIRST_SHIP_DEPLOYMENT: 15
+    TURNS_FOR_NEXT_SHIP_DEPLOYMENT_MIN: 12
+    TURNS_FOR_NEXT_SHIP_DEPLOYMENT_MAX: 18
+    TURNS_FOR_FIRST_SHIP_DEPLOYMENT_ON_DISCOVERY: 3
+    PIRATE_DESTROYER_TURN_THRESHOLD: 70
+    PIRATE_CRUISER_TURN_THRESHOLD: 200
+    INITIAL_SHIPS_COUNT: 2
+    DEPLOYMENT_SHIP_COUNT: 1
+    DEPLOYMENT_DESTROYER_SHIP_COUNT: 1
+    DEPLOYMENT_CRUISER_SHIP_COUNT: 1
+    PIRATE_FRIGATE_BLUEPRINT: design_pirate_frigate
+    PIRATE_DESTROYER_BLUEPRINT: design_pirate_destroyer
+    PIRATE_CRUISER_BLUEPRINT: design_pirate_cruiser
+- globals: &Backend.Civilizations.MajorCivilization
+    CREDITS_SCORE_FACTOR: 1
+    RESEARCH_SCORE_FACTOR: 100
+    POPULATION_SCORE_FACTOR: 50
+    EXTERMINATION_SCORE_FACTOR: 250
+    FLEET_SCORE_FACTOR: 1
+    GROUND_ARMY_SCORE_FACTOR: 1
+    BUILDINGS_SCORE_FACTOR: 1
+    DISCOVERED_PLANETS_SCORE_FACTOR: 0.01
+    GUARDIAN_DEFEATED_SCORE_FACTOR: 1000
+    TECH_BUILDING_1_FACTOR: 2
+    TECH_BUILDING_2_FACTOR: 2
+    TECH_BUILDING_3_FACTOR: 2
+    GMF_SHARE_SCORE_FACTOR: 500
+    ANTARAN_RELIC_SCORE_FACTOR: 500
+    ANTARAN_PORTAL_SCORE_FACTOR: 1000    
+    RANDOM_EVENT_PERIODICITY: 35
+    HOME_PLANET_INITIAL_POPULATION: 6
+    COLONY_MILITARY_SCORE: 100
+    EXCELLENCE_VICTORY_NOTIFICATION_TURNS_BEFORE_END: 20
+    SCANNER_RANGE_BASE: 0
+    BASE_SPY_TRAINING_TIME: 8
+    BASE_SPY_TRAINING_COST: 25
+    BASE_ESPIONAGE_RATING: 0.1
+    SPY_TRAINING_COST_FACTOR: 1.6
+    BASE_SPY_SECURITY: 0.01
+    MAXIMUM_SPY_COUNT: 50
+    SABOTAGE_RESEARCH_MODIFIER: 0.5
+    oathBreaker:
+        oathBreakDiscountRate: 0.03
+        promiseKeeperThreshold: 0.1
+        promiseBreakerThreshold: 0.7
+    warmongerism:
+        warmongerDiscountRate: 0.01
+        peacemongerThreshold: 0.0
+        warmongerThreshold: 0.75
+        warmongerIncreaseValue: 0.6
+- globals: &Backend.Civilizations.AntaranCivilization
+    ANTARAN_RUINS_MIN: 4
+    ANTARAN_RUINS_MAX: 7
+    GALAXY_SIZE_TO_RELIC_FACTOR: 1.0
+    CIVS_TO_RELIC_FACTOR: 1.0
+    RELICS_TO_BE_RESEARCHED: 3
+    RELIC_RESEARCH_PER_TURN: 0.1
+- globals: &Backend.Civilizations.IndependentCivilization
+    STATUS_CHANGE_TIMER: 20
+    DEMAND_ACCEPTANCE_CHANCE: 0.5
+  # REWARDS
+    TURNS_TO_WAIT_FOR_REWARD: 15
+    TURNS_TO_WAIT_FOR_REWARD_VARIABLE: 10
+    REWARD_CREDITS_MIN: 40
+    REWARD_CREDITS_MAX: 100
+    REWARD_MARINES_MIN: 1
+    REWARD_MARINES_MAX: 3
+    REWARD_RESEARCH_POINTS_MIN: 10
+    REWARD_RESEARCH_POINTS_MAX : 20
+    BONUSES:
+      - type: system_colonies_credits
+        name: MINOR_CIV_BONUS_CREDITS_TITLE
+        desc: MINOR_CIV_BONUS_CREDITS_DESCRIPTION
+        next: MINOR_CIV_BONUS_NEXT_CREDITS_DESCRIPTION
+      - type: system_colonies_research
+        name: MINOR_CIV_BONUS_RESEARCH_TITLE
+        desc: MINOR_CIV_BONUS_RESEARCH_DESCRIPTION
+        next: MINOR_CIV_BONUS_NEXT_RESEARCH_DESCRIPTION
+      - type: system_colonies_production
+        name: MINOR_CIV_BONUS_PRODUCTION_TITLE
+        desc: MINOR_CIV_BONUS_PRODUCTION_DESCRIPTION
+        next: MINOR_CIV_BONUS_NEXT_PRODUCTION_DESCRIPTION
+      - type: system_colonies_food
+        name: MINOR_CIV_BONUS_FOOD_TITLE
+        desc: MINOR_CIV_BONUS_FOOD_DESCRIPTION
+        next: MINOR_CIV_BONUS_NEXT_FOOD_DESCRIPTION
+    STRUCTURE_FAMILY_DESC:
+      - id: military_outpost_influence
+        name: COLONY_STRUCTURE_MILITARY_OUTPOST_NAME
+      - id: capitol_influence
+        name: COLONY_STRUCTURE_CAPITOL_NAME
+      - id: space_port_influence
+        name: COLONY_STRUCTURE_SPACE_PORT_NAME
+  # NEW MINOR CIVS
+    GALACTIC_COUNCIL_BASE_VOTES: 5
+- globals: &Backend.RandomEvents.RandomEvent
+    fromTurn: 25
+    initialChance: 1
+    chancePerTurn: 10
+    cooldown: 10
+    positiveEventChance: 66
+    notificationCooldown: 10
+- globals: &Backend.Diplomacy.ResearchTreaty
+    BASE_COST: 50
+    COST_FACTOR: 0.15
+    REWARD_FACTOR: 0.20
+- globals: &Backend.Diplomacy.TradeTreaty
+    MINIMUM_COST: 50
+    COST_FACTOR: 0.5
+    REWARD_FACTOR: 0.1
+    TRADE_LENGTH: 20
+- globals: &Backend.Settlements.Settlement
+    REPAIR_FACTOR_BASE: 0.05
+- globals: &Backend.Settlements.Colony
+    STARTING_FOOD_SUPPLY: 2
+    POLLUTION_RATE: 1.5
+    CITIZEN_POLLUTION_RATE: 1
+    CLEANUP_RATE: 0.5
+    REVOLT_LENGTH: 10
+    MIN_POPULATION_GROWTH_MULTIPLIER: 0.2
+    MAX_MARINE_COUNT_POPULATION_MULTIPLIER: 0.8
+    MAX_ARMOR_COUNT_POPULATION_MULTIPLIER: 0.25
+    GRAVITY_TOLERANT_MULTIPLIER_BONUS: 0.0
+    GRAVITY_NOT_TOLERANT_MULTIPLIER_BONUS_MIN: -0.25
+    GRAVITY_NOT_TOLERANT_MULTIPLIER_BONUS_HIGH: -0.5
+    LINEAR_GROWTH_FACTOR: 15
+    INCREMENTAL_GROWTH_FACTOR: 2
+    TRADE_GOODS_FACTOR: 0.5
+    REVOLT_ROLL_FREQUENCY: 1
+    MORALE_TOLERANCE: 0
+    REVOLT_CHANCE: 0.01
+    REVOLT_TOLERANCE: 0
+    INFANTRY_REVOLT_SUPPRESSION: 0.0
+    BUY_PRODUCTION_FACTOR: 8
+    BASE_RESEARCH_OUTPUT_PER_TILE: 3
+    TERRAFORM_COST_FACTOR: 1.5
+    BASE_SECURITY_RATING: 0
+    BASE_SECURITY_FACTOR: 0.5
+    SAFETY_FOOD_SUPPLY: 0.5
+    MAX_BULK_COUNT: 5
+- globals: &Backend.Settlements.Citizen
+    UNASSIMILATED_PRODUCTION_FACTOR: 0.5
+    SAME_RACE_ASSIMILATION_FACTOR: 0.5
+    STANDARD_ASSIMILATION_FACTOR: 8.0
+- globals: &Backend.Galaxy.Planet
+    TURNS_TO_DEGRADE_BY_POLLUTION: 6
+    #POLLUTION_RELEVANCE_THRESHOLD: 0.60
+    GAS_GIANT_COMPRESSION_LARGE_CHANCE: 65
+- globals: &Backend.Settlements.InterstellarStockExchange
+    MARKET_SHARE_TO_WIN_DEFAULT: 0.3
+    MARKET_SHARE_TO_WIN_2: 0.5
+    MARKET_SHARE_TO_WIN_3: 0.48
+    MARKET_SHARE_TO_WIN_4: 0.46
+    MARKET_SHARE_TO_WIN_5: 0.44
+    MARKET_SHARE_TO_WIN_6: 0.42
+    MARKET_SHARE_TO_WIN_7: 0.4
+    MARKET_SHARE_TO_WIN_8: 0.38
+    GMF_VARIABLE_FACTOR: 0.2
+    GMF_VARIABLE_BASE_MULTIPLIER: 2
+    GMF_VARIABLE_TURN_MULTIPLIER: 1
+    GMF_VARIABLE_PREV_TURN_MULTIPLIER: 0.5
+    GMF_VARIABLE_PREV_PREV_TURN_MULTIPLIER: 0.25
+    GMF_VALUE_FACTOR: 0.01
+    ISE_ACTIVE_TURNS: 11
+    GDP_ACCOMPLISHED_TURNS: 10
+- globals: &Backend.Fleets.ShipModule
+    TRADEABLE_RESOURCE_COST_MODIFIER: 0.5
+- globals: &Backend.Fleets.WeaponSlot
+    FACING_ANY_COST_MOD: 2.0
+    FACING_ANY_SIZE_MOD: 1.5
+    FACING_FRONTREAR_COST_MOD: 1
+    FACING_FRONTREAR_SIZE_MOD: 1
+    FACING_SIDES_COST_MOD: 1.5
+    FACING_SIDES_SIZE_MOD: 1.25
+- globals: &Backend.Espionage.Mission
+    BASE_DEFENSE_POINTS: 20
+    MAX_AGENTS_PER_MISSION: 1
+- globals: &Backend.Espionage.SpyAgent
+    SPY_TRAVELLING_SPEED: 1
+    SPY_LEVEL_LIMIT: 5
+    BASE_LEVELING_EXPERIENCE: 10
+    EXPERIENCE_FACTOR: 10
+    BASE_MAINTENANCE_COST: 5
+    MAINTENANCE_FACTOR: 2
+- globals: &Backend.Fleets.ShipBlueprint
+    SHIP_UPKEEP_FACTOR: 0
+    SHIP_BASE_REPAIR_FACTOR: 0
+    SHIP_COMMAND_POINT_FACTOR: 20
+    MINIMUM_UPGRADE_COST: 1
+    SHIP_UPGRADE_FACTOR: 8
+    SHIP_DUMMY_BEAM_DEFENSE: 15
+    SHIP_DUMMY_MISSILE_DEFENSE: 15
+    SHIP_DUMMY_TORPEDO_HIT_CHANCE: 0.4
+    SHIP_DUMMY_TORPEDO_HIT_CHANCE_SG: 0.7
+    SHIP_DUMMY_RESILIENCE: 15
+    SLOT_BALANCE_VALUE: 0.4
+    ATTACK_RATING_SCALE: 2
+    SHIP_DUMMY_ARMOR_PENETRATION: 15
+    SHIELD_ABSORPTION_FACTOR: 0.5
+    SHIELD_MEAN_VALUE: 10
+    SHIP_DUMMY_BEAM_ATTACK: 50
+    SHIP_DUMMY_AVERAGE_MISSILE: 60
+    SHIP_DUMMY_MISSILE_ROUNDS: 4
+    DEFENSE_RATING_SCALE: 0.1
+    BASE_ENERGY_ACCURACY: 20
+- globals: &Backend.Civilizations.GNNEvent
+    GNN_SOUNDS_PATH: Audio/GNN/
+- globals: &Backend.Diplomacy.AudienceEvent
+    AUDIENCE_SOUNDS_PATH: Audio/Emperors/
+- globals: &Backend.Diplomacy.MentatResearchEvent
+    MENTAT_RESEARCH_SOUNDS_PATH: Audio/Advisor/
+- globals: &Backend.Tactical.TacticalShip
+    ACCURACY_MODIFIER_BY_SPEED: 15.0
+    ARMOR_PENETRATION_LOWER_CAP: 0.75
+- globals: &Backend.Civilizations.GalacticCouncil
+    ELECTION_FREQUENCY: 30
+    POPULATION_INCIDENCE_FACTOR: 1.0
+    DISPOSITION_INCIDENCE_FACTOR: 0.0
+- globals: &Backend.Tactical.Battlefield
+    TACTICAL_GRID_RADIO_SMALL: 62.3
+    TACTICAL_GRID_RADIO_MEDIUM: 84.9
+    TACTICAL_GRID_RADIO_BIG: 139.3
+    ARTEMIS_MINE_COUNT: 8
+    GINI_BREAK_VALUE: 0.5
+- globals: &Backend.Leaders.Leader
+    TURNS_TO_FIRST_MIN: 20
+    TURNS_TO_FIRST_MAX: 30
+    TURNS_TO_NEXT_MIN: 25
+    TURNS_TO_NEXT_MAX: 35
+    MAX_HOLD_TURNS: 10
+    XP_PER_TURN: 0
+    SALARIES_TO_HIRE_RATIO: 3
+    MATCH_MAX_COUNT_MIN: 5
+    MATCH_MAX_COUNT_MAX: 10
+    MATCH_MAX_STARS_CANCEL_FACTOR: 1
+    MATCH_MAX_CIVS_CANCEL_FACTOR: 1
+    MATCH_MAX_CIVS_MAX: 14
+    MATCH_MAX_STARS_MAX: 120
+    LEADERS_DISPOSITION_LOYALISTS: 0.7
+    LEADERS_DISPOSITION_REBELS: 0.3
+    TURNS_TO_ARRIVE_MIN: 1
+    DISTANCE_TURNS_FACTOR: 0.5
+    LEADERS_ESCAPE_CHANCE: 0
+    LEADERS_XP_PER_TURN: 0
+    LEADERS_XP_PER_TURN_HIRED: 0
+    LEADERS_XP_PER_TURN_ASSIGNED_COLONY: 2
+    XP_SYSTEM_POPULATION_FACTOR: 0
+    LEADERS_XP_PER_TURN_ASSIGNED_SHIP: 1
+    LEADERS_XP_EXPLORE_ANOMALY: 4
+    LEADERS_XP_DISCOVER_PLANET: 2
+    LEADERS_XP_BATTLE_PARTICIPATION: 4
+    LEADERS_XP_CONTACT_CIVILIZATION: 8
+    LEADERS_XP_KILL_MONSTER: 4
+    LEADERS_XP_KILL_ORION_GUARDIAN: 8
+    MINIMAP_COLOR_COLONY: a6e64b
+    MINIMAP_COLOR_FLEET: b27ff6
+    LEADERS_ACTIONS:
+      - id: recall
+        name: LEADER_ACTION_RECALL
+        icon: assets/leaders/action_recall.png
+      - id: dismiss
+        name: LEADER_ACTION_DISMISS
+        icon: assets/leaders/action_dismiss.png
+      - id: hire
+        name: LEADER_ACTION_HIRE
+        icon: assets/leaders/action_hire.png
+      - id: assign
+        name: LEADER_ACTION_ASSIGN
+        icon: assets/leaders/action_assign.png
+    COLONY_RANKS:
+      - id: rank_newbie
+        name: 
+        minExperience: 0
+        level: 0
+        icon: assets/leaders/rank_none.png
+      - id: rank_administrator
+        name: LEADER_RANK_ADMINISTRATOR
+        minExperience: 100
+        level: 1
+        icon: assets/leaders/rank_administrator.png
+      - id: rank_commissioner
+        name: LEADER_RANK_COMMISSIONER
+        minExperience: 200
+        level: 2
+        icon: assets/leaders/rank_commissioner.png
+      - id: rank_director
+        name: LEADER_RANK_DIRECTOR
+        minExperience: 300
+        level: 3
+        icon: assets/leaders/rank_director.png
+      - id: rank_magistrate
+        name: LEADER_RANK_MAGISTRATE
+        minExperience: 400
+        level: 4
+        icon: assets/leaders/rank_magistrate.png
+      - id: rank_governor
+        name: LEADER_RANK_GOVERNOR
+        minExperience: 500
+        level: 5
+        icon: assets/leaders/rank_governor.png
+    SHIP_RANKS:
+      - id: rank_newbie
+        name: 
+        minExperience: 0
+        icon: assets/leaders/rank_none.png
+      - id: rank_commander
+        name: LEADER_RANK_COMMANDER
+        level: 1
+        minExperience: 100
+        icon: assets/leaders/rank_commander.png
+      - id: rank_captain
+        name: LEADER_RANK_CAPTAIN
+        minExperience: 200
+        level: 2
+        icon: assets/leaders/rank_captain.png
+      - id: rank_commodore
+        name: LEADER_RANK_COMMODORE
+        minExperience: 300
+        level: 3
+        icon: assets/leaders/rank_commodore.png
+      - id: rank_rear_admiral
+        name: LEADER_RANK_REAR_ADMIRAL
+        minExperience: 400
+        level: 4
+        icon: assets/leaders/rank_rear_admiral.png
+      - id: rank_admiral
+        name: LEADER_RANK_ADMIRAL
+        minExperience: 500
+        level: 5
+        icon: assets/leaders/rank_admiral.png
+- globals: &StageGalaxyView
+    FLEET_ACTIONS:
+          - id: attack
+            icon: assets/fleet_controls/attack.png
+            tooltip: FE_ATTACK
+            input: FLEET_ACTION_ATTACK
+          - id: explore
+            icon: assets/fleet_controls/autoexplore.png
+            tooltip: FE_AUTOEXPLORE
+            input: FLEET_ACTION_EXPLORE
+          - id: travel
+            icon: assets/fleet_controls/goThrough.png
+            tooltip: FE_TRAVEL
+            input: FLEET_ACTION_JUMP
+          - id: colonize
+            icon: assets/fleet_controls/colonize.png
+            tooltip: FE_COLONIZE
+            input: FLEET_ACTION_COLONIZE
+          - id: build
+            icon: assets/fleet_controls/build.png
+            tooltip: FE_BUILD
+            input: FLEET_ACTION_BUILD
+          - id: unload
+            icon: assets/fleet_controls/unload.png
+            tooltip: FE_UNLOAD
+            input: FLEET_ACTION_UNLOAD
+          - id: guard
+            icon: assets/fleet_controls/guard.png
+            tooltip: FE_GUARD
+            input: FLEET_ACTION_GUARD
+          - id: unguard
+            icon: assets/fleet_controls/disengage.png
+            tooltip: FE_UNGUARD
+            input: FLEET_ACTION_GUARD
+          - id: block
+            icon: assets/fleet_controls/guard.png
+            tooltip: FE_BLOCK
+            input: FLEET_ACTION_GUARD
+          - id: blockade
+            icon: assets/fleet_controls/guard.png
+            tooltip: FE_BLOCKADE
+            input: FLEET_ACTION_GUARD
+          - id: disengage
+            icon: assets/fleet_controls/disengage.png
+            tooltip: FE_DISENGAGE
+            input: FLEET_ACTION_GUARD
+          - id: skip
+            icon: assets/fleet_controls/skip.png
+            tooltip: FE_SKIP
+            input: FLEET_ACTION_SKIP
+            separator: yes
+          - id: upgrade
+            icon: assets/fleet_controls/retrofit.png
+            tooltip: FE_UPGRADE
+            input: FLEET_ACTION_UPGRADE
+          - id: sleep
+            icon: assets/fleet_controls/sleep.png
+            tooltip: FE_SLEEP
+            input: FLEET_ACTION_SLEEP
+          - id: scrap
+            icon: assets/fleet_controls/scrap.png
+            tooltip: FE_SCRAP
+            input: FLEET_ACTION_SCRAP
+...

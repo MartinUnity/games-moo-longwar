@@ -1,0 +1,1139 @@
+﻿---
+- collection: &Backend.Settlements.ColonyStructureType
+    items:
+          - key: structure_star_base
+            name: COLONY_STRUCTURE_STAR_BASE_NAME
+            description: COLONY_STRUCTURE_STAR_BASE_DESCRIPTION
+            icon: assets/structures/star_base.png
+            cost: 120
+            upkeep: 1
+            scannerRangeBonus: 1
+            fleetSupportBonus: 5
+            repairFactor: 0.05
+            allowShipBlueprintUpgrade: true
+            shipTemplate: design_star_base
+            allowsBattleshipsConstruction: true
+            structureTypes: 
+                - 5
+            workingStatus: true
+          - key: structure_battlestation
+            name: COLONY_STRUCTURE_BATTLE_STATION_NAME
+            description: COLONY_STRUCTURE_BATTLE_STATION_DESCRIPTION
+            icon: assets/structures/battlestation.png
+            upgrades: structure_star_base
+            cost: 320
+            upkeep: 2
+            scannerRangeBonus: 2
+            fleetSupportBonus: 7
+            repairFactor: 0.07
+            allowShipBlueprintUpgrade: true
+            shipTemplate: design_battlestation
+            allowsBattleshipsConstruction: true
+            structureTypes: 
+                - 5
+            workingStatus: true
+          - key: structure_star_fortress
+            name: COLONY_STRUCTURE_STAR_FORTRESS_NAME
+            description: COLONY_STRUCTURE_STAR_FORTRESS_DESCRIPTION
+            icon: assets/structures/starfortress.png
+            upgrades: structure_battlestation
+            cost: 600
+            upkeep: 8
+            scannerRangeBonus: 3
+            repairFactor: 0.10
+            allowShipBlueprintUpgrade: true
+            fleetSupportBonus: 10
+            shipTemplate: design_starfortress
+            allowsBattleshipsConstruction: true
+            structureTypes: 
+                - 5
+            workingStatus: true
+          - key: structure_scientific_victory_1
+            name: COLONY_STRUCTURE_SCIENTIFIC_VICTORY_1_NAME
+            description: COLONY_STRUCTURE_SCIENTIFIC_VICTORY_1_DESCRIPTION
+            icon: assets/structures/scientific_victory_1.png
+            cost: 400
+            upkeep: 0
+            structureTypes: 
+                - 2
+            empireUnique: true
+            workingStatus: true
+            canBuy: false
+          - key: structure_scientific_victory_2
+            name: COLONY_STRUCTURE_SCIENTIFIC_VICTORY_2_NAME
+            description: COLONY_STRUCTURE_SCIENTIFIC_VICTORY_2_DESCRIPTION
+            icon: assets/structures/scientific_victory_2.png
+            upgrades: structure_scientific_victory_1
+            requires: structure_scientific_victory_1
+            cost: 550
+            upkeep: 0
+            structureTypes: 
+                - 2
+            empireUnique: true
+            workingStatus: true
+            canBuy: false
+          - key: structure_scientific_victory_3
+            name: COLONY_STRUCTURE_SCIENTIFIC_VICTORY_3_NAME
+            description: COLONY_STRUCTURE_SCIENTIFIC_VICTORY_3_DESCRIPTION
+            icon: assets/structures/scientific_victory_3.png
+            upgrades: structure_scientific_victory_2
+            requires: structure_scientific_victory_2
+            cost: 700
+            upkeep: 0
+            structureTypes: 
+                - 2
+            empireUnique: true
+            workingStatus: true
+            canBuy: false
+          - key: structure_colony_base
+            name: COLONY_STRUCTURE_COLONY_BASE_NAME
+            description: COLONY_STRUCTURE_COLONY_BASE_DESCRIPTION
+            icon: assets/structures/colony_base.png
+            cost: 0
+            upkeep: 2
+            baseLifeSupportBonus: 1
+            # baseResearchBonus: 1
+            # baseProductionBonus: 1
+            nonBuildable: true
+            structureTypes:
+                - 1
+            workingStatus: true
+            enableTaxation: true
+          - key: structure_marine_barracks
+            name: COLONY_STRUCTURE_MARINE_BARRACKS_NAME
+            description: COLONY_STRUCTURE_MARINE_BARRACKS_DESCRIPTION
+            icon: assets/structures/marine_barracks.png
+            cost: 60
+            upkeep: 2
+            allowGroundDefense: true
+            marinesGenerationRate: 0.2
+            initialMarinesCount: 4
+            moraleMultiplierBonus: 0.05
+            structureTypes: 
+                - 5
+            workingStatus: true
+          - key: structure_government_building
+            name: COLONY_STRUCTURE_GOVERNMENT_BUILDING_NAME
+            description: COLONY_STRUCTURE_GOVERNMENT_BUILDING_DESCRIPTION
+            icon: assets/structures/goverment_support_facility.png
+            cost: 40
+            upkeep: 1
+            moraleMultiplierBonus: 0.10
+            enableTaxation: true
+            structureTypes: 
+                - 4
+            workingStatus: true
+          - key: structure_capitol
+            name: COLONY_STRUCTURE_CAPITOL_NAME
+            description: COLONY_STRUCTURE_CAPITOL_DESCRIPTION
+            icon: assets/structures/capitol.png
+            cost: 120
+            upkeep: 3
+            baseResearchBonus: 1
+            baseLifeSupportBonus: 1
+            baseProductionBonus: 1
+            securityBonus: 0.20
+            influencesMinorCivs: capitol_influence
+            moraleMultiplierBonusSystem: 0.25
+            enableTaxation: true
+            isTransferable: false
+            upgrades: structure_government_building
+            empireUnique: true
+            structureTypes:
+                - 4
+                - 1
+                - 2
+                - 0
+                - 5
+            workingStatus: true
+          - key: structure_interplanetary_administration
+            name: COLONY_STRUCTURE_INTERPLANETARY_ADMINISTRATION_NAME
+            description: COLONY_STRUCTURE_INTERPLANETARY_ADMINISTRATION_DESCRIPTION
+            icon: assets/structures/metro.png
+            cost: 160
+            upkeep: 5
+            systemUnique: true
+            isTransferable: false
+            structureTypes: 
+                - 4
+            workingStatus: true
+          - key: structure_automated_factory
+            name: COLONY_STRUCTURE_AUTOMATED_FACTORY_NAME
+            description: COLONY_STRUCTURE_AUTOMATED_FACTORY_DESCRIPTION
+            icon: assets/structures/automated_factory.png
+            cost: 50
+            upkeep: 2
+            baseProductionBonus: 2
+            structureTypes: 
+                - 0
+            workingStatus: true
+          - key: structure_missile_base
+            name: COLONY_STRUCTURE_MISSILE_BASE_NAME
+            description: COLONY_STRUCTURE_MISSILE_BASE_DESCRIPTION
+            icon: assets/structures/missile_base.png
+            cost: 60
+            upkeep: 1
+            shipTemplate: design_missile_base
+            structureTypes: 
+                - 5
+            workingStatus: true
+          - key: structure_colonial_revenue_services
+            name: COLONY_STRUCTURE_COLONIAL_REVENUE_SERVICES_NAME
+            description: COLONY_STRUCTURE_COLONIAL_REVENUE_SERVICES_DESCRIPTION
+            icon: assets/structures/colonial_revenue_services.png
+            cost: 60
+            upkeep: 0
+            workerIncomeBonus: 1
+            # creditIncomeBonus: 2
+            # requires: structure_government_building
+            structureTypes: 
+                - 3
+            workingStatus: true
+          - key: structure_crust_prospecting
+            name: COLONY_STRUCTURE_CRUST_PROSPECTING_NAME
+            description: COLONY_STRUCTURE_CRUST_PROSPECTING_DESCRIPTION
+            icon: assets/structures/crust_prospecting.png
+            cost: 30
+            upkeep: 2
+            baseProductionBonus: 2
+            # workerIncomeBonus: 1
+            # creditIncomeBonus: 5
+            # workerYieldMultiplierBonus: 0.10
+            structureTypes: 
+               - 0
+            compatibleRichness:
+               - planetmineralrichness_poor
+               - planetmineralrichness_ultra_poor
+            workingStatus: true
+          - key: structure_space_port
+            name: COLONY_STRUCTURE_SPACE_PORT_NAME
+            description: COLONY_STRUCTURE_SPACE_PORT_DESCRIPTION
+            icon: assets/structures/space_port.png
+            cost: 210
+            upkeep: 0
+            # workerIncomeBonus: 1
+            creditIncomeBonus: 5
+            influencesMinorCivs: space_port_influence
+            # requires: structure_government_building
+            structureTypes: 
+                - 3
+            workingStatus: true
+        # - structure: &structure_centralized_customs_dispatch
+            # description: COLONY_STRUCTURE_CENTRALIZED_CUSTOMS_DISPATCH_DESCRIPTION
+            # name: COLONY_STRUCTURE_CENTRALIZED_CUSTOMS_DISPATCH_NAME
+            # icon: assets/structures/centralized_customs_dispatch.png
+            # cost: 150
+            # #upkeep: 2
+            # incomeMultiplierBonus: 1.0
+            # structureTypes: 
+            #    - 3
+            # workingStatus: true
+          - key: structure_planetary_stock_exchange
+            description: COLONY_STRUCTURE_PLANETARY_STOCK_EXCHANGE_DESCRIPTION
+            name: COLONY_STRUCTURE_PLANETARY_STOCK_EXCHANGE_NAME
+            icon: assets/structures/planetary_stock_exchange.png
+            cost: 300
+            upkeep: 0
+            # incomeMultiplierBonus: 0.5
+            workerIncomeBonus: 2
+            systemUnique: true
+            # requires: structure_government_building
+            structureTypes: 
+                - 3
+            workingStatus: true
+          - key: structure_galactic_currency_exchange
+            description: COLONY_STRUCTURE_GALACTIC_CURRENCY_EXCHANGE_DESCRIPTION
+            name: COLONY_STRUCTURE_GALACTIC_CURRENCY_EXCHANGE_NAME
+            icon: assets/structures/galactic_currency_exchange.png
+            cost: 320
+            upkeep: 0
+            totalEmpireMultiplierBonus: 1.0
+            structureTypes: 
+                - 3
+            workingStatus: true
+            isTransferable: false
+            empireUnique: true
+        # - structure: &structure_interstellar_stock_exchange
+            # description: COLONY_STRUCTURE_INTERSTELLAR_STOCK_EXCHANGE_DESCRIPTION
+            # name: COLONY_STRUCTURE_INTERSTELLAR_STOCK_EXCHANGE_NAME
+            # icon: assets/structures/planetary_stock_exchange.png
+            # cost: 110
+            # upkeep: 2
+            # structureTypes: 
+                # - 3
+            # workingStatus: true
+            # empireUnique: true
+          - key: structure_armor_barracks
+            name: COLONY_STRUCTURE_ARMOR_BARRACKS_NAME
+            description: COLONY_STRUCTURE_ARMOR_BARRACKS_DESCRIPTION
+            icon: assets/structures/armor_barracks.png
+            cost: 165
+            upkeep: 2
+            allowGroundDefense: true
+            armorGenerationRate: 0.1
+            initialArmorCount: 2
+            structureTypes: 
+                - 5
+            workingStatus: false
+          - key: structure_fighter_garrison
+            name: COLONY_STRUCTURE_FIGHTER_GARRISON_NAME
+            icon: assets/structures/fighter_garrison.png
+            description: COLONY_STRUCTURE_FIGHTER_GARRISON_DESCRIPTION
+            cost: 140
+            upkeep: 2
+            shipTemplate: design_fighter_garrison
+            structureTypes: 
+                - 5
+            workingStatus: false
+          - key: structure_robominers
+            name: COLONY_STRUCTURE_ROBO_MINERS_NAME
+            description: COLONY_STRUCTURE_ROBO_MINERS_DESCRIPTION
+            icon: assets/structures/robo_miners.png
+            cost: 180
+            upkeep: 5
+            baseProductionBonus: 2
+            productionTileBonus: 1
+            structureTypes: 
+               - 0
+            workingStatus: true
+          - key: structure_geosynchronic_wharf
+            name: COLONY_STRUCTURE_GEOSYNCHRONIC_WHARF_NAME
+            description: COLONY_STRUCTURE_GEOSYNCHRONIC_WHARF_DESCRIPTION
+            icon: assets/structures/geosynchronic_wharf.png
+            cost: 120
+            upkeep: 3
+            buyoutCostModifier: -0.2
+            structureTypes: 
+                - 3
+            workingStatus: true
+          - key: structure_deep_core_mine
+            name: COLONY_STRUCTURE_DEEP_CORE_MINE_NAME
+            description: COLONY_STRUCTURE_DEEP_CORE_MINE_DESCRIPTION
+            icon: assets/structures/deep_core_mine.png
+            cost: 360
+            upkeep: 10
+            productionTileBonus: 2
+            structureTypes: 
+                - 0
+            workingStatus: true
+          - key: structure_orbital_shipyard
+            name: COLONY_STRUCTURE_ORBITAL_SHIPYARD_NAME
+            description: COLONY_STRUCTURE_ORBITAL_SHIPYARD_DESCRIPTION
+            icon: assets/structures/orbital_shipyard.png
+            cost: 80
+            upkeep: 4
+            shipCostModifier: -0.2
+            requiresMoon: true
+            structureTypes: 
+                - 0
+            workingStatus: true
+          - key: structure_recyclotron
+            name: COLONY_STRUCTURE_RECYCLOTRON_NAME
+            description: COLONY_STRUCTURE_RECYCLOTRON_DESCRIPTION
+            icon: assets/structures/recyclotron.png
+            cost: 140
+            upkeep: 4
+            pollutionCleaningRate: 25
+            structureTypes: 
+                - 6
+            workingStatus: true
+            compatibleRichness:
+               - planetmineralrichness_rich
+               - planetmineralrichness_ultra_rich
+          - key: structure_ground_batteries
+            name: COLONY_STRUCTURE_GROUND_BATTERIES_NAME
+            description: COLONY_STRUCTURE_GROUND_BATTERIES_DESCRIPTION
+            icon: assets/structures/ground_batteries.png
+            cost: 180
+            upkeep: 2
+            shipTemplate: design_ground_batteries
+            structureTypes: 
+                - 5
+            workingStatus: true
+        # - structure: &structure_artificial_planet_construction
+            # name: COLONY_STRUCTURE_ARTIFICIAL_PLANET_CONSTRUCTION_NAME
+            # description: COLONY_STRUCTURE_ARTIFICIAL_PLANET_CONSTRUCTION_DESCRIPTION
+            # icon: assets/structures/artificial_planet_construction.png
+            # cost: 800
+            # #upkeep: 0
+            # structureTypes: 
+            #    - 4
+            # workingStatus: false
+        # - structure: &structure_robotic_factory
+            # name: COLONY_STRUCTURE_ROBOTIC_FACTORY_NAME
+            # description: COLONY_STRUCTURE_ROBOTIC_FACTORY_DESCRIPTION
+            # icon: assets/structures/robotic_factory.png
+            # cost: 200
+            # #upkeep: 3
+            # structureTypes: 
+            #    - 0
+            # workingStatus: true
+          - key: structure_atmospheric_renewer
+            name: COLONY_STRUCTURE_ATMOSPHERIC_RENEWER_NAME
+            description: COLONY_STRUCTURE_ATMOSPHERIC_RENEWER_DESCRIPTION
+            icon: assets/structures/atmospheric_renewer.png
+            cost: 60
+            upkeep: 2
+            # pollutionMultiplierReduction: 0.25
+            pollutionCleaningRate: 5
+            structureTypes:
+               - 6
+            workingStatus: true
+          - key: structure_pollution_processor
+            name: COLONY_STRUCTURE_POLLUTION_PROCESSOR_NAME
+            description: COLONY_STRUCTURE_POLLUTION_PROCESSOR_DESCRIPTION
+            icon: assets/structures/pollution_processor.png
+            cost: 140
+            upkeep: 3
+            upgrades: structure_atmospheric_renewer
+            # pollutionMultiplierReduction: 0.5
+            pollutionCleaningRate: 15
+            structureTypes: 
+                - 6
+            workingStatus: true
+          - key: structure_core_waste_dump
+            name: COLONY_STRUCTURE_CORE_WASTE_DUMP_NAME
+            description: COLONY_STRUCTURE_CORE_WASTE_DUMP_DESCRIPTION
+            icon: assets/structures/core_waste_dump.png
+            cost: 300
+            upkeep: 5
+            upgrades: structure_pollution_processor
+            # pollutionMultiplierReduction: 1
+            pollutionCleaningRate: 150
+            structureTypes: 
+                - 6
+            workingStatus: true
+          - key: structure_artemis_system_net
+            name: COLONY_STRUCTURE_ARTEMIS_SYSTEM_NET_NAME
+            description: COLONY_STRUCTURE_ARTEMIS_SYSTEM_NET_DESCRIPTION
+            icon: assets/structures/artemis_system_net.png
+            cost: 500
+            upkeep: 5
+            #shipTemplate: design_missile_base
+            systemUnique: true
+            structureTypes: 
+                - 5
+            workingStatus: false
+          - key: structure_hydroponic_farm
+            name: COLONY_STRUCTURE_HYDROPONIC_FARM_NAME
+            description: COLONY_STRUCTURE_HYDROPONIC_FARM_DESCRIPTION
+            icon: assets/structures/hydroponic_farm.png
+            cost: 60
+            upkeep: 2
+            baseLifeSupportBonus: 2
+            structureTypes: 
+                - 1
+            workingStatus: true
+          - key: structure_subterranean_farms
+            name: COLONY_STRUCTURE_SUBTERRANEAN_FARMS_NAME
+            description: COLONY_STRUCTURE_SUBTERRANEAN_FARMS_DESCRIPTION
+            icon: assets/structures/subterranean_farms.png
+            cost: 240
+            upkeep: 4
+            baseLifeSupportBonus: 2
+            foodTileBonus: 1
+            structureTypes: 
+                - 1
+            workingStatus: true
+          - key: structure_matter_converter
+            name: COLONY_STRUCTURE_MATTER_CONVERTER_NAME
+            description: COLONY_STRUCTURE_MATTER_CONVERTER_DESCRIPTION
+            icon: assets/structures/matter_converter.png
+            cost: 150
+            upkeep: 2
+            foodCarryoverRatio: 0.5
+            structureTypes: 
+                - 1
+            workingStatus: true
+          - key: structure_weather_controller
+            name: COLONY_STRUCTURE_WEATHER_CONTROLLER_NAME
+            description: COLONY_STRUCTURE_WEATHER_CONTROLLER_DESCRIPTION
+            icon: assets/structures/weather_controller.png
+            cost: 240
+            upkeep: 4
+            totalFoodMultiplierBonus: 0.25
+            structureTypes: 
+                - 1
+            workingStatus: true
+        # - structure: &structure_food_replicators
+            # name: COLONY_STRUCTURE_FOOD_REPLICATORS_NAME
+            # description: COLONY_STRUCTURE_FOOD_REPLICATORS_DESCRIPTION
+            # icon: assets/structures/food_replicators.png
+            # cost: 200
+            # #upkeep: 1
+            # structureTypes: 
+            #    - 1
+            # workingStatus: true
+          - key: structure_space_academy
+            name: COLONY_STRUCTURE_SPACE_ACADEMY_NAME
+            description: COLONY_STRUCTURE_SPACE_ACADEMY_DESCRIPTION
+            icon: assets/structures/space_academy.png
+            cost: 300
+            upkeep: 5
+            fleetSupportCostReduction: 0.5
+            shipList:
+                - hull_scout
+                - hull_freighter
+                - hull_transport
+                - hull_colony
+                - hull_frigate
+                - hull_destroyer
+            empireUnique: true
+            structureTypes: 
+               - 5
+            workingStatus: false
+          - key: structure_spy_center
+            name: COLONY_STRUCTURE_SPY_CENTER_NAME
+            description: COLONY_STRUCTURE_SPY_CENTER_DESCRIPTION
+            icon: assets/structures/spy_center.png
+            cost: 90
+            upkeep: 2
+            systemSecurityBonus: 0.20
+            empireUnique: true
+            isTransferable: false
+            structureTypes: 
+               - 5
+            workingStatus: false
+            # spyCapacity: 10	
+          - key: structure_global_dna_scanner
+            name: COLONY_STRUCTURE_GLOBAL_DNA_SCANNER_NAME
+            description: COLONY_STRUCTURE_GLOBAL_DNA_SCANNER_DESCRIPTION
+            icon: assets/structures/scanner_global_ADN.png
+            cost: 90
+            upkeep: 4
+            structureTypes: 
+               - 5
+            workingStatus: false
+            securityBonus: 0.15
+          - key: structure_espionage_training_facility
+            name: COLONY_STRUCTURE_ESPIONAGE_TRAINING_FACILITY_NAME
+            description: COLONY_STRUCTURE_ESPIONAGE_TRAINING_FACILITY_DESCRIPTION
+            icon: assets/structures/espionage_training_facility.png
+            cost: 260
+            upkeep: 5
+            empireUnique: true
+            isTransferable: false
+            structureTypes: 
+               - 5
+            workingStatus: false
+            spyTrainingTimeModifier: 0.5
+            startingSpyLvl: 2
+            # spyCapacity: 15	
+            requires: structure_spy_center
+          - key: structure_interplanetary_security_transmitter
+            name: COLONY_STRUCTURE_INTERPLANETARY_SECURITY_TRANSMITTER_NAME
+            description: COLONY_STRUCTURE_INTERPLANETARY_SECURITY_TRANSMITTER_DESCRIPTION
+            icon: assets/structures/interplanetary_security_transmitter.png
+            cost: 320
+            upkeep: 7
+            systemUnique: true
+            structureTypes: 
+                - 5
+            isTransferable: false
+            workingStatus: true
+            systemSecurityBonus: 0.10
+          - key: structure_special_units
+            name: COLONY_STRUCTURE_SPECIAL_UNITS_NAME
+            description: COLONY_STRUCTURE_SPECIAL_UNITS_DESCRIPTION
+            icon: assets/structures/special_units.png
+            cost: 100
+            upkeep: 2
+            empireUnique: true
+            isTransferable: false
+            structureTypes: 
+               - 5
+            workingStatus: false
+          - key: structure_alien_management_center
+            name: COLONY_STRUCTURE_ALIEN_MANAGEMENT_CENTER_NAME
+            description: COLONY_STRUCTURE_ALIEN_MANAGEMENT_CENTER_DESCRIPTION
+            icon: assets/structures/alien_management_center.png
+            cost: 60
+            upkeep: 4
+            assimilationRateModifier: 0.5
+            structureTypes: 
+                - 4
+            workingStatus: false
+          - key: structure_research_laboratory
+            name: COLONY_STRUCTURE_RESEARCH_LABORATORY_NAME
+            description: COLONY_STRUCTURE_RESEARCH_LABORATORY_DESCRIPTION
+            icon: assets/structures/research_laboratory.png
+            cost: 35
+            upkeep: 2
+            baseResearchBonus: 2
+            structureTypes: 
+                - 2
+            workingStatus: true
+          - key: structure_autolab
+            name: COLONY_STRUCTURE_AUTOLAB_NAME
+            description: COLONY_STRUCTURE_AUTOLAB_DESCRIPTION
+            icon: assets/structures/autolab.png
+            upgrades: structure_research_laboratory
+            cost: 320
+            upkeep: 4
+            baseResearchBonus: 10
+            structureTypes: 
+                - 2
+            workingStatus: true
+          - key: structure_astro_university
+            name: COLONY_STRUCTURE_ASTRO_UNIVERSITY_NAME
+            description: COLONY_STRUCTURE_ASTRO_UNIVERSITY_DESCRIPTION
+            icon: assets/structures/astro_university.png
+            cost: 230
+            upkeep: 5
+            researchTileBonus: 2
+            structureTypes: 
+                - 2
+            systemUnique: true
+            workingStatus: true
+          - key: structure_deep_sea_cooling
+            name: COLONY_STRUCTURE_DEEP_SEA_COOLING_NAME
+            description: COLONY_STRUCTURE_DEEP_SEA_COOLING_DESCRIPTION
+            icon: assets/structures/deep_sea_cooling.png
+            cost: 90
+            upkeep: 3
+            baseResearchBonus: 3
+            compatibleBiomes:
+                - biome_gaia
+                - biome_terran
+                - biome_ocean
+            structureTypes: 
+                - 2
+            workingStatus: true
+          - key: structure_galactic_cybernet_node
+            name: COLONY_STRUCTURE_GALACTIC_CYBERNET_NODE_NAME
+            description: COLONY_STRUCTURE_GALACTIC_CYBERNET_NODE_DESCRIPTION
+            icon: assets/structures/galactic_cybernet_node.png
+            cost: 400
+            upkeep: 10
+            totalResearchMultiplierBonus: 0.5
+            structureTypes: 
+                - 2
+                - 5
+            empireUnique: true
+            isTransferable: false
+            workingStatus: true
+            empireSecurityBonus: 0.20
+        # - structure: &structure_special_funding_tribunal
+            # name: COLONY_STRUCTURE_SPECIAL_FUNDING_TRIBUNAL_NAME
+            # description: COLONY_STRUCTURE_SPECIAL_FUNDING_TRIBUNAL_DESCRIPTION
+            # icon: assets/structures/special_funding_tribunal.png
+            # cost: 250
+            # #upkeep: 3
+            # baseResearchBonus: 15
+            # workerResearchBonus: 3
+            # structureTypes: 
+            #    - 2
+            # workingStatus: true
+          - key: structure_planetary_supercomputer
+            name: COLONY_STRUCTURE_PLANETARY_SUPERCOMPUTER_NAME
+            icon: assets/structures/planetary_supercomputer.png
+            cost: 380
+            upkeep: 6
+            baseResearchBonus: 25
+            systemUnique: true
+            description: COLONY_STRUCTURE_PLANETARY_SUPERCOMPUTER_DESCRIPTION
+            structureTypes: 
+                - 2
+            workingStatus: true
+          - key: structure_holo_simulator
+            name: COLONY_STRUCTURE_HOLO_SIMULATOR_NAME
+            description: COLONY_STRUCTURE_HOLO_SIMULATOR_DESCRIPTION
+            icon: assets/structures/holo_simulator.png
+            cost: 160
+            upkeep: 4
+            moraleMultiplierBonus: 0.15
+            structureTypes: 
+                - 4
+            workingStatus: true
+          - key: structure_pleasure_dome
+            name: COLONY_STRUCTURE_PLEASURE_DOME_NAME
+            description: COLONY_STRUCTURE_PLEASURE_DOME_DESCRIPTION
+            icon: assets/structures/pleasure_dome.png
+            cost: 400
+            upkeep: 6
+            moraleMultiplierBonus: 0.30
+            upgrades: structure_holo_simulator
+            structureTypes: 
+                - 4
+            workingStatus: true
+          - key: structure_biospheres
+            name: COLONY_STRUCTURE_BIOSPHERES_NAME
+            description: COLONY_STRUCTURE_BIOSPHERES_DESCRIPTION
+            icon: assets/structures/biospheres.png
+            cost: 45
+            upkeep: 1
+            baseLifeSupportBonus: 1
+            baseResearchBonus: 1
+            structureTypes:
+                - 1
+                - 2
+            workingStatus: true
+          - key: structure_neutron_collider
+            name: COLONY_STRUCTURE_NEUTRON_COLLIDER_NAME
+            description: COLONY_STRUCTURE_NEUTRON_COLLIDER_DESCRIPTION
+            icon: assets/structures/neutron_collider.png
+            cost: 110
+            upkeep: 3
+            # baseProductionBonus: 2
+            productionTileBonus: 1
+            structureTypes: 
+                - 0
+            workingStatus: true
+          - key: structure_advance_data_center
+            name: COLONY_STRUCTURE_ADVANCE_DATA_CENTER_NAME
+            description: COLONY_STRUCTURE_ADVANCE_DATA_CENTER_DESCRIPTION
+            icon: assets/structures/advance_data_center.png
+            cost: 110
+            upkeep: 3
+            # baseResearchBonus: 2
+            researchTileBonus: 1
+            structureTypes: 
+                - 2
+            workingStatus: true
+          - key: structure_high_orbit_sonar
+            name: COLONY_STRUCTURE_HIGH_ORBIT_SONAR_NAME
+            description: COLONY_STRUCTURE_HIGH_ORBIT_SONAR_DESCRIPTION
+            icon: assets/structures/high_orbit_sonar.png
+            cost: 80
+            upkeep: 1
+            totalFoodMultiplierBonus: 0.35
+            compatibleBiomes:
+                - biome_ocean
+            structureTypes: 
+                - 1
+            workingStatus: true
+          - key: structure_anaerobic_colonies
+            name: COLONY_STRUCTURE_ANAEROBIC_COLONIES_NAME
+            description: COLONY_STRUCTURE_ANAEROBIC_COLONIES_DESCRIPTION
+            icon: assets/structures/anaerobic_colonies.png
+            cost: 50
+            upkeep: 1
+            baseLifeSupportBonus: 3
+            compatibleBiomes:
+                - biome_barren
+            structureTypes: 
+                - 1
+            workingStatus: true
+          - key: structure_underground_storage
+            name: COLONY_STRUCTURE_UNDERGROUND_STORAGE_NAME
+            description: COLONY_STRUCTURE_UNDERGROUND_STORAGE_DESCRIPTION
+            icon: assets/structures/underground_storage.png
+            cost: 80
+            upkeep: 1
+            foodCarryoverRatio: 0.15
+            compatibleBiomes:
+                - biome_tundra
+            structureTypes: 
+                - 1
+            workingStatus: true
+          - key: structure_solar_kiln
+            name: COLONY_STRUCTURE_SOLAR_KILN_NAME
+            description: COLONY_STRUCTURE_SOLAR_KILN_DESCRIPTION
+            icon: assets/structures/solar_kiln.png
+            cost: 50
+            upkeep: 1
+            baseProductionBonus: 4
+            compatibleBiomes:
+                - biome_desert
+                - biome_grassland
+            structureTypes: 
+                - 0
+            workingStatus: true
+          - key: structure_fungal_farms
+            name: COLONY_STRUCTURE_FUNGAL_FARMS_NAME
+            description: COLONY_STRUCTURE_FUNGAL_FARMS_DESCRIPTION
+            icon: assets/structures/fungal_farms.png
+            cost: 60
+            upkeep: 2
+            baseLifeSupportBonus: 1
+            compatibleBiomes:
+                - biome_tundra
+                - biome_desert
+                - biome_barren
+                - biome_volcanic
+                - biome_toxic
+                - biome_radiated
+            structureTypes: 
+                - 1
+            workingStatus: true
+          - key: structure_moon_laboratory
+            name: COLONY_STRUCTURE_MOON_LABORATORY_NAME
+            description: COLONY_STRUCTURE_MOON_LABORATORY_DESCRIPTION
+            icon: assets/structures/moon_laboratory.png
+            cost: 100
+            upkeep: 4
+            baseResearchBonus: 6
+            requiresMoon: true
+            structureTypes:
+                - 2
+            workingStatus: true
+          - key: structure_space_elevator
+            name: COLONY_STRUCTURE_SPACE_ELEVATOR_NAME
+            description: COLONY_STRUCTURE_SPACE_ELEVATOR_DESCRIPTION
+            icon: assets/structures/space_elevator.png
+            cost: 220
+            upkeep: 5
+            shipCostModifier: -0.30
+            structureTypes: 
+                - 0
+            workingStatus: true
+        # - structure: &structure_asteroid_mines
+            # name: COLONY_STRUCTURE_ASTEROID_MINES_NAME
+            # description: COLONY_STRUCTURE_ASTEROID_MINES_DESCRIPTION
+            # icon: assets/structures/asteroid_mines.png
+            # cost: 90
+            # #upkeep: 1
+            # bonusTiles:
+               # - Industry: 1
+            # requiresAsteroid: true
+            # structureTypes: 
+                # - 0
+            # workingStatus: true
+          - key: structure_cloning_center
+            name: COLONY_STRUCTURE_CLONING_CENTER_NAME
+            description: COLONY_STRUCTURE_CLONING_CENTER_DESCRIPTION
+            icon: assets/structures/cloning_center.png
+            cost: 90
+            upkeep: 3
+            structureTypes: 
+                - 1
+            workingStatus: true
+            populationGrowthMultiplierBonus: 0.25
+          - key: structure_soil_enrichment
+            name: COLONY_STRUCTURE_SOIL_ENRICHMENT_NAME
+            description: COLONY_STRUCTURE_SOIL_ENRICHMENT_DESCRIPTION
+            icon: assets/structures/soil_enrichment.png
+            cost: 110
+            upkeep: 3
+            foodTileBonus: 1
+            compatibleBiomes:
+                - biome_gaia
+                - biome_grassland
+                - biome_inferno
+                - biome_tropical
+                - biome_cavernous
+                - biome_terran
+                - biome_ocean
+                - biome_swamp
+                - biome_arid
+                - biome_tundra
+                - biome_desert
+                - biome_barren
+            structureTypes: 
+                - 1
+            workingStatus: true
+        # - structure: &structure_dimensional_portal
+            # name: COLONY_STRUCTURE_DIMENSIONAL_PORTAL_NAME
+            # icon: assets/structures/notfound.png
+            # cost: 500
+            # #upkeep: 2
+            # description: COLONY_STRUCTURE_DIMENSIONAL_PORTAL_DESCRIPTION
+            # structureTypes: 
+            #    - 5
+            # workingStatus: false
+          - key: structure_toxics_processor
+            name: COLONY_STRUCTURE_TOXICS_PROCESSOR_NAME
+            description: COLONY_STRUCTURE_TOXICS_PROCESSOR_DESCRIPTION
+            icon: assets/structures/toxics_processor.png
+            cost: 160
+            upkeep: 3
+            # pollutionMultiplierReduction: 0.25
+            pollutionCleaningRate: 5
+            structureTypes: 
+                - 6
+            workingStatus: true
+          - key: structure_gravity_generators
+            name: COLONY_STRUCTURE_GRAVITY_GENERATORS_NAME
+            description: COLONY_STRUCTURE_GRAVITY_GENERATORS_DESCRIPTION
+            icon: assets/structures/gravity_generators.png
+            cost: 160
+            upkeep: 3
+            structureTypes: 
+                - 4
+            workingStatus: true
+          - key: structure_planetary_radiation_shield
+            name: COLONY_STRUCTURE_PLANETARY_RADIATION_SHIELD_NAME
+            description: COLONY_STRUCTURE_PLANETARY_RADIATION_SHIELD_DESCRIPTION
+            icon: assets/structures/planetary_radiation_shield.png
+            cost: 160
+            upkeep: 3
+            planetDefense: 15
+            structureTypes: 
+                - 5
+            workingStatus: false
+          - key: structure_warp_interdictor
+            name: COLONY_STRUCTURE_WARP_INTERDICTOR_NAME
+            description: COLONY_STRUCTURE_WARP_INTERDICTOR_DESCRIPTION
+            icon: assets/structures/warp_interdictor.png
+            cost: 300
+            upkeep: 3
+            #shipTemplate: design_warp_interdictor
+            structureTypes: 
+                - 5
+            workingStatus: false
+          - key: structure_planetary_flux_shield
+            name: COLONY_STRUCTURE_PLANETARY_FLUX_SHIELD_NAME
+            description: COLONY_STRUCTURE_PLANETARY_FLUX_SHIELD_DESCRIPTION
+            icon: assets/structures/planetary_flux_shield.png
+            upgrades: structure_planetary_radiation_shield
+            cost: 300
+            upkeep: 6
+            planetDefense: 35
+            structureTypes: 
+                - 5
+            workingStatus: false
+          - key: structure_planetary_barrier_shield
+            name: COLONY_STRUCTURE_PLANETARY_BARRIER_SHIELD_NAME
+            description: COLONY_STRUCTURE_PLANETARY_BARRIER_SHIELD_DESCRIPTION
+            icon: assets/structures/planetary_barrier_shield.png
+            upgrades: structure_planetary_flux_shield
+            cost: 500
+            upkeep: 10
+            planetDefense: 60
+            structureTypes: 
+                - 5
+            workingStatus: false
+          - key: structure_jump_gate
+            name: COLONY_STRUCTURE_JUMP_GATE_NAME
+            description: COLONY_STRUCTURE_JUMP_GATE_DESCRIPTION
+            icon: assets/structures/jump_gate.png
+            cost: 200
+            upkeep: 5
+            structureTypes: 
+                - 4
+            workingStatus: true
+            systemUnique: true
+            isTransferable: false
+          - key: structure_antarans_portal
+            name: COLONY_STRUCTURE_ANTARANS_PORTAL_NAME
+            description: COLONY_STRUCTURE_ANTARANS_PORTAL_DESCRIPTION
+            icon: assets/structures/jump_gate.png
+            cost: 700
+            upkeep: 0
+            structureTypes: 
+                - 4
+            workingStatus: false
+            empireUnique: true
+            isTransferable: true
+        ## DEVELOPMENT STRUCTURES
+          - key: structure_asteroid_mine
+            name: COLONY_STRUCTURE_ASTEROID_MINE_NAME
+            description: COLONY_STRUCTURE_ASTEROID_MINE_DESCRIPTION
+            icon: assets/structures/asteroid_mine.png
+            cost: 40
+            upkeep: 0
+            creditIncomeBonus: 4
+            hasScanner: true
+            structureTypes: 
+                - 3
+            workingStatus: true
+            compatibleBiomes:
+                - biome_asteroid_field
+            requiresWorker: true
+            needResource: false
+            canExtractResources: false
+            structurePrefab: ContentPrefabs/FleetIconsStarSystem/%civ%/%civ%_mine.prefab
+            structureInProgressPrefab: ContentPrefabs/FleetIconsStarSystem/fleeticon_build_in_prog.prefab
+            requiresColonyInSystem: true
+          - key: structure_asteroid_laboratory
+            name: COLONY_STRUCTURE_ASTEROID_LABORATORY_NAME
+            description: COLONY_STRUCTURE_ASTEROID_LABORATORY_DESCRIPTION
+            icon: assets/structures/asteroid_lab.png
+            cost: 40
+            upkeep: 2
+            baseResearchBonus: 2
+            hasScanner: true
+            structureTypes: 
+                - 2
+            workingStatus: true
+            compatibleBiomes:
+                - biome_asteroid_field
+                - biome_relics
+            requiresWorker: true
+            needResource: false
+            canExtractResources: false
+            structurePrefab: ContentPrefabs/FleetIconsStarSystem/%civ%/%civ%_asteroid_lab.prefab
+            structureInProgressPrefab: ContentPrefabs/FleetIconsStarSystem/fleeticon_build_in_prog.prefab
+            requiresColonyInSystem: false
+          - key: structure_superscalar_gas_harvester
+            name: COLONY_STRUCTURE_SUPERSCALAR_GAS_HARVESTER_NAME
+            description: COLONY_STRUCTURE_SUPERSCALAR_GAS_HARVESTER_DESCRIPTION
+            icon: assets/structures/super_scalar_gas_harvester.png
+            cost: 25
+            upkeep: 0
+            creditIncomeBonus: 5
+            hasScanner: true
+            structureTypes: 
+                - 3
+            workingStatus: true
+            compatibleBiomes:
+                - biome_gas_giant
+            requiresWorker: true
+            needResource: false
+            canExtractResources: false
+            structurePrefab: ContentPrefabs/FleetIconsStarSystem/%civ%/%civ%_gas_harvester.prefab
+            structureInProgressPrefab: ContentPrefabs/FleetIconsStarSystem/fleeticon_build_in_prog.prefab
+            requiresColonyInSystem: true
+          - key: structure_military_outpost
+            name: COLONY_STRUCTURE_MILITARY_OUTPOST_NAME
+            description: COLONY_STRUCTURE_MILITARY_OUTPOST_DESCRIPTION
+            icon: assets/structures/star_base.png
+            cost: 50
+            hasScanner: true
+            scannerRangeBonus: 0
+            repairFactor: 0.05
+            allowShipBlueprintUpgrade: true
+            canBlock: true
+            buildBorder: true
+            shipTemplate: design_military_outpost
+            structureTypes: 
+                - 5
+            requiresWorker: true
+            requiresWarpGate: true
+            structurePrefab: ContentPrefabs/FleetIconsStarSystem/%civ%/%civ%_starbase.prefab
+            structureInProgressPrefab: ContentPrefabs/FleetIconsStarSystem/fleeticon_build_in_prog.prefab
+            fleetSupportCost: 1
+            requiresColonyInSystem: true
+            influencesMinorCivs: military_outpost_influence
+          - key: structure_advanced_military_outpost
+            name: COLONY_STRUCTURE_ADVANCED_MILITARY_OUTPOST_NAME
+            description: COLONY_STRUCTURE_ADVANCED_MILITARY_OUTPOST_DESCRIPTION
+            icon: assets/structures/battlestation.png
+            upgrades: structure_military_outpost
+            cost: 150
+            hasScanner: true
+            scannerRangeBonus: 0
+            repairFactor: 0.075
+            allowShipBlueprintUpgrade: true
+            canBlock: true
+            buildBorder: true
+            shipTemplate: design_advanced_military_outpost
+            structureTypes: 
+                - 5
+            requiresWorker: true
+            requiresWarpGate: true
+            influencesMinorCivs: military_outpost_influence
+            structurePrefab: ContentPrefabs/FleetIconsStarSystem/%civ%/%civ%_battlestation.prefab
+            structureInProgressPrefab: ContentPrefabs/FleetIconsStarSystem/fleeticon_build_in_prog.prefab
+            fleetSupportCost: 3
+            requiresColonyInSystem: true
+          - key: structure_surveilliance_system
+            name: COLONY_STRUCTURE_SURVEILLIANCE_SYSTEM_NAME
+            description: COLONY_STRUCTURE_SURVEILLIANCE_SYSTEM_DESCRIPTION
+            icon: assets/structures/SpaceScanner.png
+            cost: 25
+            upkeep: 0
+            hasScanner: true
+            scannerRangeBonus: 0
+            canBlock: false
+            # shipTemplate: design_outpost
+            structureTypes: 
+                - 5
+            requiresWorker: true
+            requiresWarpGate: true
+            structurePrefab: ContentPrefabs/FleetIconsStarSystem/%civ%/%civ%_outpost.prefab
+            structureInProgressPrefab: ContentPrefabs/FleetIconsStarSystem/fleeticon_build_in_prog.prefab
+          - key: structure_outpost
+            name: COLONY_STRUCTURE_OUTPOST_NAME
+            description: COLONY_STRUCTURE_OUTPOST_DESCRIPTION
+            icon: assets/structures/atmospheric_renewer.png
+            cost: 30
+            upkeep: 1
+            hasScanner: true
+            structureTypes: 
+                - 4
+            compatibleBiomes:
+                - biome_gaia
+                - biome_grassland
+                - biome_inferno
+                - biome_tropical
+                - biome_cavernous
+                - biome_terran
+                - biome_ocean
+                - biome_swamp
+                - biome_arid
+                - biome_tundra
+                - biome_desert
+                - biome_barren
+                - biome_radiated
+                - biome_toxic
+                - biome_volcanic
+            requiresWorker: true
+            canExtractResources: true
+            workingStatus: false
+            structurePrefab: ContentPrefabs/FleetIconsStarSystem/%civ%/%civ%_mine.prefab
+            structureInProgressPrefab: ContentPrefabs/FleetIconsStarSystem/fleeticon_build_in_prog.prefab
+          - key: structure_jump_gate_orbital
+            name: COLONY_STRUCTURE_JUMP_GATE_NAME
+            description: COLONY_STRUCTURE_JUMP_GATE_DESCRIPTION
+            icon: assets/structures/jump_gate.png
+            cost: 50
+            upkeep: 5
+            hasScanner: true
+            scannerRangeBonus: 0
+            canBlock: false
+            buildBorder: false
+            structureTypes: 
+                - 5
+            requiresWorker: true
+            requiresWarpGate: true
+            workingStatus: true
+            structurePrefab: ContentPrefabs/FleetIconsStarSystem/%civ%/%civ%_jump_gate.prefab
+            structureInProgressPrefab: ContentPrefabs/FleetIconsStarSystem/fleeticon_build_in_prog.prefab
+            requiresColonyInSystem: true
+            generatesJumpConnection: true
+            systemUnique: true
+          # - key: structure_advanced_jump_gate_orbital
+            # name: COLONY_STRUCTURE_ADVANCED_JUMP_GATE_NAME
+            # description: COLONY_STRUCTURE_ADVANCED_JUMP_GATE_DESCRIPTION
+            # icon: assets/structures/jump_gate.png
+            # cost: 50
+            # upkeep: 10
+            # hasScanner: true
+            # scannerRangeBonus: 1
+            # upgrades: structure_jump_gate_orbital
+            # canBlock: false
+            # buildBorder: false
+            # structureTypes: 
+                # - 5
+            # requiresWorker: true
+            # requiresWarpGate: true
+            # workingStatus: true
+            # structurePrefab: ContentPrefabs/FleetIconsStarSystem/%civ%/%civ%_jump_gate.prefab
+            # structureInProgressPrefab: ContentPrefabs/FleetIconsStarSystem/fleeticon_build_in_prog.prefab
+            # requiresColonyInSystem: false
+            # generatesJumpConnection: true
+            # systemUnique: true
+        #Dont remove this structure. Used for workers while are building
+          - key: structure_work_in_progress
+            icon: assets/structures/high_orbit_sonar.png
+            canBlock: false
+            structureTypes: 
+                - 5
+            requiresWorker: true
+            nonBuildable: true
+        #comment
+        ## REQUIRES REVISION
+          - key: structure_radiotelescopic_observatory
+            name: COLONY_STRUCTURE_RADIOTELESCOPIC_OBSERVATORY_NAME
+            description: COLONY_STRUCTURE_RADIOTELESCOPIC_OBSERVATORY_DESCRIPTION
+            icon: assets/structures/radiotelescopic_observatory.png
+            cost: 65
+            upkeep: 1
+            baseResearchBonus: 4
+            compatibleBiomes:
+                - biome_radiated
+            structureTypes: 
+                - 2
+            workingStatus: true
+          - key: structure_sulphuric_condenser
+            name: COLONY_STRUCTURE_SULPHURIC_CONDENSER_NAME
+            description: COLONY_STRUCTURE_SULPHURIC_CONDENSER_DESCRIPTION
+            icon: assets/structures/sulphuric_condenser.png
+            cost: 85
+            upkeep: 1
+            productionTileBonus: 1
+            structureTypes: 
+                - 0
+            workingStatus: true
+...

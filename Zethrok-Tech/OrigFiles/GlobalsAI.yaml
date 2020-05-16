@@ -1,0 +1,153 @@
+---
+- globals: &AI.SP_GeneralStrategy
+    AI_COLONY_SELF_BUDGET: false
+    DISPOSITION_THRESHOLD_POTENTIAL_ENEMY: -0.3
+    OPPORTUNITY_THRESHOLD: 3
+    BAD_RELATIONS_THRESHOLD: 3
+    THREAT_THRESHOLD: 2
+- globals: &AI.T_Leadership
+    UPKEEP_BUDGET_FOR_LEADER: 0.1
+    UPKEEP_BUDGET_FOR_LEADER_MAX_THRESHOLD: 2
+- globals: &AI.T_DiplomacyMajorCiv
+    DIPLOMACY_MIN_TURN_DELAY_ALL_DEALS: 15
+    DIPLOMACY_MIN_TURN_DELAY_SAME_DEAL: 25
+    DISPOSITION_THRESHOLD_DEFENSIVE_PACT: 0.4
+    DISPOSITION_THRESHOLD_OFFENSIVE_PACT: 0
+    DISPOSITION_THRESHOLD_NON_AGGRESSION_PACT: 0.2
+    DISPOSITION_THRESHOLD_RESEARCH_AGREEMENT: 0
+    DISPOSITION_THRESHOLD_TRADE_AGREEMENT: 0
+    DISPOSITION_THRESHOLD_SHARE_CHARTS: 0
+    DISPOSITION_THRESHOLD_OPEN_BORDERS: 0
+    DISPOSITION_THRESHOLD_ACCEPT_EMBASSY: 0
+    DISPOSITION_THRESHOLD_TECH_TRADE: 0.1
+    EVALUATION_DEMAND_COLONY_SHIP_PRODUCTION_COST: 2
+    EVALUATION_DEMAND_COLONY_PLANET_RATING: 1000
+    EVALUATION_DEMAND_COLONY_POPULATION_UNIT: 1000
+    EVALUATION_DEMAND_COLONY_STRUCTURE_COST: 1
+    EVALUATION_DEMAND_OPEN_BORDERS: 1000
+    EVALUATION_DEMAND_SHARE_CHARTS_PER_PLANET: 5
+    EVALUATION_DEMAND_SHARE_CHARTS_PER_STAR: 3
+    EVALUATION_DEMAND_SHARE_CHARTS_PER_OWN_COLONY: 100
+    EVALUATION_DEMAND_SHARE_SURVEILLANCE: 75
+    EVALUATION_DEMAND_ESPIONAGE_WARNING: 10
+    EVALUATION_DEMAND_SETTLEMENT_WARNING: 10
+    EVALUATION_DEMAND_RESOURCE_BASE: 100
+    EVALUATION_DEMAND_CEASE_FIRE_TARGET_ENEMY: 10000
+    EVALUATION_DEMAND_GALACTIC_COUNCIL_PER_CENT: 1500
+    EVALUATION_DEMAND_TECH_APP_TRADE_PER_RP: 2
+    EVALUATION_DEMAND_ACCEPT_EMBASSY: 10
+    EVALUATION_DEMAND_NON_AGGRESSION_PACT: 2500
+    EVALUATION_DEMAND_BAD_DISPOSITION_MULTIPLIER: 6
+    EVALUATION_DEMAND_GOOD_DISPOSITION_DIVISOR: 1.4
+    EVALUATION_OFFER_DEFENSIVE_PACT_MULTIPLIER: 1.15
+    EVALUATION_OFFER_COLONY_SHIP_PRODUCTION_COST: 1
+    EVALUATION_OFFER_COLONY_PLANET_RATING: 700
+    EVALUATION_OFFER_COLONY_POPULATION_UNIT: 700
+    EVALUATION_OFFER_COLONY_STRUCTURE_COST: 0.7
+    EVALUATION_OFFER_OPEN_BORDERS: 1000
+    EVALUATION_OFFER_SHARE_SURVEILLANCE: 75
+    EVALUATION_OFFER_SHARE_CHARTS_PER_PLANET: 2
+    EVALUATION_OFFER_SHARE_CHARTS_PER_STAR: 0
+    EVALUATION_OFFER_ESPIONAGE_WARNING: 10
+    EVALUATION_OFFER_SETTLEMENT_WARNING: 10
+    EVALUATION_OFFER_CEASE_FIRE_NON_TARGET_ENEMY: 10000
+    EVALUATION_OFFER_GALACTIC_COUNCIL_PER_CENT_IF_CANDIDATE: 1500
+    EVALUATION_OFFER_TECH_APP_TRADE_PER_RP: 4
+    EVALUATION_OFFER_ACCEPT_EMBASSY: 10
+    EVALUATION_OFFER_NON_AGGRESSION_PACT: 2000
+    COLD_WAR_DISPOSITION_THRESHOLD: -0.25
+- globals: &AI.Awareness
+    weightedColonyProduction:
+        - key: buyout_cost
+          base_score: 1
+          early: 1
+          developed: 5
+          mature: 1
+        - key: ship_building_speed
+          base_score: 5
+          early: 1
+          developed: 5
+          mature: 10
+        - key: defense_ground
+          base_score: 10
+          early: 5
+          developed: 7
+          mature: 8
+        - key: defense_orbital
+          base_score: 6
+          early: 5
+          developed: 8
+          mature: 10
+        - key: shields
+          base_score: 5
+          early: 1
+          developed: 8
+          mature: 10
+          biome_radiated: 1.5
+        - key: BC_per_pop
+          base_score: 7
+          early: 3
+          developed: 10
+          mature: 5
+        - key: BC_flat
+          base_score: 7
+          early: 3
+          developed: 5
+          mature: 10
+        - key: morale_flat
+          base_score: 7
+          early: 4
+          developed: 8
+          mature: 10
+        - key: pollution_absortion
+          base_score: 10
+          early: 9
+          developed: 10
+          mature: 10
+          biome_toxic: 1.5
+        - key: food_flat
+          base_score: 9
+          early: 10
+          developed: 5
+          mature: 1
+        - key: food_per_cell
+          base_score: 7
+          early: 5
+          developed: 10
+          mature: 3
+        - key: population_growth
+          base_score: 8
+          early: 7
+          developed: 5
+          mature: 3
+        - key: terraforming
+          base_score: 6
+          early: 0
+          developed: 5
+          mature: 10
+        - key: production_flat
+          base_score: 10
+          early: 10
+          developed: 8
+          mature: 5
+        - key: production_per_cell
+          base_score: 8
+          early: 5
+          developed: 8
+          mature: 10
+        - key: research_flat
+          base_score: 8
+          early: 5
+          developed: 10
+          mature: 5
+        - key: research_per_pop
+          base_score: 5
+          early: 1
+          developed: 5
+          mature: 10
+        - key: security
+          base_score: 5
+          early: 1
+          developed: 7
+          mature: 9
+...

@@ -1,0 +1,20 @@
+---
+- collection: &Backend.Core.PopulationGrowthSpeed
+    items:
+        - key: population_growth_speed_very_slow
+          name: FE_POPULATION_GROWTH_SPEED_VERY_SLOW
+          value: 0.5
+        - key: population_growth_speed_slow
+          name: FE_POPULATION_GROWTH_SPEED_SLOW
+          value: 0.25
+        - key: population_growth_speed_normal
+          name: FE_POPULATION_GROWTH_SPEED_NORMAL
+          value: 0
+          isDefault: true
+        - key: population_growth_speed_fast
+          name: FE_POPULATION_GROWTH_SPEED_FAST
+          value: -0.25
+        - key: population_growth_speed_very_fast
+          name: FE_POPULATION_GROWTH_SPEED_VERY_FAST
+          value: -0.5
+...

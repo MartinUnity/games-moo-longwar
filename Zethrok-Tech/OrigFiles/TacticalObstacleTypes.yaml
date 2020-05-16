@@ -1,0 +1,65 @@
+---
+- collection: &Backend.Tactical.TacticalObstacleType
+    items:
+        - key: obstacle_asteroid_big
+          hullClass: 3
+          models:
+                - model: ContentPrefabs/Tactical/Obstacles/Asteroid_A
+                - model: ContentPrefabs/Tactical/Obstacles/Asteroid_B
+                - model: ContentPrefabs/Tactical/Obstacles/Asteroid_C
+                - model: ContentPrefabs/Tactical/Obstacles/Asteroid_D
+          hp: 100
+          visualScale: 4
+          tacticalLong: 1
+          tacticalWide: 1
+          tacticalTall: 1
+        - key: obstacle_asteroid_medium
+          hullClass: 2
+          models:
+                - model: ContentPrefabs/Tactical/Obstacles/MediumA
+                - model: ContentPrefabs/Tactical/Obstacles/MediumB
+                - model: ContentPrefabs/Tactical/Obstacles/MediumC
+                - model: ContentPrefabs/Tactical/Obstacles/MediumD
+          hp: 50
+          visualScale: 5.6
+          tacticalLong: 0.5
+          tacticalWide: 0.5
+          tacticalTall: 0.5
+          explosionSpeed: 2.0
+          explosionAngularSpeed: 5.0
+          friction: 0.25
+        - key: obstacle_asteroid_small
+          hullClass: 1
+          models:
+                - model: ContentPrefabs/Tactical/Obstacles/SmallA
+                - model: ContentPrefabs/Tactical/Obstacles/SmallB
+                - model: ContentPrefabs/Tactical/Obstacles/SmallC
+                - model: ContentPrefabs/Tactical/Obstacles/SmallD
+          hp: 25
+          visualScale: 2.4
+          tacticalLong: 0.5
+          tacticalWide: 0.5
+          tacticalTall: 0.5
+          explosionSpeed: 3.0
+          explosionAngularSpeed: 5.0
+          friction: 0.5
+        - key: obstacle_debris
+          hullClass: 2
+          models:
+                - model: ContentPrefabs/Tactical/Obstacles/Debries
+          hp: 30
+          tacticalLong: 7
+          tacticalWide: 7
+          tacticalTall: 7
+          explosionSpeed: 5.0
+          explosionAngularSpeed: 5.0
+          friction: 0.85
+        - key: obstacle_nebula
+          hullClass: 2
+          models:
+                - model: ContentPrefabs/Tactical/Obstacles/Nebula
+          hp: 0
+          tacticalLong: 25
+          tacticalWide: 25
+          tacticalTall: 25
+...

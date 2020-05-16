@@ -1,0 +1,19 @@
+---
+- strategy: &strategy_test
+    strategyName: Test
+    hull: #frigate
+        class: 1
+        role: role_engage-50
+        role: role_flee-25
+        role: role_assault-25
+    hull: #destroyer
+        class: 2
+        role: role_engage-50
+        role: role_flee-25
+        role: role_assault-25
+    hull: #cruiser
+        class: 3
+        role: role_engage-50
+        role: role_flee-25
+        role: role_assault-25
+...
