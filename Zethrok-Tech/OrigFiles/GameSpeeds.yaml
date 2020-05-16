@@ -1,0 +1,39 @@
+---
+- collection: &Backend.Core.GameSpeed
+    items:
+        - key: game_pace_lighting
+          name: FE_GAME_PACE_LIGHTNING
+          populationGrowthSpeed: population_growth_speed_very_fast
+          productionSpeed: production_speed_fast
+          researchSpeed: research_speed_fast
+          leadersAppearenceSpeed: 0.45
+        - key: game_pace_quick
+          name: FE_GAME_PACE_QUICK
+          populationGrowthSpeed: population_growth_speed_fast
+          productionSpeed: production_speed_fast
+          researchSpeed: research_speed_normal
+          leadersAppearenceSpeed: 0.25         
+        - key: game_pace_classic
+          name: FE_GAME_PACE_CLASSIC
+          populationGrowthSpeed: population_growth_speed_fast
+          productionSpeed: production_speed_normal
+          researchSpeed: research_speed_normal
+          leadersAppearenceSpeed: 0.0
+          isDefault: true          
+        - key: game_pace_heroic
+          name: FE_GAME_PACE_HEROIC
+          populationGrowthSpeed: population_growth_speed_normal
+          productionSpeed: production_speed_normal
+          researchSpeed: research_speed_slow
+          leadersAppearenceSpeed: -0.25          
+        - key: game_pace_colossal
+          name: FE_GAME_PACE_COLOSSAL
+          populationGrowthSpeed: population_growth_speed_slow
+          productionSpeed: production_speed_slow
+          researchSpeed: research_speed_very_slow
+          leadersAppearenceSpeed: -0.35         
+        - key: game_pace_user_define
+          name: FE_GAME_PACE_USER_DEFINE
+          isUserDefined: true
+          leadersAppearenceSpeed: 0.0
+...

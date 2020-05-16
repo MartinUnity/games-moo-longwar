@@ -1,0 +1,189 @@
+---
+- collection: &GenericSubtitle
+    items:
+        - key: moo_still_alive
+          lines:
+              - line: Master of Orion!
+                start: 1.85
+                end: 6.1
+              - line: The legend is back we feel
+                start: 6.2
+                end: 9.0
+              - line: So proud!
+                start: 9.02
+                end: 11.75
+              - line: Even though you human
+                start: 11.80
+                end: 14.53
+              - line: Players beat it
+                start: 14.6
+                end: 18.8
+              - line: During Early Access
+                start: 19
+                end: 23.1
+              - line: We did everything
+                start: 22.3
+                end: 25.1
+              - line: to please you guys
+                start: 25.15
+                end: 27.4
+              - line: for the good of 4X games
+                start: 28.708
+                end: 32.5
+              - line: that where out-dated and dead
+                start: 32.6
+                end: 34.7
+              - line: But Kotaku cried that we
+                start: 34.9
+                end: 37.35
+              - line: had no chance in hell
+                start: 37.5
+                end: 39.304
+              - line: Thus we kept on trying
+                start: 39.1
+                end: 41.5
+              - line: didn't listen to them
+                start: 41.6
+                end: 43.290
+              - line: We just worked our asses off
+                start: 43.7
+                end: 45.83
+              - line: and we proved that they are wrong
+                start: 45.9
+                end: 47.9
+              - line: NGD Studios is
+                start: 48
+                end: 49.95
+              - line: Still alive
+                start: 49.96
+                end: 52
+              - line: We changed the tech tree
+                start: 58
+                end: 61.78
+              - line: Tactical Battles are real-time
+                start: 62
+                end: 67
+              - line: Now you cruised our star lanes and
+                start: 67.3
+                end: 71.12
+              - line: you liked it
+                start: 71.3
+                end: 74
+              - line: You conquered Orion
+                start: 74.7
+                end: 78.45
+              - line: Designed every ship because you can
+                start: 78.86
+                end: 84.1
+              - line: as you beat it felt so good
+                start: 84.4
+                end: 87.87
+              - line: because we did this for you
+                start: 87.9
+                end: 90.21
+              - line: Brigning back this legend
+                start: 90.35
+                end: 92.614
+              - line: was the gig of our lives
+                start: 92.714
+                end: 94.517
+              - line: Now we are out of beta
+                start: 94.717
+                end: 97
+              - line: we could not feel more proud
+                start: 97.1
+                end: 99
+              - line: so we are glad you enjoyed
+                start: 99.2
+                end: 101.4
+              - line: all the days that we crunched
+                start: 101.5
+                end: 103.510
+              - line: NGD Studios is
+                start: 103.620
+                end: 105.544
+              - line: Still alive
+                start: 105.585
+                end: 108.254
+              - line: Now about DLC
+                start: 113.578
+                end: 117.44
+              - line: Can't wait to tell you what will come
+                start: 117.6
+                end: 122.4
+              - line: Maybe Wargaming will let me
+                start: 123.1
+                end: 127.103
+              - line: tell you?
+                start: 127.2
+                end: 130.35
+              - line: Maybe Antarans?
+                start: 130.5
+                end: 134.6
+              - line: That was a joke haha, next time!
+                start: 134.7
+                end: 139.7
+              - line: Anyway the game is great!
+                start: 140.2
+                end: 143.4
+              - line: It's as addictive as MOO!
+                start: 143.5
+                end: 145.962
+              - line: Look at me I'm singing!
+                start: 146
+                end: 148.134
+              - line: while there's news to report
+                start: 148.2
+                end: 150
+              - line: When I see your planet
+                start: 150.2
+                end: 152.45
+              - line: I just want to bash Trump
+                start: 152.6
+                end: 154.644
+              - line: GNN has to go on
+                start: 154.8
+                end: 156.6
+              - line: There's DLC to be done
+                start: 156.8
+                end: 158.87
+              - line: NGD Studios is
+                start: 158.91
+                end: 160.899
+              - line: Still alive
+                start: 161
+                end: 162.8885
+              - line: We're making games and we are
+                start: 163.036
+                end: 165.133
+              - line: Still alive.
+                start: 165.140
+                end: 167
+              - line: Thanks to Wargaming we are
+                start: 167.245
+                end: 169.269
+              - line: still alive.
+                start: 169.4
+                end: 171.277
+              - line: Look this Kotaku we are
+                start: 171.4
+                end: 173.58
+              - line: Still Alive.
+                start: 173.7
+                end: 175.55
+              - line: Because of Victor
+                start: 175.6
+                end: 177
+              - line: We are still alive
+                start: 177.2
+                end: 179.71
+              - line: Now back to work cause we are
+                start: 179.911
+                end: 181.9
+              - line: Still Alive.
+                start: 182
+                end: 184.264
+              - line: Still Alive.
+                start: 184.4
+                end: 192.455
+...

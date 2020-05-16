@@ -1,0 +1,11 @@
+---
+- role: &role_engage
+    name: Engage
+    behaviour: Vulture-90, Coop-10
+- role: &role_flee
+    name: Flee
+    behaviour: Vulture-90, Coop-10
+- role: &role_assault
+    name: Assault
+    behaviour: Vulture-90, Coop-10
+...

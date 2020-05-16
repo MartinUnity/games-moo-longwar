@@ -1,0 +1,17 @@
+---
+- collection: &Backend.Core.TimelineSaveMode
+    items:
+        - key: timeline_save_mode_0
+          name: FE_TIMELINE_SAVE_MODE_NEVER
+          frequency: 0
+        - key: timeline_save_mode_1
+          name: FE_TIMELINE_SAVE_MODE_EVERY_TURN
+          frequency: 1
+          isDefault: true
+        - key: timeline_save_mode_5
+          name: FE_TIMELINE_SAVE_MODE_EVERY_N_TURNS
+          frequency: 5
+        - key: timeline_save_mode_10
+          name: FE_TIMELINE_SAVE_MODE_EVERY_N_TURNS
+          frequency: 10
+...

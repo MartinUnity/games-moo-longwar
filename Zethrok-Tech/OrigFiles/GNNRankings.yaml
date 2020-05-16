@@ -1,0 +1,32 @@
+---
+- collection: &GNNRankings
+    items:
+          - key: gnn_rankings
+            types:
+                - type: gnn_intro
+                  turns:
+                      - turn: 14
+                - type: empire_population
+                  turns:
+                      - turn: 130
+                      - turn: 300
+                - type: advanced_technology
+                  turns:
+                      - turn: 155
+                - type: space_fleet_strenghts
+                  turns:
+                      - turn: 80
+                      - turn: 185
+                - type: colonies_number
+                  turns:
+                      - turn: 105
+                      - turn: 205
+                - type: diplomatic_affinity
+                  turns:
+                      - turn: 180
+                      - turn: 245
+                - type: economic_power
+                  turns:
+                      - turn: 270
+                      - turn: 350
+...

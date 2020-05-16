@@ -1,0 +1,26 @@
+---
+- spacemonster: &spacemonster_amoeba
+    name: Amoeba
+    maxHitPoints: 100
+    attackPower: 100
+- spacemonster: &spacemonster_squid
+    name: Squid
+    maxHitPoints: 100
+    attackPower: 100
+- spacemonster: &spacemonster_space_eel
+    name: Space Eel
+    maxHitPoints: 100
+    attackPower: 100
+- spacemonster: &spacemonster_space_dragon
+    name: Space Dragon
+    maxHitPoints: 100
+    attackPower: 100
+- spacemonster: &spacemonster_leviathan
+    name: Leviathan
+    maxHitPoints: 100
+    attackPower: 100
+- spacemonster: &spacemonster_ikaroa
+    name: Ikaroa
+    maxHitPoints: 100
+    attackPower: 100
+...

@@ -1,0 +1,20 @@
+---
+- collection: &Backend.Core.ResearchSpeed
+    items:
+        - key: research_speed_very_slow
+          name: FE_RESEARCH_SPEED_VERY_SLOW
+          multiplier: 1.5
+        - key: research_speed_slow
+          name: FE_RESEARCH_SPEED_SLOW
+          multiplier: 1.25
+        - key: research_speed_normal
+          name: FE_RESEARCH_SPEED_NORMAL
+          multiplier: 1.0
+          isDefault: true
+        - key: research_speed_fast
+          name: FE_RESEARCH_SPEED_FAST
+          multiplier: 0.75
+        - key: research_speed_very_fast
+          name: FE_RESEARCH_SPEED_VERY_FAST
+          multiplier: 0.5
+...

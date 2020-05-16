@@ -1,0 +1,45 @@
+---
+- collection: &Backend.Civilizations.PlanetDefense
+    items:
+          - key: planetdefense_plasma_rifle
+            name: PLANET_DEFENSE_PLASMA_RIFLE_NAME
+            description: PLANET_DEFENSE_PLASMA_RIFLE_DESCRIPTION
+            icon: assets/structures/PlasmaRifle.png
+            baseCombatRating: 0.3
+          - key: planetdefense_phasor_rifle
+            name: PLANET_DEFENSE_PHASOR_RIFLE_NAME
+            description: PLANET_DEFENSE_PHASOR_RIFLE_DESCRIPTION
+            icon: assets/structures/PhasorRifle.png
+            baseCombatRating: 0.2
+          - key: planetdefense_neutron_rifle
+            name: PLANET_DEFENSE_NEUTRON_RIFLE_NAME
+            description: PLANET_DEFENSE_NEUTRON_RIFLE_DESCRIPTION
+            icon: assets/structures/NeutronRifle.png
+            baseCombatRating: 0.1
+          - key: planetdefense_laser_rifle
+            name: PLANET_DEFENSE_LASER_RIFLE_NAME
+            description: PLANET_DEFENSE_LASER_RIFLE_DESCRIPTION
+            icon: assets/structures/NeutronRifle.png
+            baseCombatRating: 0.05
+          - key: planetdefense_powered_armor
+            name: PLANET_DEFENSE_POWERED_ARMOR_NAME
+            description: PLANET_DEFENSE_POWERED_ARMOR_DESCRIPTION
+            icon: assets/structures/PoweredArmor.png
+            infantryCombatRatingBonus: 0.1
+            infantryHitPointBonus: 1
+          - key: planetdefense_antigrav_harness
+            name: PLANET_DEFENSE_ANTIGRAV_HARNESS_NAME
+            description: PLANET_DEFENSE_ANTIGRAV_HARNESS_DESCRIPTION
+            icon: assets/structures/AntiGravityHarness.png
+            infantryCombatRatingBonus: 0.1
+          - key: planetdefense_personal_shield
+            name: PLANET_DEFENSE_PERSONAL_SHIELD_NAME
+            description: PLANET_DEFENSE_PERSONAL_SHIELD_DESCRIPTION
+            icon: assets/structures/PersonalShield.png
+            infantryCombatRatingBonus: 0.1
+          - key: planetdefense_battleoids
+            name: PLANET_DEFENSE_BATTLEOIDS_NAME
+            description: PLANET_DEFENSE_BATTLEOIDS_DESCRIPTION
+            icon: assets/structures/Battleoids.png
+            armorHitPointBonus: 1
+...

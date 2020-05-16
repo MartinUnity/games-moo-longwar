@@ -1,0 +1,140 @@
+---
+- collection: &Backend.Diplomacy.AudienceEventPlaylist
+    items:
+          - key: playlist_test_1
+            events:
+                - event: audience_introduction
+                  type: NEUTRAL
+                  textIndex: 0
+                - event: audience_war_declaration
+                  type: FRIENDLY
+                  textIndex: 0
+                - event: audience_react_to_attack
+                  type: HOSTILE
+                  textIndex: 0
+          - key: trade_success
+            events:
+                - event: audience_hello
+                  type: FRIENDLY
+                  textIndex: 0
+                - event: audience_hear_offer
+                  type: FRIENDLY
+                  textIndex: 0
+                - event: audience_make_offer
+                  type: FRIENDLY
+                  textIndex: 0
+                - event: audience_decline
+                  type: FRIENDLY
+                  textIndex: 0
+                - event: audience_no_offer
+                  type: FRIENDLY
+                  textIndex: 0
+                - event: audience_accept
+                  type: FRIENDLY
+                  textIndex: 0
+                - event: audience_end_session
+                  type: FRIENDLY
+                  textIndex: 0
+          - key: trade_failure
+            events:
+                - event: audience_hello
+                  type: HOSTILE
+                  textIndex: 0
+                - event: audience_hear_offer
+                  type: HOSTILE
+                  textIndex: 0
+                - event: audience_decline
+                  type: HOSTILE
+                  textIndex: 0
+                - event: audience_make_offer
+                  type: HOSTILE
+                  textIndex: 0
+                - event: audience_no_offer
+                  type: HOSTILE
+                  textIndex: 0
+                - event: audience_decline
+                  type: MEMORY_2
+                  textIndex: 0
+                - event: audience_end_session
+                  type: HOSTILE
+                  textIndex: 0
+          - key: trade_war
+            events:
+                - event: audience_hello
+                  type: AFRAID
+                  textIndex: 0
+                - event: audience_hear_offer
+                  type: FRIENDLY
+                  textIndex: 0
+                - event: audience_no_offer
+                  type: FRIENDLY
+                  textIndex: 0
+                - event: audience_decline
+                  type: AFRAID
+                  textIndex: 0
+                - event: audience_make_offer
+                  type: FRIENDLY
+                  textIndex: 0
+                - event: audience_decline
+                  type: AFRAID_2
+                  textIndex: 0
+                - event: audience_react_to_attack
+                  type: FRIENDLY
+                  textIndex: 0
+          - key: honored_friend
+            events:
+                - event: audience_reminder
+                  type: FRIENDLY
+                  textIndex: 0
+                - event: audience_praise
+                  type: FRIENDLY
+                  textIndex: 0
+          - key: honored_hostile
+            events:
+                - event: audience_reminder
+                  type: HOSTILE
+                  textIndex: 0
+                - event: audience_praise
+                  type: FRIENDLY
+                  textIndex: 0
+          - key: betrayed_friend
+            events:
+                - event: audience_reminder
+                  type: FRIENDLY
+                  textIndex: 0
+                - event: audience_react_to_betrayal
+                  type: FRIENDLY
+                  textIndex: 0
+          - key: betrayed_hostile
+            events:
+                - event: audience_reminder
+                  type: HOSTILE
+                  textIndex: 0
+                - event: audience_react_to_betrayal
+                  type: HOSTILE
+                  textIndex: 0
+          - key: warning_ok_friend
+            events:
+                - event: audience_warning
+                  type: FRIENDLY
+                  textIndex: 0
+                - event: audience_react_to_proposal_accept
+                  type: FRIENDLY
+                  textIndex: 0
+          - key: warning_no_hostile
+            events:
+                - event: audience_warning
+                  type: HOSTILE
+                  textIndex: 0
+                - event: audience_react_to_proposal_decline
+                  type: HOSTILE
+                  textIndex: 0
+          - key: warning_no_again
+            events:
+                - event: audience_warning
+                  type: MEMORY_1
+                  textIndex: 0
+                - event: audience_react_to_proposal_decline
+                  type: MEMORY_2
+                  textIndex: 0
+...

@@ -1,0 +1,1082 @@
+---
+- collection: &Backend.Diplomacy.AudienceEvent
+    items:
+          - key: audience_idle
+            action:
+            types:
+                - type: FRIENDLY
+                  animatorState: 092_friendly_idle
+                  moodState: Friendly
+                - type: HOSTILE
+                  animatorState: 093_hostile_idle
+                  moodState: Hostile
+                  memoryTriggerID: 1
+                - type: AFRAID
+                  animatorState: 094_afraid_idle
+                  moodState: Afraid
+                  memoryTriggerID: 2
+                - type: MEMORY
+                  animatorState: 095_memory_idle
+                  moodState: Memory
+                  memoryTriggerID: 3
+          - key: audience_introduction
+            showInMultiplayer: true
+            action: Introduction
+            priority: lock
+            types:
+                - type: NEUTRAL
+                  animatorState: 001_Neutral_Introduction
+                  moodState: Friendly
+                  sound: 01 Greet/01 - Intro - Neutral
+                  forceToRestart: true
+                  textKeys:
+                      - textKey: TEXT_{0}_INTRODUCTION
+                  
+
+          - key: audience_hello
+            action: Hello
+            types:
+                - type: FRIENDLY
+                  animatorState: 002_Friendly_Hello
+                  moodState: Friendly
+                  falseMoodState: true
+                  sound: 01 Greet/02 - Hello - Friendly
+                  textKeys:
+                      - textKey: TEXT_{0}_HELLO_FRIENDLY
+
+                - type: HOSTILE
+                  animatorState: 003_Hostile_Hello
+                  moodState: Hostile
+                  falseMoodState: true
+                  memoryTriggerID: 1
+                  sound: 01 Greet/03 - Hello - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_HELLO_HOSTILE
+
+                - type: AFRAID
+                  animatorState: 004_Afraid_Hello
+                  moodState: Afraid
+                  falseMoodState: true
+                  memoryTriggerID: 2
+                  sound: 01 Greet/04 - Hello - Afraid
+                  textKeys:
+                      - textKey: TEXT_{0}_HELLO_AFRAID
+
+                - type: MEMORY_POSITIVE
+                  animatorState: 005_Memory_Positive_Hello
+                  moodState: Friendly
+                  falseMoodState: true
+                  memoryTriggerID: 3
+                  sound: 01 Greet/05 - Memory Greeting - Positive
+                  textKeys:
+                      - textKey: TEXT_{0}_HELLO_POSITIVE_DEFAULT
+                      - textKey: TEXT_{0}_HELLO_POSITIVE_GIFT
+                      - textKey: TEXT_{0}_HELLO_POSITIVE_HONOR
+
+                - type: MEMORY_NEGATIVE
+                  animatorState: 006_Memory_Negative_Hello
+                  moodState: Hostile
+                  falseMoodState: true
+                  memoryTriggerID: 4
+                  sound: 01 Greet/06 - Memory Greeting - Negative
+                  textKeys:
+                      - textKey: TEXT_{0}_HELLO_NEGATIVE_DEFAULT
+                      - textKey: TEXT_{0}_HELLO_NEGATIVE_ATTACKED
+                      - textKey: TEXT_{0}_HELLO_NEGATIVE_BETRAYED
+                      - textKey: TEXT_{0}_HELLO_NEGATIVE_DESTROYER
+                      - textKey: TEXT_{0}_HELLO_NEGATIVE_BIOWEAPONS
+                      - textKey: TEXT_{0}_HELLO_NEGATIVE_OATHBREAKER
+
+          - key: audience_react_to_attack
+            showInMultiplayer: true
+            action: Attacked
+            priority: lock
+            descriptionKeys:
+                - textKey: FE_DIPLOMACY_EVENT_REACT_TO_ATTACK_EXTERNAL_DEFAULT
+            types:
+                - type: FRIENDLY
+                  animatorState: 007_Attacked_Friendly
+                  moodState: Friendly
+                  sound: 02 React to Attack/07 - Default Reaction - Friendly
+                  textKeys:
+                      - textKey: TEXT_{0}_WAR_REACTION_FRIENDLY_DEFAULT
+                      - textKey: TEXT_{0}_WAR_REACTION_FRIENDLY_DECLARATION
+
+                - type: HOSTILE
+                  animatorState: 008_Attacked_Hostile
+                  moodState: Hostile
+                  sound: 02 React to Attack/08 - Default Reaction - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_WAR_REACTION_HOSTILE_DEFAULT
+                      - textKey: TEXT_{0}_WAR_REACTION_HOSTILE_DECLARATION
+
+                - type: MEMORY_HAS_DEALS
+                  animatorState: 009_Attacked_Memory_Has_Deals
+                  moodState: Memory
+                  sound: 02 React to Attack/09 - Memory Reaction - Has Deals
+                  textKeys:
+                      - textKey: TEXT_{0}_WAR_REACTION_DEALS_DEFAULT
+                      - textKey: TEXT_{0}_WAR_REACTION_DEALS_DECLARATION
+
+                - type: MEMORY_DEAL_HISTORY
+                  animatorState: 010_Attacked_Memory_Deal_History
+                  moodState: Memory
+                  memoryTriggerID: 1
+                  sound: 02 React to Attack/10 - Memory Reaction - Deal History
+                  textKeys:
+                      - textKey: TEXT_{0}_WAR_REACTION_HISTORY_DEFAULT
+                      - textKey: TEXT_{0}_WAR_REACTION_HISTORY_DECLARATION
+
+                - type: MEMORY_WAS_ATTACKED
+                  animatorState: 011_Attacked_Memory_Was_Attacked
+                  moodState: Memory
+                  memoryTriggerID: 2
+                  sound: 02 React to Attack/11 - Memory Reaction - Was Attacked
+                  textKeys:
+                      - textKey: TEXT_{0}_WAR_REACTION_ATTACKED_DEFAULT
+                      - textKey: TEXT_{0}_WAR_REACTION_ATTACKED_DECLARATION
+
+          - key: audience_react_to_attack_external
+            showInMultiplayer: true
+            action: AttackedExternal
+            priority: lock
+            descriptionKeys:
+                - textKey: FE_DIPLOMACY_EVENT_REACT_TO_ATTACK_EXTERNAL_DEFAULT
+            types:
+                - type: FRIENDLY
+                  animatorState: 007_Attacked_Friendly
+                  moodState: Friendly
+                  falseMoodState: true
+                  sound: 02 React to Attack/07 - Default Reaction - Friendly
+                  textKeys:
+                      - textKey: TEXT_{0}_WAR_REACTION_FRIENDLY_DEFAULT
+                      - textKey: TEXT_{0}_WAR_REACTION_FRIENDLY_ATTACK
+
+                - type: HOSTILE
+                  animatorState: 008_Attacked_Hostile
+                  moodState: Hostile
+                  falseMoodState: true
+                  memoryTriggerID: 1
+                  sound: 02 React to Attack/08 - Default Reaction - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_WAR_REACTION_HOSTILE_DEFAULT
+                      - textKey: TEXT_{0}_WAR_REACTION_HOSTILE_ATTACK
+
+                - type: MEMORY_HAS_DEALS
+                  animatorState: 009_Attacked_Memory_Has_Deals
+                  moodState: Memory
+                  falseMoodState: true
+                  memoryTriggerID: 2
+                  sound: 02 React to Attack/09 - Memory Reaction - Has Deals
+                  textKeys:
+                      - textKey: TEXT_{0}_WAR_REACTION_DEALS_DEFAULT
+                      - textKey: TEXT_{0}_WAR_REACTION_DEALS_ATTACK
+
+                - type: MEMORY_DEAL_HISTORY
+                  animatorState: 010_Attacked_Memory_Deal_History
+                  moodState: Memory
+                  falseMoodState: true
+                  memoryTriggerID: 3
+                  sound: 02 React to Attack/10 - Memory Reaction - Deal History
+                  textKeys:
+                      - textKey: TEXT_{0}_WAR_REACTION_HISTORY_DEFAULT
+                      - textKey: TEXT_{0}_WAR_REACTION_HISTORY_ATTACK
+
+                - type: MEMORY_WAS_ATTACKED
+                  animatorState: 011_Attacked_Memory_Was_Attacked
+                  moodState: Memory
+                  falseMoodState: true
+                  memoryTriggerID: 4
+                  sound: 02 React to Attack/11 - Memory Reaction - Was Attacked
+                  textKeys:
+                      - textKey: TEXT_{0}_WAR_REACTION_ATTACKED_DEFAULT
+                      - textKey: TEXT_{0}_WAR_REACTION_ATTACKED_ATTACK
+
+          - key: audience_defeat
+            showInMultiplayer: true
+            action: Defeat
+            priority: lock
+            types:
+                - type: NEUTRAL
+                  animatorState: 012_Neutral_Defeat
+                  moodState: Friendly
+                  falseMoodState: true
+                  sound: 03 Defeat/12 - Defeat Speech
+                  forceToRestart: true
+                  textKeys:
+                      - textKey: TEXT_{0}_DEFEAT
+
+          - key: audience_war_declaration
+            showInMultiplayer: true
+            action: WarDeclaration
+            descriptionKeys:
+                - textKey: FE_DIPLOMACY_EVENT_WAR_DECLARATION_DEFAULT
+                - textKey: FE_DIPLOMACY_EVENT_WAR_DECLARATION_INSTIGATOR
+                - textKey: FE_DIPLOMACY_EVENT_WAR_DECLARATION_JOIN
+            priority: lock
+            types:
+                - type: FRIENDLY
+                  animatorState: 013_Friendly_War_Declaration
+                  moodState: Friendly
+                  falseMoodState: true
+                  sound: 04 Declare War/13 - Default Declaration - Friendly
+                  textKeys:
+                      - textKey: TEXT_{0}_WAR_DECLARATION_FRIENDLY_DEFAULT
+                      - textKey: TEXT_{0}_WAR_DECLARATION_FRIENDLY_PACT
+
+                - type: HOSTILE
+                  animatorState: 014_Hostile_War_Declaration
+                  moodState: Hostile
+                  falseMoodState: true
+                  memoryTriggerID: 1
+                  sound: 04 Declare War/14 - Default Declaration - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_WAR_DECLARATION_HOSTILE_DEFAULT
+                      - textKey: TEXT_{0}_WAR_DECLARATION_HOSTILE_PACT
+
+                - type: AFRAID
+                  animatorState: 015_Afraid_War_Declaration
+                  moodState: Afraid
+                  falseMoodState: true
+                  memoryTriggerID: 2
+                  sound: 04 Declare War/15 - Default Declaration - Afraid
+                  textKeys:
+                      - textKey: TEXT_{0}_WAR_DECLARATION_AFRAID_DEFAULT
+                      - textKey: TEXT_{0}_WAR_DECLARATION_AFRAID_PACT
+
+                - type: MEMORY_REVENGE
+                  animatorState: 016_Memory_Revenge_War_Declaration
+                  moodState: Memory
+                  falseMoodState: true
+                  memoryTriggerID: 3
+                  sound: 04 Declare War/16 - Memory Declaration - Revenge
+                  textKeys:
+                      - textKey: TEXT_{0}_WAR_DECLARATION_REVENGE_DEFAULT
+                      - textKey: TEXT_{0}_WAR_DECLARATION_REVENGE_BETRAYED
+                      - textKey: TEXT_{0}_WAR_DECLARATION_REVENGE_ATTACKED
+
+                - type: MEMORY_GRUDGE
+                  animatorState: 017_Memory_Grudge_War_Declaration
+                  moodState: Memory
+                  falseMoodState: true
+                  memoryTriggerID: 4
+                  sound: 04 Declare War/17 - Memory Declaration - Grudge
+                  textKeys:
+                      - textKey: TEXT_{0}_WAR_DECLARATION_GRUDGE_DEFAULT
+                      - textKey: TEXT_{0}_WAR_DECLARATION_GRUDGE_1
+                      - textKey: TEXT_{0}_WAR_DECLARATION_GRUDGE_2
+                      - textKey: TEXT_{0}_WAR_DECLARATION_GRUDGE_3
+
+          - key: audience_peace
+            action: Peace
+            types:
+                - type: FRIENDLY
+                  animatorState: 018_Friendly_Peace
+                  moodState: Friendly
+                  sound: 05 Negotiate/18 - Default Peace - Friendly
+                  textKeys:
+                      - textKey: TEXT_{0}_PEACE_OFFER_FRIENDLY
+
+                - type: HOSTILE
+                  animatorState: 019_Hostile_Peace
+                  moodState: Hostile
+                  memoryTriggerID: 1
+                  sound: 05 Negotiate/19 - Default Peace - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_PEACE_OFFER_HOSTILE
+
+                - type: MEMORY_APOLOGIES
+                  animatorState: 020_Memory_Peace_Apologies
+                  moodState: Memory
+                  sound: 05 Negotiate/20 - Memory Peace - Apologies
+                  textKeys:
+                      - textKey: TEXT_{0}_PEACE_OFFER_APOLOGIES_DEFAULT
+                      - textKey: TEXT_{0}_PEACE_OFFER_APOLOGIES_PACT
+
+                - type: MEMORY_FORGIVING
+                  animatorState: 021_Memory_Peace_Forgiving
+                  moodState: Memory
+                  memoryTriggerID: 1
+                  sound: 05 Negotiate/21 - Memory Peace - Forgiving
+                  textKeys:
+                      - textKey: TEXT_{0}_PEACE_OFFER_FORGIVING_DEFAULT
+                      - textKey: TEXT_{0}_PEACE_OFFER_FORGIVING_PACT
+
+          - key: audience_hear_offer
+            action: HearOffer
+            priority: low
+            types:
+                - type: FRIENDLY
+                  animatorState: 022_Friendly_Hear_Offer
+                  moodState: Friendly
+                  sound: 05 Negotiate/22 - Hear Offer - Friendly
+                  textKeys:
+                      - textKey: TEXT_{0}_HEAR_OFFER_FRIENDLY
+
+                - type: HOSTILE
+                  animatorState: 023_Hostile_Hear_Offer
+                  moodState: Hostile
+                  sound: 05 Negotiate/23 - Hear Offer - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_HEAR_OFFER_HOSTILE
+
+                - type: AFRAID
+                  animatorState: 123_Afraid_Hear_Offer
+                  moodState: Afraid
+
+          - key: audience_propose_deal
+            action: Propose
+            types:
+                - type: FRIENDLY
+                  animatorState: 024_Friendly_Propose_Deal
+                  moodState: Friendly
+                  sound: 05 Negotiate/24 - Propose Deal - Friendly
+                  textKeys:
+                      - textKey: TEXT_{0}_PROPOSE_DEAL_FRIENDLY_DEFAULT
+                      - textKey: TEXT_{0}_PROPOSE_DEAL_FRIENDLY_DEMAND
+                      - textKey: TEXT_{0}_PROPOSE_DEAL_FRIENDLY_GIFT
+                      - textKey: TEXT_{0}_PROPOSE_DEAL_FRIENDLY_OFFENSE
+                      - textKey: TEXT_{0}_PROPOSE_DEAL_FRIENDLY_DEFENSE
+
+                - type: HOSTILE
+                  animatorState: 025_Hostile_Propose_Deal
+                  moodState: Hostile
+                  sound: 05 Negotiate/25 - Propose Deal - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_PROPOSE_DEAL_HOSTILE_DEFAULT
+                      - textKey: TEXT_{0}_PROPOSE_DEAL_HOSTILE_DEMAND
+                      - textKey: TEXT_{0}_PROPOSE_DEAL_HOSTILE_GIFT
+                      - textKey: TEXT_{0}_PROPOSE_DEAL_HOSTILE_OFFENSE
+                      - textKey: TEXT_{0}_PROPOSE_DEAL_HOSTILE_DEFENSE
+
+                - type: AFRAID
+                  animatorState: 026_Afraid_Propose_Deal
+                  moodState: Afraid
+                  sound: 05 Negotiate/26 - Propose Deal - Afraid
+                  textKeys:
+                      - textKey: TEXT_{0}_PROPOSE_DEAL_AFRAID_DEFAULT
+                      - textKey: TEXT_{0}_PROPOSE_DEAL_AFRAID_DEMAND
+                      - textKey: TEXT_{0}_PROPOSE_DEAL_AFRAID_GIFT
+                      - textKey: TEXT_{0}_PROPOSE_DEAL_AFRAID_OFFENSE
+                      - textKey: TEXT_{0}_PROPOSE_DEAL_AFRAID_DEFENSE
+
+                - type: MEMORY_RENEWAL
+                  animatorState: 027_Memory_Propose_Deal_Renewal
+                  moodState: Memory
+                  sound: 05 Negotiate/27 - Memory Deal - Renewal
+                  textKeys:
+                      - textKey: TEXT_{0}_PROPOSE_DEAL_RENEWAL
+
+                - type: MEMORY_FORGIVING
+                  animatorState: 028_Memory_Propose_Deal_Forgiving
+                  moodState: Memory
+                  memoryTriggerID: 1
+                  sound: 05 Negotiate/28 - Memory Deal - Forgiving
+                  textKeys:
+                      - textKey: TEXT_{0}_PROPOSE_DEAL_FORGIVING
+
+          - key: audience_make_offer
+            action: MakeOffer
+            priority: lock
+            types:
+                - type: FRIENDLY
+                  animatorState: 029_Friendly_Make_Offer
+                  moodState: Friendly
+                  sound: 05 Negotiate/29 - Make Offer - Friendly
+                  textKeys:
+                      - textKey: TEXT_{0}_MAKE_OFFER_FRIENDLY_DEFAULT
+                      - textKey: TEXT_{0}_MAKE_OFFER_FRIENDLY_FINE
+                      - textKey: TEXT_{0}_MAKE_OFFER_FRIENDLY_UPDATE
+
+                - type: HOSTILE
+                  animatorState: 030_Hostile_Make_Offer
+                  moodState: Hostile
+                  sound: 05 Negotiate/30 - Make Offer - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_MAKE_OFFER_HOSTILE_DEFAULT
+                      - textKey: TEXT_{0}_MAKE_OFFER_HOSTILE_FINE
+                      - textKey: TEXT_{0}_MAKE_OFFER_HOSTILE_UPDATE
+
+                - type: AFRAID
+                  animatorState: 130_Afraid_Make_Offer
+                  moodState: Afraid
+
+          - key: audience_no_offer
+            action: NoOffer
+            priority: lock
+            types:
+                - type: FRIENDLY
+                  animatorState: 031_friendly_no_offer
+                  moodState: Friendly
+                  sound: 05 Negotiate/31 - No Offer - Friendly
+                  textKeys:
+                      - textKey: TEXT_{0}_NO_OFFER_FRIENDLY_DEFAULT
+
+                - type: HOSTILE
+                  animatorState: 032_hostile_no_offer
+                  moodState: Hostile
+                  sound: 05 Negotiate/32 - No Offer - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_NO_OFFER_HOSTILE_DEFAULT
+
+                - type: AFRAID
+                  animatorState: 132_afraid_no_offer
+                  moodState: Afraid
+                  sound: 05 Negotiate/132 - No Offer - Afraid
+                  textKeys:
+                      - textKey: TEXT_{0}_NO_OFFER_AFRAID_DEFAULT
+
+          - key: audience_consider
+            showInMultiplayer: true
+            action: Consider
+            priority: lock
+            types:
+                - type: NEUTRAL
+                  animatorState: 033_Neutral_Consider
+                  moodState: Friendly
+                  sound: 05 Negotiate/33 - I'll Consider It - Neutral
+                  textKeys:
+                      - textKey: TEXT_{0}_CONSIDER
+
+          - key: audience_accept
+            action: Yes
+            priority: lock
+            types:
+                - type: FRIENDLY
+                  animatorState: 034_friendly_1_accept
+                  moodState: Friendly
+                  sound: 06 Accept/34 - Default Yes 1 - Friendly
+                  textKeys:
+                      - textKey: TEXT_{0}_ACCEPT_FRIENDLY_DEFAULT_1
+                      - textKey: TEXT_{0}_ACCEPT_FRIENDLY_PEACE
+                      - textKey: TEXT_{0}_ACCEPT_FRIENDLY_OFFENSE
+                      - textKey: TEXT_{0}_ACCEPT_FRIENDLY_DEFENSE
+                      - textKey: TEXT_{0}_ACCEPT_FRIENDLY_SPY
+                      - textKey: TEXT_{0}_ACCEPT_FRIENDLY_COLONIZE
+                      - textKey: TEXT_{0}_ACCEPT_FRIENDLY_ENEMIES
+
+                - type: HOSTILE
+                  animatorState: 035_Hostile_1_accept
+                  moodState: Hostile
+                  sound: 06 Accept/35 - Default Yes 1 - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_ACCEPT_HOSTILE_DEFAULT_1
+                      - textKey: TEXT_{0}_ACCEPT_HOSTILE_PEACE
+                      - textKey: TEXT_{0}_ACCEPT_HOSTILE_OFFENSE
+                      - textKey: TEXT_{0}_ACCEPT_HOSTILE_DEFENSE
+                      - textKey: TEXT_{0}_ACCEPT_HOSTILE_SPY
+                      - textKey: TEXT_{0}_ACCEPT_HOSTILE_COLONIZE
+                      - textKey: TEXT_{0}_ACCEPT_HOSTILE_ENEMIES
+
+                - type: AFRAID
+                  animatorState: 036_Afraid_1_accept
+                  moodState: Afraid
+                  sound: 06 Accept/36 - Default Yes 1 - Afraid
+                  textKeys:
+                      - textKey: TEXT_{0}_ACCEPT_AFRAID_DEFAULT_1
+                      - textKey: TEXT_{0}_ACCEPT_AFRAID_PEACE
+                      - textKey: TEXT_{0}_ACCEPT_AFRAID_OFFENSE
+                      - textKey: TEXT_{0}_ACCEPT_AFRAID_DEFENSE
+                      - textKey: TEXT_{0}_ACCEPT_AFRAID_SPY
+                      - textKey: TEXT_{0}_ACCEPT_AFRAID_COLONIZE
+                      - textKey: TEXT_{0}_ACCEPT_AFRAID_ENEMIES
+
+                - type: FRIENDLY_2
+                  animatorState: 037_friendly_2_accept
+                  moodState: Friendly
+                  memoryTriggerID: 1
+                  sound: 06 Accept/37 - Default Yes 2 - Friendly
+                  textKeys:
+                      - textKey: TEXT_{0}_ACCEPT_FRIENDLY_DEFAULT_2
+                      - textKey: TEXT_{0}_ACCEPT_FRIENDLY_PEACE
+                      - textKey: TEXT_{0}_ACCEPT_FRIENDLY_OFFENSE
+                      - textKey: TEXT_{0}_ACCEPT_FRIENDLY_DEFENSE
+                      - textKey: TEXT_{0}_ACCEPT_FRIENDLY_SPY
+                      - textKey: TEXT_{0}_ACCEPT_FRIENDLY_COLONIZE
+                      - textKey: TEXT_{0}_ACCEPT_FRIENDLY_ENEMIES
+
+                - type: HOSTILE_2
+                  animatorState: 038_Hostile_2_accept
+                  moodState: Hostile
+                  memoryTriggerID: 1
+                  sound: 06 Accept/38 - Default Yes 2 - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_ACCEPT_HOSTILE_DEFAULT_2
+                      - textKey: TEXT_{0}_ACCEPT_HOSTILE_PEACE
+                      - textKey: TEXT_{0}_ACCEPT_HOSTILE_OFFENSE
+                      - textKey: TEXT_{0}_ACCEPT_HOSTILE_DEFENSE
+                      - textKey: TEXT_{0}_ACCEPT_HOSTILE_SPY
+                      - textKey: TEXT_{0}_ACCEPT_HOSTILE_COLONIZE
+                      - textKey: TEXT_{0}_ACCEPT_HOSTILE_ENEMIES
+
+                - type: AFRAID_2
+                  animatorState: 039_Afraid_2_accept
+                  moodState: Afraid
+                  memoryTriggerID: 1
+                  sound: 06 Accept/39 - Default Yes 2 - Afraid
+                  textKeys:
+                      - textKey: TEXT_{0}_ACCEPT_AFRAID_DEFAULT_2
+                      - textKey: TEXT_{0}_ACCEPT_AFRAID_PEACE
+                      - textKey: TEXT_{0}_ACCEPT_AFRAID_OFFENSE
+                      - textKey: TEXT_{0}_ACCEPT_AFRAID_DEFENSE
+                      - textKey: TEXT_{0}_ACCEPT_AFRAID_SPY
+                      - textKey: TEXT_{0}_ACCEPT_AFRAID_COLONIZE
+                      - textKey: TEXT_{0}_ACCEPT_AFRAID_ENEMIES
+
+                - type: MEMORY_GUARDED
+                  animatorState: 040_mem_guarded_accept
+                  moodState: Memory
+                  sound: 06 Accept/40 - Memory Yes - Guarded
+                  textKeys:
+                      - textKey: TEXT_{0}_ACCEPT_GUARDED_DEFAULT
+                      - textKey: TEXT_{0}_ACCEPT_GUARDED_PEACE
+                      - textKey: TEXT_{0}_ACCEPT_GUARDED_OFFENSE
+                      - textKey: TEXT_{0}_ACCEPT_GUARDED_DEFENSE
+                      - textKey: TEXT_{0}_ACCEPT_GUARDED_SPY
+                      - textKey: TEXT_{0}_ACCEPT_GUARDED_COLONIZE
+
+                - type: MEMORY_GLAD
+                  animatorState: 041_mem_glad_accept
+                  moodState: Friendly
+                  memoryTriggerID: 2
+                  sound: 06 Accept/41 - Memory Yes - Glad
+                  textKeys:
+                      - textKey: TEXT_{0}_ACCEPT_GLAD_DEFAULT
+                      - textKey: TEXT_{0}_ACCEPT_GLAD_PEACE
+                      - textKey: TEXT_{0}_ACCEPT_GLAD_OFFENSE
+                      - textKey: TEXT_{0}_ACCEPT_GLAD_DEFENSE
+                      - textKey: TEXT_{0}_ACCEPT_GLAD_SPY
+                      - textKey: TEXT_{0}_ACCEPT_GLAD_COLONIZE
+
+          - key: audience_decline
+            action: No
+            priority: lock
+            types:
+                - type: FRIENDLY
+                  animatorState: 042_friendly_1_decline
+                  moodState: Friendly
+                  sound: 07 Decline/42 - Default No 1 - Friendly
+                  textKeys:
+                      - textKey: TEXT_{0}_DECLINE_FRIENDLY_DEFAULT_1
+                      - textKey: TEXT_{0}_DECLINE_FRIENDLY_PEACE
+                      - textKey: TEXT_{0}_DECLINE_FRIENDLY_OFFENSE
+                      - textKey: TEXT_{0}_DECLINE_FRIENDLY_DEFENSE
+                      - textKey: TEXT_{0}_DECLINE_FRIENDLY_SPY
+                      - textKey: TEXT_{0}_DECLINE_FRIENDLY_COLONIZE
+                      - textKey: TEXT_{0}_DECLINE_FRIENDLY_ENEMIES
+
+                - type: HOSTILE
+                  animatorState: 043_Hostile_1_decline
+                  moodState: Hostile
+                  sound: 07 Decline/43 - Default No 1 - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_DECLINE_HOSTILE_DEFAULT_1
+                      - textKey: TEXT_{0}_DECLINE_HOSTILE_PEACE
+                      - textKey: TEXT_{0}_DECLINE_HOSTILE_OFFENSE
+                      - textKey: TEXT_{0}_DECLINE_HOSTILE_DEFENSE
+                      - textKey: TEXT_{0}_DECLINE_HOSTILE_SPY
+                      - textKey: TEXT_{0}_DECLINE_HOSTILE_COLONIZE
+                      - textKey: TEXT_{0}_DECLINE_HOSTILE_ENEMIES
+
+                - type: AFRAID
+                  animatorState: 044_Afraid_1_decline
+                  moodState: Afraid
+                  sound: 07 Decline/44 - Default No 1 - Afraid
+                  textKeys:
+                      - textKey: TEXT_{0}_DECLINE_AFRAID_DEFAULT_1
+                      - textKey: TEXT_{0}_DECLINE_AFRAID_PEACE
+                      - textKey: TEXT_{0}_DECLINE_AFRAID_OFFENSE
+                      - textKey: TEXT_{0}_DECLINE_AFRAID_DEFENSE
+                      - textKey: TEXT_{0}_DECLINE_AFRAID_SPY
+                      - textKey: TEXT_{0}_DECLINE_AFRAID_COLONIZE
+                      - textKey: TEXT_{0}_DECLINE_AFRAID_ENEMIES
+
+                - type: FRIENDLY_2
+                  animatorState: 045_friendly_2_decline
+                  moodState: Friendly
+                  memoryTriggerID: 1
+                  sound: 07 Decline/45 - Default No 2 - Friendly
+                  textKeys:
+                      - textKey: TEXT_{0}_DECLINE_FRIENDLY_DEFAULT_2
+                      - textKey: TEXT_{0}_DECLINE_FRIENDLY_PEACE
+                      - textKey: TEXT_{0}_DECLINE_FRIENDLY_OFFENSE
+                      - textKey: TEXT_{0}_DECLINE_FRIENDLY_DEFENSE
+                      - textKey: TEXT_{0}_DECLINE_FRIENDLY_SPY
+                      - textKey: TEXT_{0}_DECLINE_FRIENDLY_COLONIZE
+                      - textKey: TEXT_{0}_DECLINE_FRIENDLY_ENEMIES
+
+                - type: HOSTILE_2
+                  animatorState: 046_Hostile_2_decline
+                  moodState: Hostile
+                  memoryTriggerID: 1
+                  sound: 07 Decline/46 - Default No 2 - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_DECLINE_HOSTILE_DEFAULT_2
+                      - textKey: TEXT_{0}_DECLINE_HOSTILE_PEACE
+                      - textKey: TEXT_{0}_DECLINE_HOSTILE_OFFENSE
+                      - textKey: TEXT_{0}_DECLINE_HOSTILE_DEFENSE
+                      - textKey: TEXT_{0}_DECLINE_HOSTILE_SPY
+                      - textKey: TEXT_{0}_DECLINE_HOSTILE_COLONIZE
+                      - textKey: TEXT_{0}_DECLINE_HOSTILE_ENEMIES
+
+                - type: AFRAID_2
+                  animatorState: 047_Afraid_2_decline
+                  moodState: Afraid
+                  memoryTriggerID: 1
+                  sound: 07 Decline/47 - Default No 2 - Afraid
+                  textKeys:
+                      - textKey: TEXT_{0}_DECLINE_AFRAID_DEFAULT_2
+                      - textKey: TEXT_{0}_DECLINE_AFRAID_PEACE
+                      - textKey: TEXT_{0}_DECLINE_AFRAID_OFFENSE
+                      - textKey: TEXT_{0}_DECLINE_AFRAID_DEFENSE
+                      - textKey: TEXT_{0}_DECLINE_AFRAID_SPY
+                      - textKey: TEXT_{0}_DECLINE_AFRAID_COLONIZE
+                      - textKey: TEXT_{0}_DECLINE_AFRAID_ENEMIES
+
+                - type: MEMORY_GRUDGE
+                  animatorState: 048_mem_grudge_decline
+                  moodState: Memory
+                  sound: 07 Decline/48 - Memory No - Grudge
+                  textKeys:
+                      - textKey: TEXT_{0}_DECLINE_GRUDGE_DEFAULT
+                      - textKey: TEXT_{0}_DECLINE_GRUDGE_PEACE
+                      - textKey: TEXT_{0}_DECLINE_GRUDGE_OFFENSE
+                      - textKey: TEXT_{0}_DECLINE_GRUDGE_DEFENSE
+                      - textKey: TEXT_{0}_DECLINE_GRUDGE_SPY
+                      - textKey: TEXT_{0}_DECLINE_GRUDGE_COLONIZE
+
+                - type: MEMORY_REBUKED
+                  animatorState: 049_mem_rebuked_decline
+                  moodState: Memory
+                  memoryTriggerID: 1
+                  sound: 07 Decline/49 - Memory No - Rebuked
+                  textKeys:
+                      - textKey: TEXT_{0}_DECLINE_REBUKED_DEFAULT
+                      - textKey: TEXT_{0}_DECLINE_REBUKED_PEACE
+                      - textKey: TEXT_{0}_DECLINE_REBUKED_OFFENSE
+                      - textKey: TEXT_{0}_DECLINE_REBUKED_DEFENSE
+
+          - key: audience_warning
+            action: Warning
+            descriptionKeys:
+                - textKey: FE_DIPLOMACY_EVENT_WARNING_DEFAULT
+                - textKey: FE_DIPLOMACY_EVENT_WARNING_BIOWEAPONS
+                - textKey: FE_DIPLOMACY_EVENT_WARNING_SPY
+                - textKey: FE_DIPLOMACY_EVENT_WARNING_FLEET
+                - textKey: FE_DIPLOMACY_EVENT_WARNING_COLONIZE
+                - textKey: FE_DIPLOMACY_EVENT_WARNING_ENEMIES
+            types:
+                - type: FRIENDLY
+                  animatorState: 050_friendly_warning
+                  moodState: Friendly
+                  falseMoodState: true
+                  sound: 08 Warn/50 - Warning - Friendly
+                  textKeys:
+                      - textKey: TEXT_{0}_WARNING_FRIENDLY_DEFAULT
+                      - textKey: TEXT_{0}_WARNING_FRIENDLY_BIOWEAPONS
+                      - textKey: TEXT_{0}_WARNING_FRIENDLY_SPY
+                      - textKey: TEXT_{0}_WARNING_FRIENDLY_FLEET
+                      - textKey: TEXT_{0}_WARNING_FRIENDLY_COLONIZE
+                      - textKey: TEXT_{0}_WARNING_FRIENDLY_ENEMIES
+
+                - type: HOSTILE
+                  animatorState: 051_hostile_warning
+                  moodState: Hostile
+                  falseMoodState: true
+                  memoryTriggerID: 1
+                  sound: 08 Warn/51 - Warning - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_WARNING_HOSTILE_DEFAULT
+                      - textKey: TEXT_{0}_WARNING_HOSTILE_BIOWEAPONS
+                      - textKey: TEXT_{0}_WARNING_HOSTILE_SPY
+                      - textKey: TEXT_{0}_WARNING_HOSTILE_FLEET
+                      - textKey: TEXT_{0}_WARNING_HOSTILE_COLONIZE
+                      - textKey: TEXT_{0}_WARNING_HOSTILE_ENEMIES
+
+                - type: MEMORY_REPEAT
+                  animatorState: 052_mem_repeat_warning
+                  moodState: Memory
+                  falseMoodState: true
+                  memoryTriggerID: 2
+                  sound: 08 Warn/52 - Memory Warning - Repeat
+                  textKeys:
+                      - textKey: TEXT_{0}_WARNING_REPEAT_DEFAULT
+                      - textKey: TEXT_{0}_WARNING_REPEAT_BIOWEAPONS
+                      - textKey: TEXT_{0}_WARNING_REPEAT_SPY
+                      - textKey: TEXT_{0}_WARNING_REPEAT_FLEET
+                      - textKey: TEXT_{0}_WARNING_REPEAT_COLONIZE
+                      - textKey: TEXT_{0}_WARNING_REPEAT_ENEMIES
+
+          - key: audience_threaten
+            action: Threaten
+            descriptionKeys:
+                - textKey: FE_DIPLOMACY_EVENT_THREAT_DEMAND
+                - textKey: FE_DIPLOMACY_EVENT_THREAT_CLAIM
+                - textKey: FE_DIPLOMACY_EVENT_THREAT_ENVY
+            priority: lock
+            types:
+                - type: OPPORTUNITY
+                  animatorState: 053_opportunity_threat
+                  moodState: Hostile
+                  falseMoodState: true
+                  sound: 09 Threaten/53 - Threat - Opportunity
+                  textKeys:
+                      - textKey: TEXT_{0}_THREAT_OPORTUNITY_DEFAULT
+                      - textKey: TEXT_{0}_THREAT_OPORTUNITY_DEMAND
+                      - textKey: TEXT_{0}_THREAT_OPORTUNITY_2
+                      - textKey: TEXT_{0}_THREAT_OPORTUNITY_3
+
+                - type: ENVY
+                  animatorState: 054_envy_threat
+                  moodState: Hostile
+                  falseMoodState: true
+                  memoryTriggerID: 1
+                  sound: 09 Threaten/54 - Threat - Envy
+                  textKeys:
+                      - textKey: TEXT_{0}_THREAT_ENVY_DEFAULT
+                      - textKey: TEXT_{0}_THREAT_ENVY_CLAIM
+                      - textKey: TEXT_{0}_THREAT_ENVY_2
+                      - textKey: TEXT_{0}_THREAT_ENVY_3
+
+          - key: audience_praise
+            descriptionKeys:
+                - textKey: FE_DIPLOMACY_EVENT_PRAISE_DEFAULT
+            action: Praise
+            types:
+                - type: FRIENDLY
+                  animatorState: 055_positive_praise
+                  moodState: Friendly
+                  sound: 10 Praise/55 - Praise - Positive
+                  textKeys:
+                      - textKey: TEXT_{0}_PRAISE_DEFAULT
+                      - textKey: TEXT_{0}_PRAISE_OFFENSE
+                      - textKey: TEXT_{0}_PRAISE_DEFENSE
+
+          - key: audience_betray
+            descriptionKeys:
+                - textKey: FE_DIPLOMACY_EVENT_BETRAY_DEFAULT
+            action: Betray
+            types:
+                - type: FRIENDLY
+                  animatorState: 056_apologetic_betray
+                  moodState: Friendly
+                  falseMoodState: true
+                  sound: 11 Betray/56 - Betray - Apologetic
+                  textKeys:
+                      - textKey: TEXT_{0}_BETRAY_APOLOGETIC_DEFAULT
+                      - textKey: TEXT_{0}_BETRAY_APOLOGETIC_INDISPOSED
+                      - textKey: TEXT_{0}_BETRAY_APOLOGETIC_SURVIVAL
+
+                - type: HOSTILE
+                  animatorState: 057_vindictive_betray
+                  moodState: Hostile
+                  falseMoodState: true
+                  memoryTriggerID: 1
+                  sound: 11 Betray/57 - Betray - Vindictive
+                  textKeys:
+                      - textKey: TEXT_{0}_BETRAY_VINDICTIVE_DEFAULT
+
+          - key: audience_honor
+            showInMultiplayer: true
+            descriptionKeys:
+                - textKey: FE_DIPLOMACY_EVENT_HONOR_DEFAULT
+            action: Honor
+            types:
+                - type: FRIENDLY
+                  animatorState: 058_friendly_honor
+                  moodState: Friendly
+                  falseMoodState: true
+                  sound: 12 Honor/58 - Honor - Friendly
+                  textKeys:
+                      - textKey: TEXT_{0}_HONOR_FRIENDLY_DEFAULT
+                      - textKey: TEXT_{0}_HONOR_FRIENDLY_OFFENSE
+                      - textKey: TEXT_{0}_HONOR_FRIENDLY_DEFENSE
+
+                - type: HOSTILE
+                  animatorState: 059_hostile_honor
+                  moodState: Hostile
+                  falseMoodState: true
+                  memoryTriggerID: 1
+                  sound: 12 Honor/59 - Honor - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_HONOR_HOSTILE_DEFAULT
+                      - textKey: TEXT_{0}_HONOR_HOSTILE_OFFENSE
+                      - textKey: TEXT_{0}_HONOR_HOSTILE_DEFENSE
+
+          - key: audience_react_to_betrayal
+            showInMultiplayer: true
+            action: ReactBetrayal
+            types:
+                - type: FRIENDLY
+                  animatorState: 060_friendly_react_to_betrayal
+                  moodState: Friendly
+                  sound: 13 React to Betrayal/60 - Betrayed - Default Reaction - Friendly
+                  textKeys:
+                      - textKey: TEXT_{0}_BETRAYAL_REACTION_FRIENDLY_DEFAULT
+                      - textKey: TEXT_{0}_BETRAYAL_REACTION_FRIENDLY_OFFENSE
+                      - textKey: TEXT_{0}_BETRAYAL_REACTION_FRIENDLY_DEFENSE
+                      - textKey: TEXT_{0}_BETRAYAL_REACTION_FRIENDLY_COLONIZE
+                      - textKey: TEXT_{0}_BETRAYAL_REACTION_FRIENDLY_SPY
+
+                - type: HOSTILE
+                  animatorState: 061_hostile_react_to_betrayal
+                  moodState: Hostile
+                  memoryTriggerID: 1
+                  sound: 13 React to Betrayal/61 - Betrayed - Default Reaction - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_BETRAYAL_REACTION_HOSTILE_DEFAULT
+                      - textKey: TEXT_{0}_BETRAYAL_REACTION_HOSTILE_OFFENSE
+                      - textKey: TEXT_{0}_BETRAYAL_REACTION_HOSTILE_DEFENSE
+                      - textKey: TEXT_{0}_BETRAYAL_REACTION_HOSTILE_COLONIZE
+                      - textKey: TEXT_{0}_BETRAYAL_REACTION_HOSTILE_SPY
+
+                - type: MEMORY_WAS_BETRAYED
+                  animatorState: 062_mem_was_betrayed_react_to_betrayal
+                  moodState: Hostile
+                  memoryTriggerID: 2
+                  sound: 13 React to Betrayal/62 - Betrayed - Memory Reaction - Was Betrayed
+                  textKeys:
+                      - textKey: TEXT_{0}_BETRAYAL_REACTION_WASBETRAYED
+
+                - type: MEMORY_HAD_BETRAYED
+                  animatorState: 063_mem_had_betrayed_react_to_betrayal
+                  moodState: Hostile
+                  memoryTriggerID: 3
+                  sound: 13 React to Betrayal/63 - Betrayed - Memory Reaction - Had Betrayed
+                  textKeys:
+                      - textKey: TEXT_{0}_BETRAYAL_REACTION_HADBETRAYED
+
+                - type: MEMORY_OATHBREAKER
+                  animatorState: 064_oathbreaker_react_to_betrayal
+                  moodState: Hostile
+                  memoryTriggerID: 4
+                  sound: 13 React to Betrayal/64 - Betrayed - Memory Reaction - Oathbreaker
+                  textKeys:
+                      - textKey: TEXT_{0}_BETRAYAL_REACTION_OATHBREAKER
+
+          - key: audience_reminder
+            showInMultiplayer: true
+            action: Reminder
+            descriptionKeys:
+                - textKey: FE_DIPLOMACY_EVENT_REMINDER_DEFAULT
+                - textKey: FE_DIPLOMACY_EVENT_REMINDER_OFFENSE
+                - textKey: FE_DIPLOMACY_EVENT_REMINDER_DEFENSE
+            types:
+                - type: FRIENDLY
+                  animatorState: 065_friendly_reminder
+                  moodState: Friendly
+                  falseMoodState: true
+                  sound: 14 Remind/65 - Reminder - Friendly
+                  textKeys:
+                      - textKey: TEXT_{0}_REMINDER_FRIENDLY_DEFAULT
+                      - textKey: TEXT_{0}_REMINDER_FRIENDLY_OFFENSE
+                      - textKey: TEXT_{0}_REMINDER_FRIENDLY_DEFENSE
+
+                - type: HOSTILE
+                  animatorState: 066_hostile_reminder
+                  moodState: Hostile
+                  falseMoodState: true
+                  memoryTriggerID: 1
+                  sound: 14 Remind/66 - Reminder - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_REMINDER_HOSTILE_DEFAULT
+                      - textKey: TEXT_{0}_REMINDER_HOSTILE_OFFENSE
+                      - textKey: TEXT_{0}_REMINDER_HOSTILE_DEFENSE
+
+          - key: audience_react_to_proposal_accept
+            action: ReactPropYes
+            priority: lock
+            types:
+                - type: FRIENDLY
+                  animatorState: 067_friendly_deal_accepted
+                  moodState: Friendly
+                  sound: 15 Proposal Reactions/67 - Proposal Accepted - Friendly
+                  textKeys:
+                      - textKey: TEXT_{0}_PROPOSAL_REACTION_ACCEPTED_FRIENDLY
+
+                - type: HOSTILE
+                  animatorState: 068_hostile_deal_accepted
+                  moodState: Hostile
+                  sound: 15 Proposal Reactions/68 - Proposal Accepted - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_PROPOSAL_REACTION_ACCEPTED_HOSTILE
+
+                - type: AFRAID
+                  animatorState: 069_afraid_deal_accepted
+                  moodState: Afraid
+                  sound: 15 Proposal Reactions/69 - Proposal Accepted - Afraid
+                  textKeys:
+                      - textKey: TEXT_{0}_PROPOSAL_REACTION_ACCEPTED_AFRAID
+
+                - type: MEMORY_HAD_ACCEPTED
+                  animatorState: 070_mem_had_accepted_deal_accepted
+                  moodState: Memory
+                  sound: 15 Proposal Reactions/70 - Memory Accepted - Had Accepted
+                  textKeys:
+                      - textKey: TEXT_{0}_PROPOSAL_REACTION_ACCEPTED_HADACCEPTED
+
+                - type: MEMORY_HAD_REJECTED
+                  animatorState: 071_mem_had_rejected_deal_accepted
+                  moodState: Memory
+                  memoryTriggerID: 1
+                  sound: 15 Proposal Reactions/71 - Memory Accepted - Had Rejected
+                  textKeys:
+                      - textKey: TEXT_{0}_PROPOSAL_REACTION_ACCEPTED_HADREJECTED
+
+                - type: THREAT
+                  animatorState: 068_hostile_deal_accepted
+                  moodState: Hostile
+                  sound: 15 Proposal Reactions/68 - Proposal Accepted - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_PROPOSAL_REACTION_ACCEPTED_THREAT
+
+          - key: audience_react_to_proposal_decline
+            action: ReactPropNo
+            priority: lock
+            types:
+                - type: FRIENDLY
+                  animatorState: 072_friendly_deal_declined
+                  moodState: Friendly
+                  sound: 15 Proposal Reactions/72 - Proposal Declined - Friendly
+                  textKeys:
+                      - textKey: TEXT_{0}_PROPOSAL_REACTION_DECLINED_FRIENDLY
+
+                - type: HOSTILE
+                  animatorState: 073_hostile_deal_declined
+                  moodState: Hostile
+                  sound: 15 Proposal Reactions/73 - Proposal Declined - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_PROPOSAL_REACTION_DECLINED_HOSTILE
+
+                - type: AFRAID
+                  animatorState: 074_afraid_deal_declined
+                  moodState: Afraid
+                  sound: 15 Proposal Reactions/74 - Proposal Declined - Afraid
+                  textKeys:
+                      - textKey: TEXT_{0}_PROPOSAL_REACTION_DECLINED_AFRAID
+
+                - type: MEMORY_HAD_ACCEPTED
+                  animatorState: 075_mem_had_accepted_deal_declined
+                  moodState: Memory
+                  sound: 15 Proposal Reactions/75 - Memory Rejected - Had Accepted
+                  textKeys:
+                      - textKey: TEXT_{0}_PROPOSAL_REACTION_DECLINED_HADACCEPTED
+
+                - type: MEMORY_HAD_REJECTED
+                  animatorState: 076_mem_had_rejected_deal_declined
+                  moodState: Memory
+                  memoryTriggerID: 1
+                  sound: 15 Proposal Reactions/76 - Memory Rejected - Had Rejected
+                  textKeys:
+                      - textKey: TEXT_{0}_PROPOSAL_REACTION_DECLINED_HADREJECTED
+
+                - type: THREAT
+                  animatorState: 073_hostile_deal_declined
+                  moodState: Hostile
+                  sound: 15 Proposal Reactions/73 - Proposal Declined - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_PROPOSAL_REACTION_DECLINED_THREAT
+
+          - key: audience_end_session
+            action: Goodbye
+            types:
+                - type: FRIENDLY
+                  animatorState: 077_friendly_goodbye
+                  moodState: Friendly
+                  sound: 16 End Session/77 - Goodbye - Friendly
+                  textKeys:
+                      - textKey: TEXT_{0}_GOODBYE_FRIENDLY
+
+                - type: HOSTILE
+                  animatorState: 078_hostile_goodbye
+                  moodState: Hostile
+                  sound: 16 End Session/78 - Goodbye - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_GOODBYE_HOSTILE
+
+                - type: AFRAID
+                  animatorState: 178_Afraid_goodbye
+                  moodState: Afraid
+                - type: MEMORY_HANG_UP
+                  animatorState: 079_hostile_hang_up
+                  moodState: Hostile
+                  memoryTriggerID: 1
+                  sound: 16 End Session/79 - HungUp - Hostile
+                  textKeys:
+                      - textKey: TEXT_{0}_GOODBYE_HANGUP
+
+          - key: audience_cancel
+            action: Cancel
+            types:
+                - type: FRIENDLY
+                  animatorState: Friendly_Idle
+                  moodState: Friendly
+                - type: HOSTILE
+                  animatorState: Hostile_Idle
+                  moodState: Hostile
+                  memoryTriggerID: 1
+                - type: AFRAID
+                  animatorState: Afraid_Idle
+                  moodState: Afraid
+                  memoryTriggerID: 2
+                - type: MEMORY_CANCEL
+                  animatorState: Memory_Idle
+                  moodState: Memory
+                  memoryTriggerID: 3
+          - key: audience_special_cancel
+            action: CancelSpecial
+            types:
+                - type: SPECIAL_CANCEL
+        # - event: &audience_sfx_test
+            # action: Goodbye
+            # types:
+                # - type: FRIENDLY
+                  # animatorState: 077_friendly_goodbye
+                  # moodState: Friendly
+                  # sound: 16 End Session/77 - Goodbye - Friendly
+                  # textKeys:
+                      # - textKey: TEXT_{0}_GOODBYE_FRIENDLY
+                  # sfx:
+                      # - sfx_key: Test_key_1
+                        # parameter: 1
+                      # - sfx_key: Test_key_2
+                        # parameter: 1
+                      # - sfx_key: Test_key_3
+                        # parameter: 1
+                      # - sfx_key: Test_key_2
+                        # parameter: 3
+                # - type: HOSTILE
+                  # animatorState: 078_hostile_goodbye
+                  # moodState: Hostile
+                  # sound: 16 End Session/78 - Goodbye - Hostile
+                  # textKeys:
+                      # - textKey: TEXT_{0}_GOODBYE_HOSTILE
+                  # sfx:
+                      # - sfx_key: Test_key_1
+                        # parameter: 1
+                      # - sfx_key: Test_key_2
+                        # parameter: 1
+                      # - sfx_key: Test_key_3
+                        # parameter: 1
+                      # - sfx_key: Test_key_2
+                        # parameter: 3
+                # - type: AFRAID
+                  # animatorState: 178_Afraid_goodbye
+                  # moodState: Afraid
+                # - type: MEMORY_HANG_UP
+                  # animatorState: 079_hostile_hang_up
+                  # moodState: Hostile
+                  # memoryTriggerID: 1
+                  # sound: 16 End Session/79 - HungUp - Hostile
+                  # textKeys:
+                      # - textKey: TEXT_{0}_GOODBYE_HANGUP
+                  # sfx:
+                      # - sfx_key: Test_key_1
+                        # parameter: 1
+                      # - sfx_key: Test_key_2
+                        # parameter: 1
+                      # - sfx_key: Test_key_3
+                        # parameter: 1
+                      # - sfx_key: Test_key_2
+                        # parameter: 3
+...

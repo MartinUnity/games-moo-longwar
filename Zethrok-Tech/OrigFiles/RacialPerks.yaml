@@ -1,0 +1,1426 @@
+﻿---
+- collection: &Backend.Civilizations.RacialPerk
+    items:
+          - key: perk_population_growth_modifier
+            category: PERK_CATEGORY_POPULATION_GROWTH
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: POPULATION_GROWTH_VERY_LOW_NAME
+                description: POPULATION_GROWTH_VERY_LOW_DESCRIPTION
+                value: -0.50
+                score: -7
+                displayIcon: assets/racial_traits/population_growth_low.png
+              - displayName: POPULATION_GROWTH_LOW_NAME
+                description: POPULATION_GROWTH_LOW_DESCRIPTION
+                value: -0.25
+                score: -4
+                displayIcon: assets/racial_traits/population_growth_low.png
+              - displayName: POPULATION_GROWTH_HIGH_NAME
+                description: POPULATION_GROWTH_HIGH_DESCRIPTION
+                value: 0.25
+                score: 4
+                displayIcon: assets/racial_traits/population_growth_high.png
+              - displayName: POPULATION_GROWTH_MAXIMUM_NAME
+                description: POPULATION_GROWTH_MAXIMUM_DESCRIPTION
+                value: 0.5
+                score: 7
+                displayIcon: assets/racial_traits/population_growth_maximum.png
+          - key: perk_food_bonus
+            category: PERK_CATEGORY_FOOD_OUTPUT
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: FOOD_OUTPUT_LOW_NAME
+                description: FOOD_OUTPUT_LOW_DESCRIPTION
+                value: -0.25
+                score: -3
+                displayIcon: assets/racial_traits/food_output_low.png
+              - displayName: FOOD_OUTPUT_HIGH_NAME
+                description: FOOD_OUTPUT_HIGH_DESCRIPTION
+                value: 0.25
+                score: 4
+                displayIcon: assets/racial_traits/food_output_high.png
+              - displayName: FOOD_OUTPUT_MAXIMUM_NAME
+                description: FOOD_OUTPUT_MAXIMUM_DESCRIPTION
+                value: 0.5
+                score: 7
+                displayIcon: assets/racial_traits/food_output_maximum.png
+            exclusions:
+               - perk_lithovore
+          - key: perk_production_bonus
+            category: PERK_CATEGORY_PRODUCTION
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: PRODUCTION_LOW_NAME
+                description: PRODUCTION_LOW_DESCRIPTION
+                value: -0.25
+                score: -3
+                displayIcon: assets/racial_traits/production_low.png
+              - displayName: PRODUCTION_HIGH_NAME
+                description: PRODUCTION_HIGH_DESCRIPTION
+                value: 0.25
+                score: 3
+                displayIcon: assets/racial_traits/production_high.png
+              - displayName: PRODUCTION_MAXIMUM_NAME
+                description: PRODUCTION_MAXIMUM_DESCRIPTION
+                value: 0.5
+                score: 6
+                displayIcon: assets/racial_traits/production_maximum.png
+            exclusions:
+               - perk_industrialist
+          - key: perk_research_bonus
+            category: PERK_CATEGORY_RESEARCH
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: RESEARCH_LOW_NAME
+                description: RESEARCH_LOW_DESCRIPTION
+                value: -0.25
+                score: -3
+                displayIcon: assets/racial_traits/research_low.png
+              - displayName: RESEARCH_HIGH_NAME
+                description: RESEARCH_HIGH_DESCRIPTION
+                value: 0.25
+                score: 3
+                displayIcon: assets/racial_traits/research_high.png
+              - displayName: RESEARCH_MAXIMUM_NAME
+                description: RESEARCH_MAXIMUM_DESCRIPTION
+                value: 0.5
+                score: 6
+                displayIcon: assets/racial_traits/research_maximum.png
+            exclusions:
+               - perk_uncreative
+               - perk_creative
+          - key: perk_income_bonus
+            category: PERK_CATEGORY_CREDITS
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: CREDITS_LOW_NAME
+                description: CREDITS_LOW_DESCRIPTION
+                value: -0.25
+                score: -4
+                displayIcon: assets/racial_traits/credits_low.png
+              - displayName: CREDITS_HIGH_NAME
+                description: CREDITS_HIGH_DESCRIPTION
+                value: 0.25
+                score: 5
+                displayIcon: assets/racial_traits/credits_high.png
+              - displayName: CREDITS_MAXIMUM_NAME
+                description: CREDITS_MAXIMUM_DESCRIPTION
+                value: 0.5
+                score: 8
+                displayIcon: assets/racial_traits/credits_maximum.png
+          - key: perk_pollution_absorption
+            category: PERK_CATEGORY_POLLUTION
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 1
+              # - displayName: POLLUTION_LOW_TOLERANCE_NAME
+                # description: POLLUTION_LOW_TOLERANCE_DESCRIPTION
+                # value: 0.25
+                # score: -2
+                # displayIcon: assets/racial_traits/pollution_immunity.png
+              # - displayName: POLLUTION_HIGH_TOLERANCE_NAME
+                # description: POLLUTION_HIGH_TOLERANCE_DESCRIPTION
+                # value: -0.5
+                # score: 2
+                # displayIcon: assets/racial_traits/pollution_immunity.png
+              - displayName: POLLUTION_INMUNITY_NAME
+                description: POLLUTION_INMUNITY_DESCRIPTION
+                value: 0
+                score: 8
+                displayIcon: assets/racial_traits/pollution_immunity.png
+            exclusions:
+               - perk_ecologist
+          - key: perk_homeworld_size
+            category: PERK_CATEGORY_HOMEWORLD_SIZE
+            valueType: planetsize
+            displayOrder: 0
+            levels:
+              - value: planetsize_medium
+              - displayName: HOMEWORLD_SIZE_SMALL_NAME
+                description: HOMEWORLD_SIZE_SMALL_DESCRIPTION
+                value: planetsize_small
+                score: -2
+                displayIcon: assets/racial_traits/home_size_large.png
+              - displayName: HOMEWORLD_SIZE_LARGE_NAME
+                description: HOMEWORLD_SIZE_LARGE_DESCRIPTION
+                value: planetsize_large
+                score: 2
+                displayIcon: assets/racial_traits/home_size_large.png
+              - displayName: HOMEWORLD_SIZE_HUGE_NAME
+                description: HOMEWORLD_SIZE_HUGE_DESCRIPTION
+                value: planetsize_huge
+                score: 4
+                displayIcon: assets/racial_traits/home_size_large.png
+          - key: perk_homeworld_richness
+            category: PERK_CATEGORY_HOMEWORLD_MINERALS
+            valueType: planetmineralrichness
+            displayOrder: 0
+            levels:
+              - value: planetmineralrichness_abundant
+              - displayName: HOMEWORLD_MINERALS_POOR_NAME
+                description: HOMEWORLD_MINERALS_POOR_DESCRIPTION
+                value: planetmineralrichness_poor
+                score: -2
+                displayIcon: assets/racial_traits/home_minerals_poor.png
+              - displayName: HOMEWORLD_MINERALS_RICH_NAME
+                description: HOMEWORLD_MINERALS_RICH_DESCRIPTION
+                value: planetmineralrichness_rich
+                score: 2
+                displayIcon: assets/racial_traits/home_minerals_rich.png
+              - displayName: HOMEWORLD_MINERALS_ULTRA_RICH_NAME
+                description: HOMEWORLD_MINERALS_ULTRA_RICH_DESCRIPTION
+                value: planetmineralrichness_ultra_rich
+                score: 6
+                displayIcon: assets/racial_traits/home_minerals_ultra_rich.png
+          - key: perk_ship_defense
+            category: PERK_CATEGORY_SHIP_DEFENSE
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: SHIP_DEFENSE_LOW_NAME
+                description: SHIP_DEFENSE_LOW_DESCRIPTION
+                value: -0.25
+                score: -1
+                displayIcon: assets/racial_traits/ship_defense_low.png
+              - displayName: SHIP_DEFENSE_HIGH_NAME
+                description: SHIP_DEFENSE_HIGH_DESCRIPTION
+                value: 0.25
+                score: 2
+                displayIcon: assets/racial_traits/ship_defense_high.png
+              - displayName: SHIP_DEFENSE_MAXIMUM_NAME
+                description: SHIP_DEFENSE_MAXIMUM_DESCRIPTION
+                value: 0.5
+                score: 4
+                displayIcon: assets/racial_traits/ship_defense_maximum.png
+            exclusions:
+               - perk_natural_pilots
+          - key: perk_ship_attack
+            category: PERK_CATEGORY_SHIP_ATTACK
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: SHIP_ATTACK_LOW_NAME
+                description: SHIP_ATTACK_LOW_DESCRIPTION
+                value: -0.25
+                score: -1
+                displayIcon: assets/racial_traits/ship_attack_low.png
+              - displayName: SHIP_ATTACK_HIGH_NAME
+                description: SHIP_ATTACK_HIGH_DESCRIPTION
+                value: 0.25
+                score: 2
+                displayIcon: assets/racial_traits/ship_attack_high.png
+              - displayName: SHIP_ATTACK_MAXIMUM_NAME
+                description: SHIP_ATTACK_MAXIMUM_DESCRIPTION
+                value: 0.5
+                score: 4
+                displayIcon: assets/racial_traits/ship_attack_maximum.png
+            exclusions:
+               - perk_natural_pilots
+          - key: perk_ship_auto_repair
+            category: PERK_CATEGORY_SHIP_IMPROVEMENTS
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: SHIP_AUTO_REPAIR_ENABLED_NAME
+                description: SHIP_AUTO_REPAIR_ENABLED_DESCRIPTION
+                value: 0.05
+                score: 3
+                displayIcon: assets/racial_traits/ship_auto_repair.png
+            exclusions:
+               - perk_cybernetic
+          - key: perk_ship_improvements_combat_speed_bonus
+            category: PERK_CATEGORY_SHIP_IMPROVEMENTS
+            isHiddenPerk: true
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: SHIP_IMPROVEMENTS_COMBAT_SPEED_BONUS_NAME
+                description: SHIP_IMPROVEMENTS_COMBAT_SPEED_BONUS_DESCRIPTION
+                value: 0.25
+                score: 1
+                displayIcon: assets/racial_traits/ship_combat_speed.png
+            exclusions:
+               - perk_natural_pilots
+          - key: perk_ship_improvements_travel_speed_bonus
+            category: PERK_CATEGORY_SHIP_IMPROVEMENTS
+            isHiddenPerk: true
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: SHIP_IMPROVEMENTS_TRAVEL_SPEED_BONUS_NAME
+                description: SHIP_IMPROVEMENTS_TRAVEL_SPEED_BONUS_DESCRIPTION
+                value: 0.25
+                score: 2
+                displayIcon: assets/racial_traits/ship_travel_speed.png
+            exclusions:
+               - perk_natural_pilots
+          - key: perk_ship_improvements_stealth
+            category: PERK_CATEGORY_SHIP_IMPROVEMENTS
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: SHIP_IMPROVEMENTS_STEALTH_NAME
+                description: SHIP_IMPROVEMENTS_STEALTH_DESCRIPTION
+                value: -0.5
+                score: 2
+                displayIcon: assets/racial_traits/ship_stealth.png
+            exclusions:
+               - perk_stealthy
+          - key: perk_ship_cost_modifier
+            category: PERK_CATEGORY_SHIP_COST
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: SHIP_COST_REDUCED_NAME
+                description: SHIP_COST_REDUCED_DESCRIPTION
+                value: -0.2
+                score: 3
+                displayIcon: assets/racial_traits/ship_cost_reduced.png
+            exclusions:
+               - perk_strategists
+          - key: perk_homeworld_biome
+            category: PERK_CATEGORY_HOMEWORLD_BIOME
+            isHiddenPerk: true
+            valueType: planetbiome
+            displayOrder: 0
+            levels:
+              - value: biome_terran
+              - displayName: HOMEWORLD_BIOME_SWAMP_NAME
+                description: HOMEWORLD_BIOME_SWAMP_DESCRIPTION
+                value: biome_swamp
+                score: -1
+                displayIcon: assets/racial_traits/home_biome_swamp.png
+              - displayName: HOMEWORLD_BIOME_DESERT_NAME
+                description: HOMEWORLD_BIOME_DESERT_DESCRIPTION
+                value: biome_desert
+                score: -1
+                displayIcon: assets/racial_traits/home_biome_desert.png
+              - displayName: HOMEWORLD_BIOME_ARID_NAME
+                description: HOMEWORLD_BIOME_ARID_DESCRIPTION
+                value: biome_arid
+                score: -1
+                displayIcon: assets/racial_traits/home_biome_arid.png
+              - displayName: HOMEWORLD_BIOME_VOLCANIC_NAME
+                description: HOMEWORLD_BIOME_VOLCANIC_DESCRIPTION
+                value: biome_volcanic
+                score: -1
+                displayIcon: assets/racial_traits/home_biome_volcanic.png
+              - displayName: HOMEWORLD_BIOME_OCEAN_NAME
+                description: HOMEWORLD_BIOME_OCEAN_DESCRIPTION
+                value: biome_ocean
+                score: -1
+                displayIcon: assets/racial_traits/home_biome_ocean.png
+          - key: perk_uber_planet
+            category: PERK_CATEGORY_UBER_PLANET
+            isHiddenPerk: true
+            valueType: uberplanet
+            displayOrder: 0
+            levels:
+              - value: 
+              - displayName: UBER_PLANET_CAVERNOUS_NAME
+                description: UBER_PLANET_CAVERNOUS_DESCRIPTION
+                value: techapp_uber_cavernous
+                score: 2
+                displayIcon: assets/racial_traits/uber_cavernous.png
+              - displayName: UBER_PLANET_GRASSLAND_NAME
+                description: UBER_PLANET_GRASSLAND_DESCRIPTION
+                value: techapp_uber_grassland
+                score: 2
+                displayIcon: assets/racial_traits/uber_grassland.png
+              - displayName: UBER_PLANET_TROPICAL_NAME
+                description: UBER_PLANET_TROPICAL_DESCRIPTION
+                value: techapp_uber_tropical
+                score: 2
+                displayIcon: assets/racial_traits/uber_tropical.png
+              - displayName: UBER_PLANET_INFERNO_NAME
+                description: UBER_PLANET_INFERNO_DESCRIPTION
+                value: techapp_uber_inferno
+                score: 2
+                displayIcon: assets/racial_traits/uber_inferno.png
+              - displayName: UBER_PLANET_OCEAN_NAME
+                description: UBER_PLANET_OCEAN_DESCRIPTION
+                value: techapp_uber_ocean
+                score: 2
+                displayIcon: assets/racial_traits/uber_oceanic.png
+          - key: perk_food_consumption_modifier
+            category: PERK_CATEGORY_FOOD_CONSUMPTION
+            isHiddenPerk: true
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: FOOD_CONSUMPTION_REDUCED_NAME
+                description: FOOD_CONSUMPTION_REDUCED_DESCRIPTION
+                value: 0.25
+                score: 3
+                displayIcon: assets/racial_traits/food_consumption_reduced.png
+              - displayName: FOOD_CONSUMPTION_REDUCED_NAME
+                description: FOOD_CONSUMPTION_REDUCED_DESCRIPTION
+                value: 0.5
+                score: 5
+                displayIcon: assets/racial_traits/food_consumption_reduced.png
+              - displayName: FOOD_CONSUMPTION_NONE_NAME
+                description: FOOD_CONSUMPTION_NONE_DESCRIPTION
+                value: 1
+                score: 8
+                displayIcon: assets/racial_traits/food_consumption_none.png
+          - key: perk_morale_bonus
+            category: PERK_CATEGORY_MORALE
+            isHiddenPerk: true
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: MORALE_VERY_LOW_NAME
+                description: MORALE_VERY_DESCRIPTION
+                value: -0.15
+                score: -3
+                displayIcon: assets/racial_traits/morale_low.png
+              - displayName: MORALE_LOW_NAME
+                description: MORALE_LOW_DESCRIPTION
+                value: -0.05
+                score: -1
+                displayIcon: assets/racial_traits/morale_low.png
+              - displayName: MORALE_HIGH_NAME
+                description: MORALE_HIGH_DESCRIPTION
+                value: 0.05
+                score: 2
+                displayIcon: assets/racial_traits/morale_invariable.png
+              - displayName: MORALE_VERY_HIGH_NAME
+                description: MORALE_VERY_HIGH_DESCRIPTION
+                value: 0.15
+                score: 4
+                displayIcon: assets/racial_traits/morale_invariable.png
+              # - displayName: MORALE_INVARIABLE_NAME
+                # description: MORALE_INVARIABLE_DESCRIPTION
+                # value: 1
+                # score: 80
+                # displayIcon: assets/racial_traits/morale_invariable.png
+          - key: perk_ground_units_marine_training_rate
+            category: PERK_CATEGORY_GROUND_UNITS
+            isHiddenPerk: true
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: GROUND_UNITS_MARINE_TRAINING_RATE_NAME
+                description: GROUND_UNITS_MARINE_TRAINING_RATE_DESCRIPTION
+                value: 0.5
+                score: 1
+                displayIcon: assets/racial_traits/ground_units_marines_rate.png
+          - key: perk_ground_units_extended_barracks
+            category: PERK_CATEGORY_GROUND_UNITS
+            isHiddenPerk: true
+            valueType: int
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: GROUND_UNITS_EXTENDED_BARRACKS_NAME
+                description: GROUND_UNITS_EXTENDED_BARRACKS_DESCRIPTION
+                value: 4
+                score: 1
+                displayIcon: assets/racial_traits/ground_units_extended_barracks.png
+          - key: perk_ground_combat_rating
+            category: PERK_CATEGORY_GROUND_COMBAT_RATING
+            isHiddenPerk: true
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: GROUND_COMBAT_RATING_LOW_NAME
+                description: GROUND_COMBAT_RATING_LOW_DESCRIPTION
+                value: -0.25
+                score: -1
+                displayIcon: assets/racial_traits/ground_combat_low.png
+              - displayName: GROUND_COMBAT_RATING_HIGH_NAME
+                description: GROUND_COMBAT_RATING_HIGH_DESCRIPTION
+                value: 0.25
+                score: 1
+                displayIcon: assets/racial_traits/ground_combat_high.png
+              - displayName: GROUND_COMBAT_RATING_MAXIMUM_NAME
+                description: GROUND_COMBAT_RATING_MAXIMUM_DESCRIPTION
+                value: 0.5
+                score: 2
+                displayIcon: assets/racial_traits/ground_combat_high.png
+          - key: perk_assimilation_power
+            category: PERK_CATEGORY_ASSIMILATION_POWER
+            isHiddenPerk: true
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: ASSIMILATION_POWER_LOW_NAME
+                description: ASSIMILATION_POWER_LOW_DESCRIPTION
+                value: -0.25
+                score: -1
+                displayIcon: assets/racial_traits/assimilation_power_low.png
+              - displayName: ASSIMILATION_POWER_HIGH_NAME
+                description: ASSIMILATION_POWER_HIGH_DESCRIPTION
+                value: 0.25
+                score: 1
+                displayIcon: assets/racial_traits/assimilation_power_high.png
+              - displayName: ASSIMILATION_POWER_IMMEDIATE_NAME
+                description: ASSIMILATION_POWER_IMMEDIATE_DESCRIPTION
+                value: 1
+                score: 4
+                displayIcon: assets/racial_traits/assimilation_power_immediate.png
+          - key: perk_gravity_tolerance
+            category: PERK_CATEGORY_GRAVITY_TOLERANCE
+            isHiddenPerk: true
+            valueType: string
+            displayOrder: 0
+            levels:
+              - value: Normal
+              - displayName: GRAVITY_TOLERANCE_LOW_NAME
+                description: GRAVITY_TOLERANCE_LOW_DESCRIPTION
+                value: Low
+                score: -3
+                displayIcon: assets/racial_traits/gravity_low.png
+              - displayName: GRAVITY_TOLERANCE_HIGH_NAME
+                description: GRAVITY_TOLERANCE_HIGH_DESCRIPTION
+                value: High
+                score: 4
+                displayIcon: assets/racial_traits/gravity_high.png
+              - displayName: GRAVITY_TOLERANCE_ALL_NAME
+                description: GRAVITY_TOLERANCE_ALL_DESCRIPTION
+                value: All
+                score: 6
+                displayIcon: assets/racial_traits/gravity_high.png
+            exclusions:
+               - perk_tolerant
+          - key: perk_counterespionage_leveling_rate
+            category: PERK_CATEGORY_COUNTERESPIONAGE
+            isHiddenPerk: true
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: COUNTERESPIONAGE_LOW_NAME
+                description: COUNTERESPIONAGE_LOW_DESCRIPTION
+                value: -0.2
+                score: -3
+                displayIcon: assets/racial_traits/counterespionage_low.png
+              - displayName: COUNTERESPIONAGE_HIGH_NAME
+                description: COUNTERESPIONAGE_HIGH_DESCRIPTION
+                value: 0.1
+                score: 1
+                displayIcon: assets/racial_traits/counterespionage_high.png
+              - displayName: COUNTERESPIONAGE_MAXIMUM_NAME
+                description: COUNTERESPIONAGE_MAXIMUM_DESCRIPTION
+                value: 0.2
+                score: 3
+                displayIcon: assets/racial_traits/counterespionage_maximum.png
+          - key: perk_espionage_leveling_rate
+            category: PERK_CATEGORY_ESPIONAGE
+            isHiddenPerk: true
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: ESPIONAGE_LOW_NAME
+                description: ESPIONAGE_LOW_DESCRIPTION
+                value: 0.1
+                score: -1
+                displayIcon: assets/racial_traits/espionage_low.png
+              - displayName: ESPIONAGE_HIGH_NAME
+                description: ESPIONAGE_HIGH_DESCRIPTION
+                value: -0.1
+                score: 2
+                displayIcon: assets/racial_traits/espionage_high.png
+              - displayName: ESPIONAGE_MAXIMUM_NAME
+                description: ESPIONAGE_MAXIMUM_DESCRIPTION
+                value: -0.2
+                score: 4
+                displayIcon: assets/racial_traits/espionage_maximum.png
+          - key: perk_spy_trainer
+            category: PERK_CATEGORY_SPY_TRAINING
+            isHiddenPerk: true
+            valueType: float
+            displayOrder: 0
+            levels:
+                - value: 0
+                - displayName: SPY_TRAINING_NAME
+                  description: SPY_TRAINING_DESCRIPTION
+                  value: 0.5
+                  score: 4
+                  displayIcon: assets/racial_traits/espionage_high.png
+          - key: perk_omniscience
+            category: PERK_CATEGORY_OMNISCIENCE
+            isHiddenPerk: true
+            valueType: bool
+            displayOrder: 0
+            levels:
+              - value: false
+              - displayName: OMNISCIENCE_ENABLED_NAME
+                description: OMNISCIENCE_ENABLED_DESCRIPTION
+                value: true
+                score: 8
+                displayIcon: assets/racial_traits/omniscience.png
+          - key: perk_trade_treaty_bonus
+            category: PERK_CATEGORY_TRADING
+            isHiddenPerk: true
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: TRADING_TREATIES_NAME
+                description: TRADING_TREATIES_DESCRIPTION
+                value: 0.25
+                score: 3
+                displayIcon: assets/racial_traits/trading_treaties.png
+          - key: perk_trade_goods_bonus
+            category: PERK_CATEGORY_TRADING
+            isHiddenPerk: true
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: TRADING_GOODS_NAME
+                description: TRADING_GOODS_DESCRIPTION
+                value: 0.25
+                score: 2
+                displayIcon: assets/racial_traits/trading_goods.png
+              - displayName: TRADING_GOODS_NAME
+                description: TRADING_GOODS_DESCRIPTION
+                value: 1
+                score: 6
+                displayIcon: assets/racial_traits/trading_goods.png
+          - key: perk_diplomacy_repulse_treaties
+            category: PERK_CATEGORY_DIPLOMACY
+            isHiddenPerk: true
+            valueType: bool
+            displayOrder: 0
+            levels:
+              - value: false
+              - displayName: DIPLOMACY_REPULSE_TREATIES_NAME
+                description: DIPLOMACY_REPULSE_TREATIES_DESCRIPTION
+                value: true
+                score: -6
+                displayIcon: assets/racial_traits/diplomacy_repulse_treaties.png
+          - key: perk_diplomacy_high_acceptance
+            category: PERK_CATEGORY_DIPLOMACY
+            isHiddenPerk: true
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: DIPLOMACY_LOW_ACCEPTANCE_NAME
+                description: DIPLOMACY_LOW_ACCEPTANCE_DESCRIPTION
+                value: 0.2
+                score: -1
+                displayIcon: assets/racial_traits/diplomacy_repulse_treaties.png
+              - displayName: DIPLOMACY_HIGH_ACCEPTANCE_NAME
+                description: DIPLOMACY_HIGH_ACCEPTANCE_DESCRIPTION
+                value: -0.2
+                score: 2
+                displayIcon: assets/racial_traits/diplomacy_high_acceptance.png
+          - key: perk_diplomacy_improved_effects
+            category: PERK_CATEGORY_DIPLOMACY
+            isHiddenPerk: true
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: DIPLOMACY_WORSEN_EFFECTS_NAME
+                description: DIPLOMACY_WORSEN_EFFECTS_DESCRIPTION
+                value: -0.2
+                score: -2
+                displayIcon: assets/racial_traits/diplomacy_repulse_treaties.png
+              - displayName: DIPLOMACY_IMPROVED_EFFECTS_NAME
+                description: DIPLOMACY_IMPROVED_EFFECTS_DESCRIPTION
+                value: 0.2
+                score: 3
+                displayIcon: assets/racial_traits/diplomacy_improved_effects.png
+          - key: perk_command_points_bonus
+            category: PERK_CATEGORY_COMMAND_POINTS
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: COMMAND_POINTS_GOOD_NAME
+                description: COMMAND_POINTS_GOOD_DESCRIPTION
+                value: 0.1
+                score: 2
+                displayIcon: assets/racial_traits/command_points_good.png
+              - displayName: COMMAND_POINTS_GREAT_NAME
+                description: COMMAND_POINTS_GREAT_DESCRIPTION
+                value: 0.2
+                score: 4
+                displayIcon: assets/racial_traits/command_points_great.png
+              - displayName: COMMAND_POINTS_EXCELLENT_NAME
+                description: COMMAND_POINTS_EXCELLENT_DESCRIPTION
+                value: 0.3
+                score: 6
+                displayIcon: assets/racial_traits/command_points_excellent.png
+            exclusions:
+               - perk_strategists
+          - key: perk_research_government
+            category: PERK_CATEGORY_RESEARCH_FREE
+            isHiddenPerk: true
+            valueType: string
+            isTechFreePerk: true
+            displayOrder: 0
+            levels:
+              - value: 
+              - displayName: RESEARCH_FREE_GOVERNMENT_NAME
+                description: RESEARCH_FREE_GOVERNMENT_DESCRIPTION
+                value: technode_government
+                score: 1
+                displayIcon: assets/racial_traits/advanced_government.png
+          - key: perk_research_physics
+            category: PERK_CATEGORY_RESEARCH_FREE
+            isHiddenPerk: true
+            valueType: string
+            isTechFreePerk: true
+            displayOrder: 0
+            levels:
+              - value: 
+              - displayName: RESEARCH_FREE_PHYSICS_NAME
+                description: RESEARCH_FREE_PHYSICS_DESCRIPTION
+                value: technode_physics
+                score: 1
+                displayIcon: assets/racial_traits/nuclear_physics.png
+          - key: perk_research_biology
+            category: PERK_CATEGORY_RESEARCH_FREE
+            isHiddenPerk: true
+            valueType: string
+            isTechFreePerk: true
+            displayOrder: 0
+            levels:
+              - value: 
+              - displayName: RESEARCH_FREE_BIOLOGY_NAME
+                description: RESEARCH_FREE_BIOLOGY_DESCRIPTION
+                value: technode_biology
+                score: 1
+                displayIcon: assets/racial_traits/bio_technology.png
+          - key: perk_research_engineering
+            category: PERK_CATEGORY_RESEARCH_FREE
+            isHiddenPerk: true
+            valueType: string
+            isTechFreePerk: true
+            displayOrder: 0
+            levels:
+              - value: 
+              - displayName: RESEARCH_FREE_ENGINEERING_NAME
+                description: RESEARCH_FREE_ENGINEERING_DESCRIPTION
+                value: technode_engineering
+                score: 1
+                displayIcon: assets/racial_traits/advanced_engineering.png
+          - key: perk_gmf_shares_discount
+            category: PERK_CATEGORY_GMF
+            isHiddenPerk: true
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: GMF_SHARES_DISCOUNT_NAME
+                description: GMF_SHARES_DISCOUNT_DESCRIPTION
+                value: -0.1
+                score: 20
+                displayIcon: assets/racial_traits/command_points_good.png
+          - key: perk_gdp_bonus
+            category: PERK_CATEGORY_GDP
+            isHiddenPerk: true
+            valueType: float
+            displayOrder: 0
+            levels:
+              - value: 0
+              - displayName: GDP_BONUS_NAME
+                description: GDP_BONUS_DESCRIPTION
+                value: 0.1
+                score: 20
+                displayIcon: assets/racial_traits/command_points_good.png
+          - key: perk_mind_control
+            category: PERK_CATEGORY_MIND_CONTROL
+            isHiddenPerk: true
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: MIND_CONTROL_NAME
+                  description: MIND_CONTROL_DESCRIPTION
+                  value: true
+                  score: 1
+                  displayIcon: assets/racial_traits/mindcontrol.png
+          - key: perk_tech_discover_all
+            category: PERK_CATEGORY_TECH
+            isHiddenPerk: true
+            valueType: bool
+            displayOrder: 0
+            levels:
+              - value: false
+              - displayName: TECH_DISCOVER_ALL_NAME
+                description: TECH_DISCOVER_ALL_DESCRIPTION
+                value: true
+                score: 4
+                displayIcon: assets/racial_traits/research_maximum.png
+          - key: perk_tech_discover_random
+            category: PERK_CATEGORY_TECH
+            isHiddenPerk: true
+            valueType: bool
+            displayOrder: 0
+            levels:
+              - value: false
+              - displayName: TECH_DISCOVER_RANDOM_NAME
+                description: TECH_DISCOVER_RANDOM_DESCRIPTION
+                value: true
+                score: -2
+                displayIcon: assets/racial_traits/research_low.png
+          - key: perk_homeworld_artifact
+            category: PERK_CATEGORY_HOMEWORLD_RESEARCH
+            valueType: bool
+            displayOrder: 0
+            levels:
+              - value: false
+              - displayName: HOMEWORLD_RESEARCH_ARTIFACTS_NAME
+                description: HOMEWORLD_RESEARCH_ARTIFACTS_DESCRIPTION
+                value: true
+                score: 1
+                displayIcon: assets/racial_traits/home_research_artifacts.png
+            exclusions:
+               - perk_technologist
+###SPECIALS
+          - key: perk_homeworld_gravity_low
+            category: PERK_CATEGORY_HOMEWORLD_RESEARCH
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: HOMEWORLD_GRAVITY_LOW_NAME
+                  description: HOMEWORLD_GRAVITY_LOW_DESCRIPTION
+                  value: true
+                  score: -3
+                  displayIcon: assets/racial_traits/tolerant.png
+            perks:
+               - perk: perk_gravity_tolerance
+                 level: 1
+            exclusions:
+               - perk_gravity_tolerance
+               - perk_homeworld_gravity_high
+               - perk_tolerant
+          - key: perk_homeworld_gravity_high
+            category: PERK_CATEGORY_HOMEWORLD_RESEARCH
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: HOMEWORLD_GRAVITY_HIGH_NAME
+                  description: HOMEWORLD_GRAVITY_HIGH_DESCRIPTION
+                  value: true
+                  score: 4
+                  displayIcon: assets/racial_traits/tolerant.png
+            perks:
+               - perk: perk_gravity_tolerance
+                 level: 2
+            exclusions:
+               - perk_gravity_tolerance
+               - perk_homeworld_gravity_low
+               - perk_tolerant
+          - key: perk_diplomat
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: DIPLOMAT_NAME
+                  description: DIPLOMAT_DESCRIPTION
+                  value: true
+                  score: 3
+                  displayIcon: assets/racial_traits/diplomat.png
+            perks:
+               - perk: perk_research_government
+                 level: 1
+               - perk: perk_morale_bonus
+                 level: 3
+            exclusions:
+               - perk_militarist
+               - perk_technologist
+               - perk_ecologist
+               - perk_industrialist
+               - perk_expansionist
+               - perk_morale_bonus
+          - key: perk_militarist
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: MILITARIST_NAME
+                  description: MILITARIST_DESCRIPTION
+                  value: true
+                  score: 3
+                  displayIcon: assets/racial_traits/militarist.png
+            perks:
+               - perk: perk_research_engineering
+                 level: 1
+               - perk: perk_ground_units_marine_training_rate
+                 level: 1
+            exclusions:
+               - perk_diplomat
+               - perk_technologist
+               - perk_ecologist
+               - perk_industrialist
+               - perk_expansionist
+          - key: perk_technologist
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: TECHNOLOGIST_NAME
+                  description: TECHNOLOGIST_DESCRIPTION
+                  value: true
+                  score: 2
+                  displayIcon: assets/racial_traits/technologist.png
+            perks:
+               - perk: perk_research_physics
+                 level: 1
+               - perk: perk_homeworld_artifact
+                 level: 1
+            exclusions:
+               - perk_diplomat
+               - perk_militarist
+               - perk_ecologist
+               - perk_industrialist
+               - perk_expansionist
+               - perk_homeworld_artifact
+          - key: perk_ecologist
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: ECOLOGIST_NAME
+                  description: ECOLOGIST_DESCRIPTION
+                  value: true
+                  score: 1
+                  displayIcon: assets/racial_traits/ecologist.png
+            perks:
+               - perk: perk_research_biology
+                 level: 1
+               # - perk: perk_pollution_absorption
+                 # level: 2
+            exclusions:
+               - perk_diplomat
+               - perk_militarist
+               - perk_technologist
+               - perk_industrialist
+               - perk_expansionist
+               # - perk_pollution_absorption
+          - key: perk_industrialist
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: INDUSTRIALIST_NAME
+                  description: INDUSTRIALIST_DESCRIPTION
+                  value: true
+                  score: 4
+                  displayIcon: assets/racial_traits/industrialist.png
+            perks:
+               - perk: perk_research_physics
+                 level: 1
+               - perk: perk_production_bonus
+                 level: 2
+            exclusions:
+               - perk_diplomat
+               - perk_militarist
+               - perk_technologist
+               - perk_ecologist
+               - perk_expansionist
+               - perk_production_bonus
+          - key: perk_expansionist
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: EXPANSIONIST_NAME
+                  description: EXPANSIONIST_DESCRIPTION
+                  value: true
+                  score: 3
+                  displayIcon: assets/racial_traits/expansionist.png
+            perks:
+               - perk: perk_research_engineering
+                 level: 1
+               - perk: perk_research_biology
+                 level: 1
+            exclusions:
+               - perk_diplomat
+               - perk_militarist
+               - perk_technologist
+               - perk_ecologist
+               - perk_industrialist
+          - key: perk_aquatic
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: AQUATIC_NAME
+                  description: AQUATIC_DESCRIPTION
+                  value: true
+                  score: 2
+                  displayIcon: assets/racial_traits/aquatic.png
+            perks:
+               - perk: perk_homeworld_biome
+                 level: 5
+               - perk: perk_uber_planet
+                 level: 5
+            exclusions:
+               - perk_plains_dweller
+               - perk_jungle_creature
+               - perk_lava_breather
+               - perk_subterranean
+          - key: perk_subterranean
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: SUBTERRANEAN_NAME
+                  description: SUBTERRANEAN_DESCRIPTION
+                  value: true
+                  score: 2
+                  displayIcon: assets/racial_traits/subterranean.png
+            perks:
+               - perk: perk_uber_planet
+                 level: 1
+               - perk: perk_homeworld_biome
+                 level: 3
+            exclusions:
+               - perk_plains_dweller
+               - perk_jungle_creature
+               - perk_lava_breather
+               - perk_aquatic
+          - key: perk_plains_dweller
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: PLAINS_DWELLER_NAME
+                  description: PLAINS_DWELLER_DESCRIPTION
+                  value: true
+                  score: 2
+                  displayIcon: assets/racial_traits/plainsDweller.png
+            perks:
+               - perk: perk_uber_planet
+                 level: 2
+               - perk: perk_homeworld_biome
+                 level: 3
+            exclusions:
+               - perk_subterranean
+               - perk_jungle_creature
+               - perk_lava_breather
+               - perk_aquatic
+          - key: perk_jungle_creature
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: JUNGLE_CREATURE_NAME
+                  description: JUNGLE_CREATURE_DESCRIPTION
+                  value: true
+                  score: 3
+                  displayIcon: assets/racial_traits/jungleCreature.png
+            perks:
+               - perk: perk_uber_planet
+                 level: 3
+               - perk: perk_homeworld_biome
+                 level: 1
+            exclusions:
+               - perk_subterranean
+               - perk_plains_dweller
+               - perk_lava_breather
+               - perk_aquatic
+          - key: perk_lava_breather
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: LAVA_BREATHER_NAME
+                  description: LAVA_BREATHER_DESCRIPTION
+                  value: true
+                  score: 2
+                  displayIcon: assets/racial_traits/lavaBreather.png
+            perks:
+               - perk: perk_uber_planet
+                 level: 4
+               - perk: perk_homeworld_biome
+                 level: 4
+            exclusions:
+               - perk_subterranean
+               - perk_plains_dweller
+               - perk_jungle_creature
+               - perk_aquatic
+          - key: perk_lithovore
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: LITHOVORE_NAME
+                  description: LITHOVORE_DESCRIPTION
+                  value: true
+                  score: 8
+                  displayIcon: assets/racial_traits/lithovore.png
+            perks:
+               - perk: perk_food_consumption_modifier
+                 level: 3
+            exclusions:
+               - perk_cybernetic
+               - perk_food_consumption_modifier
+               - perk_food_bonus
+          - key: perk_cybernetic
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: CYBERNETIC_NAME
+                  description: CYBERNETIC_DESCRIPTION
+                  value: true
+                  score: 8
+                  displayIcon: assets/racial_traits/cybernetic.png
+            perks:
+               - perk: perk_food_consumption_modifier
+                 level: 2
+               - perk: perk_ship_auto_repair
+                 level: 1
+            exclusions:
+               - perk_lithovore
+               - perk_ship_auto_repair
+          - key: perk_charismatic
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: CHARISMATIC_NAME
+                  description: CHARISMATIC_DESCRIPTION
+                  value: true
+                  score: 5
+                  displayIcon: assets/racial_traits/charismatic.png
+            perks:
+               - perk: perk_diplomacy_high_acceptance
+                 level: 2
+               - perk: perk_diplomacy_improved_effects
+                 level: 2
+            exclusions:
+               - perk_repulsive
+               - perk_diplomacy_high_acceptance
+               - perk_diplomacy_improved_effects
+          - key: perk_repulsive
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: REPULSIVE_NAME
+                  description: REPULSIVE_DESCRIPTION
+                  value: true
+                  score: -2
+                  displayIcon: assets/racial_traits/repulsive.png
+            perks:
+               - perk: perk_diplomacy_high_acceptance
+                 level: 1
+               - perk: perk_diplomacy_improved_effects
+                 level: 1
+            exclusions:
+               - perk_charismatic
+               - perk_diplomacy_high_acceptance
+               - perk_diplomacy_improved_effects
+          - key: perk_creative
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: CREATIVE_NAME
+                  description: CREATIVE_DESCRIPTION
+                  value: true
+                  score: 10
+                  displayIcon: assets/racial_traits/creative.png
+            perks:
+               - perk: perk_tech_discover_all
+                 level: 1
+               - perk: perk_research_bonus
+                 level: 3
+            exclusions:
+               - perk_uncreative
+               - perk_research_bonus 
+               - perk_tech_discover_random       
+          - key: perk_uncreative
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: UNCREATIVE_NAME
+                  description: UNCREATIVE_DESCRIPTION
+                  value: true
+                  score: -5
+                  displayIcon: assets/racial_traits/uncreative.png
+            perks:
+               - perk: perk_tech_discover_random
+                 level: 1
+               - perk: perk_research_bonus
+                 level: 1
+            exclusions:
+               - perk_creative
+               - perk_research_bonus
+               - perk_tech_discover_all
+          - key: perk_lucky
+            category: PERK_CATEGORY_SPECIAL
+            valueType: float
+            displayOrder: 0
+            levels:
+                - value: 0
+                - displayName: LUCKY_NAME
+                  description: LUCKY_DESCRIPTION
+                  value: 0.5
+                  score: 4
+                  displayIcon: assets/racial_traits/lucky.png
+          - key: perk_omniscient
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: OMNISCIENT_NAME
+                  description: OMNISCIENT_DESCRIPTION
+                  value: true
+                  score: 6
+                  displayIcon: assets/racial_traits/omniscience.png
+            perks:
+               - perk: perk_omniscience
+                 level: 1
+            exclusions:
+               - perk_omniscience
+          - key: perk_telepathic
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: TELEPATHIC_NAME
+                  description: TELEPATHIC_DESCRIPTION
+                  value: true
+                  score: 6
+                  displayIcon: assets/racial_traits/telepathic.png
+            perks:
+               - perk: perk_mind_control
+                 level: 1            
+               - perk: perk_diplomacy_high_acceptance
+                 level: 2
+               - perk: perk_counterespionage_leveling_rate
+                 level: 2
+               - perk: perk_assimilation_power
+                 level: 3
+            exclusions:
+               - perk_diplomacy_high_acceptance
+               - perk_counterespionage_leveling_rate
+               - perk_assimilation_power
+               - perk_shapeshifters
+          - key: perk_tolerant
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: TOLERANT_NAME
+                  description: TOLERANT_DESCRIPTION
+                  value: true
+                  score: 6
+                  displayIcon: assets/racial_traits/tolerant.png
+            perks:
+               - perk: perk_gravity_tolerance
+                 level: 3
+            exclusions:
+               - perk_gravity_tolerance
+               - perk_homeworld_gravity_low
+               - perk_homeworld_gravity_high
+          - key: perk_traders
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: TRADERS_NAME
+                  description: TRADERS_DESCRIPTION
+                  value: true
+                  score: 5
+                  displayIcon: assets/racial_traits/traders.png
+            perks:
+               - perk: perk_trade_treaty_bonus
+                 level: 1
+               - perk: perk_trade_goods_bonus
+                 level: 1
+            exclusions:
+               - perk_trade_treaty_bonus
+               - perk_trade_goods_bonus
+               - perk_fantastic_traders
+          - key: perk_fantastic_traders
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: FANTASTIC_TRADERS_NAME
+                  description: FANTASTIC_TRADERS_DESCRIPTION
+                  value: true
+                  score: 9
+                  displayIcon: assets/racial_traits/fantastictraders.png
+            perks:
+               - perk: perk_trade_treaty_bonus
+                 level: 1
+               - perk: perk_trade_goods_bonus
+                 level: 2
+            exclusions:
+               - perk_trade_treaty_bonus
+               - perk_trade_goods_bonus
+               - perk_traders
+          - key: perk_trans_dimensional
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: TRANS_DIMENSIONAL_NAME
+                  description: TRANS_DIMENSIONAL_DESCRIPTION
+                  value: true
+                  score: 4
+                  displayIcon: assets/racial_traits/transdimensional.png
+            perks:
+               - perk: perk_ship_improvements_travel_speed_bonus
+                 level: 1
+               - perk: perk_ship_improvements_combat_speed_bonus
+                 level: 1
+            exclusions:
+               - perk_ship_improvements_travel_speed_bonus
+               - perk_ship_improvements_combat_speed_bonus
+          - key: perk_stealthy
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: STEALTHY_NAME
+                  description: STEALTHY_DESCRIPTION
+                  value: true
+                  score: 6
+                  displayIcon: assets/racial_traits/stealthy.png
+            perks:
+               - perk: perk_ship_improvements_stealth
+                 level: 1
+               - perk: perk_spy_trainer
+                 level: 1
+            exclusions:
+               - perk_ship_improvements_stealth
+               - perk_spy_trainer
+          - key: perk_shapeshifters
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: SHAPESHIFTERS_NAME
+                  description: SHAPESHIFTERS_DESCRIPTION
+                  value: true
+                  score: 3
+                  displayIcon: assets/racial_traits/shapeshifters.png
+            perks:
+               - perk: perk_counterespionage_leveling_rate
+                 level: 2
+               - perk: perk_assimilation_power
+                 level: 2
+            exclusions:
+               - perk_counterespionage_leveling_rate
+               - perk_assimilation_power
+               - perk_telepathic
+          - key: perk_strategists
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: STRATEGISTS_NAME
+                  description: STRATEGISTS_DESCRIPTION
+                  value: true
+                  score: 7
+                  displayIcon: assets/racial_traits/strategists.png
+            perks:
+               - perk: perk_command_points_bonus
+                 level: 2
+               - perk: perk_ship_cost_modifier
+                 level: 1
+            exclusions:
+               - perk_command_points_bonus
+               - perk_ship_cost_modifier
+          - key: perk_natural_pilots
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: NATURAL_PILOTS_NAME
+                  description: NATURAL_PILOTS_DESCRIPTION
+                  value: true
+                  score: 8
+                  displayIcon: assets/racial_traits/naturalPilots.png
+            perks:
+               - perk: perk_ship_defense
+                 level: 3
+               - perk: perk_ship_attack
+                 level: 2
+               - perk: perk_ship_improvements_travel_speed_bonus
+                 level: 1
+               - perk: perk_ship_improvements_combat_speed_bonus
+                 level: 1
+            exclusions:
+               - perk_ship_defense
+               - perk_ship_attack
+               - perk_ship_improvements_travel_speed_bonus
+               - perk_ship_improvements_combat_speed_bonus
+          - key: perk_warlord
+            category: PERK_CATEGORY_SPECIAL
+            valueType: bool
+            displayOrder: 0
+            levels:
+                - value: false
+                - displayName: WARLORD_NAME
+                  description: WARLORD_DESCRIPTION
+                  value: true
+                  score: 4
+                  displayIcon: assets/racial_traits/warlord.png
+            perks:
+               - perk: perk_ground_combat_rating
+                 level: 3
+               - perk: perk_ground_units_extended_barracks
+                 level: 1
+            exclusions:
+               - perk_ground_combat_rating
+               - perk_ground_units_extended_barracks
+...

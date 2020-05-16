@@ -1,0 +1,180 @@
+---
+- collection: &Backend.MatchSetup.GameStartPoint
+    items:
+        - key: prewarp
+          name: fe_GAME_START_POINT_PRE_WARP
+          fleet:
+              - design: design_colony
+              - design: design_scout
+              - design: design_scout
+              - design: design_frigate_a
+              - design: design_frigate_b
+              - design: design_frigate_c
+              - design: design_frigate_humans
+              - design: design_frigate_darlok
+              - design: design_frigate_alkari
+              - design: design_frigate_klackon
+              - design: design_frigate_bulrathi
+              - design: design_frigate_meklar
+              - design: design_frigate_mrrshan
+              - design: design_frigate_psilon
+              - design: design_frigate_sakkra
+              - design: design_frigate_silicoid
+              - design: design_frigate_terran
+              - design: design_frigate_elerian
+              - design: design_frigate_gnolam
+              - design: design_frigate_trilarian
+              - design: design_frigate_player
+          majorStartingStructures:
+              - structure: structure_capitol
+          minorStartingStructures:
+              - structure: structure_capitol
+              - structure: structure_star_base
+              - structure: structure_marine_barracks
+          startingPopulation: 4
+          startingWealth: 25
+        - key: average
+          name: fe_GAME_START_POINT_POST_WARP
+          fleet:
+              - design: design_colony
+              - design: design_scout
+              - design: design_scout
+              - design: design_frigate_a
+              - design: design_frigate_b
+              - design: design_frigate_c
+              - design: design_frigate_humans
+              - design: design_frigate_darlok
+              - design: design_frigate_alkari
+              - design: design_frigate_klackon
+              - design: design_frigate_bulrathi
+              - design: design_frigate_meklar
+              - design: design_frigate_mrrshan
+              - design: design_frigate_psilon
+              - design: design_frigate_sakkra
+              - design: design_frigate_silicoid
+              - design: design_frigate_terran
+              - design: design_frigate_elerian
+              - design: design_frigate_gnolam
+              - design: design_frigate_trilarian
+              - design: design_frigate_player
+          startingTechs:
+              - technology: technode_space_travel
+          majorStartingStructures:
+              - structure: structure_capitol
+              - structure: structure_star_base
+              - structure: structure_marine_barracks
+          minorStartingStructures:
+              - structure: structure_capitol
+              - structure: structure_star_base
+              - structure: structure_marine_barracks
+           startingPopulation: 6
+           startingWealth: 50
+        - key: advanced
+          name: fe_GAME_START_POINT_ADVANCED
+          fleet:
+              - design: design_colony
+              - design: design_colony
+              - design: design_space_factory
+              - design: design_scout
+              - design: design_scout
+              - design: design_frigate_a
+              - design: design_frigate_b
+              - design: design_frigate_c
+              - design: design_destroyer_a
+              - design: design_destroyer_b
+              - design: design_cruiser_a
+              - design: design_cruiser_b
+              - design: design_cruiser_c
+              - design: design_frigate_humans
+              - design: design_destroyer_humans
+              - design: design_cruiser_humans
+              - design: design_frigate_darlok
+              - design: design_destroyer_darlok
+              - design: design_cruiser_darlok
+              - design: design_frigate_alkari
+              - design: design_destroyer_alkari
+              - design: design_cruiser_alkari
+              - design: design_frigate_klackon
+              - design: design_destroyer_klackon
+              - design: design_cruiser_klackon
+              - design: design_frigate_bulrathi
+              - design: design_destroyer_bulrathi
+              - design: design_cruiser_bulrathi
+              - design: design_frigate_meklar
+              - design: design_destroyer_meklar
+              - design: design_cruiser_meklar
+              - design: design_frigate_mrrshan
+              - design: design_destroyer_mrrshan
+              - design: design_cruiser_mrrshan
+              - design: design_frigate_psilon
+              - design: design_destroyer_psilon
+              - design: design_cruiser_psilon
+              - design: design_frigate_sakkra
+              - design: design_destroyer_sakkra
+              - design: design_cruiser_sakkra
+              - design: design_frigate_silicoid
+              - design: design_destroyer_silicoid
+              - design: design_cruiser_silicoid
+              - design: design_frigate_terran
+              - design: design_destroyer_terran
+              - design: design_cruiser_terran
+              - design: design_frigate_elerian
+              - design: design_destroyer_elerian
+              - design: design_cruiser_elerian
+              - design: design_frigate_gnolam
+              - design: design_destroyer_gnolam
+              - design: design_cruiser_gnolam
+              - design: design_frigate_trilarian
+              - design: design_destroyer_trilarian
+              - design: design_cruiser_trilarian
+              - design: design_frigate_player
+              - design: design_destroyer_player
+              - design: design_cruiser_player
+          startingTechs:
+              - technology: technode_private_funding
+              - technology: technode_military_tactics
+              - technology: technode_tachyon_physics
+              - technology: technode_genetic_mutations
+              - technology: technode_advanced_engineering
+              - technology: technode_ion_fission
+          majorStartingStructures:
+              - structure: structure_capitol
+              - structure: structure_star_base
+              - structure: structure_marine_barracks
+              - structure: structure_automated_factory
+              - structure: structure_research_laboratory
+              - structure: structure_hydroponic_farm
+              - structure: structure_colonial_revenue_services
+              - structure: structure_atmospheric_renewer
+              - structure: structure_global_dna_scanner
+          minorStartingStructures:
+              - structure: structure_capitol
+              - structure: structure_star_base
+              - structure: structure_marine_barracks
+              - structure: structure_automated_factory
+              - structure: structure_research_laboratory
+              - structure: structure_hydroponic_farm
+              - structure: structure_colonial_revenue_services
+              - structure: structure_atmospheric_renewer
+          startingPopulation: 8
+          startingWealth: 250
+        - key: guided_tutorial
+          name: TUTORIAL
+          fleet:
+              - design: design_colony
+              - design: design_scout
+              - design: design_scout
+          startingTechs:
+              - technology: technode_space_travel
+          majorStartingStructures:
+              - structure: structure_capitol
+              - structure: structure_star_base
+              - structure: structure_marine_barracks
+          minorStartingStructures:
+              - structure: structure_capitol
+              - structure: structure_star_base
+              - structure: structure_marine_barracks
+           startingPopulation: 6
+           startingWealth: 200
+           piratesStartingShipsSpawnTurn: 1
+...

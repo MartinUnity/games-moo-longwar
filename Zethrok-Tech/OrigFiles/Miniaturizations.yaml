@@ -1,0 +1,172 @@
+---
+- collection: &Backend.Fleets.Miniaturization
+    items:
+        ###MISSILES
+          - key: miniaturization_missiles_1
+            name: MINIATURIZATION_MISSILES_1_NAME
+            description: MINIATURIZATION_MISSILES_1_DESCRIPTION
+            icon: assets/ship_modules/miniaturization_missilies.png
+            spaceDecreaseFactor: 0.1
+            costDecreaseFactor: 0.1
+            affectedModules: 
+                - shipmodule_nuclear_missile
+          - key: miniaturization_missiles_2
+            name: MINIATURIZATION_MISSILES_2_NAME
+            description: MINIATURIZATION_MISSILES_2_DESCRIPTION
+            icon: assets/ship_modules/miniaturization_missilies.png
+            spaceDecreaseFactor: 0.1
+            costDecreaseFactor: 0.1
+            affectedModules: 
+                - shipmodule_nuclear_missile
+                - shipmodule_merculite_missile
+          - key: miniaturization_missiles_3
+            name: MINIATURIZATION_MISSILES_3_NAME
+            description: MINIATURIZATION_MISSILES_3_DESCRIPTION
+            icon: assets/ship_modules/miniaturization_missilies.png
+            spaceDecreaseFactor: 0.1
+            costDecreaseFactor: 0.1
+            affectedModules: 
+                - shipmodule_nuclear_missile
+                - shipmodule_merculite_missile
+                - shipmodule_pulson_missile
+        ###BOMBS
+          - key: miniaturization_bombs_1
+            name: MINIATURIZATION_BOMBS_1_NAME
+            description: MINIATURIZATION_BOMBS_1_DESCRIPTION
+            icon: assets/ship_modules/miniaturization_bombs.png
+            spaceDecreaseFactor: 0.1
+            costDecreaseFactor: 0.1
+            affectedModules: 
+                - shipmodule_nuclear_bomb
+          - key: miniaturization_bombs_2
+            name: MINIATURIZATION_BOMBS_2_NAME
+            description: MINIATURIZATION_BOMBS_2_DESCRIPTION
+            icon: assets/ship_modules/miniaturization_bombs.png
+            spaceDecreaseFactor: 0.1
+            costDecreaseFactor: 0.1
+            affectedModules: 
+                - shipmodule_nuclear_bomb
+                - shipmodule_fusion_bomb
+          - key: miniaturization_bombs_3
+            name: MINIATURIZATION_BOMBS_3_NAME
+            description: MINIATURIZATION_BOMBS_3_DESCRIPTION
+            icon: assets/ship_modules/miniaturization_bombs.png
+            spaceDecreaseFactor: 0.1
+            costDecreaseFactor: 0.1
+            affectedModules: 
+                - shipmodule_nuclear_bomb
+                - shipmodule_fusion_bomb
+                - shipmodule_antimatter_bomb
+        ###TORPEDOES
+          - key: miniaturization_torpedoes_1
+            name: MINIATURIZATION_TORPEDOES_1_NAME
+            description: MINIATURIZATION_TORPEDOES_1_DESCRIPTION
+            icon: assets/ship_modules/miniaturization_torpedoes.png
+            spaceDecreaseFactor: 0.1
+            costDecreaseFactor: 0.1
+            affectedModules: 
+                - shipmodule_proton_torpedoes
+          - key: miniaturization_torpedoes_2
+            name: MINIATURIZATION_TORPEDOES_2_NAME
+            description: MINIATURIZATION_TORPEDOES_2_DESCRIPTION
+            icon: assets/ship_modules/miniaturization_torpedoes.png
+            spaceDecreaseFactor: 0.1
+            costDecreaseFactor: 0.1
+            affectedModules: 
+                - shipmodule_proton_torpedoes
+                - shipmodule_antimatter_torpedoes
+        ###BEAMS
+          - key: miniaturization_beams_1
+            name: MINIATURIZATION_BEAMS_1_NAME
+            description: MINIATURIZATION_BEAMS_1_DESCRIPTION
+            icon: assets/ship_modules/miniaturization_beams.png
+            spaceDecreaseFactor: 0.1
+            costDecreaseFactor: 0.1
+            affectedModules: 
+                - shipmodule_fusion_beam
+          - key: miniaturization_beams_2
+            name: MINIATURIZATION_BEAMS_2_NAME
+            description: MINIATURIZATION_BEAMS_2_DESCRIPTION
+            icon: assets/ship_modules/miniaturization_beams.png
+            spaceDecreaseFactor: 0.1
+            costDecreaseFactor: 0.1
+            affectedModules: 
+                - shipmodule_fusion_beam
+                - shipmodule_ion_pulse_cannon
+          - key: miniaturization_beams_3
+            name: MINIATURIZATION_BEAMS_3_NAME
+            description: MINIATURIZATION_BEAMS_3_DESCRIPTION
+            icon: assets/ship_modules/miniaturization_beams.png
+            spaceDecreaseFactor: 0.1
+            costDecreaseFactor: 0.1
+            affectedModules: 
+                - shipmodule_fusion_beam
+                - shipmodule_ion_pulse_cannon
+                - shipmodule_plasma_cannon
+        ###CANNONS
+          - key: miniaturization_cannons_1
+            name: MINIATURIZATION_CANNONS_1_NAME
+            description: MINIATURIZATION_CANNONS_1_DESCRIPTION
+            icon: assets/ship_modules/miniaturization_cannons.png
+            spaceDecreaseFactor: 0.1
+            costDecreaseFactor: 0.1
+            affectedModules: 
+                - shipmodule_laser_cannon
+                - shipmodule_neutron_blaster        
+          - key: miniaturization_cannons_2
+            name: MINIATURIZATION_CANNONS_2_NAME
+            description: MINIATURIZATION_CANNONS_2_DESCRIPTION
+            icon: assets/ship_modules/miniaturization_cannons.png
+            spaceDecreaseFactor: 0.1
+            costDecreaseFactor: 0.1
+            affectedModules: 
+                - shipmodule_laser_cannon
+                - shipmodule_neutron_blaster 
+                - shipmodule_mass_driver
+          - key: miniaturization_cannons_3
+            name: MINIATURIZATION_CANNONS_3_NAME
+            description: MINIATURIZATION_CANNONS_3_DESCRIPTION
+            icon: assets/ship_modules/miniaturization_cannons.png
+            spaceDecreaseFactor: 0.1
+            costDecreaseFactor: 0.1
+            affectedModules:
+                - shipmodule_laser_cannon
+                - shipmodule_neutron_blaster 
+                - shipmodule_mass_driver
+                - shipmodule_graviton_beam
+          - key: miniaturization_cannons_4
+            name: MINIATURIZATION_CANNONS_4_NAME
+            description: MINIATURIZATION_CANNONS_4_DESCRIPTION
+            icon: assets/ship_modules/miniaturization_cannons.png
+            spaceDecreaseFactor: 0.1
+            costDecreaseFactor: 0.1
+            affectedModules: 
+                - shipmodule_laser_cannon
+                - shipmodule_neutron_blaster 
+                - shipmodule_mass_driver
+                - shipmodule_graviton_beam
+                - shipmodule_phasors
+          - key: miniaturization_cannons_5
+            name: MINIATURIZATION_CANNONS_5_NAME
+            description: MINIATURIZATION_CANNONS_5_DESCRIPTION
+            icon: assets/ship_modules/miniaturization_cannons.png
+            spaceDecreaseFactor: 0.1
+            costDecreaseFactor: 0.1
+            affectedModules: 
+                - shipmodule_laser_cannon
+                - shipmodule_neutron_blaster 
+                - shipmodule_mass_driver
+                - shipmodule_graviton_beam
+                - shipmodule_phasors
+                - shipmodule_gauss_cannon
+        # - miniaturization: &miniaturization_cannons_6
+            # name: MINIATURIZATION_CANNONS_6_NAME
+            # description: MINIATURIZATION_CANNONS_6_DESCRIPTION
+            # icon: assets/ship_modules/miniaturization_cannons.png
+            # spaceDecreaseFactor: 0.1
+            # costDecreaseFactor: 0.1
+            # affectedModules: 
+                # - shipmodule_nuclear_missile
+                # - shipmodule_merculite_missile
+                # - shipmodule_pulson_missile
+...

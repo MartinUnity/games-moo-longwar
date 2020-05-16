@@ -1,0 +1,363 @@
+---
+- collection: &Backend.Leaders.LeaderBonus
+    items:
+          - key: bonus_colony_research
+            name:    BONUS_COLONY_RESEARCH_NAME
+            desc:    BONUS_COLONY_RESEARCH_DESC
+            tooltip: BONUS_COLONY_RESEARCH_TOOLTIP
+            type: Colony
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_colony_research.png
+            color: 00aac8
+            value_cost: 2
+          - key: bonus_colony_production
+            name:    BONUS_COLONY_PRODUCTION_NAME
+            desc:    BONUS_COLONY_PRODUCTION_DESC
+            tooltip: BONUS_COLONY_PRODUCTION_TOOLTIP
+            type: Colony
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_colony_production.png
+            color: c68832
+            value_cost: 2
+          - key: bonus_colony_pollution_cleanup
+            name:    BONUS_COLONY_POLLUTION_CLEANUP_NAME
+            desc:    BONUS_COLONY_POLLUTION_CLEANUP_DESC
+            tooltip: BONUS_COLONY_POLLUTION_CLEANUP_TOOLTIP
+            type: Colony
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_colony_pollution_cleanup.png
+            color: 14bc83
+            value_cost: 2
+          - key: bonus_colony_food
+            name:    BONUS_COLONY_FOOD_NAME
+            desc:    BONUS_COLONY_FOOD_DESC
+            tooltip: BONUS_COLONY_FOOD_TOOLTIP
+            type: Colony
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_colony_food.png
+            color: 83e736
+            value_cost: 3
+          - key: bonus_colony_population_growth
+            name:    BONUS_COLONY_POPULATION_GROWTH_NAME
+            desc:    BONUS_COLONY_POPULATION_GROWTH_DESC
+            tooltip: BONUS_COLONY_POPULATION_GROWTH_TOOLTIP
+            type: Colony
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_colony_population_growth.png
+            color: 83e736
+            value_cost: 3
+          - key: bonus_colony_credits
+            name:    BONUS_COLONY_CREDITS_NAME
+            desc:    BONUS_COLONY_CREDITS_DESC
+            tooltip: BONUS_COLONY_CREDITS_TOOLTIP
+            type: Colony
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_colony_credits.png
+            color: eed600
+            value_cost: 3
+          - key: bonus_colony_buyout_cost_reduction
+            name:    BONUS_COLONY_BUYOUT_COST_REDUCTION_NAME
+            desc:    BONUS_COLONY_BUYOUT_COST_REDUCTION_DESC
+            tooltip: BONUS_COLONY_BUYOUT_COST_REDUCTION_TOOLTIP
+            type: Colony
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_colony_buyout_cost_reduction.png
+            color: c68832
+            value_cost: 3
+          - key: bonus_colony_morale
+            name:    BONUS_COLONY_MORALE_NAME
+            desc:    BONUS_COLONY_MORALE_DESC
+            tooltip: BONUS_COLONY_MORALE_TOOLTIP
+            type: Colony
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_colony_morale.png
+            color: b7bf9f
+            value_cost: 3
+          - key: bonus_colony_leaders_experience_rate
+            name:    BONUS_COLONY_LEADERS_EXPERIENCE_RATE_NAME
+            desc:    BONUS_COLONY_LEADERS_EXPERIENCE_RATE_DESC
+            tooltip: BONUS_COLONY_LEADERS_EXPERIENCE_RATE_TOOLTIP
+            type: Colony
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_colony_leaders_experience_rate.png
+            color: ac2ec4
+            value_cost: 3
+          - key: bonus_colony_ground_combat_rating
+            name:    BONUS_COLONY_GROUND_COMBAT_RATING_NAME
+            desc:    BONUS_COLONY_GROUND_COMBAT_RATING_DESC
+            tooltip: BONUS_COLONY_GROUND_COMBAT_RATING_TOOLTIP
+            type: Colony
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_colony_ground_combat_rating.png
+            color: b27ff6
+            value_cost: 2
+          - key: bonus_colony_beam_damage_orbiting_ships
+            name:    BONUS_COLONY_BEAM_DAMAGE_ORBITING_SHIPS_NAME
+            desc:    BONUS_COLONY_BEAM_DAMAGE_ORBITING_SHIPS_DESC
+            tooltip: BONUS_COLONY_BEAM_DAMAGE_ORBITING_SHIPS_TOOLTIP
+            type: Colony
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_colony_beam_damage_orbiting_ships.png
+            color: b27ff6
+            value_cost: 2
+          - key: bonus_ship_travel_speed
+            name:    BONUS_SHIP_TRAVEL_SPEED_NAME
+            desc:    BONUS_SHIP_TRAVEL_SPEED_DESC
+            tooltip: BONUS_SHIP_TRAVEL_SPEED_TOOLTIP
+            type: Ship
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_ship_travel_speed.png
+            color: b27ff6
+            value_cost: 2
+          - key: bonus_ship_beam_defense
+            name:    BONUS_SHIP_BEAM_DEFENSE_NAME
+            desc:    BONUS_SHIP_BEAM_DEFENSE_DESC
+            tooltip: BONUS_SHIP_BEAM_DEFENSE_TOOLTIP
+            type: Ship
+            isTactical: true
+            icon: assets/leaders/bonuses/bonus_ship_beam_defense.png
+            color: b27ff6
+            value_cost: 1
+          - key: bonus_ship_beam_defense_antarans_monsters
+            name:    BONUS_SHIP_BEAM_DEFENSE_ANTARANS_MONSTERS_NAME
+            desc:    BONUS_SHIP_BEAM_DEFENSE_ANTARANS_MONSTERS_DESC
+            tooltip: BONUS_SHIP_BEAM_DEFENSE_ANTARANS_MONSTERS_TOOLTIP
+            type: Ship
+            isTactical: true
+            icon: assets/leaders/bonuses/bonus_ship_beam_defense_antarans_monsters.png
+            color: b27ff6
+            value_cost: 1
+          - key: bonus_ship_shield_restoration
+            name:    BONUS_SHIP_SHIELD_RESTORATION_NAME
+            desc:    BONUS_SHIP_SHIELD_RESTORATION_DESC
+            tooltip: BONUS_SHIP_SHIELD_RESTORATION_TOOLTIP
+            type: Ship
+            isTactical: true
+            icon: assets/leaders/bonuses/bonus_ship_shield_restoration.png
+            color: b27ff6
+            value_cost: 2
+          - key: bonus_ship_ship_repair_per_turn
+            name:    BONUS_SHIP_SHIP_REPAIR_PER_TURN_NAME
+            desc:    BONUS_SHIP_SHIP_REPAIR_PER_TURN_DESC
+            tooltip: BONUS_SHIP_SHIP_REPAIR_PER_TURN_TOOLTIP
+            type: Ship
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_ship_ship_repair_per_turn.png
+            color: b27ff6
+            value_cost: 2
+          - key: bonus_ship_full_auto_repair
+            name:    BONUS_SHIP_FULL_AUTO_REPAIR_NAME
+            desc:    BONUS_SHIP_FULL_AUTO_REPAIR_DESC
+            tooltip: BONUS_SHIP_FULL_AUTO_REPAIR_TOOLTIP
+            type: Ship
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_ship_full_auto_repair.png
+            color: b27ff6
+            value_cost: 3
+          - key: bonus_ship_visibility_all_planets
+            name:    BONUS_SHIP_VISIBILITY_ALL_PLANETS_NAME
+            desc:    BONUS_SHIP_VISIBILITY_ALL_PLANETS_DESC
+            tooltip: BONUS_SHIP_VISIBILITY_ALL_PLANETS_TOOLTIP
+            type: Ship
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_ship_visibility_all_planets.png
+            color: b27ff6
+            value_cost: 3
+          - key: bonus_ship_beam_damage
+            name:    BONUS_SHIP_BEAM_DAMAGE_NAME
+            desc:    BONUS_SHIP_BEAM_DAMAGE_DESC
+            tooltip: BONUS_SHIP_BEAM_DAMAGE_TOOLTIP
+            type: Ship
+            isTactical: true
+            icon: assets/leaders/bonuses/bonus_ship_beam_damage.png
+            color: b27ff6
+            value_cost: 2
+          - key: bonus_ship_missile_damage
+            name:    BONUS_SHIP_MISSILE_DAMAGE_NAME
+            desc:    BONUS_SHIP_MISSILE_DAMAGE_DESC
+            tooltip: BONUS_SHIP_MISSILE_DAMAGE_TOOLTIP
+            type: Ship
+            isTactical: true
+            icon: assets/leaders/bonuses/bonus_ship_missile_damage.png
+            color: b27ff6
+            value_cost: 2
+          - key: bonus_ship_missile_damage_antarans_monsters
+            name:    BONUS_SHIP_MISSILE_DAMAGE_ANTARANS_MONSTERS_NAME
+            desc:    BONUS_SHIP_MISSILE_DAMAGE_ANTARANS_MONSTERS_DESC
+            tooltip: BONUS_SHIP_MISSILE_DAMAGE_ANTARANS_MONSTERS_TOOLTIP
+            type: Ship
+            isTactical: true
+            icon: assets/leaders/bonuses/bonus_ship_missile_damage_antarans_monsters.png
+            color: b27ff6
+            value_cost: 1
+          - key: bonus_ship_weapons_max_damage
+            name:    BONUS_SHIP_WEAPONS_MAX_DAMAGE_NAME
+            desc:    BONUS_SHIP_WEAPONS_MAX_DAMAGE_DESC
+            tooltip: BONUS_SHIP_WEAPONS_MAX_DAMAGE_TOOLTIP
+            type: Ship
+            isTactical: true
+            icon: assets/leaders/bonuses/bonus_ship_weapons_max_damage.png
+            color: b27ff6
+            value_cost: 2
+          - key: bonus_ship_command_points
+            name:    BONUS_SHIP_COMMAND_POINTS_NAME
+            desc:    BONUS_SHIP_COMMAND_POINTS_DESC
+            tooltip: BONUS_SHIP_COMMAND_POINTS_TOOLTIP
+            type: Ship
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_ship_command_points.png
+            color: b27ff6
+            value_cost: 4
+          - key: bonus_ship_fleet_maintenance_cost_reduction
+            name:    BONUS_SHIP_FLEET_MAINTENANCE_COST_REDUCTION_NAME
+            desc:    BONUS_SHIP_FLEET_MAINTENANCE_COST_REDUCTION_DESC
+            tooltip: BONUS_SHIP_FLEET_MAINTENANCE_COST_REDUCTION_TOOLTIP
+            type: Ship
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_ship_fleet_maintenance_cost_reduction.png
+            color: c68832
+            value_cost: 3
+          - key: bonus_ship_ground_combat_rating
+            name:    BONUS_SHIP_GROUND_COMBAT_RATING_NAME
+            desc:    BONUS_SHIP_GROUND_COMBAT_RATING_DESC
+            tooltip: BONUS_SHIP_GROUND_COMBAT_RATING_TOOLTIP
+            type: Ship
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_ship_ground_combat_rating.png
+            color: b27ff6
+            value_cost: 2
+          - key: bonus_general_chance_to_kill_spies
+            name:    BONUS_GENERAL_CHANCE_TO_KILL_SPIES_NAME
+            desc:    BONUS_GENERAL_CHANCE_TO_KILL_SPIES_DESC
+            tooltip: BONUS_GENERAL_CHANCE_TO_KILL_SPIES_TOOLTIP
+            type: General
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_general_chance_to_kill_spies.png
+            color: b27ff6
+            value_cost: 1
+          - key: bonus_general_system_ground_combat_rating
+            name:    BONUS_GENERAL_SYSTEM_GROUND_COMBAT_RATING_NAME
+            desc:    BONUS_GENERAL_SYSTEM_GROUND_COMBAT_RATING_DESC
+            tooltip: BONUS_GENERAL_SYSTEM_GROUND_COMBAT_RATING_TOOLTIP
+            type: General
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_general_system_ground_combat_rating.png
+            color: b27ff6
+            value_cost: 2
+          - key: bonus_general_disposition
+            name:    BONUS_GENERAL_DISPOSITION_NAME
+            desc:    BONUS_GENERAL_DISPOSITION_DESC
+            tooltip: BONUS_GENERAL_DISPOSITION_TOOLTIP
+            type: General
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_general_disposition.png
+            color: b27ff6
+            value_cost: 3
+          - key: bonus_general_leaders_appearance_chance
+            name:    BONUS_GENERAL_LEADERS_APPEARANCE_CHANCE_NAME
+            desc:    BONUS_GENERAL_LEADERS_APPEARANCE_CHANCE_DESC
+            tooltip: BONUS_GENERAL_LEADERS_APPEARANCE_CHANCE_TOOLTIP
+            type: General
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_general_leaders_appearance_chance.png
+            color: ac2ec4
+            value_cost: 2
+          - key: bonus_general_leaders_hiring_cost
+            name:    BONUS_GENERAL_LEADERS_HIRING_COST_NAME
+            desc:    BONUS_GENERAL_LEADERS_HIRING_COST_DESC
+            tooltip: BONUS_GENERAL_LEADERS_HIRING_COST_TOOLTIP
+            type: General
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_general_leaders_hiring_cost.png
+            color: ac2ec4
+            value_cost: 3
+          - key: bonus_general_salary_reduction
+            name:    BONUS_GENERAL_SALARY_REDUCTION_NAME
+            desc:    BONUS_GENERAL_SALARY_REDUCTION_DESC
+            tooltip: BONUS_GENERAL_SALARY_REDUCTION_TOOLTIP
+            type: General
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_general_salary_reduction.png
+            color: ac2ec4
+            value_cost: 3
+          - key: bonus_general_credits
+            name:    BONUS_GENERAL_CREDITS_NAME
+            desc:    BONUS_GENERAL_CREDITS_DESC
+            tooltip: BONUS_GENERAL_CREDITS_TOOLTIP
+            type: General
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_general_credits.png
+            color: eed600
+            value_cost: 3
+          - key: bonus_general_research
+            name:    BONUS_GENERAL_RESEARCH_NAME
+            desc:    BONUS_GENERAL_RESEARCH_DESC
+            tooltip: BONUS_GENERAL_RESEARCH_TOOLTIP
+            type: General
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_general_research.png
+            color: 00aac8
+            value_cost: 2
+          - key: bonus_general_spies_experience_rate
+            name:    BONUS_GENERAL_SPIES_EXPERIENCE_RATE_NAME
+            desc:    BONUS_GENERAL_SPIES_EXPERIENCE_RATE_DESC
+            tooltip: BONUS_GENERAL_SPIES_EXPERIENCE_RATE_TOOLTIP
+            type: General
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_general_spies_experience_rate.png
+            color: 9e44f3
+            value_cost: 5
+          - key: bonus_general_discovers_tech_app
+            name:    BONUS_GENERAL_DISCOVERS_TECH_APP_NAME
+            desc:    BONUS_GENERAL_DISCOVERS_TECH_APP_DESC
+            tooltip: BONUS_GENERAL_DISCOVERS_TECH_APP_TOOLTIP
+            type: General
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_general_discovers_tech_app.png
+            color: 00abc8
+            value_cost: 2
+          - key: bonus_general_security
+            name:    BONUS_GENERAL_SECURITY_NAME
+            desc:    BONUS_GENERAL_SECURITY_DESC
+            tooltip: BONUS_GENERAL_SECURITY_TOOLTIP
+            type: General
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_general_security.png
+            color: b27ff6
+            value_cost: 3
+          - key: bonus_general_mind_control_resistance
+            name:    BONUS_GENERAL_MIND_CONTROL_RESISTANCE_NAME
+            desc:    BONUS_GENERAL_MIND_CONTROL_RESISTANCE_DESC
+            tooltip: BONUS_GENERAL_MIND_CONTROL_RESISTANCE_TOOLTIP
+            type: General
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_general_mind_control_resistance.png
+            color: ac2ec4
+            value_cost: 3
+          - key: bonus_general_trade_treaties_income
+            name:    BONUS_GENERAL_TRADE_TREATIES_INCOME_NAME
+            desc:    BONUS_GENERAL_TRADE_TREATIES_INCOME_DESC
+            tooltip: BONUS_GENERAL_TRADE_TREATIES_INCOME_TOOLTIP
+            type: General
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_general_trade_treaties_income.png
+            color: ac2ec4
+            value_cost: 3
+          - key: bonus_general_attracts_rebel_leaders
+            name:    BONUS_GENERAL_ATTRACTS_REBEL_LEADERS_NAME
+            desc:    BONUS_GENERAL_ATTRACTS_REBEL_LEADERS_DESC
+            tooltip: BONUS_GENERAL_ATTRACTS_REBEL_LEADERS_TOOLTIP
+            type: General
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_general_attracts_rebel_leaders.png
+            color: ac2ec4
+            value_cost: 3
+          - key: bonus_general__
+            name:    BONUS_GENERAL___NAME
+            desc:    BONUS_GENERAL___DESC
+            tooltip: BONUS_GENERAL___TOOLTIP
+            type: General
+            isTactical: false
+            icon: assets/leaders/bonuses/bonus_general__.png
+            color: ffffff
+            value_cost: 0

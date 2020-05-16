@@ -1,0 +1,64 @@
+---
+- collection: &Backend.Galaxy.PlanetSizeChances
+    items:
+        - key: orbit_1
+          sizeChances:
+                - size: planetsize_tiny
+                  chance: 25
+                - size: planetsize_small
+                  chance: 39
+                - size: planetsize_medium
+                  chance: 33
+                - size: planetsize_large
+                  chance: 3
+                - size: planetsize_huge
+                  chance: 0
+        - key: orbit_2
+          sizeChances:
+                - size: planetsize_tiny
+                  chance: 20
+                - size: planetsize_small
+                  chance: 35
+                - size: planetsize_medium
+                  chance: 34
+                - size: planetsize_large
+                  chance: 9
+                - size: planetsize_huge
+                  chance: 2
+        - key: orbit_3
+          sizeChances:
+                - size: planetsize_tiny
+                  chance: 13
+                - size: planetsize_small
+                  chance: 20
+                - size: planetsize_medium
+                  chance: 41
+                - size: planetsize_large
+                  chance: 16
+                - size: planetsize_huge
+                  chance: 10
+        - key: orbit_4
+          sizeChances:
+                - size: planetsize_tiny
+                  chance: 9
+                - size: planetsize_small
+                  chance: 18
+                - size: planetsize_medium
+                  chance: 39
+                - size: planetsize_large
+                  chance: 22
+                - size: planetsize_huge
+                  chance: 12
+        - key: orbit_5
+          sizeChances:
+                - size: planetsize_tiny
+                  chance: 8
+                - size: planetsize_small
+                  chance: 16
+                - size: planetsize_medium
+                  chance: 38
+                - size: planetsize_large
+                  chance: 23
+                - size: planetsize_huge
+                  chance: 15
+...

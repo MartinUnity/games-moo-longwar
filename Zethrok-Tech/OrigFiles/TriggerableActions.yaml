@@ -1,0 +1,26 @@
+---
+- collection: &Backend.Tutorials.TriggerableAction
+    items:
+          - key: action_focus_fleet
+            type: Backend.Tutorials.FocusFleetAction
+          - key: action_focus_planet
+            type: Backend.Tutorials.FocusPlanetAction
+          - key: action_focus_colony
+            type: Backend.Tutorials.FocusColonyAction
+          - key: action_focus_star
+            type: Backend.Tutorials.FocusStarAction
+          - key: action_focus_anomaly
+            type: Backend.Tutorials.FocusAnomalyAction
+          - key: action_open_empire_manager
+            type: Backend.Tutorials.OpenEmpireManagerAction
+          - key: action_open_spy_manager
+            type: Backend.Tutorials.OpenSpyManagerAction
+          - key: action_open_diplomacy
+            type: Backend.Tutorials.OpenDiplomacyAction
+          - key: action_open_tech_tree
+            type: Backend.Tutorials.OpenTechTreeAction
+          - key: action_open_fleet_manager
+            type: Backend.Tutorials.OpenFleetManagerAction
+          - key: action_open_known_settlements_manager
+            type: Backend.Tutorials.OpenKnownSettlementsManagerAction
+...
