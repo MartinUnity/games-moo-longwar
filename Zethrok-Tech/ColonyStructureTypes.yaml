@@ -167,6 +167,18 @@
             structureTypes:
                 - 0
             workingStatus: true
+            ## Custom
+          - key: structure_fleethub
+            name: Fleethub
+            description: Fleethub
+            icon: assets/structures/metro.png
+            cost: 320
+            upkeep: 5
+            scannerRangeBonus: 1
+            fleetSupportBonus: 3
+            structureTypes:
+                - 5
+            workingStatus: true            
         ## Custom - automated_factory
           - key: structure_automated_factory_1
             name: Automated Factory 1
@@ -245,6 +257,8 @@
             cost: 360
             upkeep: 0
             workerIncomeBonus: 2
+            upgrades: structure_colonial_revenue_services
+            requires: structure_colonial_revenue_services            
             #creditIncomeBonus: 4
             # requires: structure_government_building
             structureTypes:
@@ -302,7 +316,7 @@
             workingStatus: true
           - key: structure_crust_prospecting_3
             name: Crust Prospecting 3
-            description: COLONY_STRUCTURE_CRUST_PROSPECTING_DESCRIPTION
+            description: Crust Prospecting 3
             icon: assets/structures/crust_prospecting.png
             cost: 300
             upkeep: 8
@@ -317,9 +331,26 @@
                - planetmineralrichness_poor
                - planetmineralrichness_ultra_poor
             workingStatus: true
+          - key: structure_crust_prospecting_4
+            name: Crust Prospecting 4
+            description: Crust Prospecting 4
+            icon: assets/structures/crust_prospecting.png
+            cost: 600
+            upkeep: 16
+            upgrades: structure_crust_prospecting_3
+            requires: structure_crust_prospecting_3
+            baseProductionBonus: 14
+            # productionTileBonus: 1
+            # creditIncomeBonus: 8
+            structureTypes:
+               - 0
+            compatibleRichness:
+               - planetmineralrichness_poor
+               - planetmineralrichness_ultra_poor
+            workingStatus: true            
           - key: structure_tradestation
             name: TradeStation
-            description: COLONY_STRUCTURE_SPACE_PORT_DESCRIPTION
+            description: TradeStation
             icon: assets/structures/space_port.png
             cost: 660
             upkeep: 0
@@ -330,7 +361,7 @@
             workingStatus: true
           - key: structure_tradestation_2
             name: TradeStation 2
-            description: COLONY_STRUCTURE_SPACE_PORT_2_DESCRIPTION
+            description: Tradestation 2
             icon: assets/structures/space_port.png
             cost: 1420
             upkeep: 0
@@ -509,7 +540,8 @@
             icon: assets/structures/recyclotron.png
             cost: 140
             upkeep: 4
-            pollutionCleaningRate: 35 ## 25 normaly
+            ## 25 normaly
+            pollutionCleaningRate: 35 
             structureTypes:
                 - 6
             workingStatus: true
@@ -550,20 +582,23 @@
             description: COLONY_STRUCTURE_ATMOSPHERIC_RENEWER_DESCRIPTION
             icon: assets/structures/atmospheric_renewer.png
             cost: 60
-            upkeep: 1  ## 2 normal
+            ## 2 normal
+            upkeep: 1
             # pollutionMultiplierReduction: 0.25
-            pollutionCleaningRate: 7 ## Normal 5
+            ## Normal 5
+            pollutionCleaningRate: 7
             structureTypes:
                - 6
             workingStatus: true
           - key: structure_atmospheric_renewer_1
-            name: Atmospheric Renewer
-            description: COLONY_STRUCTURE_ATMOSPHERIC_RENEWER_DESCRIPTION
+            name: Atmospheric Renewer 1
+            description: Clean Air for the peasants
             icon: assets/structures/atmospheric_renewer.png
             cost: 180
             upkeep: 2
             upgrades: structure_atmospheric_renewer
             requires: structure_atmospheric_renewer
+            pollutionMultiplierReduction: 0.05
             pollutionCleaningRate: 15 
             structureTypes:
                - 6
@@ -577,10 +612,23 @@
             upgrades: structure_atmospheric_renewer_1
             requires: structure_atmospheric_renewer_1
             # pollutionMultiplierReduction: 0.5
-            pollutionCleaningRate: 25 # 15 normal
+            pollutionCleaningRate: 30
             structureTypes:
                 - 6
             workingStatus: true
+          - key: structure_atmospheric_renewer_2
+            name: Atmospheric Renewer 2
+            description: Clean Air for the peasants
+            icon: assets/structures/atmospheric_renewer.png
+            cost: 500
+            upkeep: 5
+            upgrades: structure_atmospheric_renewer_2
+            requires: structure_atmospheric_renewer_2
+            pollutionMultiplierReduction: 0.15
+            pollutionCleaningRate: 50
+            structureTypes:
+                - 6
+            workingStatus: true            
           - key: structure_core_waste_dump
             name: COLONY_STRUCTURE_CORE_WASTE_DUMP_NAME
             description: COLONY_STRUCTURE_CORE_WASTE_DUMP_DESCRIPTION
@@ -589,7 +637,8 @@
             upkeep: 5
             upgrades: structure_pollution_processor
             # pollutionMultiplierReduction: 1
-            pollutionCleaningRate: 200 ## Was 150
+            ## Was 150
+            pollutionCleaningRate: 100
             structureTypes:
                 - 6
             workingStatus: true
@@ -651,6 +700,18 @@
             structureTypes:
                 - 1
             workingStatus: true
+          - key: structure_hydroponic_farm_4
+            name: Hydroponic Farm 4
+            description: Hydroponic Farm 4
+            icon: assets/structures/hydroponic_farm.png
+            cost: 880
+            upkeep: 10
+            upgrades: structure_hydroponic_farm_3
+            upgrades: structure_hydroponic_farm_3
+            baseLifeSupportBonus: 9
+            structureTypes:
+                - 1
+            workingStatus: true            
           - key: structure_subterranean_farms
             name: COLONY_STRUCTURE_SUBTERRANEAN_FARMS_NAME
             description: COLONY_STRUCTURE_SUBTERRANEAN_FARMS_DESCRIPTION
@@ -662,6 +723,17 @@
             structureTypes:
                 - 1
             workingStatus: true
+            ## Custom
+          - key: structure_foodie
+            name: "Foodie - coll"
+            description: "Foodie - yarr"
+            icon: assets/structures/matter_converter.png
+            cost: 10
+            upkeep: 2
+            foodCarryoverRatio: 0.
+            structureTypes:
+                - 1
+            workingStatus: true            
           - key: structure_matter_converter
             name: COLONY_STRUCTURE_MATTER_CONVERTER_NAME
             description: COLONY_STRUCTURE_MATTER_CONVERTER_DESCRIPTION
@@ -702,6 +774,25 @@
             # structureTypes:
             #    - 1
             # workingStatus: true
+          - key: structure_multiversity
+            name: Multiversity
+            description: Multiversity
+            icon: assets/structures/space_academy.png
+            cost: 100
+            upkeep: 2
+            fleetSupportCostReduction: 0.15
+            shipList:
+                - hull_scout
+                - hull_freighter
+                - hull_transport
+                - hull_colony
+                - hull_frigate
+                - hull_destroyer
+                - hull_cruiser
+            empireUnique: true
+            structureTypes:
+               - 5
+            workingStatus: false            
           - key: structure_space_academy
             name: COLONY_STRUCTURE_SPACE_ACADEMY_NAME
             description: COLONY_STRUCTURE_SPACE_ACADEMY_DESCRIPTION
@@ -765,9 +856,25 @@
                - 5
             workingStatus: false
             spyTrainingTimeModifier: 0.5
-            startingSpyLvl: 2
+            startingSpyLvl: 3
             # spyCapacity: 15
             requires: structure_spy_center
+            ## Custom
+          - key: structure_spydog_lab
+            name: Spydog Lab
+            description: Spydog Lab
+            icon: assets/structures/espionage_training_facility.png
+            cost: 120
+            upkeep: 2
+            empireUnique: true
+            isTransferable: false
+            structureTypes:
+               - 5
+            workingStatus: false
+            spyTrainingTimeModifier: 0.15
+            startingSpyLvl: 2
+            # spyCapacity: 15
+            requires: structure_spy_center            
           - key: structure_interplanetary_security_transmitter
             name: COLONY_STRUCTURE_INTERPLANETARY_SECURITY_TRANSMITTER_NAME
             description: COLONY_STRUCTURE_INTERPLANETARY_SECURITY_TRANSMITTER_DESCRIPTION
@@ -1203,8 +1310,8 @@
             workingStatus: true
         ## Custom biodome - 1
           - key: structure_biodome_1
-            name: Biodome 1
-            description: Biodome 1
+            name: Biodome
+            description: Biodome
             icon: assets/structures/fungal_farms.png
             cost: 20
             upkeep: 2
@@ -1218,8 +1325,8 @@
             workingStatus: true
         ## Custom biodome - 2
           - key: structure_biodome_2
-            name: Biodome 2
-            description: Biodome 2
+            name: Biodome 1
+            description: Biodome 1
             icon: assets/structures/fungal_farms.png
             cost: 40
             upkeep: 3
@@ -1306,8 +1413,8 @@
             populationGrowthMultiplierBonus: 0.10
             workingStatus: true
           - key: structure_caves_2
-            name: Multihub - Zaktork
-            description: Tradehub facilitates trade
+            name: Multihub - 2
+            description: Multihub brings recreation
             icon: assets/structures/cloning_center.png
             cost: 160
             upkeep: 16
@@ -1324,12 +1431,12 @@
             workingStatus: true
           - key: structure_caves_3
             name: Multihub - 3
-            description: CryptoExchange owns trade
+            description: Multihub brings recreation
             icon: assets/structures/cloning_center.png
             cost: 320
             upkeep: 24
-            upgrades: structure_caves_1
-            requires: structure_caves_1
+            upgrades: structure_caves_2
+            requires: structure_caves_2
             structureTypes:
                 - 1
             workerIncomeBonus: 2
@@ -1339,6 +1446,19 @@
             baseLifeSupportBonus: 4
             baseProductionBonus: 4
             workingStatus: true
+          #- key: structure_caves_4
+            #name: "Build more tiles - 2"
+            #description: "Build tiles - 2 extra"
+            #icon: assets/structures/cloning_center.png
+            #cost: 10
+            #upkeep: 1
+            #bonusTiles: 
+              #- industry:
+                #- 1
+              #- 
+            #structureTypes:
+                #- 0
+            #workingStatus: true            
         ## Custom - cryptoexchange
           - key: structure_cryptoexchange_1
             name: CryptoExchange
@@ -1390,17 +1510,6 @@
             upgrades: structure_cryptoexchange_3
             requires: structure_cryptoexchange_3
             workingStatus: true
-#          - key: structure_caves_3
-#            name: COLONY_STRUCTURE_CAVES_NAME_3
-#            description: COLONY_STRUCTURE_CAVES_DESCRIPTION_3
-#            icon: assets/structures/cloning_center.png
-#            cost: 5
-#            upkeep: 1
-#            bonusTiles:
-#                - Industry: 2
-#            structureTypes:
-#                - 0
-#            workingStatus: true
         ## Custom - Fertility lab 1
           - key: structure_fertilitylab_1
             name: Fertility Lab - 1
@@ -1495,6 +1604,32 @@
             structureTypes:
                 - 1
             workingStatus: true
+          - key: structure_soil_enrichment_2
+            name: Soil Enrichment 2
+            description: Soil Enrichment 2
+            icon: assets/structures/soil_enrichment.png
+            cost: 760
+            upkeep: 15
+            upgrades: structure_soil_enrichment_1
+            requires: structure_soil_enrichment_1
+            foodTileBonus: 3
+            #baseLifeSupportBonus: 2
+            compatibleBiomes:
+                - biome_gaia
+                - biome_grassland
+                - biome_inferno
+                - biome_tropical
+                - biome_cavernous
+                - biome_terran
+                - biome_ocean
+                - biome_swamp
+                - biome_arid
+                - biome_tundra
+                - biome_desert
+                - biome_barren
+            structureTypes:
+                - 1
+            workingStatus: true            
         # - structure: &structure_dimensional_portal
             # name: COLONY_STRUCTURE_DIMENSIONAL_PORTAL_NAME
             # icon: assets/structures/notfound.png

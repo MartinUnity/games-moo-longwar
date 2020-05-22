@@ -295,6 +295,14 @@
                - shipmodule_xentronium_armor
             tags:
                  - Military
+          - key: techapp_mini_pods
+            icon: assets/tech_apps/tech_special_module.png
+            type: techapptype_shipmodule
+            hologram: ContentPrefabs/Research/battle_pods.prefab
+            unlocks:
+               - shipmodule_mini_pods
+            tags:
+                 - Military
           - key: techapp_battle_pods
             #name: TECH_APPLICATION_TYPE_BATTLE_PODS_NAME
             #description: TECH_APPLICATION_TYPE_BATTLE_PODS_DESCRIPTION
@@ -456,6 +464,15 @@
                - structure_technet_2
             tags:
                  - Research
+        ## Custom - technet
+          - key: techapp_technet_3
+            icon: assets/tech_apps/tech_building_research.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/autolab.prefab
+            unlocks:
+               - structure_technet_3
+            tags:
+                 - Research                 
         ## Custom - fluxtube
           - key: techapp_fluxtube_1
             icon: assets/tech_apps/tech_building_production.png
@@ -814,14 +831,6 @@
                - techachievement_advanced_city_planning
             tags:
                  - Population
-          - key: techapp_advanced_city_planning_2
-            icon: assets/tech_apps/tech_achievement_population.png
-            type: techapptype_techachievement
-            hologram: ContentPrefabs/Research/advanced_city_planning.prefab
-            unlocks:
-               - techachievement_advanced_city_planning
-            tags:
-                 - Population
           - key: techapp_underground_city
             icon: assets/tech_apps/tech_achievement_population.png
             type: techapptype_techachievement
@@ -966,6 +975,17 @@
                - hull_transport
             tags:
                  - Military
+            ## Custom
+          - key: techapp_meson_drive
+            #name: Meson drive
+            #description: Meson drive
+            icon: assets/tech_apps/tech_engines.png
+            type: techapptype_shipmodule
+            hologram: ContentPrefabs/Research/antimatter_drive.prefab
+            unlocks:
+               - shipmodule_meson_drive
+            tags:
+                 - Military            
           - key: techapp_fusion_drive
             #name: TECH_APPLICATION_TYPE_FUSION_DRIVE_NAME
             #description: TECH_APPLICATION_TYPE_FUSION_DRIVE_DESCRIPTION
@@ -1504,7 +1524,7 @@
             unlocks:
                - techachievement_neural_scanner
             tags:
-                 - Espionage
+                 - Espionage                 
         ## Custom - telekinesis
           - key: techapp_telekinesis
             icon: assets/tech_apps/tech_building_research.png
@@ -1512,6 +1532,15 @@
             hologram: ContentPrefabs/Research/neural_scanner.prefab
             unlocks:
                - structure_telekinesis
+            tags:
+                 - Espionage
+        ## Custom - telekinesis
+          - key: techapp_spydog_lab
+            icon: assets/tech_apps/tech_building_research.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/neural_scanner.prefab
+            unlocks:
+               - structure_spydog_lab
             tags:
                  - Espionage
         ## Custom - telekinesis - TechAchievement
@@ -1834,7 +1863,7 @@
             unlocks:
                - structure_fungal_farms_2
             tags:
-                 - Populationtechapp_space_port_2
+                 - Population
         ## Custom - fungal 3
           - key: techapp_fungal_farms_3
             icon: assets/tech_apps/tech_building_food.png
@@ -1844,6 +1873,15 @@
                - structure_fungal_farms_3
             tags:
                  - Population
+        ## Custom - multiversity
+          - key: techapp_multiversity
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_academy.prefab
+            unlocks:
+               - structure_multiversity
+            tags:
+                 - Military
         ## Custom - caves
           - key: techapp_caves
             icon: assets/tech_apps/tech_building_food.png
@@ -1871,6 +1909,14 @@
                - structure_caves_3
             tags:
                  - Population
+          #- key: techapp_caves_4
+            #icon: assets/tech_apps/tech_space_factory.png
+            #type: techapptype_structure
+            #hologram: ContentPrefabs/Research/advanced_city_planning.prefab
+            #unlocks:
+               #- structure_caves_4
+            #tags:
+                 #- Population                 
           - key: techapp_cloning_center
             #name: TECH_APPLICATION_TYPE_CLONING_CENTER_NAME
             #description: TECH_APPLICATION_TYPE_CLONING_CENTER_DESCRIPTION
@@ -1966,6 +2012,16 @@
                - structure_weather_controller
             tags:
                  - Population
+          - key: techapp_foodie
+            name: "Foodie"
+            description: "Foodie - keep 15% of food for next pop"
+            icon: assets/tech_apps/tech_building_food.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/matter_converter.prefab
+            unlocks:
+               - structure_foodie
+            tags:
+                 - Population                 
           - key: techapp_matter_converter
             #name: TECH_APPLICATION_TYPE_MATTER_CONVERTER_NAME
             #description: TECH_APPLICATION_TYPE_MATTER_CONVERTER_DESCRIPTION
@@ -2903,7 +2959,24 @@
                - structure_hydroponic_farm_3
             tags:
                  - Population
-        ## Custom stuff
+          - key: techapp_hydroponic_farm_4
+            icon: assets/tech_apps/tech_building_food.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/hydroponic_farm.prefab
+            unlocks:
+               - structure_hydroponic_farm_4
+            tags:
+                 - Population                 
+        ## Custom stuff 
+        ## Custom - structure_fleethub
+          - key: techapp_fleethub
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_academy.prefab
+            unlocks:
+               - structure_fleethub
+            tags:
+                 - Military        
           - key: techapp_automated_factory_1
             icon: assets/tech_apps/tech_building_production.png
             type: techapptype_structure
@@ -2961,6 +3034,14 @@
                - structure_crust_prospecting_3
             tags:
                  - Production
+          - key: techapp_crust_prospecting_4
+            icon: assets/tech_apps/tech_building_production.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/crust_prospecting.prefab
+            unlocks:
+               - structure_crust_prospecting_4
+            tags:
+                 - Production                 
         ## Custom - Research lab.
           - key: techapp_research_laboratory_1
             icon: assets/tech_apps/tech_building_research.png
@@ -3040,6 +3121,15 @@
                - structure_atmospheric_renewer_1
             tags:
                  - Pollution
+        ## Custom - atmospheric_renewer_2
+          - key: techapp_atmospheric_renewer_2
+            icon: assets/tech_apps/tech_building_pollution.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/atmospheric_renewer.prefab
+            unlocks:
+               - structure_atmospheric_renewer_2
+            tags:
+                 - Pollution                 
         ## Custom - soil_enrichment
           - key: techapp_soil_enrichment_1
             icon: assets/tech_apps/tech_building_food.png
@@ -3049,7 +3139,25 @@
                - structure_soil_enrichment_1
             tags:
                  - Population
+        ## Custom - soil_enrichment
+          - key: techapp_soil_enrichment_2
+            icon: assets/tech_apps/tech_building_food.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/soil_enrichment.prefab
+            unlocks:
+               - structure_soil_enrichment_2
+            tags:
+                 - Population                 
         ##MINIATURIZATION
+        ## Custom - nuclear torpedoes -
+          - key: techapp_nuclear_torpedoes
+            icon: assets/tech_apps/tech_torpedoes.png
+            type: techapptype_shipmodule
+            hologram: ContentPrefabs/Research/antimatter_torpedoes.prefab
+            unlocks:
+               - shipmodule_nuclear_torpedoes
+            tags:
+                 - Military
         ## Custom - meson
           - key: techapp_meson_missile
             icon: assets/tech_apps/tech_missiles.png
@@ -3561,6 +3669,17 @@
                - shipmodule_zeon_missile
             tags:
                  - Military
+         ## Custom - nuclear torpedoes
+          - key: techapp_modifications_nuclear_torpedoes
+            name: Nuclear Torpedoes
+            description: NukePedo - rawr
+            icon: assets/tech_apps/tech_modifier.png
+            type: techapptype_modifier
+            hologram: ContentPrefabs/Research/antimatter_torpedoes.prefab
+            unlocks:
+               - shipmodule_nuclear_torpedoes
+            tags:
+                 - Military         
           - key: techapp_modifications_proton_torpedoes
             name: TECH_APPLICATION_TYPE_MODS_PROTON_TORPEDOES_NAME
             description: TECH_APPLICATION_TYPE_MODS_PROTON_TORPEDOES_DESCRIPTION

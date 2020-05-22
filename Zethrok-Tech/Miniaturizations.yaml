@@ -66,6 +66,7 @@
             costDecreaseFactor: 0.1
             affectedModules:
                 - shipmodule_proton_torpedoes
+                - shipmodule_nuclear_torpedoes
           - key: miniaturization_torpedoes_2
             name: MINIATURIZATION_TORPEDOES_2_NAME
             description: MINIATURIZATION_TORPEDOES_2_DESCRIPTION
@@ -199,6 +200,7 @@
             costDecreaseFactor: 0.05
             affectedModules:
                 - shipmodule_laser_cannon
+                - shipmodule_nuclear_torpedoes
                 - shipmodule_merculite_missile
           - key: miniaturization_weapon_3
             name: Weapon 3 - Miniaturization
@@ -209,6 +211,7 @@
             affectedModules:
                 - shipmodule_mass_driver
                 - shipmodule_proton_torpedoes
+                - shipmodule_nuclear_torpedoes                
           - key: miniaturization_weapon_4
             name: Weapon 4 - Miniaturization
             description: Weapon 4 - Miniaturization
@@ -218,8 +221,9 @@
             affectedModules:
                 - shipmodule_mass_driver
                 - shipmodule_proton_torpedoes
+                - shipmodule_nuclear_torpedoes
           - key: miniaturization_nuclearbombs_1
-            name: Nuclearbombs 1 - Miniaturization
+            name: NuclearWeaponry 1 - Miniaturization
             description: Nukes - 1 - mini
             icon: assets/ship_modules/miniaturization_bombs.png
             spaceDecreaseFactor: 0.10
@@ -227,13 +231,14 @@
             affectedModules:
                 - shipmodule_nuclear_bomb
           - key: miniaturization_nuclearbombs_2
-            name: Nuclearbombs 2 - Miniaturization
+            name: NuclearWeaponry 2 - Miniaturization
             description: Nuclear bomb - mini1
             icon: assets/ship_modules/miniaturization_bombs.png
             spaceDecreaseFactor: 0.10
             costDecreaseFactor: 0.10
             affectedModules:
                 - shipmodule_nuclear_bomb
+                - shipmodule_nuclear_torpedoes
           - key: miniaturization_lazer_1
             name: Lazer 1 - Miniaturization
             description: Lazzzer 1 - Mini
@@ -300,29 +305,31 @@
                 - shipmodule_pulse_beam
         ## Custom
           - key: miniaturization_nuclear_1
-            name: Nuclear Missile - Mini 1
-            description: Nuclear Missile - Mini 1
+            name: Nuclear Weaponry - Mini 1
+            description: Nuclear Weaponry - Mini 1
             icon: assets/ship_modules/miniaturization_missilies.png
             spaceDecreaseFactor: 0.08
             costDecreaseFactor: 0.08
             affectedModules:
                 - shipmodule_nuclear_missile
           - key: miniaturization_nuclear_2
-            name: Nuclear Missile - Mini 2
-            description: Nuclear Missile - Mini 2
+            name: Nuclear Weaponry - Mini 2
+            description: Nuclear Weaponry - Mini 2
             icon: assets/ship_modules/miniaturization_missilies.png
             spaceDecreaseFactor: 0.08
             costDecreaseFactor: 0.08
             affectedModules:
                 - shipmodule_nuclear_missile
+                - shipmodule_nuclear_torpedoes
           - key: miniaturization_nuclear_3
-            name: Nuclear Missile - Mini 3
-            description: Nuclear Missile - Mini 3
+            name: Nuclear Weaponry - Mini 3
+            description: Nuclear Weaponry - Mini 3
             icon: assets/ship_modules/miniaturization_missilies.png
             spaceDecreaseFactor: 0.09
             costDecreaseFactor: 0.09
             affectedModules:
                 - shipmodule_nuclear_missile
+                - shipmodule_nuclear_torpedoes
 
 
 ...

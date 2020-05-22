@@ -32,6 +32,18 @@
           productionSpeed: production_speed_slow
           researchSpeed: research_speed_very_slow
           leadersAppearenceSpeed: -0.35         
+        - key: game_pace_super
+          name: "Super Slow - 2x"
+          populationGrowthSpeed: population_growth_speed_super_slow
+          productionSpeed: production_speed_super_slow
+          researchSpeed: research_speed_super_slow
+          leadersAppearenceSpeed: -0.60
+        - key: game_pace_extreme
+          name: "Extremely Slow - 4x"
+          populationGrowthSpeed: population_growth_speed_extremely_slow
+          productionSpeed: production_speed_extremely_slow
+          researchSpeed: research_speed_extremely_slow
+          leadersAppearenceSpeed: -0.75
         - key: game_pace_user_define
           name: FE_GAME_PACE_USER_DEFINE
           isUserDefined: true

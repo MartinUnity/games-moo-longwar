@@ -64,14 +64,14 @@
             className: TacticalBeam
             model: graviton_beam
             visualScale: 2.0
-            tacticalCooldown: 3.5
+            tacticalCooldown: 5
             rateOfFire: 0.10
             volleySize: 1
-            maxDamage: 3
-            weaponSteps: 8
+            maxDamage: 4
+            weaponSteps: 10
             weaponStepDuration: 0.5
-            armorPenetration: 3.0
-            weaponRange: 60
+            armorPenetration: 0.0
+            weaponRange: 70
             rangeDecayFactor: 0.7
             decayRate: 2.0
             rangeLoss: 0.15
@@ -203,6 +203,7 @@
                 - modifier: modifier_enveloping
         #CANNONS
         ## Custom - Lazer
+        # Low dmg, high AC-piecing - with =<15 armor ships it does 2x damage.
           - key: weapontype_lazer_cannon
             className: TacticalLaser
             model: laser_cannon
@@ -210,15 +211,15 @@
             tacticalCooldown: 5.0
             rateOfFire: 0.25
             volleySize: 1
-            maxDamage: 15
-            armorPenetration: 5.0
+            maxDamage: 10
+            armorPenetration: 30.0
             shieldPenetration: false
             rangeDissipation: false
             rangeDecayFactor: 0.4
             decayRate: 1.5
             weaponAccuracy: 1.0
             rangeDissipation: false
-            weaponRange: 65
+            weaponRange: 75
             warmupTime: 0.2
             radius: 1.0
             mass: 1.0
@@ -601,6 +602,7 @@
                 - modifier: modifier_fast
                 - modifier: modifier_mirv
         ## Custom - meson missile
+        ### 8s CD - low dmg, higher range. High accel+velo
           - key: weapontype_meson_missile
             className: TacticalMissile
             model: zeon_missile
@@ -635,6 +637,38 @@
                 - modifier: modifier_fast
                 - modifier: modifier_mirv
         #TORPEDOES
+        ## CUSTOM
+          - key: weapontype_nuclear_torpedo
+            className: TacticalTorpedo
+            model: antimatter_torpedo
+            visualScale: 6.0
+            tacticalCooldown: 15.0
+            rateOfFire: 1.0
+            volleySize: 1
+            maxDamage: 30
+            armorPenetration: 10.0
+            weaponAccuracy: 1.0
+            weaponRange: 70
+            distanceToLive: 125
+            splashArea: 1
+            weaponHp: 50.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 7.0
+            maxVelocity: 6.0
+            maxVelocityVariance: 0.0
+            angularAcceleration: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.05
+            isToggleable: true
+            isTargeteable: true
+            modifiers:
+                - modifier: modifier_enveloping
+                - modifier: modifier_overloaded
+                - modifier: modifier_fast
+                - modifier: modifier_semi_guided
           - key: weapontype_proton_torpedo
             className: TacticalTorpedo
             model: proton_torpedo

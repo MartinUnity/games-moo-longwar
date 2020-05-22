@@ -1,6 +1,12 @@
 ---
 - collection: &Backend.Core.ProductionSpeed
     items:
+        - key: production_speed_extremely_slow
+          name: "Extremely Slow"
+          multiplier: 0.25
+        - key: production_speed_super_slow
+          name: "Super Slow"
+          multiplier: 0.35
         - key: production_speed_very_slow
           name: FE_PRODUCTION_SPEED_VERY_SLOW
           multiplier: 0.5

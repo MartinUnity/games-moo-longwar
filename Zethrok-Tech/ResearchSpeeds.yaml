@@ -1,6 +1,12 @@
 ---
 - collection: &Backend.Core.ResearchSpeed
     items:
+        - key: research_speed_extremely_slow
+          name: "Extremely Slow"
+          multiplier: 4.0
+        - key: research_speed_super_slow
+          name: "Super slow"
+          multiplier: 2.5
         - key: research_speed_very_slow
           name: FE_RESEARCH_SPEED_VERY_SLOW
           multiplier: 1.5

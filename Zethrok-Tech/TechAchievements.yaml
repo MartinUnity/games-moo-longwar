@@ -100,6 +100,12 @@
             description: TECH_ACHIEVEMENT_ADVANCED_CITY_PLANNING_DESCRIPTION
             icon: assets/structures/advanced_city_planning.png
             value: 5
+            ## Custom
+          - key: techachievement_advanced_city_planning_2
+            name: TECH_ACHIEVEMENT_ADVANCED_CITY_PLANNING_NAME
+            description: TECH_ACHIEVEMENT_ADVANCED_CITY_PLANNING_DESCRIPTION
+            icon: assets/structures/advanced_city_planning.png
+            value: 2
           - key: techachievement_underground_city
             name: TECH_ACHIEVEMENT_ADVANCED_CITY_PLANNING_NAME
             description: TECH_ACHIEVEMENT_ADVANCED_CITY_PLANNING_DESCRIPTION
