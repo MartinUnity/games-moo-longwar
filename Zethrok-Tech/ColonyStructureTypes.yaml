@@ -347,6 +347,23 @@
             compatibleRichness:
                - planetmineralrichness_poor
                - planetmineralrichness_ultra_poor
+            workingStatus: true
+          - key: structure_crust_prospecting_5
+            name: Crust Prospecting 5
+            description: Crust Prospecting 5
+            icon: assets/structures/crust_prospecting.png
+            cost: 1200
+            upkeep: 32
+            upgrades: structure_crust_prospecting_4
+            requires: structure_crust_prospecting_4
+            baseProductionBonus: 24
+            # productionTileBonus: 1
+            # creditIncomeBonus: 8
+            structureTypes:
+               - 0
+            compatibleRichness:
+               - planetmineralrichness_poor
+               - planetmineralrichness_ultra_poor
             workingStatus: true            
           - key: structure_tradestation
             name: TradeStation
@@ -503,6 +520,19 @@
             structureTypes:
                - 0
             workingStatus: true
+          - key: structure_androidminers
+            name: Android Miners
+            description: Android Mineres
+            icon: assets/structures/robo_miners.png
+            cost: 360
+            upkeep: 10
+            baseProductionBonus: 4
+            productionTileBonus: 2
+            upgrades: structure_robominers
+            requires: structure_robominers            
+            structureTypes:
+               - 0
+            workingStatus: true            
           - key: structure_geosynchronic_wharf
             name: COLONY_STRUCTURE_GEOSYNCHRONIC_WHARF_NAME
             description: COLONY_STRUCTURE_GEOSYNCHRONIC_WHARF_DESCRIPTION
@@ -628,6 +658,19 @@
             pollutionCleaningRate: 50
             structureTypes:
                 - 6
+            workingStatus: true
+          - key: structure_atmospheric_renewer_3
+            name: Atmospheric Renewer 3
+            description: Clean Air for the peasants
+            icon: assets/structures/atmospheric_renewer.png
+            cost: 1000
+            upkeep: 10
+            upgrades: structure_atmospheric_renewer_3
+            requires: structure_atmospheric_renewer_3
+            pollutionMultiplierReduction: 0.25
+            pollutionCleaningRate: 125
+            structureTypes:
+                - 6
             workingStatus: true            
           - key: structure_core_waste_dump
             name: COLONY_STRUCTURE_CORE_WASTE_DUMP_NAME
@@ -711,6 +754,18 @@
             baseLifeSupportBonus: 9
             structureTypes:
                 - 1
+            workingStatus: true
+          - key: structure_hydroponic_farm_5
+            name: Hydroponic Farm 5
+            description: Hydroponic Farm 5
+            icon: assets/structures/hydroponic_farm.png
+            cost: 1280
+            upkeep: 16
+            upgrades: structure_hydroponic_farm_4
+            upgrades: structure_hydroponic_farm_4
+            baseLifeSupportBonus: 16
+            structureTypes:
+                - 1
             workingStatus: true            
           - key: structure_subterranean_farms
             name: COLONY_STRUCTURE_SUBTERRANEAN_FARMS_NAME
@@ -725,12 +780,12 @@
             workingStatus: true
             ## Custom
           - key: structure_foodie
-            name: "Foodie - coll"
-            description: "Foodie - yarr"
+            name: "Foodie"
+            description: "Foodie"
             icon: assets/structures/matter_converter.png
             cost: 10
             upkeep: 2
-            foodCarryoverRatio: 0.
+            foodCarryoverRatio: 0.25
             structureTypes:
                 - 1
             workingStatus: true            
@@ -1202,6 +1257,19 @@
             structureTypes:
                 - 2
             workingStatus: true
+          - key: structure_cloud
+            name: Galactic Cloud
+            description: Galactic Cloud
+            icon: assets/structures/advance_data_center.png
+            cost: 310
+            upkeep: 8
+            # baseResearchBonus: 2
+            upgrades: structure_advance_data_center
+            requires: structure_advance_data_center            
+            researchTileBonus: 2
+            structureTypes:
+                - 2
+            workingStatus: true            
           - key: structure_high_orbit_sonar
             name: COLONY_STRUCTURE_HIGH_ORBIT_SONAR_NAME
             description: COLONY_STRUCTURE_HIGH_ORBIT_SONAR_DESCRIPTION
@@ -1542,7 +1610,7 @@
             upkeep: 6
             structureTypes:
                 - 1
-            populationGrowthMultiplierBonus: 0.50
+            populationGrowthMultiplierBonus: 0.75
             workingStatus: true
           - key: structure_cloning_center
             name: COLONY_STRUCTURE_CLONING_CENTER_NAME

@@ -631,7 +631,7 @@
             tags:
                  - Production
           - key: techapp_robominers
-            #name: TECH_APPLICATION_TYPE_ROBO_MINERS_NAME
+            #name: TECH_APPLICATION_TYPE_ROBO_MINERS_NAME structure_androidminers
             #description: TECH_APPLICATION_TYPE_ROBO_MINERS_DESCRIPTION
             icon: assets/tech_apps/tech_building_production.png
             type: techapptype_structure
@@ -640,6 +640,16 @@
                - structure_robominers
             tags:
                  - Production
+          - key: techapp_androidminers
+            #name: TECH_APPLICATION_TYPE_ROBO_MINERS_NAME 
+            #description: TECH_APPLICATION_TYPE_ROBO_MINERS_DESCRIPTION
+            icon: assets/tech_apps/tech_building_production.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/robominers.prefab
+            unlocks:
+               - structure_androidminers
+            tags:
+                 - Production                 
           - key: techapp_space_factory
             #name: TECH_APPLICATION_TYPE_SPACE_FACTORY_NAME
             #description: TECH_APPLICATION_TYPE_SPACE_FACTORY_DESCRIPTION
@@ -985,7 +995,17 @@
             unlocks:
                - shipmodule_meson_drive
             tags:
-                 - Military            
+                 - Military
+          - key: techapp_particle_drive
+            #name: Meson drive
+            #description: Meson drive
+            icon: assets/tech_apps/tech_engines.png
+            type: techapptype_shipmodule
+            hologram: ContentPrefabs/Research/fusion_drive.prefab
+            unlocks:
+               - shipmodule_particle_drive
+            tags:
+                 - Military                 
           - key: techapp_fusion_drive
             #name: TECH_APPLICATION_TYPE_FUSION_DRIVE_NAME
             #description: TECH_APPLICATION_TYPE_FUSION_DRIVE_DESCRIPTION
@@ -1208,13 +1228,22 @@
             tags:
                  - Military
           - key: techapp_hyperx_capacitors
-            #name: TECH_APPLICATION_TYPE_HYPER_X_CAPACITORS_NAME
+            #name: TECH_APPLICATION_TYPE_HYPER_X_CAPACITORS_NAME 
             #description: TECH_APPLICATION_TYPE_HYPER_X_CAPACITORS_DESCRIPTION
             icon: assets/tech_apps/tech_special_module.png
             type: techapptype_shipmodule
             hologram: ContentPrefabs/Research/hyperx_capacitors.prefab
             unlocks:
                - shipmodule_hyperx_capacitors
+            ## Custom
+          - key: techapp_flux_capacitor
+            #name: TECH_APPLICATION_TYPE_HYPER_X_CAPACITORS_NAME 
+            #description: TECH_APPLICATION_TYPE_HYPER_X_CAPACITORS_DESCRIPTION
+            icon: assets/tech_apps/tech_special_module.png
+            type: techapptype_shipmodule
+            hologram: ContentPrefabs/Research/deuterium_fuel_cells.prefab
+            unlocks:
+               - shipmodule_flux_capacitor
           - key: techapp_interphased_drive
             #name: TECH_APPLICATION_TYPE_INTERPHASED_DRIVE_NAME
             #description: TECH_APPLICATION_TYPE_INTERPHASED_DRIVE_DESCRIPTION
@@ -1409,6 +1438,15 @@
                - shipmodule_compressedneutronium_armor
             tags:
                  - Military
+        ## Custom - techapp_aeon_armor
+          - key: techapp_aeon_armor
+            icon: assets/tech_apps/tech_armors.png
+            type: techapptype_shipmodule
+            hologram: ContentPrefabs/Research/adamantium_armor.prefab
+            unlocks:
+               - shipmodule_aeon_armor
+            tags:
+                 - Military                 
           - key: techapp_hyperadvanced_chemistry
             #name: TECH_APPLICATION_TYPE_HYPER_ADVANCED_EXPLOIT_NAME
             #description: TECH_APPLICATION_TYPE_HYPER_ADVANCED_EXPLOIT_DESCRIPTION
@@ -2561,6 +2599,15 @@
                - shipmodule_class_xv_shield
             tags:
                  - Military
+        ## Custom - shield XV
+          - key: techapp_class_xx_shield
+            icon: assets/tech_apps/tech_shields.png
+            type: techapptype_shipmodule
+            hologram: ContentPrefabs/Research/class_v_shield.prefab
+            unlocks:
+               - shipmodule_class_xx_shield
+            tags:
+                 - Military                 
           - key: techapp_class_iii_shield
             #name: TECH_APPLICATION_TYPE_CLASS_III_SHIELD_NAME
             #description: TECH_APPLICATION_TYPE_CLASS_III_SHIELD_DESCRIPTION
@@ -2755,7 +2802,7 @@
                  - Research
                  - Espionage
           - key: techapp_advance_data_center
-            #name: TECH_APPLICATION_TYPE_ADVANCE_DATA_CENTER_NAME
+            #name: TECH_APPLICATION_TYPE_ADVANCE_DATA_CENTER_NAME structure_cloud
             #description: TECH_APPLICATION_TYPE_ADVANCE_DATA_CENTER_DESCRIPTION
             icon: assets/tech_apps/tech_building_research.png
             type: techapptype_structure
@@ -2764,6 +2811,16 @@
                - structure_advance_data_center
             tags:
                  - Research
+          - key: techapp_cloud
+            #name: TECH_APPLICATION_TYPE_ADVANCE_DATA_CENTER_NAME structure_cloud
+            #description: TECH_APPLICATION_TYPE_ADVANCE_DATA_CENTER_DESCRIPTION
+            icon: assets/tech_apps/tech_building_research.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/advance_data_center.prefab
+            unlocks:
+               - structure_cloud
+            tags:
+                 - Research                 
           - key: techapp_pollution_cleanup
             #name: TECH_APPLICATION_TYPE_POLLUTION_CLEANUP_NAME
             #description: TECH_APPLICATION_TYPE_POLLUTION_CLEANUP_DESCRIPTION
@@ -2966,6 +3023,14 @@
             unlocks:
                - structure_hydroponic_farm_4
             tags:
+                 - Population
+          - key: techapp_hydroponic_farm_5
+            icon: assets/tech_apps/tech_building_food.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/hydroponic_farm.prefab
+            unlocks:
+               - structure_hydroponic_farm_5
+            tags:
                  - Population                 
         ## Custom stuff 
         ## Custom - structure_fleethub
@@ -3040,6 +3105,14 @@
             hologram: ContentPrefabs/Research/crust_prospecting.prefab
             unlocks:
                - structure_crust_prospecting_4
+            tags:
+                 - Production
+          - key: techapp_crust_prospecting_5
+            icon: assets/tech_apps/tech_building_production.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/crust_prospecting.prefab
+            unlocks:
+               - structure_crust_prospecting_5
             tags:
                  - Production                 
         ## Custom - Research lab.
@@ -3128,6 +3201,15 @@
             hologram: ContentPrefabs/Research/atmospheric_renewer.prefab
             unlocks:
                - structure_atmospheric_renewer_2
+            tags:
+                 - Pollution
+        ## Custom - atmospheric_renewer_3
+          - key: techapp_atmospheric_renewer_3
+            icon: assets/tech_apps/tech_building_pollution.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/atmospheric_renewer.prefab
+            unlocks:
+               - structure_atmospheric_renewer_3
             tags:
                  - Pollution                 
         ## Custom - soil_enrichment

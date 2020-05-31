@@ -475,8 +475,8 @@
 - globals: &Backend.Diplomacy.TradeTreaty
     MINIMUM_COST: 50
     COST_FACTOR: 0.5
-    REWARD_FACTOR: 0.1
-    TRADE_LENGTH: 20
+    REWARD_FACTOR: 0.020
+    TRADE_LENGTH: 50
 - globals: &Backend.Settlements.Settlement
     REPAIR_FACTOR_BASE: 0.05
 - globals: &Backend.Settlements.Colony
@@ -545,7 +545,7 @@
     MAX_AGENTS_PER_MISSION: 1
 - globals: &Backend.Espionage.SpyAgent
     SPY_TRAVELLING_SPEED: 1
-    SPY_LEVEL_LIMIT: 5
+    SPY_LEVEL_LIMIT: 10
     BASE_LEVELING_EXPERIENCE: 10
     EXPERIENCE_FACTOR: 10
     BASE_MAINTENANCE_COST: 5

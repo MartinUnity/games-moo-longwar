@@ -469,11 +469,26 @@
             costHullFactor: 2
             baseSize: 0
             requiredResource: tradeable_resource_neutronium
-            resilience: 40
-            tacticalArmorMultiplier: 4.0
-            missileArmorMultiplier: 2.6
+            resilience: 35
+            tacticalArmorMultiplier: 3.75
+            missileArmorMultiplier: 2.25
             icon: assets/ship_modules/neutronium_armor.png
             groundDefenseCombatBonus: 0.4
+        ## Custom - shipmodule_aeon_armor
+          - key: shipmodule_aeon_armor
+            name: Aeon Armor
+            shortDescription: Aeon Armor
+            description: Aeon Armor
+            slot: shipslot_armor
+            baseCost: 20
+            costHullFactor: 2
+            baseSize: 0
+            requiredResource: tradeable_resource_neutronium
+            resilience: 48
+            tacticalArmorMultiplier: 4.65
+            missileArmorMultiplier: 2.75
+            icon: assets/ship_modules/neutronium_armor.png
+            groundDefenseCombatBonus: 0.45
           - key: shipmodule_neutronium_armor
             name: $SHIP_MODULE_NEUTRONIUM_ARMOR_NAME
             shortDescription: $SHIP_MODULE_NEUTRONIUM_ARMOR_DESCRIPTION_SHORT
@@ -645,6 +660,20 @@
             shieldRechargeRate: 5.5
             shieldCooldown: 5.0
             icon: assets/ship_modules/class_v_shield.png
+          - key: shipmodule_class_xx_shield
+            name: Shield XX 
+            shortDescription: Shield XX 
+            description: Shield XX
+            slot: shipslot_shield
+            baseCost: 60
+            costHullFactor: 1.5
+            baseSize: 8
+            sizeHullFactor: 1.9
+            shieldStrengthMultiplier: 4.2
+            shieldDamageAbsorption: 40
+            shieldRechargeRate: 6.25
+            shieldCooldown: 5.0
+            icon: assets/ship_modules/class_v_shield.png            
         #COMPUTERS
           - key: shipmodule_electronic_computer
             name: $SHIP_MODULE_ELECTRONIC_COMPUTER_NAME
@@ -761,6 +790,19 @@
             sizeHullFactor: 2.35
             impulseFactor: 0.30
             travelSpeed: 2.0
+            icon: assets/ship_modules/fusion_drive.png
+            ## Custom
+          - key: shipmodule_particle_drive
+            name: Particle Drive
+            shortDescription: Particle Drive
+            description: Particle drive of ultrafastness
+            slot: shipslot_drive
+            baseCost: 5
+            costHullFactor: 1.5
+            baseSize: 6
+            sizeHullFactor: 1.8
+            impulseFactor: 1.00
+            travelSpeed: 6.5
             icon: assets/ship_modules/fusion_drive.png            
           - key: shipmodule_ion_drive
             name: $SHIP_MODULE_ION_DRIVE_NAME
@@ -1080,6 +1122,23 @@
             specialType: Def
             isUnique: true
             icon: assets/ship_modules/energy_absorber.png
+          - key: shipmodule_flux_capacitor
+        #reduces energy weapons size requirements
+            name: Flux Capacitor
+            slot: shipslot_special
+            weaponType: weapontype_special_passive
+            baseCost: 2
+            costHullFactor: 2.5
+            baseSize: 6
+            sizeHullFactor: 2.2
+            energyWeaponSizeFactor: 0.30
+            bonusEnergyDamage: 0.30
+            shortDescription: Flux Capacitor
+            description: Flux Capacitor
+            isPassive: true
+            singularShip: false
+            isUnique: true
+            icon: assets/ship_modules/hyperx_capacitors.png            
           - key: shipmodule_hyperx_capacitors
         #reduces energy weapons size requirements
             name: $SHIP_MODULE_HYPER_X_CAPACITORS_NAME
