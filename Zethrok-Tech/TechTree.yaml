@@ -172,7 +172,7 @@
             unlocks:
                 - application: techapp_freighters
                 - application: techapp_structure_colony_base
-                - application: techapp_foodie
+                # - application: techapp_foodie -- Removed 1.22
                 # - application: techapp_deep_scanner
           - key: technode_xeno_relations
             name: TECHNOLOGY_XENO_RELATIONS_NAME
@@ -318,7 +318,7 @@
                 - technology: technode_engineering
             unlocks:
                 - application: techapp_miniaturization_weapon_1
-                - application: techapp_mini_pods
+                #- application: techapp_mini_pods -- Removed 1.2
           - key: technode_advanced_fusion
             name: TECHNOLOGY_ADVANCED_FUSION_NAME
             description: TECHNOLOGY_ADVANCED_FUSION_DESCRIPTION
@@ -1070,7 +1070,7 @@
                 - unlocks:
                      - application: techapp_weather_controller
                 # - application: techapp_biomorphic_fungi
-                     - application: techapp_underground_storage
+                    # - application: techapp_underground_storage # removed 1.2
                 # - application: techapp_anaerobic_colonies
           - key: technode_astro_engineering
             name: TECHNOLOGY_ASTRO_ENGINEERING_NAME

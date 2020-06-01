@@ -779,16 +779,16 @@
                 - 1
             workingStatus: true
             ## Custom
-          - key: structure_foodie
-            name: "Foodie"
-            description: "Foodie"
-            icon: assets/structures/matter_converter.png
-            cost: 10
-            upkeep: 2
-            foodCarryoverRatio: 0.25
-            structureTypes:
-                - 1
-            workingStatus: true            
+          #- key: structure_foodie
+            #name: "Foodie"
+            #description: "Foodie"
+            #icon: assets/structures/matter_converter.png
+            #cost: 10
+            #upkeep: 2
+            #foodCarryoverRatio: 0.25
+            #structureTypes:
+                #- 1
+            #workingStatus: true            
           - key: structure_matter_converter
             name: COLONY_STRUCTURE_MATTER_CONVERTER_NAME
             description: COLONY_STRUCTURE_MATTER_CONVERTER_DESCRIPTION
@@ -1294,18 +1294,18 @@
             structureTypes:
                 - 1
             workingStatus: true
-          - key: structure_underground_storage
-            name: COLONY_STRUCTURE_UNDERGROUND_STORAGE_NAME
-            description: COLONY_STRUCTURE_UNDERGROUND_STORAGE_DESCRIPTION
-            icon: assets/structures/underground_storage.png
-            cost: 80
-            upkeep: 1
-            foodCarryoverRatio: 0.15
-            compatibleBiomes:
-                - biome_tundra
-            structureTypes:
-                - 1
-            workingStatus: true
+          #- key: structure_underground_storage
+            #name: COLONY_STRUCTURE_UNDERGROUND_STORAGE_NAME
+            #description: COLONY_STRUCTURE_UNDERGROUND_STORAGE_DESCRIPTION
+            #icon: assets/structures/underground_storage.png
+            #cost: 80
+            #upkeep: 1
+            #foodCarryoverRatio: 0.15
+            #compatibleBiomes:
+                #- biome_tundra
+            #structureTypes:
+                #- 1
+            #workingStatus: true
           - key: structure_solar_kiln
             name: COLONY_STRUCTURE_SOLAR_KILN_NAME
             description: COLONY_STRUCTURE_SOLAR_KILN_DESCRIPTION

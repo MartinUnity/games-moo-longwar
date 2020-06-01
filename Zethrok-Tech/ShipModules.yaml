@@ -953,22 +953,22 @@
             isUnique: true
             icon: assets/ship_modules/heavy_armor.png
             ## Custom
-          - key: shipmodule_mini_pods
+          #- key: shipmodule_mini_pods
         #Expands 'space' capacity
-            name: Battle Mini Pods
-            shortDescription: Pods Mini Battle
-            description: Mini Pods Battle
-            slot: shipslot_special
-            weaponType: weapontype_special_passive
-            availableSpaceMultiplierBonus: 0.15
-            baseCost: 1
-            costHullFactor: 1.5
-            baseSize: 2
-            sizeHullFactor: 1.75
-            isPassive: true
-            singularShip: false
-            isUnique: true
-            icon: assets/ship_modules/battle_pods.png            
+            #name: Battle Mini Pods
+            #shortDescription: Pods Mini Battle
+            #description: Mini Pods Battle
+            #slot: shipslot_special
+            #weaponType: weapontype_special_passive
+            #availableSpaceMultiplierBonus: 0.15
+            #baseCost: 1
+            #costHullFactor: 1.5
+            #baseSize: 2
+            #sizeHullFactor: 1.75
+            #isPassive: true
+            #singularShip: false
+            #isUnique: true
+            #icon: assets/ship_modules/battle_pods.png            
           - key: shipmodule_battle_pods
         #Expands 'space' capacity
             name: $SHIP_MODULE_BATTLE_PODS_NAME

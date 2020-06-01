@@ -295,14 +295,14 @@
                - shipmodule_xentronium_armor
             tags:
                  - Military
-          - key: techapp_mini_pods
-            icon: assets/tech_apps/tech_special_module.png
-            type: techapptype_shipmodule
-            hologram: ContentPrefabs/Research/battle_pods.prefab
-            unlocks:
-               - shipmodule_mini_pods
-            tags:
-                 - Military
+          #- key: techapp_mini_pods
+            #icon: assets/tech_apps/tech_special_module.png
+            #type: techapptype_shipmodule
+            #hologram: ContentPrefabs/Research/battle_pods.prefab
+            #unlocks:
+               #- shipmodule_mini_pods
+            #tags:
+                 #- Military
           - key: techapp_battle_pods
             #name: TECH_APPLICATION_TYPE_BATTLE_PODS_NAME
             #description: TECH_APPLICATION_TYPE_BATTLE_PODS_DESCRIPTION
@@ -1873,16 +1873,16 @@
                - structure_anaerobic_colonies
             tags:
                  - Population
-          - key: techapp_underground_storage
+          #- key: techapp_underground_storage  ## Removed 1.2
             #name: TECH_APPLICATION_TYPE_UNDERGROUND_STORAGE_NAME
             #description: TECH_APPLICATION_TYPE_UNDERGROUND_STORAGE_DESCRIPTION
-            icon: assets/tech_apps/tech_building_food.png
-            type: techapptype_structure
-            hologram: ContentPrefabs/Research/underground_storage.prefab
-            unlocks:
-               - structure_underground_storage
-            tags:
-                 - Population
+            #icon: assets/tech_apps/tech_building_food.png
+            #type: techapptype_structure
+            #hologram: ContentPrefabs/Research/underground_storage.prefab
+            #unlocks:
+            #   - structure_underground_storage
+            #tags:
+            #     - Population
           - key: techapp_fungal_farms
             #name: TECH_APPLICATION_TYPE_FUNGAL_FARMS_NAME
             #description: TECH_APPLICATION_TYPE_FUNGAL_FARMS_DESCRIPTION
@@ -2050,16 +2050,16 @@
                - structure_weather_controller
             tags:
                  - Population
-          - key: techapp_foodie
-            name: "Foodie"
-            description: "Foodie - keep 15% of food for next pop"
-            icon: assets/tech_apps/tech_building_food.png
-            type: techapptype_structure
-            hologram: ContentPrefabs/Research/matter_converter.prefab
-            unlocks:
-               - structure_foodie
-            tags:
-                 - Population                 
+          #- key: techapp_foodie
+            #name: "Foodie"
+            #description: "Foodie - keep 15% of food for next pop"
+            #icon: assets/tech_apps/tech_building_food.png
+            #type: techapptype_structure
+            #hologram: ContentPrefabs/Research/matter_converter.prefab
+            #unlocks:
+               #- structure_foodie
+            #tags:
+                 #- Population                 
           - key: techapp_matter_converter
             #name: TECH_APPLICATION_TYPE_MATTER_CONVERTER_NAME
             #description: TECH_APPLICATION_TYPE_MATTER_CONVERTER_DESCRIPTION
