@@ -130,7 +130,6 @@
             unlocks:
                 - application: techapp_hydroponic_farm
                 - application: techapp_biospheres
-                - application: techapp_civnet
                 #- application: techapp_caves_4
           - key: technode_engineering
             name: TECHNOLOGY_ENGINEERING_NAME
@@ -158,7 +157,6 @@
             unlocks:
                 # - application: techapp_trade_goods
                 - application: techapp_colonial_revenue_services
-                - application: techapp_biodome_1
                 - application: techapp_cryptoexchange_1
           - key: technode_deep_space_exploration
             name: TECHNOLOGY_DEEP_SPACE_EXPLORATION_NAME
@@ -172,7 +170,7 @@
             unlocks:
                 - application: techapp_freighters
                 - application: techapp_structure_colony_base
-                - application: techapp_foodie
+                # - application: techapp_foodie -- Removed 1.22
                 # - application: techapp_deep_scanner
           - key: technode_xeno_relations
             name: TECHNOLOGY_XENO_RELATIONS_NAME
@@ -275,13 +273,13 @@
             requires:
                 - technology: technode_biology
             unlocks:
+                - application: techapp_biodome_1
                 - application: techapp_fungal_farms
                 - application: techapp_death_spores
-                - application: techapp_biodome_2
         ## Custom
           - key: technode_caves_2
-            name: Multihub 1
-            description: Multihub brings recreation
+            name: CloudPuting
+            description: Universal Cloud Infra
             cost: 110
             x: 2
             y: 9
@@ -290,6 +288,7 @@
                 - technology: technode_government
             unlocks:
                 - application: techapp_caves
+                - application: techapp_civnet
           - key: technode_molecular_manipulation
             name: TECHNOLOGY_MOLECULAR_MANIPULATION_NAME
             description: TECHNOLOGY_MOLECULAR_MANIPULATION_DESCRIPTION
@@ -318,7 +317,7 @@
                 - technology: technode_engineering
             unlocks:
                 - application: techapp_miniaturization_weapon_1
-                - application: techapp_mini_pods
+                #- application: techapp_mini_pods -- Removed 1.2
           - key: technode_advanced_fusion
             name: TECHNOLOGY_ADVANCED_FUSION_NAME
             description: TECHNOLOGY_ADVANCED_FUSION_DESCRIPTION
@@ -443,6 +442,7 @@
                 - application: techapp_uber_cavernous
                 - application: techapp_uber_ocean
                 - application: techapp_toxics_processor
+                - application: techapp_biodome_2                
             branches:
                 - unlocks:
                      - application: techapp_soil_enrichment
@@ -764,17 +764,18 @@
             unlocks:
                 - application: techapp_space_port
                 - application: techapp_worker_2
-          - key: technode_spydog_lab
-            name: Spydog Lab
-            description: Spydog Lab
+          - key: technode_underwater_computing
+            name: Underwater Computing
+            description: Underwater computing
             cost: 795
             x: 5
             y: 2
-            icon: assets/techs/techapp_spy_center.png
+            icon: assets/techs/tachyon_physics.png
             requires:
                 - technology: technode_caves_4
             unlocks:
                 - application: techapp_spydog_lab
+                - application: techapp_deep_sea_cooling_1
         ## Custom
           - key: technode_weapon_5
             name: Weapon 3 - Mini
@@ -871,6 +872,7 @@
                 # - application: techapp_terraforming
                 #- application: techapp_psionics
                 #- application: techapp_heightened_intelligence
+                - application: techapp_biodome_3
                 - application: techapp_giant_compression
                 - application: techapp_asteroid_compression
           - key: technode_multiversity
@@ -1070,7 +1072,7 @@
                 - unlocks:
                      - application: techapp_weather_controller
                 # - application: techapp_biomorphic_fungi
-                     - application: techapp_underground_storage
+                    # - application: techapp_underground_storage # removed 1.2
                 # - application: techapp_anaerobic_colonies
           - key: technode_astro_engineering
             name: TECHNOLOGY_ASTRO_ENGINEERING_NAME
@@ -1259,18 +1261,6 @@
                 # - application: techapp_weather_controller
                 # - application: techapp_biomorphic_fungi
                 #- application: techapp_evolutionary_mutation
-        ## Custom - colonial
-          - key: technode_colonial_7
-            name: Colonial Upgrade 2
-            description: Colonial Upgrade 2
-            cost: 1990
-            x: 7
-            y: 10
-            icon: assets/techs/intergalactic_economics.png
-            requires:
-                - technology: technode_teaching_methods
-            unlocks:
-                - application: techapp_colonial_revenue_services_2
           - key: technode_nano_technology
             name: TECHNOLOGY_NANO_TECHNOLOGY_NAME
             description: TECHNOLOGY_NANO_TECHNOLOGY_DESCRIPTION
@@ -1383,6 +1373,18 @@
                 - unlocks:
                      - application: techapp_lightning_field
                 # - application: techapp_warp_interdictor
+        ## Custom - colonial
+          - key: technode_colonial_7
+            name: Colonial Upgrade 2
+            description: Colonial Upgrade 2
+            cost: 1990
+            x: 8
+            y: 6
+            icon: assets/techs/intergalactic_economics.png
+            requires:
+                - technology: technode_cryptoexchange_3
+            unlocks:
+                - application: techapp_colonial_revenue_services_2                
           - key: technode_positronics
             name: TECHNOLOGY_POSITRONICS_NAME
             description: TECHNOLOGY_POSITRONICS_DESCRIPTION
@@ -1936,6 +1938,7 @@
                 - technology: technode_planar_transcendence
             unlocks:
                 - application: techapp_biogenic_computer
+                - application: techapp_technet_4
           - key: technode_future_technology
             name: TECHNOLOGY_FUTURE_TECHNOLOGY_NAME
             description: TECHNOLOGY_FUTURE_TECHNOLOGY_DESCRIPTION
@@ -1998,8 +2001,8 @@
             unlocks:
                 - application: techapp_class_xx_shield
           - key: technode_armor_15
-            name: Aeon Armor
-            description: Aeon Armor
+            name: Aeon Tech
+            description: Aeon Tech
             cost: 120000
             x: 15
             y: 3
@@ -2008,6 +2011,7 @@
                 - technology: technode_basicupgrades_14
             unlocks:
                 - application: techapp_aeon_armor
+                - application: techapp_planetary_aeon_shield
         # - technology: &technode_advanced_communications
             # name: TECHNOLOGY_ADVANCED_COMMUNICATIONS_NAME
             # description: TECHNOLOGY_ADVANCED_COMMUNICATIONS_DESCRIPTION

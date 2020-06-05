@@ -235,6 +235,16 @@
                - structure_planetary_barrier_shield
             tags:
                  - Defenses
+          - key: techapp_planetary_aeon_shield
+            #name: TECH_APPLICATION_TYPE_PLANETARY_BARRIER_SHIELD_NAME
+            #description: TECH_APPLICATION_TYPE_PLANETARY_BARRIER_SHIELD_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/planetary_radiation_shield.prefab
+            unlocks:
+               - structure_planetary_aeon_shield
+            tags:
+                 - Defenses                 
           - key: techapp_marine_transport
             #name: TECH_APPLICATION_TYPE_MARINE_TRANSPORT_NAME
             #description: TECH_APPLICATION_TYPE_MARINE_TRANSPORT_DESCRIPTION
@@ -295,14 +305,14 @@
                - shipmodule_xentronium_armor
             tags:
                  - Military
-          - key: techapp_mini_pods
-            icon: assets/tech_apps/tech_special_module.png
-            type: techapptype_shipmodule
-            hologram: ContentPrefabs/Research/battle_pods.prefab
-            unlocks:
-               - shipmodule_mini_pods
-            tags:
-                 - Military
+          #- key: techapp_mini_pods
+            #icon: assets/tech_apps/tech_special_module.png
+            #type: techapptype_shipmodule
+            #hologram: ContentPrefabs/Research/battle_pods.prefab
+            #unlocks:
+               #- shipmodule_mini_pods
+            #tags:
+                 #- Military
           - key: techapp_battle_pods
             #name: TECH_APPLICATION_TYPE_BATTLE_PODS_NAME
             #description: TECH_APPLICATION_TYPE_BATTLE_PODS_DESCRIPTION
@@ -401,6 +411,15 @@
                - structure_biodome_2
             tags:
                  - Population
+        ## Custom - Biodome - 3
+          - key: techapp_biodome_3
+            icon: assets/tech_apps/tech_building_food.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/soil_enrichment.prefab
+            unlocks:
+               - structure_biodome_3
+            tags:
+                 - Population                 
         ## Custom - tomb
           - key: techapp_tomb_1
             icon: assets/tech_apps/tech_building_credits.png
@@ -472,7 +491,16 @@
             unlocks:
                - structure_technet_3
             tags:
-                 - Research                 
+                 - Research 
+        ## Custom - technet
+          - key: techapp_technet_4
+            icon: assets/tech_apps/tech_building_research.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/autolab.prefab
+            unlocks:
+               - structure_technet_4
+            tags:
+                 - Research                                 
         ## Custom - fluxtube
           - key: techapp_fluxtube_1
             icon: assets/tech_apps/tech_building_production.png
@@ -1646,6 +1674,17 @@
                - structure_deep_sea_cooling
             tags:
                  - Research
+          ## Custom
+          - key: techapp_deep_sea_cooling_1
+            #name: TECH_APPLICATION_TYPE_DEEP_SEA_COOLING_NAME
+            #description: TECH_APPLICATION_TYPE_DEEP_SEA_COOLING_DESCRIPTION
+            icon: assets/tech_apps/tech_building_research.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/deep_sea_cooling.prefab
+            unlocks:
+               - structure_deep_sea_cooling_1
+            tags:
+                 - Research                 
           - key: techapp_astro_university
             #name: TECH_APPLICATION_TYPE_ASTRO_UNIVERSITY_NAME
             #description: TECH_APPLICATION_TYPE_ASTRO_UNIVERSITY_DESCRIPTION
@@ -1873,16 +1912,16 @@
                - structure_anaerobic_colonies
             tags:
                  - Population
-          - key: techapp_underground_storage
+          #- key: techapp_underground_storage  ## Removed 1.2
             #name: TECH_APPLICATION_TYPE_UNDERGROUND_STORAGE_NAME
             #description: TECH_APPLICATION_TYPE_UNDERGROUND_STORAGE_DESCRIPTION
-            icon: assets/tech_apps/tech_building_food.png
-            type: techapptype_structure
-            hologram: ContentPrefabs/Research/underground_storage.prefab
-            unlocks:
-               - structure_underground_storage
-            tags:
-                 - Population
+            #icon: assets/tech_apps/tech_building_food.png
+            #type: techapptype_structure
+            #hologram: ContentPrefabs/Research/underground_storage.prefab
+            #unlocks:
+            #   - structure_underground_storage
+            #tags:
+            #     - Population
           - key: techapp_fungal_farms
             #name: TECH_APPLICATION_TYPE_FUNGAL_FARMS_NAME
             #description: TECH_APPLICATION_TYPE_FUNGAL_FARMS_DESCRIPTION
@@ -2050,16 +2089,16 @@
                - structure_weather_controller
             tags:
                  - Population
-          - key: techapp_foodie
-            name: "Foodie"
-            description: "Foodie - keep 15% of food for next pop"
-            icon: assets/tech_apps/tech_building_food.png
-            type: techapptype_structure
-            hologram: ContentPrefabs/Research/matter_converter.prefab
-            unlocks:
-               - structure_foodie
-            tags:
-                 - Population                 
+          #- key: techapp_foodie
+            #name: "Foodie"
+            #description: "Foodie - keep 15% of food for next pop"
+            #icon: assets/tech_apps/tech_building_food.png
+            #type: techapptype_structure
+            #hologram: ContentPrefabs/Research/matter_converter.prefab
+            #unlocks:
+               #- structure_foodie
+            #tags:
+                 #- Population                 
           - key: techapp_matter_converter
             #name: TECH_APPLICATION_TYPE_MATTER_CONVERTER_NAME
             #description: TECH_APPLICATION_TYPE_MATTER_CONVERTER_DESCRIPTION
@@ -3080,7 +3119,7 @@
             type: techapptype_structure
             hologram: ContentPrefabs/Research/crust_prospecting.prefab
             unlocks:
-               - structure_crust_prospecting_2
+               - structure_crust_prospecting_1
             tags:
                  - Production
           - key: techapp_crust_prospecting_2

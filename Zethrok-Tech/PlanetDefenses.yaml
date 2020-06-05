@@ -15,7 +15,7 @@
             name: Lazor Rifle
             description: Lazor rifle of Oblivion
             icon: assets/structures/PhasorRifle.png
-            baseCombatRating: 0.15
+            baseCombatRating: 0.2
           - key: planetdefense_neutron_rifle
             name: PLANET_DEFENSE_NEUTRON_RIFLE_NAME
             description: PLANET_DEFENSE_NEUTRON_RIFLE_DESCRIPTION

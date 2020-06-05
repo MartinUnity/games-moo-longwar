@@ -64,19 +64,18 @@
             className: TacticalBeam
             model: graviton_beam
             visualScale: 2.0
-            tacticalCooldown: 5
+            tacticalCooldown: 8
             rateOfFire: 0.10
             volleySize: 1
             maxDamage: 4
             weaponSteps: 10
-            weaponStepDuration: 0.5
-            armorPenetration: 0.0
-            weaponRange: 70
-            rangeDecayFactor: 0.7
-            decayRate: 2.0
-            rangeLoss: 0.15
+            weaponStepDuration: 0.25
+            armorPenetration: 10.0
+            weaponRange: 65
+            rangeDecayFactor: 0.5
+            decayRate: 1.5
             weaponAccuracy: 1.0
-            rangeLoss: 0.15
+            rangeLoss: 0.10
             warmupTime: 1.3
             radius: 1.0
             mass: 1.0
@@ -125,7 +124,7 @@
             rateOfFire: 0.3
             volleySize: 1
             maxDamage: 30
-            weaponSteps: 5
+            weaponSteps: 4
             weaponStepDuration: 0.5
             armorPenetration: 30.0
             # shieldPenetration: false
