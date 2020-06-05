@@ -200,7 +200,7 @@
             upkeep: 4
             upgrades: structure_automated_factory_1
             requires: structure_automated_factory_1            
-            baseProductionBonus: 4
+            baseProductionBonus: 5
             structureTypes:
                 - 0
             workingStatus: true
@@ -212,7 +212,7 @@
             upkeep: 5
             upgrades: structure_automated_factory_2
             requires: structure_automated_factory_2            
-            baseProductionBonus: 5
+            baseProductionBonus: 6
             structureTypes:
                 - 0
             workingStatus: true
@@ -224,7 +224,7 @@
             upkeep: 6
             upgrades: structure_automated_factory_3
             requires: structure_automated_factory_3            
-            baseProductionBonus: 6
+            baseProductionBonus: 8
             structureTypes:
                 - 0
             workingStatus: true
@@ -728,7 +728,7 @@
             upkeep: 4
             upgrades: structure_hydroponic_farm_1
             upgrades: structure_hydroponic_farm_1
-            baseLifeSupportBonus: 4
+            baseLifeSupportBonus: 5
             structureTypes:
                 - 1
             workingStatus: true
@@ -740,7 +740,7 @@
             upkeep: 5
             upgrades: structure_hydroponic_farm_2
             upgrades: structure_hydroponic_farm_2
-            baseLifeSupportBonus: 5
+            baseLifeSupportBonus: 6
             structureTypes:
                 - 1
             workingStatus: true
@@ -749,10 +749,10 @@
             description: Hydroponic Farm 4
             icon: assets/structures/hydroponic_farm.png
             cost: 880
-            upkeep: 7
+            upkeep: 5
             upgrades: structure_hydroponic_farm_3
             upgrades: structure_hydroponic_farm_3
-            baseLifeSupportBonus: 8
+            baseLifeSupportBonus: 6
             structureTypes:
                 - 1
             workingStatus: true
@@ -761,10 +761,10 @@
             description: Hydroponic Farm 5
             icon: assets/structures/hydroponic_farm.png
             cost: 1280
-            upkeep: 10
+            upkeep: 6
             upgrades: structure_hydroponic_farm_4
             upgrades: structure_hydroponic_farm_4
-            baseLifeSupportBonus: 12
+            baseLifeSupportBonus: 8
             structureTypes:
                 - 1
             workingStatus: true            
@@ -995,7 +995,7 @@
             upkeep: 4
             upgrades: structure_research_laboratory_1
             requires: structure_research_laboratory_1
-            baseResearchBonus: 4
+            baseResearchBonus: 5
             structureTypes:
                 - 2
             workingStatus: true
@@ -1007,7 +1007,7 @@
             upkeep: 5
             upgrades: structure_research_laboratory_2
             requires: structure_research_laboratory_2
-            baseResearchBonus: 5
+            baseResearchBonus: 6
             structureTypes:
                 - 2
             workingStatus: true
@@ -1019,7 +1019,7 @@
             upkeep: 6
             requires: structure_research_laboratory_3
             upgrades: structure_research_laboratory_3
-            baseResearchBonus: 6
+            baseResearchBonus: 8
             structureTypes:
                 - 2
             workingStatus: true

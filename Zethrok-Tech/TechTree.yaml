@@ -1261,18 +1261,6 @@
                 # - application: techapp_weather_controller
                 # - application: techapp_biomorphic_fungi
                 #- application: techapp_evolutionary_mutation
-        ## Custom - colonial
-          - key: technode_colonial_7
-            name: Colonial Upgrade 2
-            description: Colonial Upgrade 2
-            cost: 1990
-            x: 7
-            y: 10
-            icon: assets/techs/intergalactic_economics.png
-            requires:
-                - technology: technode_teaching_methods
-            unlocks:
-                - application: techapp_colonial_revenue_services_2
           - key: technode_nano_technology
             name: TECHNOLOGY_NANO_TECHNOLOGY_NAME
             description: TECHNOLOGY_NANO_TECHNOLOGY_DESCRIPTION
@@ -1385,6 +1373,18 @@
                 - unlocks:
                      - application: techapp_lightning_field
                 # - application: techapp_warp_interdictor
+        ## Custom - colonial
+          - key: technode_colonial_7
+            name: Colonial Upgrade 2
+            description: Colonial Upgrade 2
+            cost: 1990
+            x: 8
+            y: 6
+            icon: assets/techs/intergalactic_economics.png
+            requires:
+                - technology: technode_cryptoexchange_3
+            unlocks:
+                - application: techapp_colonial_revenue_services_2                
           - key: technode_positronics
             name: TECHNOLOGY_POSITRONICS_NAME
             description: TECHNOLOGY_POSITRONICS_DESCRIPTION
