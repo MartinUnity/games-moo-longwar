@@ -382,6 +382,7 @@
             cost: 30
             upkeep: 1
             baseProductionBonus: 1
+            workerYieldMultiplierBonus: 0.10
             structureTypes:
                - 0
             compatibleRichness:
@@ -395,8 +396,8 @@
             icon: assets/structures/crust_prospecting.png
             cost: 120
             upkeep: 3
-            baseProductionBonus: 1
-            workerYieldMultiplierBonus: 0.150
+            baseProductionBonus: 2
+            workerYieldMultiplierBonus: 0.20
             upgrades: structure_rock_disintegrator
             requires: structure_rock_disintegrator
             structureTypes:
