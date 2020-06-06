@@ -1,0 +1,18 @@
+ID,Reserved,English,Russian,German,French,Polish,Czech,Turkish,Spanish (Spain),Spanish (Latin America),Portuguese (Brazil),Korean,Japanese,Traditional Chinese,Simplified Chinese
+PLANETARY_RESOURCE_DARK_HATTER_NAME,,"Dark Hatter",,,,,,,,,,,
+PLANETARY_RESOURCE_DARK_HATTER_DESCRIPTION,,"Dark Hatter is an elite half-sentient delicious mushroom from Deltas Dungeon, grants %Food bonus.",,,,,,,,,,,
+PLANETARY_RESOURCE_DARK_MATTER_NAME,,"Dark Matter",,,,,,,,,,,
+PLANETARY_RESOURCE_DARK_MATTER_DESCRIPTION,,"Dark Matter is the elusive substance of Everything (TM) - grants %Research, %Food and %Production bonuses.",,,,,,,,,,,
+PLANETARY_RESOURCE_IP_NAME,,"Interfission Prolectary Crystals",,,,,,,,,,,
+PLANETARY_RESOURCE_IP_DESCRIPTION,,"Interfission Prolectary Crystals, grants %Research, %Food and %Production bonuses.",,,,,,,,,,,
+
+PLANET_MINERAL_RICHNESS_TYPE_ABSURD_POOR,,"Absurd Poor",,,,,,,,,,,
+PLANETMINERALRICHNESS_ABSURD_POOR_DESCRIPTION,,"Absurd Poor planets is almost all rock. (--- Production)",,,,,,,,,,,
+PLANET_MINERAL_RICHNESS_TYPE_ABSURD_RICH,,"Absurd Rich",,,,,,,,,,,
+PLANETMINERALRICHNESS_ABSURD_RICH_DESCRIPTION,,"Absurd Rich planets has rivers of valuable minerals. (+++ Production)",,,,,,,,,,,
+
+HULL_IMMOVABLE_OBJECT_NAME,,"Immovable Object",,,,,,,,,,,
+SHIP_TYPE_IMMOVABLE_OBJECT_DESCRIPTION,,"The Immovable Object counters The Unstoppable Force",,,,,,,,,,,
+SHIP_DESIGN_IMMOVABLE_OBJECT,,"The Immovable Object",,,,,,,,,,,
+COLONY_STRUCTURE_IMMOVABLE_OBJECT_NAME,,"The Immovable Object",,,,,,,,,,,
+COLONY_STRUCTURE_IMMOVABLE_OBJECT_DESCRIPTION,,"The Immovable Object counters The Unstoppable Force.",,,,,,,,,,,

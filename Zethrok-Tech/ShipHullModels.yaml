@@ -1,0 +1,155 @@
+---
+- collection: &Backend.Fleets.ShipHullModel
+    items:
+          - key: hullmodel_frigate
+            hullType: hull_frigate
+            model: frigate
+            model: frigate_b
+          - key: hullmodel_destroyer
+            hullType: hull_destroyer
+            model: destroyer
+            model: destroyer_b
+          - key: hullmodel_cruiser
+            hullType: hull_cruiser
+            model: cruiser
+            model: cruiser_b
+          - key: hullmodel_battleship
+            hullType: hull_battleship
+            model: battleship
+            model: battleship_b
+          - key: hullmodel_titan
+            hullType: hull_titan
+            model: titan
+            model: titan_b
+          - key: hullmodel_doomstar
+            hullType: hull_doomstar
+            model: doomstar
+          - key: hullmodel_fighter
+            hullType: hull_fighter
+            model: fighter
+          - key: hullmodel_bomber
+            hullType: hull_bomber
+            model: fighter
+          - key: hullmodel_heavy_fighter
+            hullType: hull_heavy_fighter
+            model: fighter
+            ## Custom
+          - key: hullmodel_missile_base_2
+            hullType: hull_missile_base_2
+            model: missile_battery
+          - key: hullmodel_missile_base_3
+            hullType: hull_missile_base_3
+            model: missile_battery
+          - key: hullmodel_missile_base_4
+            hullType: hull_missile_base_4
+            model: missile_battery
+          - key: hullmodel_missile_base_5
+            hullType: hull_missile_base_5
+            model: missile_battery
+          - key: hullmodel_missile_base_6
+            hullType: hull_missile_base_6
+            model: missile_battery                                                
+          - key: hullmodel_missile_base
+            hullType: hull_missile_base
+            model: missile_battery
+          - key: hullmodel_fighter_garrison
+            hullType: hull_fighter_garrison
+            model: fightergarrison
+          - key: hullmodel_ground_batteries
+            hullType: hull_ground_batteries
+            model: laser_battery
+          ## Custom
+          - key: hullmodel_ground_batteries_2
+            hullType: hull_ground_batteries_2
+            model: laser_battery
+          - key: hullmodel_ground_batteries_3
+            hullType: hull_ground_batteries_3
+            model: laser_battery
+          - key: hullmodel_ground_batteries_4
+            hullType: hull_ground_batteries_4
+            model: laser_battery
+          - key: hullmodel_warp_interdictor
+            hullType: hull_warp_interdictor
+            model: missile_battery
+          - key: hullmodel_space_station
+            hullType: hull_space_station
+            model: starbase
+          - key: hullmodel_starbase
+            hullType: hull_starbase
+            model: starbase
+          - key: hullmodel_militaty_outpost
+            hullType: hull_military_outpost
+            model: starbase
+          - key: hullmodel_advanced_military_outpost
+            hullType: hull_advanced_military_outpost
+            model: battlestation
+          - key: hullmodel_battlestation
+            hullType: hull_battlestation
+            model: battlestation
+          - key: hullmodel_starfortress
+            hullType: hull_starfortress
+            model: starfortress
+          - key: hullmodel_immovable_object
+            hullType: hull_immovable_object
+            model: starfortress
+          - key: hullmodel_orion_guardian
+            hullType: hull_orion_guardian
+            model: guardian
+          - key: hullmodel_amoeba
+            hullType: hull_amoeba
+            model: amoeba
+          - key: hullmodel_amoeba_medium
+            hullType: hull_amoeba_medium
+            model: amoeba_medium
+          - key: hullmodel_amoeba_small
+            hullType: hull_amoeba_small
+            model: amoeba_small
+          - key: hullmodel_squid
+            hullType: hull_squid
+            model: squid
+          - key: hullmodel_eel
+            hullType: hull_eel
+            model: eel
+          - key: hullmodel_dragon
+            hullType: hull_dragon
+            model: dragon
+          - key: hullmodel_leviathan
+            hullType: hull_leviathan
+            model: frigate
+          - key: hullmodel_ikaroa
+            hullType: hull_ikaroa
+            model: frigate
+          - key: hullmodel_pirate_frigate
+            hullType: hull_pirate_frigate
+            model: frigate
+          - key: hullmodel_pirate_frigate_2
+            hullType: hull_pirate_frigate_2
+            model: frigate            
+          - key: hullmodel_pirate_destroyer
+            hullType: hull_pirate_destroyer
+            model: destroyer
+          - key: hullmodel_pirate_cruiser
+            hullType: hull_pirate_cruiser
+            model: cruiser
+          - key: hullmodel_scout
+            hullType: hull_scout
+            model: frigate
+          - key: hullmodel_colony
+            hullType: hull_colony
+            model: colony
+          - key: hullmodel_advanced_colony
+            hullType: hull_advanced_colony
+            model: colony
+          - key: hullmodel_freighter
+            hullType: hull_freighter
+            model: transport
+          - key: hullmodel_transport
+            hullType: hull_transport
+            model: transport_military
+          - key: hullmodel_worker
+            hullType: hull_worker
+            model: worker
+          - key: hullmodel_dragon_parasite
+            hullType: hull_parasite
+            model: dragon_parasite
+...

@@ -1,0 +1,192 @@
+---
+- collection: &Backend.Galaxy.TradeableResourceChances
+    items:
+        - key: tradeable_resource_config
+          tradeable_resource_spawn_chance:
+                - biome_type: biome_gaia
+                  resources:
+                    - tradeableResourceType: planetary_resource_gold
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_artifact
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_gem
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_quartz
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_hatter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_matter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_IP
+                      chance: 0.1
+                - biome_type: biome_terran
+                  resources:
+                    - tradeableResourceType: planetary_resource_gold
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_artifact
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_gem
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_seagrass
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_quartz
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_hatter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_matter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_IP
+                      chance: 0.1                      
+                - biome_type: biome_ocean
+                  resources:
+                    - tradeableResourceType: planetary_resource_gold
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_artifact
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_gem
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_seagrass
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_quartz
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_hatter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_matter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_IP
+                      chance: 0.1                      
+                - biome_type: biome_swamp
+                  resources:
+                    - tradeableResourceType: planetary_resource_gold
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_artifact
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_gem
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_quartz
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_hatter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_matter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_IP
+                      chance: 0.1                      
+                - biome_type: biome_arid
+                  resources:
+                    - tradeableResourceType: planetary_resource_gold
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_artifact
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_gem
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_quartz
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_hatter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_matter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_IP
+                      chance: 0.1                      
+                - biome_type: biome_tundra
+                  resources:
+                    - tradeableResourceType: planetary_resource_gold
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_artifact
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_gem
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_quartz
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_hatter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_matter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_IP
+                      chance: 0.1                      
+                - biome_type: biome_desert
+                  resources:
+                    - tradeableResourceType: planetary_resource_gold
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_artifact
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_gem
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_quartz
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_hatter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_matter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_IP
+                      chance: 0.1                      
+                - biome_type: biome_barren
+                  resources:
+                    - tradeableResourceType: planetary_resource_gold
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_artifact
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_gem
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_quartz
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_hatter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_matter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_IP
+                      chance: 0.1                      
+                - biome_type: biome_radiated
+                  resources:
+                    - tradeableResourceType: planetary_resource_gold
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_artifact
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_gem
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_quartz
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_red_fungus
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_hatter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_matter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_IP
+                      chance: 0.1                      
+                - biome_type: biome_toxic
+                  resources:
+                    - tradeableResourceType: planetary_resource_gold
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_artifact
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_gem
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_quartz
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_red_fungus
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_hatter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_matter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_IP
+                      chance: 0.1                      
+                - biome_type: biome_volcanic
+                  resources:
+                    - tradeableResourceType: planetary_resource_gold
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_artifact
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_gem
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_quartz
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_red_fungus
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_hatter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_dark_matter
+                      chance: 0.1
+                    - tradeableResourceType: planetary_resource_IP
+                      chance: 0.1                      
+...

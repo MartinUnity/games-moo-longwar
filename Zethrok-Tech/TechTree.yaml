@@ -130,6 +130,7 @@
             unlocks:
                 - application: techapp_hydroponic_farm
                 - application: techapp_biospheres
+                #- application: techapp_test
                 #- application: techapp_caves_4
           - key: technode_engineering
             name: TECHNOLOGY_ENGINEERING_NAME
@@ -245,6 +246,7 @@
             unlocks:
                 - application: techapp_miniaturization_nuclear_1
                 - application: techapp_nuclear_torpedoes
+                - application: techapp_rock_disintegrator
         ## Custom
           - key: technode_basicupgrades_2
             name: BasicUpgrades - 2
@@ -289,6 +291,7 @@
             unlocks:
                 - application: techapp_caves
                 - application: techapp_civnet
+                - application: techapp_voidcoinmining                
           - key: technode_molecular_manipulation
             name: TECHNOLOGY_MOLECULAR_MANIPULATION_NAME
             description: TECHNOLOGY_MOLECULAR_MANIPULATION_DESCRIPTION
@@ -413,6 +416,7 @@
             unlocks:
                 - application: techapp_proton_torpedoes
                 - application: techapp_displacement_device
+                - application: techapp_missile_base_2
         ## Custom
           - key: technode_weapon_2_1
             name: Weapon 2 - Meson Missile
@@ -506,6 +510,7 @@
                 - application: techapp_cruiser
                 - application: techapp_tritanium_armor
                 - application: techapp_modifications_merculite_missile
+                - application: techapp_antimatter_replicator
           - key: technode_fusion_weapons
             name: TECHNOLOGY_FUSION_WEAPONS_NAME
             description: TECHNOLOGY_FUSION_WEAPONS_DESCRIPTION
@@ -548,6 +553,7 @@
                 - technology: technode_private_funding
             unlocks:
                 - application: techapp_crust_prospecting_1
+                - application: techapp_rock_disintegrator_2
           - key: technode_xenology
             name: TECHNOLOGY_XENOLOGY_NAME
             description: TECHNOLOGY_XENOLOGY_DESCRIPTION
@@ -620,6 +626,7 @@
                 - technology: technode_private_funding
             unlocks:
                 - application: techapp_caves_2
+                - application: techapp_voidcoinmining_2                
           - key: technode_robotics
             name: TECHNOLOGY_ROBOTICS_NAME
             description: TECHNOLOGY_ROBOTICS_DESCRIPTION
@@ -640,8 +647,8 @@
                      - application: techapp_dauntless_guidance_system
         ## Custom
           - key: technode_foodinator_1
-            name: Foodinator
-            description: Foodinator - creates food from air
+            name: Antimatter Replication
+            description: "AntiMatter Replication - Creates food & matter from nothing"
             cost: 425
             x: 4
             y: 7
@@ -650,6 +657,7 @@
                 - technology: technode_xenobiotic
             unlocks:
                 - application: techapp_foodinator_1
+                - application: techapp_antimatter_replicator_2
           - key: technode_genetic_mutations
             name: TECHNOLOGY_GENETIC_MUTATIONS_NAME
             description: TECHNOLOGY_GENETIC_MUTATIONS_DESCRIPTION
@@ -886,6 +894,7 @@
                 - technology: technode_advanced_construction
             unlocks:
                 - application: techapp_multiversity
+                - application: techapp_missile_base_3
           #- key: technode_city_planning_2
             #name: "City Planning"
             #description: "City planning"
@@ -974,6 +983,7 @@
                 - technology: technode_magneto_gravitics
             unlocks:
                 - application: techapp_class_iv_shield
+                - application: techapp_ground_batteries_2
           - key: technode_gravitic_fields
             name: TECHNOLOGY_GRAVITIC_FIELDS_NAME
             description: TECHNOLOGY_GRAVITIC_FIELDS_DESCRIPTION
@@ -1005,6 +1015,7 @@
                 - technology: technode_optronics
             unlocks:
                 - application: techapp_tradestation
+                - application: techapp_voidcoinmining_3
           - key: technode_electromagnetic_refraction
             name: TECHNOLOGY_ELECTROMAGNETIC_REFRACTION_NAME
             description: TECHNOLOGY_ELECTROMAGNETIC_REFRACTION_DESCRIPTION
@@ -1219,6 +1230,7 @@
                  - technology: technode_cybertronics
             unlocks:
                 - application: techapp_battlestation
+                - application: techapp_missile_base_4
                 #- application: techapp_robotic_factory
                 # - application: techapp_ground_batteries
             branches:
@@ -1384,7 +1396,8 @@
             requires:
                 - technology: technode_cryptoexchange_3
             unlocks:
-                - application: techapp_colonial_revenue_services_2                
+                - application: techapp_colonial_revenue_services_2      
+                - application: techapp_voidcoinmining_4          
           - key: technode_positronics
             name: TECHNOLOGY_POSITRONICS_NAME
             description: TECHNOLOGY_POSITRONICS_DESCRIPTION
@@ -1479,6 +1492,7 @@
                 - technology: technode_advanced_tactics
             unlocks:
                 - application: techapp_technet_3
+                - application: techapp_missile_base_5
           - key: technode_plasma_physics
             name: TECHNOLOGY_PLASMA_PHYSICS_NAME
             description: TECHNOLOGY_PLASMA_PHYSICS_DESCRIPTION
@@ -1550,6 +1564,7 @@
                 # - technology: technode_nano_technology
             unlocks:
                 - application: techapp_miniaturization_missiles_3
+                - application: techapp_ground_batteries_3
             branches:
                 - unlocks:
                      - application: techapp_adamantium_armor
@@ -1875,6 +1890,7 @@
                 - technology: technode_galactic_networking
             unlocks:
                 - application: techapp_caves_3
+                - application: techapp_ground_batteries_4
           - key: technode_planar_transcendence
             name: TECHNOLOGY_PLANAR_TRANSCENDENCE_NAME
             description: TECHNOLOGY_PLANAR_TRANSCENDENCE_DESCRIPTION
@@ -1916,6 +1932,7 @@
                 - technology: technode_planar_transcendence
             unlocks:
                 - application: techapp_particle_beam
+                - application: techapp_missile_base_6
           - key: technode_armor_13
             name: Compressed Neutronium
             description: Compressed Neutronium
@@ -1927,6 +1944,7 @@
                 - technology: technode_planar_transcendence
             unlocks:
                 - application: techapp_compressedneutronium_armor
+                - application: techapp_immovable_object
           - key: technode_computer_13
             name: Biogenic Computers
             description: Biogenic Computers

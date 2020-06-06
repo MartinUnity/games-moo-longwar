@@ -1,29 +1,39 @@
 ---
 - collection: &Backend.Galaxy.PlanetMineralRichnessType
     items:
+          - key: planetmineralrichness_absurd_poor
+            name: PLANET_MINERAL_RICHNESS_TYPE_ABSURD_POOR
+            mineralProductionFactor: 1.0
+            lithovoreLifePointProduction: 1.3
+            color: 0x1f473d
           - key: planetmineralrichness_ultra_poor
             name: PLANET_MINERAL_RICHNESS_TYPE_ULTRA_POOR
             mineralProductionFactor: 1.2
-            lithovoreLifePointProduction: 1.5
+            lithovoreLifePointProduction: 1.7
             color: 0x4f473d
           - key: planetmineralrichness_poor
             name: PLANET_MINERAL_RICHNESS_TYPE_POOR
-            mineralProductionFactor: 1.4
-            lithovoreLifePointProduction: 2.3
+            mineralProductionFactor: 1.5
+            lithovoreLifePointProduction: 2.2
             color: 0x766248
           - key: planetmineralrichness_abundant
             name: PLANET_MINERAL_RICHNESS_TYPE_ABUNDANT
-            mineralProductionFactor: 2.3
+            mineralProductionFactor: 2.0
             lithovoreLifePointProduction: 2.8
             color: 0x856438
           - key: planetmineralrichness_rich
             name: PLANET_MINERAL_RICHNESS_TYPE_RICH
-            mineralProductionFactor: 3.3
+            mineralProductionFactor: 2.5
             lithovoreLifePointProduction: 3.5
             color: 0xa67737
           - key: planetmineralrichness_ultra_rich
             name: PLANET_MINERAL_RICHNESS_TYPE_ULTRA_RICH
-            mineralProductionFactor: 3.6
-            lithovoreLifePointProduction: 4.1
+            mineralProductionFactor: 3.5
+            lithovoreLifePointProduction: 4.3
             color: 0xc68832
+          - key: planetmineralrichness_absurd_rich
+            name: PLANET_MINERAL_RICHNESS_TYPE_ABSURD_RICH
+            mineralProductionFactor: 4.5
+            lithovoreLifePointProduction: 5.2
+            color: 0x228832
 ...

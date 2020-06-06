@@ -1,6 +1,17 @@
 # Master of Orion - Mod
 
-# 1.2 
+
+# 1.3
+## Changes from 1.2
+
+* Added 2 new planetary Resource types
+
+* Experimented with all types of bonusses from dotPeek colonystructuretype and have been creating buildings with these.
+
+* Added Super_Hard Difficulty (+75%)
+
+---
+# 1.2
 ## Changes from 1.1
 
 _Finally_ cracked the code open with dotpeek and found a lot of hardcoded settings, buildings, arch and stuff that I've built but is of no real use
