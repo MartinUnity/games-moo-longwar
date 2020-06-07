@@ -1,5 +1,13 @@
 # Master of Orion - Mod
 
+# 1.3.1
+## Changes from 1.3.0
+
+### Highlights
+* Reverted to original pirate spawn rate - several civs got wiped out by pirates in a play-through
+* Kept pirate frigtate buff of 50% - and destroyer & cruiser 100%
+
+---
 # 1.3
 ## Changes from 1.2
 

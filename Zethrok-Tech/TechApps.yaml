@@ -3999,7 +3999,7 @@
          ## Custom - nuclear torpedoes
           - key: techapp_modifications_nuclear_torpedoes
             name: Nuclear Torpedoes
-            description: NukePedo - rawr
+            description: NukeTorps
             icon: assets/tech_apps/tech_modifier.png
             type: techapptype_modifier
             hologram: ContentPrefabs/Research/antimatter_torpedoes.prefab
