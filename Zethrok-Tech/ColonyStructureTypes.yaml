@@ -606,6 +606,7 @@
             icon: assets/structures/galactic_currency_exchange.png
             cost: 160
             upkeep: 0
+            totalIncomeMultiplierBonus: 0.10
             totalEmpireMultiplierBonus: 0.10
             structureTypes:
                 - 3
@@ -619,6 +620,7 @@
             icon: assets/structures/galactic_currency_exchange.png
             cost: 320
             upkeep: 0
+            totalIncomeMultiplierBonus: 0.20
             totalEmpireMultiplierBonus: 0.20
             structureTypes:
                 - 3
@@ -1030,7 +1032,7 @@
             icon: assets/structures/weather_controller.png
             cost: 100
             upkeep: 2
-            totalFoodMultiplierBonus: 0.10
+            totalFoodMultiplierBonus: 0.125
             structureTypes:
                 - 1
             workingStatus: true

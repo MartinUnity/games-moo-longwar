@@ -3614,6 +3614,42 @@
             tags:
                  - Military
         ## Custom
+          - key: techapp_miniaturization_meson_1
+            icon: assets/tech_apps/tech_miniaturization_missiles.png
+            type: techapptype_miniaturization
+            hologram: ContentPrefabs/Research/miniaturization_missiles.prefab
+            unlocks:
+               - miniaturization_meson_1
+            tags:
+                 - Military
+        ## Custom
+          - key: techapp_miniaturization_meson_2
+            icon: assets/tech_apps/tech_miniaturization_missiles.png
+            type: techapptype_miniaturization
+            hologram: ContentPrefabs/Research/miniaturization_missiles.prefab
+            unlocks:
+               - miniaturization_meson_2
+            tags:
+                 - Military
+        ## Custom
+          - key: techapp_miniaturization_meson_3
+            icon: assets/tech_apps/tech_miniaturization_missiles.png
+            type: techapptype_miniaturization
+            hologram: ContentPrefabs/Research/miniaturization_missiles.prefab
+            unlocks:
+               - miniaturization_meson_3
+            tags:
+                 - Military
+        ## Custom
+          - key: techapp_miniaturization_meson_4
+            icon: assets/tech_apps/tech_miniaturization_missiles.png
+            type: techapptype_miniaturization
+            hologram: ContentPrefabs/Research/miniaturization_missiles.prefab
+            unlocks:
+               - miniaturization_meson_4
+            tags:
+                 - Military                 
+        ## Custom
           - key: techapp_miniaturization_weapon_1
             icon: assets/tech_apps/tech_miniaturization_missiles.png
             type: techapptype_miniaturization
