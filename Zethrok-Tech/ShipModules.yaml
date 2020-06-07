@@ -265,8 +265,8 @@
           ## Custom - nuclear torpedo
           - key: shipmodule_nuclear_torpedoes
             name: Nuclear Torpedo
-            shortDescription: NukePedo
-            description: NukePedo of heat
+            shortDescription: Nuclear Torpedo
+            description: Nuclear Torpedo
             slot: shipslot_weapon
             subType: shipmodulesubtype_torpedo
             weaponType: weapontype_nuclear_torpedo
