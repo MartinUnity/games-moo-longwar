@@ -74,6 +74,7 @@
             spaceDecreaseFactor: 0.1
             costDecreaseFactor: 0.1
             affectedModules:
+                - shipmodule_nuclear_torpedoes
                 - shipmodule_proton_torpedoes
                 - shipmodule_antimatter_torpedoes
           - key: miniaturization_torpedoes_3
@@ -83,6 +84,7 @@
             spaceDecreaseFactor: 0.1
             costDecreaseFactor: 0.1
             affectedModules:
+                #- shipmodule_nuclear_torpedoes
                 - shipmodule_proton_torpedoes
         ###BEAMS
           - key: miniaturization_beams_1
@@ -330,6 +332,38 @@
             affectedModules:
                 - shipmodule_nuclear_missile
                 - shipmodule_nuclear_torpedoes
-
+          ## Cusom - meson
+          - key: miniaturization_meson_1
+            name: Meson Weaponry - 1
+            description: Meson Weaponry - Mini 1
+            icon: assets/ship_modules/miniaturization_missilies.png
+            spaceDecreaseFactor: 0.10
+            costDecreaseFactor: 0.10
+            affectedModules:
+                - shipmodule_meson_missile
+          - key: miniaturization_meson_2
+            name: Meson Weaponry - 2
+            description: Meson Weaponry - Mini 2
+            icon: assets/ship_modules/miniaturization_missilies.png
+            spaceDecreaseFactor: 0.10
+            costDecreaseFactor: 0.10
+            affectedModules:
+                - shipmodule_meson_missile
+          - key: miniaturization_meson_3
+            name: Meson Weaponry - 3
+            description: Meson Weaponry - Mini 3
+            icon: assets/ship_modules/miniaturization_missilies.png
+            spaceDecreaseFactor: 0.10
+            costDecreaseFactor: 0.10
+            affectedModules:
+                - shipmodule_meson_missile
+          - key: miniaturization_meson_4
+            name: Meson Weaponry - 4
+            description: Meson Weaponry - Mini 4
+            icon: assets/ship_modules/miniaturization_missilies.png
+            spaceDecreaseFactor: 0.10
+            costDecreaseFactor: 0.10
+            affectedModules:
+                - shipmodule_meson_missile                                                
 
 ...

@@ -41,6 +41,17 @@
                - structure_star_fortress
             tags:
                  - Defenses
+         ## Custom
+          - key: techapp_immovable_object
+            #name: TECH_APPLICATION_TYPE_STAR_FORTRESS_NAME
+            #description: TECH_APPLICATION_TYPE_STAR_FORTRESS_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/star_fortress.prefab
+            unlocks:
+               - structure_immovable_object
+            tags:
+                 - Defenses                 
           - key: techapp_warp_interdictor
             #name: TECH_APPLICATION_TYPE_WARP_INTERDICTOR_NAME
             #description: TECH_APPLICATION_TYPE_WARP_INTERDICTOR_DESCRIPTION
@@ -70,6 +81,57 @@
             tags:
                  - Defenses
                  - Morale
+           ## Cusom
+          - key: techapp_missile_base_2
+            #name: TECH_APPLICATION_TYPE_MISSILE_BASE_NAME
+            #description: TECH_APPLICATION_TYPE_MISSILE_BASE_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/missile_base.prefab
+            unlocks:
+               - structure_missile_base_2
+            tags:
+                 - Defenses
+          - key: techapp_missile_base_3
+            #name: TECH_APPLICATION_TYPE_MISSILE_BASE_NAME
+            #description: TECH_APPLICATION_TYPE_MISSILE_BASE_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/missile_base.prefab
+            unlocks:
+               - structure_missile_base_3
+            tags:
+                 - Defenses
+          - key: techapp_missile_base_4
+            #name: TECH_APPLICATION_TYPE_MISSILE_BASE_NAME
+            #description: TECH_APPLICATION_TYPE_MISSILE_BASE_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/missile_base.prefab
+            unlocks:
+               - structure_missile_base_4
+            tags:
+                 - Defenses
+          - key: techapp_missile_base_5
+            #name: TECH_APPLICATION_TYPE_MISSILE_BASE_NAME
+            #description: TECH_APPLICATION_TYPE_MISSILE_BASE_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/missile_base.prefab
+            unlocks:
+               - structure_missile_base_5
+            tags:
+                 - Defenses
+          - key: techapp_missile_base_6
+            #name: TECH_APPLICATION_TYPE_MISSILE_BASE_NAME
+            #description: TECH_APPLICATION_TYPE_MISSILE_BASE_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/missile_base.prefab
+            unlocks:
+               - structure_missile_base_6
+            tags:
+                 - Defenses
           - key: techapp_missile_base
             #name: TECH_APPLICATION_TYPE_MISSILE_BASE_NAME
             #description: TECH_APPLICATION_TYPE_MISSILE_BASE_DESCRIPTION
@@ -108,6 +170,37 @@
                - structure_ground_batteries
             tags:
                  - Defenses
+         ## Custom
+          - key: techapp_ground_batteries_2
+            #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
+            #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/ground_batteries.prefab
+            unlocks:
+               - structure_ground_batteries_2
+            tags:
+                 - Defenses
+          - key: techapp_ground_batteries_3
+            #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
+            #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/ground_batteries.prefab
+            unlocks:
+               - structure_ground_batteries_3
+            tags:
+                 - Defenses
+          - key: techapp_ground_batteries_4
+            #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
+            #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/ground_batteries.prefab
+            unlocks:
+               - structure_ground_batteries_4
+            tags:
+                 - Defenses                                  
           - key: techapp_battleoids
             icon: assets/tech_apps/tech_battleoids.png
             type: techapptype_planetdefense
@@ -357,6 +450,42 @@
                - structure_tradestation_2
             tags:
                  - Economy
+        ## Custom - VoidCoinMining
+          - key: techapp_voidcoinmining
+            icon: assets/tech_apps/tech_building_credits.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_port.prefab
+            unlocks:
+               - structure_voidcoin_mining
+            tags:
+                 - Economy    
+        ## Custom - VoidCoinMining-2
+          - key: techapp_voidcoinmining_2
+            icon: assets/tech_apps/tech_building_credits.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_port.prefab
+            unlocks:
+               - structure_voidcoin_mining_2
+            tags:
+                 - Economy        
+        ## Custom - VoidCoinMining-3
+          - key: techapp_voidcoinmining_3
+            icon: assets/tech_apps/tech_building_credits.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_port.prefab
+            unlocks:
+               - structure_voidcoin_mining_3
+            tags:
+                 - Economy        
+        ## Custom - VoidCoinMining-4
+          - key: techapp_voidcoinmining_4
+            icon: assets/tech_apps/tech_building_credits.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_port.prefab
+            unlocks:
+               - structure_voidcoin_mining_4
+            tags:
+                 - Economy                                                                        
         ## Custom - CryptoExchange
           - key: techapp_cryptoexchange_1
             icon: assets/tech_apps/tech_building_credits.png
@@ -3030,6 +3159,15 @@
             hologram: ContentPrefabs/Research/fast_missile_racks.prefab
             unlocks:
                - shipmodule_fast_missile_racks
+        ## Custom stuff - TESTING 
+          - key: techapp_test
+            icon: assets/tech_apps/tech_building_food.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/hydroponic_farm.prefab
+            unlocks:
+               - structure_test
+            tags:
+                 - Population               
         ## Custom stuff
           - key: techapp_hydroponic_farm_1
             icon: assets/tech_apps/tech_building_food.png
@@ -3113,7 +3251,39 @@
                - structure_automated_factory_4
             tags:
                  - Production
-        ## Custom - Crust
+        ## Custom 
+          - key: techapp_antimatter_replicator
+            icon: assets/tech_apps/tech_building_production.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/crust_prospecting.prefab
+            unlocks:
+               - structure_antimatter_replicator
+            tags:
+                 - Production
+          - key: techapp_antimatter_replicator_2
+            icon: assets/tech_apps/tech_building_production.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/crust_prospecting.prefab
+            unlocks:
+               - structure_antimatter_replicator_2
+            tags:
+                 - Production
+          - key: techapp_rock_disintegrator
+            icon: assets/tech_apps/tech_building_production.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/crust_prospecting.prefab
+            unlocks:
+               - structure_rock_disintegrator
+            tags:
+                 - Production        
+          - key: techapp_rock_disintegrator_2
+            icon: assets/tech_apps/tech_building_production.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/crust_prospecting.prefab
+            unlocks:
+               - structure_rock_disintegrator_2
+            tags:
+                 - Production
           - key: techapp_crust_prospecting_1
             icon: assets/tech_apps/tech_building_production.png
             type: techapptype_structure
@@ -3443,6 +3613,42 @@
                - miniaturization_nuclear_3
             tags:
                  - Military
+        ## Custom
+          - key: techapp_miniaturization_meson_1
+            icon: assets/tech_apps/tech_miniaturization_missiles.png
+            type: techapptype_miniaturization
+            hologram: ContentPrefabs/Research/miniaturization_missiles.prefab
+            unlocks:
+               - miniaturization_meson_1
+            tags:
+                 - Military
+        ## Custom
+          - key: techapp_miniaturization_meson_2
+            icon: assets/tech_apps/tech_miniaturization_missiles.png
+            type: techapptype_miniaturization
+            hologram: ContentPrefabs/Research/miniaturization_missiles.prefab
+            unlocks:
+               - miniaturization_meson_2
+            tags:
+                 - Military
+        ## Custom
+          - key: techapp_miniaturization_meson_3
+            icon: assets/tech_apps/tech_miniaturization_missiles.png
+            type: techapptype_miniaturization
+            hologram: ContentPrefabs/Research/miniaturization_missiles.prefab
+            unlocks:
+               - miniaturization_meson_3
+            tags:
+                 - Military
+        ## Custom
+          - key: techapp_miniaturization_meson_4
+            icon: assets/tech_apps/tech_miniaturization_missiles.png
+            type: techapptype_miniaturization
+            hologram: ContentPrefabs/Research/miniaturization_missiles.prefab
+            unlocks:
+               - miniaturization_meson_4
+            tags:
+                 - Military                 
         ## Custom
           - key: techapp_miniaturization_weapon_1
             icon: assets/tech_apps/tech_miniaturization_missiles.png

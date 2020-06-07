@@ -1,6 +1,37 @@
 # Master of Orion - Mod
 
-# 1.2 
+# 1.3
+## Changes from 1.2
+
+### Highlights
+- Added new upgrade paths to many existing fortifications - it will be much more difficult to assault a planet with all upgraded defences now.
+- Added new planetary resources and mineral classifications
+- Aligned costs of many new buildings to what they do
+- Consolidated multiple techs into single techs
+- Added a few low %-empire income unique buildings
+- Pirates are now more of a threath - twice as many ships, frigate buffed +50%, destroyer+cruiser +100%
+- Finally added a .csv file for better descriptions, will slowly fill out
+- Added SuperHard difficulty - AI now gets +75% resources
+- Slightly bumped silicoid prod on planets as they cannot benefit from all new building
+- Created new names for many techs
+
+### Details
+* Added 2 new planetary Resource types
+* Added 2 new miniral classifications (in each end of scala)
+* Experimented with all types of bonusses from dotPeek colonystructuretype and have been creating buildings with these.
+* Added Super_Hard Difficulty (+75%)
+* New buildings - fortifications
+  * Immovable Object (star fortress upgrade)
+  * Missile base upgrades 1 -> 6 
+  * Ground Batteries 1 -> 4
+* New buildings - productivity
+  * New poor/very poor/absurd poor - %-based buildings
+* Miniaturization
+  * Aligned with existing; added more mini for lowtech items so they could find a use again on smaller ships lategame
+  * Added new mini for new techs
+
+---
+# 1.2
 ## Changes from 1.1
 
 _Finally_ cracked the code open with dotpeek and found a lot of hardcoded settings, buildings, arch and stuff that I've built but is of no real use

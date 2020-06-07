@@ -1,0 +1,90 @@
+[h1]1.3[/h1]
+Diff of all changes from 1.2.0 -> 1.3.0: https://gl.skytech.dk/games/master-of-orion/-/compare/r1.2.0...r1.3.0
+
+[h1]Highlights[/h1]
+[list]
+  [*] Added new upgrade paths to many existing fortifications - it will be much more difficult to assault a planet with all upgraded defences now.
+  [*] Added new planetary resources and mineral classifications
+  [*] Aligned costs of many new buildings to what they do
+  [*] Consolidated multiple techs into single techs
+  [*] Added a few low %-empire income unique buildings
+  [*] Pirates are now more of a threath - twice as many ships, frigate buffed +50%, destroyer+cruiser +100%
+  [*] Finally added a .csv file for better descriptions, will slowly fill out
+  [*] Added SuperHard difficulty - AI now gets +75% resources
+  [*] Slightly bumped silicoid prod on planets as they cannot benefit from all new building
+  [*] Created new names for many techs
+[list]
+
+[h2]Some details[/h2]
+[list]
+  [*] Added 2 new planetary Resource types
+  [*] Added 2 new miniral classifications (in each end of scala)
+  [*] Experimented with all types of bonusses from dotPeek colonystructuretype and have been creating buildings with these.
+  [*] Added Super_Hard Difficulty (+75%)
+  [*] New buildings - fortifications
+  [list]
+    [*] Immovable Object (star fortress upgrade)
+    [*] Missile base upgrades 1 -> 6 
+    [*] Ground Batteries 1 -> 4
+  [/list]
+  [*] New buildings - productivity
+  [list]
+    [*] New poor/very poor/absurd poor - %-based buildings
+  [/list]
+  [*] Miniaturization
+  [list]
+    [*] Aligned with existing; added more mini for lowtech items so they could find a use again on smaller ships lategame
+    [*] Added new mini for new techs
+  [/list]
+[/list]
+
+---------------------
+[h1]1.2.0[/h1]
+Diff of all changes from 1.1.0 -> 1.2.0: https://gl.skytech.dk/games/master-of-orion/-/compare/r1.1.0...r1.2.0
+[i]Finally[/i] cracked the code open with dotpeek and found a lot of hardcoded settings, buildings, arch and stuff that I've built but is of no real use
+
+[h2]Changes from 1.1[/h2]
+[b]TL;DR[/b]
+[list]
+  [*]Trade treaty now runs 50 turns instead of 20: initial cost still 50%, but return is 100% total, not 200%
+  [*]Lowered Galactic Currencey Exchange to provide +50% empire credits instead of +100%
+  [*]Updated several odd %-based increased to better align and reduced cost for many new buildings by ~15-20%
+  [*]Spread techs a little bit (will do more in 1.3) - added more tier14+15 techs
+  [*]Aligned new techs, weapons & armor to fit into line with existing
+[/list]
+
+[b]More details[/b]
+Read diff of 1.2.0 <==> 1.1.0 for completely overview of changes ( https://gl.skytech.dk/games/master-of-orion/-/compare/r1.1.0...r1.2.0 )
+[list]
+  [*]Armor / Weapon changes
+  [list]
+    [*] More armor piercing for Pulse (always do min. dam, but can now do 2x dam on <10 armor)
+    [*] Reduced Plasma beam damage 20% (4 steps instead of 5 at 30 dam)
+  [/list]
+  [*] Used dotpeek to lookup all hardcoded values/techs and removed a bunch
+  [list]
+    [*] All foodCarryOver buildings (UndergroundStorage, Foodie)
+    [*] Ship (Mini Battle Pods (Battle Pods is hardcoded as single entity for > space))
+  [/list]    
+  [*] Small adjustmests / updated entities
+  [list]
+    [*] Rifles (lazor, 0.2x rating (from 0.15))
+    [*] Cut gravity generator cost by 50% - lowered maint 33%
+    [*] Update toxic processor pollute removal from 7 -> 12
+  [/list]    
+  [*] New buildings
+  [list]
+    [*] Biodome 2 (restricted planets, extra food) - tier 
+    [*] New planetary shield - tier 15
+  [/list]    
+  [*] New Research
+  [list]
+    [*] Deep sea Cooling 2
+  [/list]    
+  [*] Fixes
+  [list]
+    [*] Moved biodome 2 to tier 3
+    [*] Crust Prospecting 2 now properly unlocks building 2 and not 3
+    [*] Many typos/fixed description
+  [/list]
+[/list]  

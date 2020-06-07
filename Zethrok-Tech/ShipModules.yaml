@@ -584,7 +584,7 @@
             costHullFactor: 1.5
             baseSize: 4.5
             sizeHullFactor: 2.4
-            shieldStrengthMultiplier: 0.7
+            shieldStrengthMultiplier: 0.85
             shieldDamageAbsorption: 4
             shieldRechargeRate: 2.5
             shieldCooldown: 5.0

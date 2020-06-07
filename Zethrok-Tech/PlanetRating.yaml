@@ -1,0 +1,57 @@
+---
+- globals: &AI.PlanetRating
+    hasResources: 0.5
+    hasGold: 0.5
+    hasArtifact: 0.5
+    biomeRatings:
+      - biome: biome_gaia
+        value: 3
+      - biome: biome_terran
+        value: 2.8
+      - biome: biome_ocean
+        value: 2.6
+      - biome: biome_swamp
+        value: 2.4
+      - biome: biome_arid
+        value: 2.2
+      - biome: biome_tundra
+        value: 2
+      - biome: biome_desert
+        value: 1.8
+      - biome: biome_barren
+        value: 1.6
+      - biome: biome_radiated
+        value: 1.4
+      - biome: biome_toxic
+        value: 1.2
+      - biome: biome_volcanic
+        value: 1
+      - biome: biome_asteroid_field
+        value: 0
+    mineralRichnessRatings:
+      - richness: planetmineralrichness_absurd_rich
+        value: 3.5
+      - richness: planetmineralrichness_ultra_rich
+        value: 3
+      - richness: planetmineralrichness_rich
+        value: 2.5
+      - richness: planetmineralrichness_abundant
+        value: 2
+      - richness: planetmineralrichness_poor
+        value: 1.5
+      - richness: planetmineralrichness_ultra_poor
+        value: 1
+      - richness: planetmineralrichness_absurd_poor
+        value: 0.5
+    sizeRatings:
+      - size: planetsize_huge
+        value: 3
+      - size: planetsize_large
+        value: 2.3
+      - size: planetsize_medium
+        value: 1.75
+      - size: planetsize_small
+        value: 1.25
+      - size: planetsize_tiny
+        value: 1
+...

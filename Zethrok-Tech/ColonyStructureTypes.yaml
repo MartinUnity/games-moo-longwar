@@ -48,6 +48,23 @@
             structureTypes:
                 - 5
             workingStatus: true
+          ## Custom
+          - key: structure_immovable_object
+            name: COLONY_STRUCTURE_IMMOVABLE_OBJECT_NAME
+            description: COLONY_STRUCTURE_IMMOVABLE_OBJECT_DESCRIPTION
+            icon: assets/structures/starfortress.png
+            upgrades: structure_star_fortress
+            cost: 1200
+            upkeep: 14
+            scannerRangeBonus: 4
+            repairFactor: 0.12
+            allowShipBlueprintUpgrade: true
+            fleetSupportBonus: 12
+            shipTemplate: design_immovable_object
+            allowsBattleshipsConstruction: true
+            structureTypes:
+                - 5
+            workingStatus: true            
           - key: structure_scientific_victory_1
             name: COLONY_STRUCTURE_SCIENTIFIC_VICTORY_1_NAME
             description: COLONY_STRUCTURE_SCIENTIFIC_VICTORY_1_DESCRIPTION
@@ -238,6 +255,67 @@
             structureTypes:
                 - 5
             workingStatus: true
+            ## Custom
+          - key: structure_missile_base_2
+            name: Missile base - 2
+            description: Missile Base 2
+            icon: assets/structures/missile_base.png
+            upgrades: structure_missile_base
+            requires: structure_missile_base
+            cost: 90
+            upkeep: 2
+            shipTemplate: design_missile_base_2
+            structureTypes:
+                - 5
+            workingStatus: true
+          - key: structure_missile_base_3
+            name: Missile base - 3
+            description: Missile Base 3
+            icon: assets/structures/missile_base.png
+            upgrades: structure_missile_base_2
+            requires: structure_missile_base_2
+            cost: 120
+            upkeep: 3
+            shipTemplate: design_missile_base_3
+            structureTypes:
+                - 5
+            workingStatus: true
+          - key: structure_missile_base_4
+            name: Missile base - 4
+            description: Missile Base 4
+            icon: assets/structures/missile_base.png
+            upgrades: structure_missile_base_3
+            requires: structure_missile_base_3
+            cost: 150
+            upkeep: 4
+            shipTemplate: design_missile_base_4
+            structureTypes:
+                - 5
+            workingStatus: true
+          - key: structure_missile_base_5
+            name: Missile base - 5
+            description: Missile Base 5
+            icon: assets/structures/missile_base.png
+            upgrades: structure_missile_base_4
+            requires: structure_missile_base_4
+            cost: 200
+            upkeep: 5
+            shipTemplate: design_missile_base_5
+            structureTypes:
+                - 5
+            workingStatus: true
+          - key: structure_missile_base_6
+            name: Missile base - 6
+            description: Missile Base 6
+            icon: assets/structures/missile_base.png
+            upgrades: structure_missile_base_5
+            requires: structure_missile_base_5
+            cost: 300
+            upkeep: 6
+            shipTemplate: design_missile_base_6
+            structureTypes:
+                - 5
+            workingStatus: true                                                
           - key: structure_colonial_revenue_services
             name: COLONY_STRUCTURE_COLONIAL_REVENUE_SERVICES_NAME
             description: COLONY_STRUCTURE_COLONIAL_REVENUE_SERVICES_DESCRIPTION
@@ -265,6 +343,70 @@
                 - 3
             workingStatus: true
         ## Custom - crust
+          - key: structure_antimatter_replicator
+            name: "Antimatter Replicator"
+            description: "Antimatter replicator - %-based %Production increase on colony (works on absurd_poor as well)"
+            icon: assets/structures/crust_prospecting.png
+            cost: 60
+            upkeep: 2
+            workerYieldMultiplierBonus: 0.125
+            structureTypes:
+               - 0
+            compatibleRichness:
+               - planetmineralrichness_abundant            
+               - planetmineralrichness_poor
+               - planetmineralrichness_ultra_poor
+               - planetmineralrichness_absurd_poor
+            workingStatus: true          
+          - key: structure_antimatter_replicator_2
+            name: "Antimatter Replicator 2"
+            description: "Antimatter replicator 2 - %-based %Production increase on colony (works on absurd_poor as well)"
+            icon: assets/structures/crust_prospecting.png
+            cost: 120
+            upkeep: 2
+            upgrades: structure_antimatter_replicator
+            requires: structure_antimatter_replicator
+            workerYieldMultiplierBonus: 0.250
+            structureTypes:
+               - 0
+            compatibleRichness:
+               - planetmineralrichness_abundant            
+               - planetmineralrichness_poor
+               - planetmineralrichness_ultra_poor
+               - planetmineralrichness_absurd_poor            
+            workingStatus: true          
+          - key: structure_rock_disintegrator
+            name: "Rock Disintegrator"
+            description: "Rock Disintegrator (works on absurd_poor as well)"
+            icon: assets/structures/crust_prospecting.png
+            cost: 30
+            upkeep: 1
+            baseProductionBonus: 1
+            workerYieldMultiplierBonus: 0.10
+            structureTypes:
+               - 0
+            compatibleRichness:
+               - planetmineralrichness_poor
+               - planetmineralrichness_ultra_poor
+               - planetmineralrichness_absurd_poor            
+            workingStatus: true        
+          - key: structure_rock_disintegrator_2
+            name: "Rock Disintegrator 2"
+            description: "Rock Disintegrator 2 (works on absurd_poor as well)"
+            icon: assets/structures/crust_prospecting.png
+            cost: 120
+            upkeep: 3
+            baseProductionBonus: 2
+            workerYieldMultiplierBonus: 0.20
+            upgrades: structure_rock_disintegrator
+            requires: structure_rock_disintegrator
+            structureTypes:
+               - 0
+            compatibleRichness:
+               - planetmineralrichness_poor
+               - planetmineralrichness_ultra_poor
+               - planetmineralrichness_absurd_poor            
+            workingStatus: true
           - key: structure_crust_prospecting
             name: COLONY_STRUCTURE_CRUST_PROSPECTING_NAME
             description: COLONY_STRUCTURE_CRUST_PROSPECTING_DESCRIPTION
@@ -279,6 +421,7 @@
             compatibleRichness:
                - planetmineralrichness_poor
                - planetmineralrichness_ultra_poor
+               - planetmineralrichness_absurd_poor
             workingStatus: true
           - key: structure_crust_prospecting_1
             name: Crust Prospecting 1
@@ -296,6 +439,7 @@
             compatibleRichness:
                - planetmineralrichness_poor
                - planetmineralrichness_ultra_poor
+               - planetmineralrichness_absurd_poor
             workingStatus: true
           - key: structure_crust_prospecting_2
             name: Crust Prospecting 2
@@ -313,6 +457,7 @@
             compatibleRichness:
                - planetmineralrichness_poor
                - planetmineralrichness_ultra_poor
+               - planetmineralrichness_absurd_poor
             workingStatus: true
           - key: structure_crust_prospecting_3
             name: Crust Prospecting 3
@@ -330,6 +475,7 @@
             compatibleRichness:
                - planetmineralrichness_poor
                - planetmineralrichness_ultra_poor
+               - planetmineralrichness_absurd_poor
             workingStatus: true
           - key: structure_crust_prospecting_4
             name: Crust Prospecting 4
@@ -347,6 +493,7 @@
             compatibleRichness:
                - planetmineralrichness_poor
                - planetmineralrichness_ultra_poor
+               - planetmineralrichness_absurd_poor
             workingStatus: true
           - key: structure_crust_prospecting_5
             name: Crust Prospecting 5
@@ -364,6 +511,7 @@
             compatibleRichness:
                - planetmineralrichness_poor
                - planetmineralrichness_ultra_poor
+               - planetmineralrichness_absurd_poor
             workingStatus: true            
           - key: structure_tradestation
             name: TradeStation
@@ -458,6 +606,7 @@
             icon: assets/structures/galactic_currency_exchange.png
             cost: 160
             upkeep: 0
+            totalIncomeMultiplierBonus: 0.10
             totalEmpireMultiplierBonus: 0.10
             structureTypes:
                 - 3
@@ -471,6 +620,7 @@
             icon: assets/structures/galactic_currency_exchange.png
             cost: 320
             upkeep: 0
+            totalIncomeMultiplierBonus: 0.20
             totalEmpireMultiplierBonus: 0.20
             structureTypes:
                 - 3
@@ -578,6 +728,7 @@
             compatibleRichness:
                - planetmineralrichness_rich
                - planetmineralrichness_ultra_rich
+               - planetmineralrichness_absurd_rich
           - key: structure_ground_batteries
             name: COLONY_STRUCTURE_GROUND_BATTERIES_NAME
             description: COLONY_STRUCTURE_GROUND_BATTERIES_DESCRIPTION
@@ -585,6 +736,43 @@
             cost: 180
             upkeep: 2
             shipTemplate: design_ground_batteries
+            structureTypes:
+                - 5
+            workingStatus: true
+          ## Custom
+          - key: structure_ground_batteries_2
+            name: Ground Batteries 2
+            description: COLONY_STRUCTURE_GROUND_BATTERIES_DESCRIPTION
+            icon: assets/structures/ground_batteries.png
+            cost: 250
+            upkeep: 3
+            upgrades: structure_ground_batteries
+            requires: structure_ground_batteries
+            shipTemplate: design_ground_batteries_2
+            structureTypes:
+                - 5
+            workingStatus: true
+          - key: structure_ground_batteries_3
+            name: Ground Batteries 3
+            description: COLONY_STRUCTURE_GROUND_BATTERIES_DESCRIPTION
+            icon: assets/structures/ground_batteries.png
+            cost: 350
+            upkeep: 5
+            upgrades: structure_ground_batteries_2
+            requires: structure_ground_batteries_2
+            shipTemplate: design_ground_batteries_3
+            structureTypes:
+                - 5
+            workingStatus: true
+          - key: structure_ground_batteries_4
+            name: Ground Batteries 4
+            description: COLONY_STRUCTURE_GROUND_BATTERIES_DESCRIPTION
+            icon: assets/structures/ground_batteries.png
+            cost: 420
+            upkeep: 8
+            upgrades: structure_ground_batteries_3
+            requires: structure_ground_batteries_3
+            shipTemplate: design_ground_batteries_4
             structureTypes:
                 - 5
             workingStatus: true
@@ -707,6 +895,33 @@
             structureTypes:
                 - 1
             workingStatus: true
+          ## Custom - test
+          - key: structure_test
+            name: Tech - Testing
+            description: Various testing
+            icon: assets/structures/hydroponic_farm.png
+            cost: 20
+            upkeep: 1
+            baseLifeSupportBonus: 3
+            #totalProductionMultiplierBonus: 0.12
+            workerYieldMultiplierBonus: 0.13
+            #workerIncomeBonus: 0.50
+            #workerYieldMultiplierBonus: 0.14
+            #totalFoodMultiplierBonus: 0.16
+            #totalResearchMultiplierBonus: 0.17
+            totalIncomeMultiplierBonus: 0.50
+            #totalEmpireMultiplierBonus: 0.50
+            fleetSupportCostReduction: 0.21
+            fleetSupportBonus: 0.22
+            #maxPopulationBonus: 0.50
+            #pollutionCleaningRate: 0.24
+            #workerLifeSupportBonus: 0.40
+            #scannerRangeBonus: 0.50
+            #workerProductionBonus: 0.50
+            #workerResearchBonus: 0.60
+            structureTypes:
+                - 1
+            workingStatus: true            
         ## Custom - hydroponic_farm
           - key: structure_hydroponic_farm_1
             name: Hydroponic Farm 1
@@ -817,7 +1032,7 @@
             icon: assets/structures/weather_controller.png
             cost: 100
             upkeep: 2
-            totalFoodMultiplierBonus: 0.10
+            totalFoodMultiplierBonus: 0.125
             structureTypes:
                 - 1
             workingStatus: true
@@ -1523,10 +1738,10 @@
             description: Multihub brings recreation
             icon: assets/structures/cloning_center.png
             cost: 80
-            upkeep: 7
+            upkeep: 5
             structureTypes:
                 - 1
-            productionTileBonus: 1                
+            workerIncomeBonus: 0.33
             baseLifeSupportBonus: 1
             creditIncomeBonus: 1
             baseProductionBonus: 1
@@ -1540,12 +1755,12 @@
             description: Multihub brings recreation
             icon: assets/structures/cloning_center.png
             cost: 160
-            upkeep: 14
+            upkeep: 10
             upgrades: structure_caves
             requires: structure_caves
             structureTypes:
                 - 1
-            workerIncomeBonus: 1
+            workerIncomeBonus: 0.67
             researchTileBonus: 1
             moraleMultiplierBonusSystem: 0.05
             populationGrowthMultiplierBonus: 0.1
@@ -1559,7 +1774,7 @@
             description: Multihub brings recreation
             icon: assets/structures/cloning_center.png
             cost: 320
-            upkeep: 21
+            upkeep: 15
             upgrades: structure_caves_2
             requires: structure_caves_2
             structureTypes:
@@ -1596,7 +1811,7 @@
             upkeep: 0
             structureTypes:
                 - 1
-#            workerIncomeBonus: 1
+            workerIncomeBonus: 0.10
             creditIncomeBonus: 1
             workingStatus: true
         ## Custom - cryptoexchange - 2
@@ -1608,7 +1823,8 @@
             upkeep: 0
             structureTypes:
                 - 1
-            creditIncomeBonus: 3
+            workerIncomeBonus: 0.2
+            creditIncomeBonus: 2
             upgrades: structure_cryptoexchange_1
             requires: structure_cryptoexchange_1
             workingStatus: true
@@ -1621,7 +1837,8 @@
             upkeep: 0
             structureTypes:
                 - 1
-            creditIncomeBonus: 6
+            workerIncomeBonus: 0.3
+            creditIncomeBonus: 3
             upgrades: structure_cryptoexchange_2
             requires: structure_cryptoexchange_2
             workingStatus: true
@@ -1634,11 +1851,62 @@
             upkeep: 0
             structureTypes:
                 - 1
-            creditIncomeBonus: 3
-            workerIncomeBonus: 1
+            creditIncomeBonus: 4
+            workerIncomeBonus: 0.4
             upgrades: structure_cryptoexchange_3
             requires: structure_cryptoexchange_3
             workingStatus: true
+            ## Custom - VoidCoin Mining
+          - key: structure_voidcoin_mining
+            name: Void Coin Mining
+            description: "Void Coin Mining - 5% empire %Credits increase. Does not show in building overview"
+            icon: assets/structures/space_port.png
+            cost: 60
+            upkeep: 0
+            structureTypes:
+                - 1
+            totalIncomeMultiplierBonus: 0.05
+            empireUnique: true
+            workingStatus: true            
+          - key: structure_voidcoin_mining_2
+            name: Void Coin Mining
+            description: "Void Coin Mining 2 - 10% empire %Credits increase. Does not show in building overview"
+            icon: assets/structures/space_port.png
+            cost: 120
+            upkeep: 0
+            upgrades: structure_voidcoin_mining
+            requires: structure_voidcoin_mining
+            structureTypes:
+                - 1
+            totalIncomeMultiplierBonus: 0.10
+            empireUnique: true
+            workingStatus: true            
+          - key: structure_voidcoin_mining_3
+            name: Void Coin Mining
+            description: "Void Coin Mining 3 - 15% empire %Credits increase. Does not show in building overview"
+            icon: assets/structures/space_port.png
+            cost: 240
+            upkeep: 0
+            upgrades: structure_voidcoin_mining_2
+            requires: structure_voidcoin_mining_2
+            structureTypes:
+                - 1
+            totalIncomeMultiplierBonus: 0.15
+            empireUnique: true
+            workingStatus: true            
+          - key: structure_voidcoin_mining_4
+            name: Void Coin Mining
+            description: "Void Coin Mining 4 - 20% empire %Credits increase. Does not show in building overview"
+            icon: assets/structures/space_port.png
+            cost: 320
+            upkeep: 0
+            upgrades: structure_voidcoin_mining_3
+            requires: structure_voidcoin_mining_3
+            structureTypes:
+                - 1
+            totalIncomeMultiplierBonus: 0.20
+            empireUnique: true
+            workingStatus: true            
         ## Custom - Fertility lab 1
           - key: structure_fertilitylab_1
             name: Fertility Lab - 1

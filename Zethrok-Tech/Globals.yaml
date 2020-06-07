@@ -357,11 +357,20 @@
         - design_heavy_fighter
         - design_military_outpost
         - design_missile_base
+        - design_missile_base_2
+        - design_missile_base_3
+        - design_missile_base_4
+        - design_missile_base_5
+        - design_missile_base_6
         - design_ground_batteries
+        - design_ground_batteries_2
+        - design_ground_batteries_3
+        - design_ground_batteries_4
         - design_fighter_garrison
         - design_star_base
         - design_battlestation
         - design_starfortress
+        - design_immovable_object
 - globals: &Backend.Civilizations.PirateCivilization
     RACE_KEY: race_space_pirates
     RESPAWN_DELAY: 10
@@ -370,12 +379,12 @@
     TURNS_FOR_NEXT_SHIP_DEPLOYMENT_MIN: 12
     TURNS_FOR_NEXT_SHIP_DEPLOYMENT_MAX: 18
     TURNS_FOR_FIRST_SHIP_DEPLOYMENT_ON_DISCOVERY: 3
-    PIRATE_DESTROYER_TURN_THRESHOLD: 70
-    PIRATE_CRUISER_TURN_THRESHOLD: 200
-    INITIAL_SHIPS_COUNT: 2
-    DEPLOYMENT_SHIP_COUNT: 1
-    DEPLOYMENT_DESTROYER_SHIP_COUNT: 1
-    DEPLOYMENT_CRUISER_SHIP_COUNT: 1
+    PIRATE_DESTROYER_TURN_THRESHOLD: 50
+    PIRATE_CRUISER_TURN_THRESHOLD: 150
+    INITIAL_SHIPS_COUNT: 3
+    DEPLOYMENT_SHIP_COUNT: 2
+    DEPLOYMENT_DESTROYER_SHIP_COUNT: 2
+    DEPLOYMENT_CRUISER_SHIP_COUNT: 2
     PIRATE_FRIGATE_BLUEPRINT: design_pirate_frigate
     PIRATE_DESTROYER_BLUEPRINT: design_pirate_destroyer
     PIRATE_CRUISER_BLUEPRINT: design_pirate_cruiser
@@ -421,7 +430,8 @@
     ANTARAN_RUINS_MAX: 7
     GALAXY_SIZE_TO_RELIC_FACTOR: 1.0
     CIVS_TO_RELIC_FACTOR: 1.0
-    RELICS_TO_BE_RESEARCHED: 3
+    ## Was 3 -- assuming 9 will make it impossible
+    RELICS_TO_BE_RESEARCHED: 9
     RELIC_RESEARCH_PER_TURN: 0.1
 - globals: &Backend.Civilizations.IndependentCivilization
     STATUS_CHANGE_TIMER: 20

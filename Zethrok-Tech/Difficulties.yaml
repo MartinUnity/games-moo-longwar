@@ -1,0 +1,58 @@
+---
+- collection: &Backend.Core.Difficulty
+    items:
+        - key: difficulty_very_easy
+          name: DIFFICULTY_VERY_EASY
+          research_multiplier_bonus: -0.3
+          credits_multiplier_bonus: -0.3
+          command_points_multiplier_bonus: -0.3
+          colony_production_multiplier_bonus: -0.3
+          food_production_multiplier_bonus: -0.3
+        - key: difficulty_easy
+          name: DIFFICULTY_EASY
+          research_multiplier_bonus: -0.1
+          credits_multiplier_bonus: -0.1
+          command_points_multiplier_bonus: -0.1
+          colony_production_multiplier_bonus: -0.1
+          food_production_multiplier_bonus: -0.1
+        - key: difficulty_average
+          name: DIFFICULTY_AVERAGE
+          research_multiplier_bonus: 0
+          credits_multiplier_bonus: 0
+          command_points_multiplier_bonus: 0
+          colony_production_multiplier_bonus: 0
+          food_production_multiplier_bonus: 0
+          isDefault: true
+        - key: difficulty_hard
+          name: DIFFICULTY_HARD
+          research_multiplier_bonus: 0.1
+          credits_multiplier_bonus: 0.1
+          command_points_multiplier_bonus: 0.1
+          colony_production_multiplier_bonus: 0.1
+          food_production_multiplier_bonus: 0.1
+          unlocksHard: true
+        - key: difficulty_very_hard
+          name: DIFFICULTY_VERY_HARD
+          research_multiplier_bonus: 0.25
+          credits_multiplier_bonus: 0.25
+          command_points_multiplier_bonus: 0.25
+          colony_production_multiplier_bonus: 0.25
+          food_production_multiplier_bonus: 0.25
+          unlocksHard: true
+        - key: difficulty_extreme
+          name: DIFFICULTY_EXTREME
+          research_multiplier_bonus: 0.5
+          credits_multiplier_bonus: 0.5
+          command_points_multiplier_bonus: 0.5
+          colony_production_multiplier_bonus: 0.5
+          food_production_multiplier_bonus: 0.5
+          unlocksHard: true
+        - key: difficulty_super_hard
+          name: Super Hard - 75%
+          research_multiplier_bonus: 0.75
+          credits_multiplier_bonus: 0.75
+          command_points_multiplier_bonus: 0.75
+          colony_production_multiplier_bonus: 0.75
+          food_production_multiplier_bonus: 0.75
+          unlocksHard: true          
+...
