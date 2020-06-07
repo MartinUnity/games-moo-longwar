@@ -1,3 +1,13 @@
+Title: Moo Longwar [XCOM LongWar inspired]
+[h1]1.3.1[/h1]
+Diff of all changes from 1.2.0 -> 1.3.0: https://gl.skytech.dk/games/master-of-orion/-/compare/r1.2.0...r1.3.0
+
+[list]
+  [*] Reverted to original pirate spawn rate - several civs got wiped out by pirates in a play-through
+  [*] Kept pirate frigtate buff of 50% - and destroyer & cruiser 100%
+[/list]
+
+
 [h1]1.3[/h1]
 Diff of all changes from 1.2.0 -> 1.3.0: https://gl.skytech.dk/games/master-of-orion/-/compare/r1.2.0...r1.3.0
 
@@ -13,7 +23,8 @@ Diff of all changes from 1.2.0 -> 1.3.0: https://gl.skytech.dk/games/master-of-o
   [*] Added SuperHard difficulty - AI now gets +75% resources
   [*] Slightly bumped silicoid prod on planets as they cannot benefit from all new building
   [*] Created new names for many techs
-[list]
+  [*] Antaran victory has been disabled if Antaran is chosen (now requires 9 ruin research, but can max be 7 in a game)
+[/list]
 
 [h2]Some details[/h2]
 [list]
@@ -37,6 +48,8 @@ Diff of all changes from 1.2.0 -> 1.3.0: https://gl.skytech.dk/games/master-of-o
     [*] Added new mini for new techs
   [/list]
 [/list]
+
+[h3] Site used for basis of adjusted armor, pen, dissipation, damage etc: http://www.orderofmidnight.com/MOO/index.html [/h3]
 
 ---------------------
 [h1]1.2.0[/h1]
