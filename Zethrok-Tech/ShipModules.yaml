@@ -953,22 +953,52 @@
             isUnique: true
             icon: assets/ship_modules/heavy_armor.png
             ## Custom
-          #- key: shipmodule_mini_pods
+          - key: shipmodule_tungsten_hull
+            name: $SHIP_MODULE_TUNGSTEN_HULL_NAME
+            shortDescription: $SHIP_MODULE_TUNGSTEN_HULL_DESCRIPTION_SHORT
+            description: $SHIP_MODULE_TUNGSTEN_HULL_DESCRIPTION
+            slot: shipslot_special
+            weaponType: weapontype_special_passive
+            subType: shipmodulesubtype_defense
+            hullPointsMultiplier: 0.25
+            baseCost: 2
+            costHullFactor: 2.5
+            baseSize: 0
+            sizeHullFactor: 0
+            isPassive: true
+            isUnique: true
+            icon: assets/ship_modules/reinforced_hull.png            
+          - key: shipmodule_liquid_armor
+            name: $SHIP_MODULE_LIQUID_ARMOR_NAME
+            shortDescription: $SHIP_MODULE_LIQUID_ARMOR_DESCRIPTION_SHORT
+            description: $SHIP_MODULE_LIQUID_ARMOR_DESCRIPTION
+            slot: shipslot_special
+            weaponType: weapontype_special_passive
+            subType: shipmodulesubtype_defense
+            baseCost: 5
+            costHullFactor: 1.35
+            baseSize: 0
+            sizeHullFactor: 0
+            resilienceMultiplier: 1.5
+            isPassive: true
+            isUnique: true
+            icon: assets/ship_modules/heavy_armor.png            
+          - key: shipmodule_mini_pods
         #Expands 'space' capacity
-            #name: Battle Mini Pods
-            #shortDescription: Pods Mini Battle
-            #description: Mini Pods Battle
-            #slot: shipslot_special
-            #weaponType: weapontype_special_passive
-            #availableSpaceMultiplierBonus: 0.15
-            #baseCost: 1
-            #costHullFactor: 1.5
-            #baseSize: 2
-            #sizeHullFactor: 1.75
-            #isPassive: true
-            #singularShip: false
-            #isUnique: true
-            #icon: assets/ship_modules/battle_pods.png            
+            name: Battle Mini Pods
+            shortDescription: Pods Mini Battle
+            description: Mini Pods Battle
+            slot: shipslot_special
+            weaponType: weapontype_special_passive
+            availableSpaceMultiplierBonus: 0.50
+            baseCost: 1
+            costHullFactor: 1.5
+            baseSize: 2
+            sizeHullFactor: 1.75
+            isPassive: true
+            singularShip: false
+            isUnique: true
+            icon: assets/ship_modules/battle_pods.png            
           - key: shipmodule_battle_pods
         #Expands 'space' capacity
             name: $SHIP_MODULE_BATTLE_PODS_NAME
@@ -1459,6 +1489,23 @@
             singularShip: false
             specialType: Misc
             icon: assets/ship_modules/stasis_field.png
+          ## Custom
+          - key: shipmodule_layered_shield
+        #negates shield piercing and increases damage mitigation
+            name: $SHIP_MODULE_LAYERED_SHIELD_NAME
+            slot: shipslot_special
+            weaponType: weapontype_special_passive
+            baseCost: 1
+            costHullFactor: 1.5
+            baseSize: 2.0
+            sizeHullFactor: 1.5
+            bonusAbsorptionRate: 3
+            shortDescription: $SHIP_MODULE_LAYERED_SHIELD_DESCRIPTION_SHORT
+            description: $SHIP_MODULE_LAYERED_SHIELD_DESCRIPTION
+            isPassive: true
+            singularShip: false
+            isUnique: true
+            icon: assets/ship_modules/hard_shield.png            
           - key: shipmodule_hard_shield
         #negates shield piercing and increases damage mitigation
             name: $SHIP_MODULE_HARD_SHIELD_NAME

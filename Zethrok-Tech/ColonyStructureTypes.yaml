@@ -16,6 +16,90 @@
             structureTypes:
                 - 5
             workingStatus: true
+          ## Custom
+          - key: structure_orbit_ads
+            name: COLONY_STRUCTURE_ORBIT_ADS_NAME
+            description: COLONY_STRUCTURE_ORBIT_ADS_DESCRIPTION
+            icon: assets/structures/star_base.png
+            cost: 30
+            upkeep: 1
+            scannerRangeBonus: 1
+            fleetSupportBonus: 1
+            repairFactor: 0.02
+            allowShipBlueprintUpgrade: true
+            shipTemplate: design_orbit_ads
+            allowsBattleshipsConstruction: true
+            structureTypes:
+                - 5
+            workingStatus: true            
+          - key: structure_orbit_ads_2
+            name: COLONY_STRUCTURE_ORBIT_ADS_NAME_2
+            description: COLONY_STRUCTURE_ORBIT_ADS_DESCRIPTION
+            icon: assets/structures/star_base.png
+            cost: 60
+            upkeep: 1
+            requires: structure_orbit_ads
+            upgrades: structure_orbit_ads
+            scannerRangeBonus: 1
+            fleetSupportBonus: 1
+            repairFactor: 0.03
+            allowShipBlueprintUpgrade: true
+            shipTemplate: design_orbit_ads_2
+            allowsBattleshipsConstruction: true
+            structureTypes:
+                - 5
+            workingStatus: true       
+          - key: structure_orbit_ads_3
+            name: COLONY_STRUCTURE_ORBIT_ADS_NAME_3
+            description: COLONY_STRUCTURE_ORBIT_ADS_DESCRIPTION
+            icon: assets/structures/star_base.png
+            cost: 90
+            upkeep: 2
+            requires: structure_orbit_ads_2
+            upgrades: structure_orbit_ads_2
+            scannerRangeBonus: 2
+            fleetSupportBonus: 2
+            repairFactor: 0.04
+            allowShipBlueprintUpgrade: true
+            shipTemplate: design_orbit_ads_3
+            allowsBattleshipsConstruction: true
+            structureTypes:
+                - 5
+            workingStatus: true       
+          - key: structure_orbit_ads_4
+            name: COLONY_STRUCTURE_ORBIT_ADS_NAME_4
+            description: COLONY_STRUCTURE_ORBIT_ADS_DESCRIPTION
+            icon: assets/structures/star_base.png
+            cost: 120
+            upkeep: 2
+            requires: structure_orbit_ads_3
+            upgrades: structure_orbit_ads_3
+            scannerRangeBonus: 3
+            fleetSupportBonus: 3
+            repairFactor: 0.06
+            allowShipBlueprintUpgrade: true
+            shipTemplate: design_orbit_ads_4
+            allowsBattleshipsConstruction: true
+            structureTypes:
+                - 5
+            workingStatus: true   
+          - key: structure_orbit_ads_5
+            name: COLONY_STRUCTURE_ORBIT_ADS_NAME_5
+            description: COLONY_STRUCTURE_ORBIT_ADS_DESCRIPTION
+            icon: assets/structures/star_base.png
+            cost: 240
+            upkeep: 4
+            requires: structure_orbit_ads_4
+            upgrades: structure_orbit_ads_4
+            scannerRangeBonus: 3
+            fleetSupportBonus: 3
+            repairFactor: 0.1
+            allowShipBlueprintUpgrade: true
+            shipTemplate: design_orbit_ads_5
+            allowsBattleshipsConstruction: true
+            structureTypes:
+                - 5
+            workingStatus: true                                                          
           - key: structure_battlestation
             name: COLONY_STRUCTURE_BATTLE_STATION_NAME
             description: COLONY_STRUCTURE_BATTLE_STATION_DESCRIPTION
@@ -53,6 +137,7 @@
             name: COLONY_STRUCTURE_IMMOVABLE_OBJECT_NAME
             description: COLONY_STRUCTURE_IMMOVABLE_OBJECT_DESCRIPTION
             icon: assets/structures/starfortress.png
+            requires: structure_star_fortress
             upgrades: structure_star_fortress
             cost: 1200
             upkeep: 14
@@ -322,7 +407,7 @@
             icon: assets/structures/colonial_revenue_services.png
             cost: 60
             upkeep: 0
-            workerIncomeBonus: 1
+            workerIncomeBonus: 0.5
             # creditIncomeBonus: 2
             # requires: structure_government_building
             structureTypes:
@@ -334,7 +419,7 @@
             icon: assets/structures/colonial_revenue_services.png
             cost: 360
             upkeep: 0
-            workerIncomeBonus: 2
+            workerIncomeBonus: 1
             upgrades: structure_colonial_revenue_services
             requires: structure_colonial_revenue_services            
             #creditIncomeBonus: 4
@@ -342,6 +427,56 @@
             structureTypes:
                 - 3
             workingStatus: true
+        ## Custom fungal 2
+          - key: structure_volcanic_converter
+            name: "Lava Converter"
+            description: "Lava Converter - Converts Lava into Raw Aether"
+            icon: assets/structures/crust_prospecting.png
+            cost: 60
+            upkeep: 2
+            workerYieldMultiplierBonus: 0.25
+            compatibleBiomes:
+                - biome_volcanic
+            structureTypes:
+                - 0
+            workingStatus: true            
+          - key: structure_toxic_converter
+            name: "Toxic ReFilter"
+            description: "Toxic Sludge ReFilter - energizes toxic gas"
+            icon: assets/structures/crust_prospecting.png
+            cost: 60
+            upkeep: 2
+            workerYieldMultiplierBonus: 0.25
+            compatibleBiomes:
+                - biome_toxic
+            structureTypes:
+                - 0
+            workingStatus: true      
+          - key: structure_radiation_converter
+            name: "Radiation Converter"
+            description: "Radiation Converter - Converts Radioation into Pure Energy"
+            icon: assets/structures/crust_prospecting.png
+            cost: 60
+            upkeep: 2
+            workerYieldMultiplierBonus: 0.25
+            compatibleBiomes:
+                - biome_radiated
+            structureTypes:
+                - 0
+            workingStatus: true                              
+          - key: structure_volcanic_research
+            name: "Inferno Research"
+            description: "Research facility dedicated to harnessing infernal dynamics"
+            icon: assets/structures/autolab.png
+            cost: 240
+            upkeep: 4
+            baseResearchBonus: 4
+            researchTileBonus: 2
+            compatibleBiomes:
+                - biome_volcanic
+            structureTypes:
+                - 0
+            workingStatus: true            
         ## Custom - crust
           - key: structure_antimatter_replicator
             name: "Antimatter Replicator"
@@ -537,6 +672,19 @@
             structureTypes:
                 - 3
             workingStatus: true
+          - key: structure_tradestation_3
+            name: TradeStation 3
+            description: Tradestation 3
+            icon: assets/structures/space_port.png
+            cost: 2500
+            upkeep: 0
+            upgrades: structure_tradestation_2
+            requires: structure_tradestation_2
+            workerIncomeBonus: 3
+            creditIncomeBonus: 3
+            structureTypes:
+                - 3
+            workingStatus: true            
           - key: structure_space_port
             name: COLONY_STRUCTURE_SPACE_PORT_NAME
             description: COLONY_STRUCTURE_SPACE_PORT_DESCRIPTION
@@ -606,8 +754,8 @@
             icon: assets/structures/galactic_currency_exchange.png
             cost: 160
             upkeep: 0
-            totalIncomeMultiplierBonus: 0.10
-            totalEmpireMultiplierBonus: 0.10
+            creditIncomeBonus: 1
+            workerIncomeBonus: 0.5
             structureTypes:
                 - 3
             workingStatus: true
@@ -620,8 +768,10 @@
             icon: assets/structures/galactic_currency_exchange.png
             cost: 320
             upkeep: 0
-            totalIncomeMultiplierBonus: 0.20
-            totalEmpireMultiplierBonus: 0.20
+            upgrades: structure_tomb_1
+            requires: structure_tomb_1
+            creditIncomeBonus: 2
+            workerIncomeBonus: 1
             structureTypes:
                 - 3
             workingStatus: true
@@ -729,6 +879,111 @@
                - planetmineralrichness_rich
                - planetmineralrichness_ultra_rich
                - planetmineralrichness_absurd_rich
+          ## Custom
+          - key: structure_beam_lancer
+            name: COLONY_STRUCTURE_BEAM_LANCER_NAME
+            description: COLONY_STRUCTURE_BEAM_LANCER_DESCRIPTION
+            icon: assets/structures/ground_batteries.png
+            cost: 40
+            upkeep: 1
+            shipTemplate: design_beam_lancer
+            structureTypes:
+                - 5
+            workingStatus: true
+          - key: structure_beam_lancer_2
+            name: COLONY_STRUCTURE_BEAM_LANCER_NAME_2
+            description: COLONY_STRUCTURE_BEAM_LANCER_DESCRIPTION
+            icon: assets/structures/ground_batteries.png
+            cost: 80
+            upkeep: 2
+            upgrades: structure_beam_lancer
+            requires: structure_beam_lancer
+            shipTemplate: design_beam_lancer_2
+            structureTypes:
+                - 5
+            workingStatus: true
+          - key: structure_beam_lancer_3
+            name: COLONY_STRUCTURE_BEAM_LANCER_NAME_3
+            description: COLONY_STRUCTURE_BEAM_LANCER_DESCRIPTION
+            icon: assets/structures/ground_batteries.png
+            cost: 120
+            upkeep: 3
+            upgrades: structure_beam_lancer_2
+            requires: structure_beam_lancer_2
+            shipTemplate: design_beam_lancer_3
+            structureTypes:
+                - 5
+            workingStatus: true
+          - key: structure_beam_lancer_4
+            name: COLONY_STRUCTURE_BEAM_LANCER_NAME_4
+            description: COLONY_STRUCTURE_BEAM_LANCER_DESCRIPTION
+            icon: assets/structures/ground_batteries.png
+            cost: 160
+            upkeep: 4
+            upgrades: structure_beam_lancer_3
+            requires: structure_beam_lancer_3
+            shipTemplate: design_beam_lancer_4
+            structureTypes:
+                - 5
+            workingStatus: true                                            
+          - key: structure_cannon_tower
+            name: COLONY_STRUCTURE_CANNON_TOWER_NAME
+            description: COLONY_STRUCTURE_CANNON_TOWER_DESCRIPTION
+            icon: assets/structures/ground_batteries.png
+            cost: 30
+            upkeep: 1
+            shipTemplate: design_cannon_tower
+            structureTypes:
+                - 5
+            workingStatus: true
+          - key: structure_cannon_tower_2
+            name: COLONY_STRUCTURE_CANNON_TOWER_NAME_2
+            description: COLONY_STRUCTURE_CANNON_TOWER_DESCRIPTION
+            icon: assets/structures/ground_batteries.png
+            cost: 60
+            upkeep: 2
+            upgrades: structure_cannon_tower
+            requires: structure_cannon_tower
+            shipTemplate: design_cannon_tower_2
+            structureTypes:
+                - 5
+            workingStatus: true   
+          - key: structure_cannon_tower_3
+            name: COLONY_STRUCTURE_CANNON_TOWER_NAME_3
+            description: COLONY_STRUCTURE_CANNON_TOWER_DESCRIPTION
+            icon: assets/structures/ground_batteries.png
+            cost: 100
+            upkeep: 3
+            upgrades: structure_cannon_tower_2
+            requires: structure_cannon_tower_2
+            shipTemplate: design_cannon_tower_3
+            structureTypes:
+                - 5
+            workingStatus: true 
+          - key: structure_cannon_tower_4
+            name: COLONY_STRUCTURE_CANNON_TOWER_NAME_4
+            description: COLONY_STRUCTURE_CANNON_TOWER_DESCRIPTION
+            icon: assets/structures/ground_batteries.png
+            cost: 130
+            upkeep: 4
+            upgrades: structure_cannon_tower_3
+            requires: structure_cannon_tower_3
+            shipTemplate: design_cannon_tower_4
+            structureTypes:
+                - 5
+            workingStatus: true         
+          - key: structure_cannon_tower_5
+            name: COLONY_STRUCTURE_CANNON_TOWER_NAME_5
+            description: COLONY_STRUCTURE_CANNON_TOWER_DESCRIPTION
+            icon: assets/structures/ground_batteries.png
+            cost: 160
+            upkeep: 4
+            upgrades: structure_cannon_tower_4
+            requires: structure_cannon_tower_4
+            shipTemplate: design_cannon_tower_5
+            structureTypes:
+                - 5
+            workingStatus: true                                        
           - key: structure_ground_batteries
             name: COLONY_STRUCTURE_GROUND_BATTERIES_NAME
             description: COLONY_STRUCTURE_GROUND_BATTERIES_DESCRIPTION
@@ -909,7 +1164,9 @@
             #workerYieldMultiplierBonus: 0.14
             #totalFoodMultiplierBonus: 0.16
             #totalResearchMultiplierBonus: 0.17
-            totalIncomeMultiplierBonus: 0.50
+            #totalIncomeMultiplierBonus: 0.50
+            #totalIncomeMultiplierBonus: 0.75
+            totalEmpireMultiplierBonus: 0.50
             #totalEmpireMultiplierBonus: 0.50
             fleetSupportCostReduction: 0.21
             fleetSupportBonus: 0.22
@@ -942,7 +1199,7 @@
             cost: 240
             upkeep: 4
             upgrades: structure_hydroponic_farm_1
-            upgrades: structure_hydroponic_farm_1
+            requires: structure_hydroponic_farm_1
             baseLifeSupportBonus: 5
             structureTypes:
                 - 1
@@ -954,7 +1211,7 @@
             cost: 480
             upkeep: 5
             upgrades: structure_hydroponic_farm_2
-            upgrades: structure_hydroponic_farm_2
+            requires: structure_hydroponic_farm_2
             baseLifeSupportBonus: 6
             structureTypes:
                 - 1
@@ -966,7 +1223,7 @@
             cost: 880
             upkeep: 5
             upgrades: structure_hydroponic_farm_3
-            upgrades: structure_hydroponic_farm_3
+            requires: structure_hydroponic_farm_3
             baseLifeSupportBonus: 6
             structureTypes:
                 - 1
@@ -978,7 +1235,7 @@
             cost: 1280
             upkeep: 6
             upgrades: structure_hydroponic_farm_4
-            upgrades: structure_hydroponic_farm_4
+            requires: structure_hydroponic_farm_4
             baseLifeSupportBonus: 8
             structureTypes:
                 - 1
@@ -1245,8 +1502,8 @@
             icon: assets/structures/autolab.png
             cost: 150
             upkeep: 3
-            baseResearchBonus: 3
-            totalResearchMultiplierBonus: 0.025
+            baseResearchBonus: 1
+            totalResearchMultiplierBonus: 0.07
             structureTypes:
                 - 2
             workingStatus: true
@@ -1256,11 +1513,11 @@
             description: Hub for combining all knowledge
             icon: assets/structures/autolab.png
             cost: 300
-            upkeep: 5
+            upkeep: 6
             requires: structure_technet_1
             upgrades: structure_technet_1
-            baseResearchBonus: 5
-            totalResearchMultiplierBonus: 0.05
+            baseResearchBonus: 2
+            totalResearchMultiplierBonus: 0.15
             structureTypes:
                 - 2
             workingStatus: true
@@ -1270,11 +1527,11 @@
             description: Hub for combining all knowledge
             icon: assets/structures/galactic_cybernet_node.png
             cost: 600
-            upkeep: 7
+            upkeep: 10
             requires: structure_technet_2
             upgrades: structure_technet_2
-            baseResearchBonus: 7
-            totalResearchMultiplierBonus: 0.075
+            baseResearchBonus: 3
+            totalResearchMultiplierBonus: 0.225
             structureTypes:
                 - 2
                 - 5
@@ -1286,11 +1543,11 @@
             description: Hub for combining all knowledge
             icon: assets/structures/galactic_cybernet_node.png
             cost: 1200
-            upkeep: 10
+            upkeep: 15
             requires: structure_technet_3
             upgrades: structure_technet_3
-            baseResearchBonus: 10
-            totalResearchMultiplierBonus: 0.10
+            baseResearchBonus: 5
+            totalResearchMultiplierBonus: 0.3
             structureTypes:
                 - 2
                 - 5
@@ -1811,7 +2068,7 @@
             upkeep: 0
             structureTypes:
                 - 1
-            workerIncomeBonus: 0.10
+            workerIncomeBonus: 0.25
             creditIncomeBonus: 1
             workingStatus: true
         ## Custom - cryptoexchange - 2
@@ -1823,7 +2080,7 @@
             upkeep: 0
             structureTypes:
                 - 1
-            workerIncomeBonus: 0.2
+            workerIncomeBonus: 0.5
             creditIncomeBonus: 2
             upgrades: structure_cryptoexchange_1
             requires: structure_cryptoexchange_1
@@ -1837,7 +2094,7 @@
             upkeep: 0
             structureTypes:
                 - 1
-            workerIncomeBonus: 0.3
+            workerIncomeBonus: 0.75
             creditIncomeBonus: 3
             upgrades: structure_cryptoexchange_2
             requires: structure_cryptoexchange_2
@@ -1852,25 +2109,38 @@
             structureTypes:
                 - 1
             creditIncomeBonus: 4
-            workerIncomeBonus: 0.4
+            workerIncomeBonus: 1
             upgrades: structure_cryptoexchange_3
             requires: structure_cryptoexchange_3
             workingStatus: true
+          - key: structure_cryptoexchange_5
+            name: CryptoExchange 5
+            description: CryptoExchange owns trade
+            icon: assets/structures/cloning_center.png
+            cost: 1200
+            upkeep: 0
+            structureTypes:
+                - 1
+            creditIncomeBonus: 6
+            workerIncomeBonus: 1.5
+            upgrades: structure_cryptoexchange_4
+            requires: structure_cryptoexchange_4
+            workingStatus: true            
             ## Custom - VoidCoin Mining
           - key: structure_voidcoin_mining
             name: Void Coin Mining
-            description: "Void Coin Mining - 5% empire %Credits increase. Does not show in building overview"
+            description: "Void Coin Mining - Automatic %Credits generation using system AI cluster"
             icon: assets/structures/space_port.png
             cost: 60
             upkeep: 0
             structureTypes:
                 - 1
-            totalIncomeMultiplierBonus: 0.05
-            empireUnique: true
+            creditIncomeBonus: 3
+            systemUnique: true
             workingStatus: true            
           - key: structure_voidcoin_mining_2
             name: Void Coin Mining
-            description: "Void Coin Mining 2 - 10% empire %Credits increase. Does not show in building overview"
+            description: "Void Coin Mining 2 - Automatic %Credits generation using system AI cluster"
             icon: assets/structures/space_port.png
             cost: 120
             upkeep: 0
@@ -1878,12 +2148,12 @@
             requires: structure_voidcoin_mining
             structureTypes:
                 - 1
-            totalIncomeMultiplierBonus: 0.10
-            empireUnique: true
+            creditIncomeBonus: 6
+            systemUnique: true
             workingStatus: true            
           - key: structure_voidcoin_mining_3
             name: Void Coin Mining
-            description: "Void Coin Mining 3 - 15% empire %Credits increase. Does not show in building overview"
+            description: "Void Coin Mining 3 - Automatic %Credits generation using system AI cluster"
             icon: assets/structures/space_port.png
             cost: 240
             upkeep: 0
@@ -1891,12 +2161,12 @@
             requires: structure_voidcoin_mining_2
             structureTypes:
                 - 1
-            totalIncomeMultiplierBonus: 0.15
-            empireUnique: true
+            creditIncomeBonus: 9
+            systemUnique: true
             workingStatus: true            
           - key: structure_voidcoin_mining_4
             name: Void Coin Mining
-            description: "Void Coin Mining 4 - 20% empire %Credits increase. Does not show in building overview"
+            description: "Void Coin Mining 4 - Automatic %Credits generation using system AI cluster"
             icon: assets/structures/space_port.png
             cost: 320
             upkeep: 0
@@ -1904,8 +2174,8 @@
             requires: structure_voidcoin_mining_3
             structureTypes:
                 - 1
-            totalIncomeMultiplierBonus: 0.20
-            empireUnique: true
+            creditIncomeBonus: 12
+            systemUnique: true
             workingStatus: true            
         ## Custom - Fertility lab 1
           - key: structure_fertilitylab_1

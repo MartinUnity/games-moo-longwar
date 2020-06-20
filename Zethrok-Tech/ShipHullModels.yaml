@@ -55,6 +55,34 @@
           - key: hullmodel_fighter_garrison
             hullType: hull_fighter_garrison
             model: fightergarrison
+          ## Custom
+          - key: hullmodel_beam_lancer
+            hullType: hull_beam_lancer
+            model: laser_battery
+          - key: hullmodel_beam_lancer_2
+            hullType: hull_beam_lancer_2
+            model: laser_battery
+          - key: hullmodel_beam_lancer_3
+            hullType: hull_beam_lancer_3
+            model: laser_battery
+          - key: hullmodel_beam_lancer_4
+            hullType: hull_beam_lancer_4
+            model: laser_battery                                    
+          - key: hullmodel_cannon_tower
+            hullType: hull_cannon_tower
+            model: laser_battery
+          - key: hullmodel_cannon_tower_2
+            hullType: hull_cannon_tower_2
+            model: laser_battery
+          - key: hullmodel_cannon_tower_3
+            hullType: hull_cannon_tower_3
+            model: laser_battery
+          - key: hullmodel_cannon_tower_4
+            hullType: hull_cannon_tower_4
+            model: laser_battery              
+          - key: hullmodel_cannon_tower_5
+            hullType: hull_cannon_tower_5
+            model: laser_battery                                         
           - key: hullmodel_ground_batteries
             hullType: hull_ground_batteries
             model: laser_battery
@@ -74,6 +102,22 @@
           - key: hullmodel_space_station
             hullType: hull_space_station
             model: starbase
+          ## Custom
+          - key: hullmodel_orbit_ads
+            hullType: hull_orbit_ads
+            model: starbase            
+          - key: hullmodel_orbit_ads_2
+            hullType: hull_orbit_ads_2
+            model: starbase            
+          - key: hullmodel_orbit_ads_3
+            hullType: hull_orbit_ads_3
+            model: starbase            
+          - key: hullmodel_orbit_ads_4
+            hullType: hull_orbit_ads_4
+            model: starbase     
+          - key: hullmodel_orbit_ads_5
+            hullType: hull_orbit_ads_5
+            model: starbase                          
           - key: hullmodel_starbase
             hullType: hull_starbase
             model: starbase

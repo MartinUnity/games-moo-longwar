@@ -1,5 +1,36 @@
 # Master of Orion - Mod
 
+# Ideas for next release
+- lategame missile
+- early game beam + cannon?
+- Torpedo base
+- more tiered tech 
+
+# 1.4.0
+## Changes from 1.3.1
+- Had many issues with multiple totalEmpireMultiplierBonus buildings
+  - Changed some existing structure to system-unique buildings offering turn-based fixed amount
+  - Others are now BC/pop, but much lowered (like 0.2 bc/pop - upgradable)
+  - Reduced bc/pop for some of the existing money-generators, added more late-game
+- Aligned created weapons to fall in between former-next weapon
+- Antaran victory disabled; can now pick antaran event freely.
+- Research Treaty: Lowered cost and reward
+- Galactic Council: Upped frequency from 30 -> 60 turns
+- Spies can now reach level 8 (expensive to maintain)
+- Fixed required tag on all hydroponic farms
+- Upped weapon + special slot for each ship +1
+- Energy weapon bases (Upgradable x3)
+- Cannon base (Upgradable x4)
+- Mini star base - cheap, low spec, works as extra mini-starbase (upgradable x4)
+- Made pirate ships slightly better (+5 space & hp, upped cost ~20%).
+- Made pirate ships spawn 2x as many on each non-starting spawning turn
+- Pirate destroyer+cruiser will spawn earlier and be much more powerful, but have no bombs; they can only blokade (but will amass)
+
+Extra: 
+- More pirates in each wave; make sure defenses are prepared for it.
+- One also has to weave, flee and run from piratesat least initially - and again when pirate cruisers arrive
+- Pirates can easily kill an outpost until early mid-game tech makes them strong enough.
+
 # 1.3.1
 ## Changes from 1.3.0
 

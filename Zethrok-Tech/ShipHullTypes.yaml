@@ -4,9 +4,9 @@
           - key: hull_scout
             name: HULL_SCOUT_NAME
             description: SHIP_TYPE_SCOUT_DESCRIPTION
-            cost: 3
+            cost: 2
             space: 30
-            hp: 120
+            hp: 60
             tacticalTriggerCooldown: 0.17
             shipDesignScale: 1.0
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/civilian.png
@@ -25,7 +25,7 @@
             flagPriority: 4
             fleetSupportCost: 1
             canAutoExplore: true
-            weaponSlots: 0
+            weaponSlots: 1
             specialSlots: 1
             allowMassProduction: true
             hullClass: 1
@@ -60,8 +60,8 @@
             angularFriction: 0.05
             flagType: frigate
             flagPriority: 10
-            specialSlots: 3
-            weaponSlots: 3
+            specialSlots: 4
+            weaponSlots: 4
             fleetSupportCost: 1
             maxShipsProperty: maxShipsHullFrigate
             allowMassProduction: true
@@ -97,8 +97,8 @@
             angularFriction: 0.05
             flagType: destroyer
             flagPriority: 9
-            specialSlots: 4
-            weaponSlots: 4
+            specialSlots: 5
+            weaponSlots: 5
             fightersGroups: 1
             fleetSupportCost: 2
             maxShipsProperty: maxShipsHullDestroyer
@@ -136,8 +136,8 @@
             angularFriction: 0.05
             flagType: cruiser
             flagPriority: 8
-            specialSlots: 5
-            weaponSlots: 5
+            specialSlots: 6
+            weaponSlots: 6
             fightersGroups: 2
             fleetSupportCost: 4
             maxShipsProperty: maxShipsHullCruiser
@@ -174,8 +174,8 @@
             angularFriction: 0.05
             flagType: battleship
             flagPriority: 7
-            specialSlots: 6
-            weaponSlots: 6
+            specialSlots: 7
+            weaponSlots: 7
             fightersGroups: 4
             fleetSupportCost: 6
             lookTowardsObjective: false
@@ -214,8 +214,8 @@
             angularFriction: 0.05
             flagType: titan
             flagPriority: 6
-            specialSlots: 7
-            weaponSlots: 7
+            specialSlots: 8
+            weaponSlots: 8
             fightersGroups: 6
             fleetSupportCost: 10
             lookTowardsObjective: false
@@ -254,8 +254,8 @@
             angularFriction: 0.05
             flagType: doomstar
             flagPriority: 5
-            specialSlots: 8
-            weaponSlots: 8
+            specialSlots: 9
+            weaponSlots: 9
             fightersGroups: 16
             fleetSupportCost: 15
             lookTowardsObjective: false
@@ -720,7 +720,250 @@
             fleetSupportCost: 0
             weaponSlots: 7
             specialSlots: 7
-            repairsFleets: false                                                
+            repairsFleets: false
+          - key: hull_beam_lancer
+            name: HULL_BEAM_LANCER_NAME
+            description: SHIP_TYPE_BEAM_LANCER_DESCRIPTION
+            cost: 80
+            space: 200
+            hp: 500
+            tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/planetary_defense.png
+            icon: assets/ships/%civ%/%type%/ship_ground_batteries.png
+            hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_ground_batteries.prefab
+            introSlot: planetary
+            flagType: defense_small
+            tacticalLong: 0.75
+            tacticalWide: 0.25
+            tacticalTall: 0.3
+            tacticalVisualScale: 5.0
+            hullClass: 3
+            isStructure: true
+            acceleration: 0.0
+            angularAcceleration: 0.0
+            maxVelocity: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.00
+            fleetSupportCost: 0
+            weaponSlots: 3
+            specialSlots: 3
+            repairsFleets: false
+          - key: hull_beam_lancer_2
+            name: HULL_BEAM_LANCER_NAME
+            description: SHIP_TYPE_BEAM_LANCER_DESCRIPTION
+            cost: 160
+            space: 400
+            hp: 800
+            tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/planetary_defense.png
+            icon: assets/ships/%civ%/%type%/ship_ground_batteries.png
+            hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_ground_batteries.prefab
+            introSlot: planetary
+            flagType: defense_small
+            tacticalLong: 1.0
+            tacticalWide: 0.35
+            tacticalTall: 0.5
+            tacticalVisualScale: 5.0
+            hullClass: 3
+            isStructure: true
+            acceleration: 0.0
+            angularAcceleration: 0.0
+            maxVelocity: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.00
+            fleetSupportCost: 0
+            weaponSlots: 3
+            specialSlots: 3
+            repairsFleets: false      
+          - key: hull_beam_lancer_3
+            name: HULL_BEAM_LANCER_NAME
+            description: SHIP_TYPE_BEAM_LANCER_DESCRIPTION
+            cost: 240
+            space: 700
+            hp: 1600
+            tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/planetary_defense.png
+            icon: assets/ships/%civ%/%type%/ship_ground_batteries.png
+            hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_ground_batteries.prefab
+            introSlot: planetary
+            flagType: defense_small
+            tacticalLong: 1.5
+            tacticalWide: 0.55
+            tacticalTall: 0.6
+            tacticalVisualScale: 5.0
+            hullClass: 3
+            isStructure: true
+            acceleration: 0.0
+            angularAcceleration: 0.0
+            maxVelocity: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.00
+            fleetSupportCost: 0
+            weaponSlots: 3
+            specialSlots: 3
+            repairsFleets: false    
+          - key: hull_beam_lancer_4
+            name: HULL_BEAM_LANCER_NAME
+            description: SHIP_TYPE_BEAM_LANCER_DESCRIPTION
+            cost: 400
+            space: 1000
+            hp: 2400
+            tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/planetary_defense.png
+            icon: assets/ships/%civ%/%type%/ship_ground_batteries.png
+            hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_ground_batteries.prefab
+            introSlot: planetary
+            flagType: defense_small
+            tacticalLong: 2.0
+            tacticalWide: 0.75
+            tacticalTall: 0.7
+            tacticalVisualScale: 5.0
+            hullClass: 3
+            isStructure: true
+            acceleration: 0.0
+            angularAcceleration: 0.0
+            maxVelocity: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.00
+            fleetSupportCost: 0
+            weaponSlots: 3
+            specialSlots: 3
+            repairsFleets: false                                  
+          - key: hull_cannon_tower
+            name: HULL_CANNON_TOWER_NAME
+            description: SHIP_TYPE_CANNON_TOWER_DESCRIPTION
+            cost: 60
+            space: 125
+            hp: 300
+            tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/planetary_defense.png
+            icon: assets/ships/%civ%/%type%/ship_ground_batteries.png
+            hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_ground_batteries.prefab
+            introSlot: planetary
+            flagType: defense_small
+            tacticalLong: 0.25
+            tacticalWide: 0.75
+            tacticalTall: 0.2
+            tacticalVisualScale: 3.0
+            hullClass: 3
+            isStructure: true
+            acceleration: 0.0
+            angularAcceleration: 0.0
+            maxVelocity: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.00
+            fleetSupportCost: 0
+            weaponSlots: 3
+            specialSlots: 3
+            repairsFleets: false
+          - key: hull_cannon_tower_2
+            name: HULL_CANNON_TOWER_NAME
+            description: SHIP_TYPE_CANNON_TOWER_DESCRIPTION
+            cost: 120
+            space: 300
+            hp: 600
+            tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/planetary_defense.png
+            icon: assets/ships/%civ%/%type%/ship_ground_batteries.png
+            hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_ground_batteries.prefab
+            introSlot: planetary
+            flagType: defense_small
+            tacticalLong: 0.35
+            tacticalWide: 0.85
+            tacticalTall: 0.3
+            tacticalVisualScale: 3.0
+            hullClass: 3
+            isStructure: true
+            acceleration: 0.0
+            angularAcceleration: 0.0
+            maxVelocity: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.00
+            fleetSupportCost: 0
+            weaponSlots: 3
+            specialSlots: 3
+            repairsFleets: false
+          - key: hull_cannon_tower_3
+            name: HULL_CANNON_TOWER_NAME
+            description: SHIP_TYPE_CANNON_TOWER_DESCRIPTION
+            cost: 180
+            space: 500
+            hp: 1200
+            tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/planetary_defense.png
+            icon: assets/ships/%civ%/%type%/ship_ground_batteries.png
+            hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_ground_batteries.prefab
+            introSlot: planetary
+            flagType: defense_small
+            tacticalLong: 0.45
+            tacticalWide: 1.0
+            tacticalTall: 0.4
+            tacticalVisualScale: 4.0
+            hullClass: 3
+            isStructure: true
+            acceleration: 0.0
+            angularAcceleration: 0.0
+            maxVelocity: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.00
+            fleetSupportCost: 0
+            weaponSlots: 3
+            specialSlots: 3
+            repairsFleets: false
+          - key: hull_cannon_tower_4
+            name: HULL_CANNON_TOWER_NAME
+            description: SHIP_TYPE_CANNON_TOWER_DESCRIPTION
+            cost: 300
+            space: 750
+            hp: 1800
+            tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/planetary_defense.png
+            icon: assets/ships/%civ%/%type%/ship_ground_batteries.png
+            hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_ground_batteries.prefab
+            introSlot: planetary
+            flagType: defense_small
+            tacticalLong: 0.55
+            tacticalWide: 1.55
+            tacticalTall: 0.5
+            tacticalVisualScale: 5.0
+            hullClass: 3
+            isStructure: true
+            acceleration: 0.0
+            angularAcceleration: 0.0
+            maxVelocity: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.00
+            fleetSupportCost: 0
+            weaponSlots: 3
+            specialSlots: 3
+            repairsFleets: false                                    
+          - key: hull_cannon_tower_5
+            name: HULL_CANNON_TOWER_NAME
+            description: SHIP_TYPE_CANNON_TOWER_DESCRIPTION
+            cost: 400
+            space: 1000
+            hp: 2400
+            tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/planetary_defense.png
+            icon: assets/ships/%civ%/%type%/ship_ground_batteries.png
+            hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_ground_batteries.prefab
+            introSlot: planetary
+            flagType: defense_small
+            tacticalLong: 0.55
+            tacticalWide: 1.55
+            tacticalTall: 0.5
+            tacticalVisualScale: 5.0
+            hullClass: 3
+            isStructure: true
+            acceleration: 0.0
+            angularAcceleration: 0.0
+            maxVelocity: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.00
+            fleetSupportCost: 0
+            weaponSlots: 3
+            specialSlots: 3
+            repairsFleets: false                
           - key: hull_ground_batteries
             name: HULL_GROUND_BATTERIES_NAME
             description: SHIP_TYPE_GROUND_BATTERIES_DESCRIPTION
@@ -915,6 +1158,142 @@
             specialSlots: 4
             repairsFleets: true
             deployOnCenter: false
+          ## Custom         
+          - key: hull_orbit_ads
+            name: HULL_ORBIT_ADS_NAME
+            description: SHIP_TYPE_ORBIT_ADS_DESCRIPTION
+            cost: 30
+            space: 250
+            hp: 350
+            tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/starbase.png
+            icon: assets/ships/%civ%/%type%/ship_starbase.png
+            hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_starbase.prefab
+            introSlot: starbase
+            tacticalLong: 2
+            tacticalWide: 2
+            tacticalTall: 1
+            tacticalVisualScale: 1.5
+            hullClass: 4
+            tacticalVictoryDelay: 5.0
+            isStructure: true
+            acceleration: 0.0
+            angularAcceleration: 0.0
+            maxVelocity: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.00
+            flagType: defense_large
+            weaponSlots: 4
+            specialSlots: 3
+            repairsFleets: true     
+          - key: hull_orbit_ads_2
+            name: HULL_ORBIT_ADS_NAME
+            description: SHIP_TYPE_ORBIT_ADS_DESCRIPTION
+            cost: 60
+            space: 500
+            hp: 700
+            tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/starbase.png
+            icon: assets/ships/%civ%/%type%/ship_starbase.png
+            hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_starbase.prefab
+            introSlot: starbase
+            tacticalLong: 2.5
+            tacticalWide: 2.5
+            tacticalTall: 1.25
+            tacticalVisualScale: 2.0
+            hullClass: 4
+            tacticalVictoryDelay: 5.0
+            isStructure: true
+            acceleration: 0.0
+            angularAcceleration: 0.0
+            maxVelocity: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.00
+            flagType: defense_large
+            weaponSlots: 4
+            specialSlots: 3
+            repairsFleets: true     
+          - key: hull_orbit_ads_3
+            name: HULL_ORBIT_ADS_NAME
+            description: SHIP_TYPE_ORBIT_ADS_DESCRIPTION
+            cost: 90
+            space: 650
+            hp: 1100
+            tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/starbase.png
+            icon: assets/ships/%civ%/%type%/ship_starbase.png
+            hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_starbase.prefab
+            introSlot: starbase
+            tacticalLong: 3
+            tacticalWide: 3
+            tacticalTall: 1.5
+            tacticalVisualScale: 2.5
+            hullClass: 4
+            tacticalVictoryDelay: 5.0
+            isStructure: true
+            acceleration: 0.0
+            angularAcceleration: 0.0
+            maxVelocity: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.00
+            flagType: defense_large
+            weaponSlots: 4
+            specialSlots: 3
+            repairsFleets: true           
+          - key: hull_orbit_ads_4
+            name: HULL_ORBIT_ADS_NAME
+            description: SHIP_TYPE_ORBIT_ADS_DESCRIPTION
+            cost: 120
+            space: 800
+            hp: 1700
+            tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/starbase.png
+            icon: assets/ships/%civ%/%type%/ship_starbase.png
+            hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_starbase.prefab
+            introSlot: starbase
+            tacticalLong: 3.5
+            tacticalWide: 3.5
+            tacticalTall: 1.75
+            tacticalVisualScale: 3.0
+            hullClass: 4
+            tacticalVictoryDelay: 5.0
+            isStructure: true
+            acceleration: 0.0
+            angularAcceleration: 0.0
+            maxVelocity: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.00
+            flagType: defense_large
+            weaponSlots: 4
+            specialSlots: 3
+            repairsFleets: true          
+          - key: hull_orbit_ads_5
+            name: HULL_ORBIT_ADS_NAME
+            description: SHIP_TYPE_ORBIT_ADS_DESCRIPTION
+            cost: 200
+            space: 1000
+            hp: 2400
+            tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/starbase.png
+            icon: assets/ships/%civ%/%type%/ship_starbase.png
+            hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_starbase.prefab
+            introSlot: starbase
+            tacticalLong: 4.0
+            tacticalWide: 4.0
+            tacticalTall: 2.0
+            tacticalVisualScale: 3.5
+            hullClass: 4
+            tacticalVictoryDelay: 5.0
+            isStructure: true
+            acceleration: 0.0
+            angularAcceleration: 0.0
+            maxVelocity: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.00
+            flagType: defense_large
+            weaponSlots: 4
+            specialSlots: 3
+            repairsFleets: true                                                        
           - key: hull_starbase
             name: HULL_STAR_BASE_NAME
             description: SHIP_TYPE_STAR_BASE_DESCRIPTION
@@ -1317,9 +1696,9 @@
           - key: hull_pirate_frigate
             name: HULL_FRIGATE_NAME
             description: SHIP_TYPE_FRIGATE_DESCRIPTION
-            cost: 30
-            space: 45
-            hp: 45
+            cost: 40
+            space: 50
+            hp: 50
             #space: 30
             #hp: 30
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/frigate.png
