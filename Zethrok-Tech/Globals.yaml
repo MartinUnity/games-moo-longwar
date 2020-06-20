@@ -366,7 +366,21 @@
         - design_ground_batteries_2
         - design_ground_batteries_3
         - design_ground_batteries_4
+        - design_beam_lancer
+        - design_beam_lancer_2
+        - design_beam_lancer_3
+        - design_beam_lancer_4
+        - design_cannon_tower
+        - design_cannon_tower_2
+        - design_cannon_tower_3
+        - design_cannon_tower_4
+        - design_cannon_tower_5
         - design_fighter_garrison
+        - design_orbit_ads
+        - design_orbit_ads_2
+        - design_orbit_ads_3
+        - design_orbit_ads_4
+        - design_orbit_ads_5
         - design_star_base
         - design_battlestation
         - design_starfortress
@@ -379,12 +393,23 @@
     TURNS_FOR_NEXT_SHIP_DEPLOYMENT_MIN: 12
     TURNS_FOR_NEXT_SHIP_DEPLOYMENT_MAX: 18
     TURNS_FOR_FIRST_SHIP_DEPLOYMENT_ON_DISCOVERY: 3
+<<<<<<< Zethrok-Tech/Globals.yaml
+    PIRATE_DESTROYER_TURN_THRESHOLD: 80
+    # PIRATE_DESTROYER_TURN_THRESHOLD: 70
+    # PIRATE_CRUISER_TURN_THRESHOLD: 200
+    PIRATE_CRUISER_TURN_THRESHOLD: 200
+    INITIAL_SHIPS_COUNT: 3
+    DEPLOYMENT_SHIP_COUNT: 3
+    DEPLOYMENT_DESTROYER_SHIP_COUNT: 2
+    DEPLOYMENT_CRUISER_SHIP_COUNT: 2
+=======
     PIRATE_DESTROYER_TURN_THRESHOLD: 70
     PIRATE_CRUISER_TURN_THRESHOLD: 200
     INITIAL_SHIPS_COUNT: 2
     DEPLOYMENT_SHIP_COUNT: 1
     DEPLOYMENT_DESTROYER_SHIP_COUNT: 1
     DEPLOYMENT_CRUISER_SHIP_COUNT: 1
+>>>>>>> Zethrok-Tech/Globals.yaml
     PIRATE_FRIGATE_BLUEPRINT: design_pirate_frigate
     PIRATE_DESTROYER_BLUEPRINT: design_pirate_destroyer
     PIRATE_CRUISER_BLUEPRINT: design_pirate_cruiser
@@ -479,9 +504,9 @@
     positiveEventChance: 66
     notificationCooldown: 10
 - globals: &Backend.Diplomacy.ResearchTreaty
-    BASE_COST: 50
-    COST_FACTOR: 0.15
-    REWARD_FACTOR: 0.20
+    BASE_COST: 30
+    COST_FACTOR: 0.05
+    REWARD_FACTOR: 0.05
 - globals: &Backend.Diplomacy.TradeTreaty
     MINIMUM_COST: 50
     COST_FACTOR: 0.5
@@ -555,7 +580,7 @@
     MAX_AGENTS_PER_MISSION: 1
 - globals: &Backend.Espionage.SpyAgent
     SPY_TRAVELLING_SPEED: 1
-    SPY_LEVEL_LIMIT: 10
+    SPY_LEVEL_LIMIT: 8
     BASE_LEVELING_EXPERIENCE: 10
     EXPERIENCE_FACTOR: 10
     BASE_MAINTENANCE_COST: 5
@@ -591,7 +616,7 @@
     ACCURACY_MODIFIER_BY_SPEED: 15.0
     ARMOR_PENETRATION_LOWER_CAP: 0.75
 - globals: &Backend.Civilizations.GalacticCouncil
-    ELECTION_FREQUENCY: 30
+    ELECTION_FREQUENCY: 60
     POPULATION_INCIDENCE_FACTOR: 1.0
     DISPOSITION_INCIDENCE_FACTOR: 0.0
 - globals: &Backend.Tactical.Battlefield

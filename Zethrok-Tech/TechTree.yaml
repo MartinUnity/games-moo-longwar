@@ -30,6 +30,7 @@
                 - application: techapp_superscalar_gas_harvester
                 - application: techapp_repair_cannon
                 - application: techapp_trade_goods
+                ## Custom
                 # - application: techapp_point_defense
                 # - application: techapp_heavy_mount
                 # - application: techapp_overloaded
@@ -118,6 +119,7 @@
                 # - application: techapp_neutron_collider
                 - application: techapp_neutron_blaster
                 # - application: techapp_neutron_scanner
+                - application: techapp_cannon_tower
           - key: technode_biology
             name: TECHNOLOGY_BIOLOGY_NAME
             description: TECHNOLOGY_BIOLOGY_DESCRIPTION
@@ -131,6 +133,9 @@
                 - application: techapp_hydroponic_farm
                 - application: techapp_biospheres
                 #- application: techapp_test
+                #- application: techapp_layered_shield
+                #- application: techapp_tungsten_hull
+                #- application: techapp_liquid_armor
                 #- application: techapp_caves_4
           - key: technode_engineering
             name: TECHNOLOGY_ENGINEERING_NAME
@@ -146,6 +151,7 @@
                 # - application: techapp_solar_kiln
                 - application: techapp_destroyer
                 - application: techapp_antimissile_rockets
+                - application: techapp_orbit_ads
           - key: technode_economics
             name: TECHNOLOGY_ECONOMICS_NAME
             description: TECHNOLOGY_ECONOMICS_DESCRIPTION
@@ -375,6 +381,7 @@
             unlocks:
                 - application: techapp_global_dna_scanner
                 - application: techapp_transports
+                - application: techapp_orbit_ads_2
                 # - application: techapp_space_academy
           - key: technode_neutrino_physics
             name: TECHNOLOGY_NEUTRINO_PHYSICS_NAME
@@ -390,20 +397,22 @@
                 - application: techapp_neutron_collider
                 - application: techapp_mass_driver
                 - application: techapp_neutron_rifle
+                - application: techapp_cannon_tower_2
         ## Custom
-          #- key: technode_weapon_2
-            #name: Weapon 2 - mini
-            #description: Weapon 2 - mini
-            #cost: 215
-            #x: 3
-            #y: 4
-            #icon: assets/techs/bio_technology.png
-            #requires:
-                #- technology: technode_weapon_1
-                #- technology: technode_nuclear_1
-            #unlocks:
-                #- application: techapp_miniaturization_weapon_2
-                #- application: techapp_modifications_nuclear_torpedoes
+          - key: technode_biome_extraction
+            name: Biome Energy Conversion
+            description: Extract and converts energy from toxic, radiated and volcanic biomes
+            cost: 215
+            x: 3
+            y: 4
+            icon: assets/techs/bio_technology.png
+            requires:
+                - technology: technode_advanced_fusion
+            unlocks:
+                - application: techapp_radiation_converter
+                - application: techapp_toxic_converter
+                - application: techapp_volcanic_converter
+                - application: techapp_volcanic_research
           - key: technode_positron_physics
             name: TECHNOLOGY_POSITRON_PHYSICS_NAME
             description: TECHNOLOGY_POSITRON_PHYSICS_DESCRIPTION
@@ -695,6 +704,7 @@
                 - application: techapp_pulse_beam
                 - application: techapp_modifications_meson_missile
                 - application: techapp_caves_2
+                - application: techapp_beam_lancer
           - key: technode_advanced_construction
             name: TECHNOLOGY_ADVANCED_CONSTRUCTION_NAME
             description: TECHNOLOGY_ADVANCED_CONSTRUCTION_DESCRIPTION
@@ -821,6 +831,7 @@
                 - application: techapp_graviton_beam
                 - application: techapp_class_iii_shield
                 - application: techapp_planetary_radiation_shield
+                - application: techapp_cannon_tower_3
                 #- application: techapp_tractor_beam
         ## Custom
           - key: technode_technet_1
@@ -866,6 +877,7 @@
                 - technology: technode_genetic_mutations
             unlocks:
                 - application: techapp_robominers
+                - application: techapp_orbit_ads_3
             branches:
                 - unlocks:
                      - application: techapp_armor_barracks
@@ -1058,6 +1070,7 @@
             unlocks:
                 - application: techapp_lazer_cannon
                 - application: techapp_lazer_rifle
+                - application: techapp_beam_lancer_2 
           - key: technode_cybertronics
             name: TECHNOLOGY_CYBERTRONICS_NAME
             description: TECHNOLOGY_CYBERTRONICS_DESCRIPTION
@@ -1130,7 +1143,7 @@
             y: 12
             icon: assets/techs/anti_matter_fission.png
             requires:
-                - technology: technode_ion_fission
+                - technology: technode_computer_3
             unlocks:
                 - application: techapp_miniaturization_bombs_2
                 - application: techapp_antimatter_drive
@@ -1188,6 +1201,7 @@
                 - application: techapp_miniaturization_cannons_3
                 - application: techapp_phasors
                 - application: techapp_subspace_communications
+                - application: techapp_cannon_tower_4
           #- key: technode_cryptoexchange_3
             #name: CryptoExchange - 3
             #description: CryptoExchange - 3
@@ -1298,6 +1312,7 @@
                 - application: techapp_modifications_ion_pulse_cannon
                 - application: techapp_microlite_construction
                 - application: techapp_zortrium_armor
+                - application: techapp_orbit_ads_4
                 # - application: techapp_zeon_missile
                 #- application: techapp_nano_disassemblers
                 #- application: techapp_soil_enrichment
@@ -1517,6 +1532,7 @@
             unlocks:
                 - application: techapp_miniaturization_torpedoes_2
                 - application: techapp_plasma_rifle
+                - application: techapp_beam_lancer_3
             branches:
                 - unlocks:
                      - application: techapp_plasma_torpedoes
@@ -1539,6 +1555,7 @@
             branches:
                 - unlocks:
                      - application: techapp_gauss_cannon
+                - application: techapp_cannon_tower_5
                 - unlocks:
                      - application: techapp_cloaking_device
                 # - application: techapp_multiwave_ecm_jammer
@@ -1662,6 +1679,7 @@
             unlocks:
                 # - application: techapp_disruptor_cannon
                 - application: techapp_scientific_victory_1
+                - application: techapp_orbit_ads_5
                 # - application: techapp_advanced_jump_gate_orbital
                 - application: techapp_hyperspace_sensors
                 - application: techapp_hyperspace_communications
@@ -1718,7 +1736,6 @@
             unlocks:
                 - application: techapp_space_port_2
                 - application: techapp_fluxtube_2
-                
           - key: technode_moleculartronics
             name: TECHNOLOGY_MOLECULARTRONICS_NAME
             description: TECHNOLOGY_MOLECULARTRONICS_DESCRIPTION
@@ -1830,6 +1847,7 @@
             #branches:
             unlocks:
                 - application: techapp_subspace_teleporter
+                - application: techapp_beam_lancer_4
                 #- unlocks:
                 #     - application: techapp_stasis_field
           - key: technode_artificial_conciousness
@@ -1969,6 +1987,8 @@
             unlocks:
                 - application: techapp_biogenic_computer
                 - application: techapp_technet_4
+                - application: techapp_tradestation_3
+                - application: techapp_cryptoexchange_5
           - key: technode_future_technology
             name: TECHNOLOGY_FUTURE_TECHNOLOGY_NAME
             description: TECHNOLOGY_FUTURE_TECHNOLOGY_DESCRIPTION

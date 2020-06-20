@@ -11,6 +11,47 @@
                - structure_colony_base
             tags:
                  - Population
+          ## Custom
+          - key: techapp_orbit_ads
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_station.prefab
+            unlocks:
+               - structure_orbit_ads
+            tags:
+                 - Defenses           
+          - key: techapp_orbit_ads_2
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_station.prefab
+            unlocks:
+               - structure_orbit_ads_2
+            tags:
+                 - Defenses       
+          - key: techapp_orbit_ads_3
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_station.prefab
+            unlocks:
+               - structure_orbit_ads_3
+            tags:
+                 - Defenses       
+          - key: techapp_orbit_ads_4
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_station.prefab
+            unlocks:
+               - structure_orbit_ads_4
+            tags:
+                 - Defenses                                                                
+          - key: techapp_orbit_ads_5
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_station.prefab
+            unlocks:
+               - structure_orbit_ads_5
+            tags:
+                 - Defenses                        
           - key: techapp_star_base
             #name: TECH_APPLICATION_TYPE_STAR_BASE_NAME
             #description: TECH_APPLICATION_TYPE_STAR_BASE_DESCRIPTION
@@ -160,6 +201,97 @@
                - planetdefense_powered_armor
             tags:
                  - Defenses
+         ## Custom
+          - key: techapp_beam_lancer
+            #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
+            #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/ground_batteries.prefab
+            unlocks:
+               - structure_beam_lancer
+            tags:
+                 - Defenses
+          - key: techapp_beam_lancer_2
+            #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
+            #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/ground_batteries.prefab
+            unlocks:
+               - structure_beam_lancer_2
+            tags:
+                 - Defenses           
+          - key: techapp_beam_lancer_3
+            #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
+            #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/ground_batteries.prefab
+            unlocks:
+               - structure_beam_lancer_3
+            tags:
+                 - Defenses           
+          - key: techapp_beam_lancer_4
+            #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
+            #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/ground_batteries.prefab
+            unlocks:
+               - structure_beam_lancer_4
+            tags:
+                 - Defenses                                                              
+          - key: techapp_cannon_tower
+            #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
+            #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/ground_batteries.prefab
+            unlocks:
+               - structure_cannon_tower
+            tags:
+                 - Defenses        
+          - key: techapp_cannon_tower_2
+            #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
+            #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/ground_batteries.prefab
+            unlocks:
+               - structure_cannon_tower_2
+            tags:
+                 - Defenses   
+          - key: techapp_cannon_tower_3
+            #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
+            #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/ground_batteries.prefab
+            unlocks:
+               - structure_cannon_tower_3
+            tags:
+                 - Defenses   
+          - key: techapp_cannon_tower_4
+            #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
+            #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/ground_batteries.prefab
+            unlocks:
+               - structure_cannon_tower_4
+            tags:
+                 - Defenses                                                                     
+          - key: techapp_cannon_tower_4
+            #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
+            #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/ground_batteries.prefab
+            unlocks:
+               - structure_cannon_tower_4
+            tags:
+                 - Defenses                 
           - key: techapp_ground_batteries
             #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
             #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
@@ -378,6 +510,27 @@
                - shipmodule_reinforced_hull
             tags:
                  - Military
+         ## Custom
+          - key: techapp_tungsten_hull
+            #name: TECH_APPLICATION_TYPE_REINFORCED_HULL_NAME
+            #description: TECH_APPLICATION_TYPE_REINFORCED_HULL_DESCRIPTION
+            icon: assets/tech_apps/tech_special_module.png
+            type: techapptype_shipmodule
+            hologram: ContentPrefabs/Research/reinforced_hull.prefab
+            unlocks:
+               - shipmodule_tungsten_hull
+            tags:
+                 - Military
+          - key: techapp_liquid_armor
+            #name: TECH_APPLICATION_TYPE_HEAVY_ARMOR_NAME
+            #description: TECH_APPLICATION_TYPE_HEAVY_ARMOR_DESCRIPTION
+            icon: assets/tech_apps/tech_special_module.png
+            type: techapptype_shipmodule
+            hologram: ContentPrefabs/Research/heavy_armor.prefab
+            unlocks:
+               - shipmodule_liquid_armor
+            tags:
+                 - Military                 
           - key: techapp_heavy_armor
             #name: TECH_APPLICATION_TYPE_HEAVY_ARMOR_NAME
             #description: TECH_APPLICATION_TYPE_HEAVY_ARMOR_DESCRIPTION
@@ -450,6 +603,14 @@
                - structure_tradestation_2
             tags:
                  - Economy
+          - key: techapp_tradestation_3
+            icon: assets/tech_apps/tech_building_credits.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_port.prefab
+            unlocks:
+               - structure_tradestation_3
+            tags:
+                 - Economy                 
         ## Custom - VoidCoinMining
           - key: techapp_voidcoinmining
             icon: assets/tech_apps/tech_building_credits.png
@@ -522,6 +683,14 @@
                - structure_cryptoexchange_4
             tags:
                  - Economy
+          - key: techapp_cryptoexchange_5
+            icon: assets/tech_apps/tech_building_credits.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/space_port.prefab
+            unlocks:
+               - structure_cryptoexchange_5
+            tags:
+                 - Economy                 
         ## Custom - Biodome - 1
           - key: techapp_biodome_1
             icon: assets/tech_apps/tech_building_food.png
@@ -2682,6 +2851,17 @@
                - shipmodule_stasis_field
             tags:
                  - Military
+         ## Custom
+          - key: techapp_layered_shield
+            #name: TECH_APPLICATION_TYPE_HARD_SHIELDS_NAME
+            #description: TECH_APPLICATION_TYPE_HARD_SHIELDS_DESCRIPTION
+            icon: assets/tech_apps/tech_special_module.png
+            type: techapptype_shipmodule
+            hologram: ContentPrefabs/Research/hard_shield.prefab
+            unlocks:
+               - shipmodule_layered_shield
+            tags:
+                 - Military
           - key: techapp_hard_shield
             #name: TECH_APPLICATION_TYPE_HARD_SHIELDS_NAME
             #description: TECH_APPLICATION_TYPE_HARD_SHIELDS_DESCRIPTION
@@ -3252,6 +3432,38 @@
             tags:
                  - Production
         ## Custom 
+          - key: techapp_volcanic_converter
+            icon: assets/tech_apps/tech_building_production.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/crust_prospecting.prefab
+            unlocks:
+               - structure_volcanic_converter
+            tags:
+                 - Production
+          - key: techapp_volcanic_research
+            icon: assets/tech_apps/tech_building_research.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/research_laboratory.prefab            
+            unlocks:
+               - structure_volcanic_research
+            tags:
+                 - Research                 
+          - key: techapp_radiation_converter
+            icon: assets/tech_apps/tech_building_production.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/crust_prospecting.prefab
+            unlocks:
+               - structure_radiation_converter
+            tags:
+                 - Production
+          - key: techapp_toxic_converter
+            icon: assets/tech_apps/tech_building_production.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/crust_prospecting.prefab
+            unlocks:
+               - structure_toxic_converter
+            tags:
+                 - Production                                          
           - key: techapp_antimatter_replicator
             icon: assets/tech_apps/tech_building_production.png
             type: techapptype_structure

@@ -201,35 +201,6 @@
                 - modifier: modifier_heavy_mount
                 - modifier: modifier_enveloping
         #CANNONS
-        ## Custom - Lazer
-        # Low dmg, high AC-piecing - with =<15 armor ships it does 2x damage.
-          - key: weapontype_lazer_cannon
-            className: TacticalLaser
-            model: laser_cannon
-            visualScale: 2.0
-            tacticalCooldown: 5.0
-            rateOfFire: 0.25
-            volleySize: 1
-            maxDamage: 10
-            armorPenetration: 30.0
-            shieldPenetration: false
-            rangeDissipation: false
-            rangeDecayFactor: 0.4
-            decayRate: 1.5
-            weaponAccuracy: 1.0
-            rangeDissipation: false
-            weaponRange: 75
-            warmupTime: 0.2
-            radius: 1.0
-            mass: 1.0
-            physicsEnabled: false
-            maxVelocity: 70.0
-            maxVelocityVariance: 0.1
-            modifiers:
-                - modifier: modifier_point_defense
-                - modifier: modifier_auto_fire
-                - modifier: modifier_heavy_mount
-                - modifier: modifier_enveloping
           - key: weapontype_laser_cannon
             className: TacticalLaser
             model: laser_cannon
@@ -271,7 +242,7 @@
             rangeDissipation: false
             weaponAccuracy: 1.0
             rangeLoss: 0.5
-            weaponRange: 60
+            weaponRange: 55
             warmupTime: 0.2
             radius: 1.0
             mass: 1.0
@@ -362,6 +333,36 @@
                 - modifier: modifier_auto_fire
                 - modifier: modifier_heavy_mount
                 - modifier: modifier_enveloping
+        ## Custom - Lazer
+        # Low dmg, high AC-piecing - with =<15 armor ships it does 2x damage.
+          - key: weapontype_lazer_cannon
+            className: TacticalLaser
+            model: laser_cannon
+            visualScale: 2.0
+            tacticalCooldown: 5.0
+            rateOfFire: 0.25
+            volleySize: 1
+            maxDamage: 14
+            armorPenetration: 25.0
+            # shieldPenetration: false
+            rangeDissipation: false
+            rangeDecayFactor: 0.5
+            decayRate: 4.0
+            weaponAccuracy: 1.0
+            # rangeDissipation: false
+            rangeLoss: 0.05
+            weaponRange: 55
+            warmupTime: 0.2
+            radius: 1.0
+            mass: 1.0
+            physicsEnabled: false
+            maxVelocity: 70.0
+            maxVelocityVariance: 0.1
+            modifiers:
+                - modifier: modifier_point_defense
+                - modifier: modifier_auto_fire
+                - modifier: modifier_heavy_mount
+                - modifier: modifier_enveloping                
           - key: weapontype_phasors
             className: TacticalLaser
             model: phasors
@@ -534,6 +535,41 @@
                 - modifier: modifier_eccm
                 - modifier: modifier_fast
                 - modifier: modifier_mirv
+        ## Custom - meson missile
+        ### 8s CD - low dmg, higher range. High accel+velo
+          - key: weapontype_meson_missile
+            className: TacticalMissile
+            model: zeon_missile
+            hasFacing: false
+            visualScale: 6.0
+            tacticalCooldown: 8.0
+            rateOfFire: 0.25
+            timeToLive: 20.0
+            volleySize: 1
+            maxDamage: 15
+            missileAttack: 50
+            armorPenetration: 15.0
+            weaponAccuracy: 1.0
+            weaponRange: 70
+            splashArea: 1
+            weaponHp: 3.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 50.0
+            maxVelocity: 18.0
+            maxVelocityVariance: 0.1
+            angularAcceleration: 34.0
+            maxAngularVelocity: 28.0
+            velocityFriction: 0.05
+            angularFriction: 0.05
+            isPDBlockeable: true
+            isToggleable: true
+            modifiers:
+                - modifier: modifier_heavy_armor
+                - modifier: modifier_eccm
+                - modifier: modifier_fast
+                - modifier: modifier_mirv                
           - key: weapontype_pulson_missile
             className: TacticalMissile
             model: pulson_missile
@@ -591,41 +627,6 @@
             maxVelocityVariance: 0.1
             angularAcceleration: 24.0
             maxAngularVelocity: 18.0
-            velocityFriction: 0.05
-            angularFriction: 0.05
-            isPDBlockeable: true
-            isToggleable: true
-            modifiers:
-                - modifier: modifier_heavy_armor
-                - modifier: modifier_eccm
-                - modifier: modifier_fast
-                - modifier: modifier_mirv
-        ## Custom - meson missile
-        ### 8s CD - low dmg, higher range. High accel+velo
-          - key: weapontype_meson_missile
-            className: TacticalMissile
-            model: zeon_missile
-            hasFacing: false
-            visualScale: 7.0
-            tacticalCooldown: 8.0
-            rateOfFire: 0.25
-            timeToLive: 20.0
-            volleySize: 1
-            maxDamage: 10
-            missileAttack: 50
-            armorPenetration: 10.0
-            weaponAccuracy: 1.0
-            weaponRange: 75
-            splashArea: 1
-            weaponHp: 5.0
-            warmupTime: 0.0
-            radius: 1.0
-            mass: 1.0
-            acceleration: 55.0
-            maxVelocity: 30.0
-            maxVelocityVariance: 0.1
-            angularAcceleration: 34.0
-            maxAngularVelocity: 28.0
             velocityFriction: 0.05
             angularFriction: 0.05
             isPDBlockeable: true
