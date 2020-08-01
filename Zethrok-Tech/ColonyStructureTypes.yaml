@@ -760,7 +760,7 @@
                 - 3
             workingStatus: true
             isTransferable: false
-            empireUnique: true
+            #empireUnique: true
         ## Custom - Tomb
           - key: structure_tomb_2
             description: Tomb of Money - 2
@@ -776,7 +776,7 @@
                 - 3
             workingStatus: true
             isTransferable: false
-            empireUnique: true
+            #empireUnique: true
         # - structure: &structure_interstellar_stock_exchange
             # description: COLONY_STRUCTURE_INTERSTELLAR_STOCK_EXCHANGE_DESCRIPTION
             # name: COLONY_STRUCTURE_INTERSTELLAR_STOCK_EXCHANGE_NAME
@@ -907,7 +907,7 @@
             description: COLONY_STRUCTURE_BEAM_LANCER_DESCRIPTION
             icon: assets/structures/ground_batteries.png
             cost: 120
-            upkeep: 3
+            upkeep: 4
             upgrades: structure_beam_lancer_2
             requires: structure_beam_lancer_2
             shipTemplate: design_beam_lancer_3
@@ -919,7 +919,7 @@
             description: COLONY_STRUCTURE_BEAM_LANCER_DESCRIPTION
             icon: assets/structures/ground_batteries.png
             cost: 160
-            upkeep: 4
+            upkeep: 6
             upgrades: structure_beam_lancer_3
             requires: structure_beam_lancer_3
             shipTemplate: design_beam_lancer_4
@@ -953,7 +953,7 @@
             description: COLONY_STRUCTURE_CANNON_TOWER_DESCRIPTION
             icon: assets/structures/ground_batteries.png
             cost: 100
-            upkeep: 3
+            upkeep: 4
             upgrades: structure_cannon_tower_2
             requires: structure_cannon_tower_2
             shipTemplate: design_cannon_tower_3
@@ -965,7 +965,7 @@
             description: COLONY_STRUCTURE_CANNON_TOWER_DESCRIPTION
             icon: assets/structures/ground_batteries.png
             cost: 130
-            upkeep: 4
+            upkeep: 6
             upgrades: structure_cannon_tower_3
             requires: structure_cannon_tower_3
             shipTemplate: design_cannon_tower_4
@@ -977,13 +977,44 @@
             description: COLONY_STRUCTURE_CANNON_TOWER_DESCRIPTION
             icon: assets/structures/ground_batteries.png
             cost: 160
-            upkeep: 4
+            upkeep: 8
             upgrades: structure_cannon_tower_4
             requires: structure_cannon_tower_4
             shipTemplate: design_cannon_tower_5
             structureTypes:
                 - 5
             workingStatus: true                                        
+          ## Custom
+          - key: structure_torpedo_base
+            name: COLONY_STRUCTURE_TORPEDO_BASE_NAME
+            description: COLONY_STRUCTURE_TORPEDO_BASE_DESCRIPTION
+            icon:  assets/structures/missile_base.png
+            cost: 80
+            upkeep: 2
+            shipTemplate: design_torpedo_base
+            structureTypes:
+                - 5
+            workingStatus: true
+          - key: structure_torpedo_base_2
+            name: COLONY_STRUCTURE_TORPEDO_BASE_NAME_2
+            description: COLONY_STRUCTURE_TORPEDO_BASE_DESCRIPTION
+            icon:  assets/structures/missile_base.png
+            cost: 120
+            upkeep: 4
+            shipTemplate: design_torpedo_base_2
+            structureTypes:
+                - 5
+            workingStatus: true
+          - key: structure_torpedo_base_3
+            name: COLONY_STRUCTURE_TORPEDO_BASE_NAME_3
+            description: COLONY_STRUCTURE_TORPEDO_BASE_DESCRIPTION
+            icon:  assets/structures/missile_base.png
+            cost: 160
+            upkeep: 6
+            shipTemplate: design_torpedo_base_3
+            structureTypes:
+                - 5
+            workingStatus: true                        
           - key: structure_ground_batteries
             name: COLONY_STRUCTURE_GROUND_BATTERIES_NAME
             description: COLONY_STRUCTURE_GROUND_BATTERIES_DESCRIPTION
@@ -1506,6 +1537,7 @@
             totalResearchMultiplierBonus: 0.07
             structureTypes:
                 - 2
+            empireUnique: true
             workingStatus: true
         ## Custom - technode 2
           - key: structure_technet_2
@@ -1520,6 +1552,7 @@
             totalResearchMultiplierBonus: 0.15
             structureTypes:
                 - 2
+            empireUnique: true
             workingStatus: true
         ## Custom - TechNet
           - key: structure_technet_3

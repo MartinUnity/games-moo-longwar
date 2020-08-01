@@ -236,8 +236,8 @@
             tacticalCooldown: 12.0
             rateOfFire: 0.30
             volleySize: 1
-            maxDamage: 180
-            armorPenetration: 50
+            maxDamage: 150
+            armorPenetration: 30
             shieldPenetration: true
             rangeDissipation: false
             weaponAccuracy: 1.0
@@ -636,6 +636,40 @@
                 - modifier: modifier_eccm
                 - modifier: modifier_fast
                 - modifier: modifier_mirv
+          ## Custom
+          - key: weapontype_quanta_missile
+            className: TacticalMissile
+            model: quanta_missile
+            hasFacing: false
+            visualScale: 7.0
+            tacticalCooldown: 15.0
+            rateOfFire: 0.5
+            timeToLive: 20.0
+            volleySize: 1
+            maxDamage: 100
+            missileAttack: 70
+            armorPenetration: 30.0
+            weaponAccuracy: 1.0
+            weaponRange: 60
+            splashArea: 1
+            weaponHp: 10.0
+            warmupTime: 0.0
+            radius: 1.0
+            mass: 1.0
+            acceleration: 35.0
+            maxVelocity: 11.0
+            maxVelocityVariance: 0.1
+            angularAcceleration: 24.0
+            maxAngularVelocity: 18.0
+            velocityFriction: 0.05
+            angularFriction: 0.05
+            isPDBlockeable: true
+            isToggleable: true
+            modifiers:
+                - modifier: modifier_heavy_armor
+                - modifier: modifier_eccm
+                - modifier: modifier_fast
+                - modifier: modifier_mirv                
         #TORPEDOES
         ## CUSTOM
           - key: weapontype_nuclear_torpedo

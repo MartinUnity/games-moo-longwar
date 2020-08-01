@@ -901,6 +901,7 @@
                 - application: techapp_biodome_3
                 - application: techapp_giant_compression
                 - application: techapp_asteroid_compression
+                - application: techapp_torpedo_base
           - key: technode_multiversity
             name: "Multiversity"
             description: "Multiversity"
@@ -1313,6 +1314,7 @@
                 - application: techapp_microlite_construction
                 - application: techapp_zortrium_armor
                 - application: techapp_orbit_ads_4
+                - application: techapp_torpedo_base_2
                 # - application: techapp_zeon_missile
                 #- application: techapp_nano_disassemblers
                 #- application: techapp_soil_enrichment
@@ -1610,6 +1612,8 @@
                 #- technology: technode_advanced_robotics
                 # - technology: technode_trans_genetics
                 - technology: technode_astro_construction
+            unlocks:
+                - application: techapp_torpedo_base_3
             branches:
                 - unlocks:
                      - application: techapp_deep_core_mine
@@ -1921,6 +1925,7 @@
             unlocks:
                 - application: techapp_caves_3
                 - application: techapp_ground_batteries_4
+                - application: techapp_quanta_missile
           - key: technode_planar_transcendence
             name: TECHNOLOGY_PLANAR_TRANSCENDENCE_NAME
             description: TECHNOLOGY_PLANAR_TRANSCENDENCE_DESCRIPTION
@@ -1938,6 +1943,10 @@
             unlocks:
                 - application: techapp_scientific_victory_3
                 - application: techapp_modifications_mauler_device
+                - application: techapp_miniaturization_beam_12
+                - application: techapp_miniaturization_torpedoes_12
+                - application: techapp_miniaturization_cannon_12
+                - application: techapp_miniaturization_missile_12
         ## Custom - Tier13
           - key: technode_shield_13
             name: MultiPhased FluxTech
@@ -1951,6 +1960,7 @@
             unlocks:
                 - application: techapp_class_xv_shield
                 - application: techapp_flux_capacitor
+                - application: techapp_modifications_quanta_missile
           - key: technode_weapon_13
             name: Particle Beam
             description: Slice and dice

@@ -1029,7 +1029,75 @@
                 moduleList:
                   - shipmodule_dauntless_guidance_system
                   - shipmodule_achilles_targeting_unit
-                  - shipmodule_fast_missile_racks            
+                  - shipmodule_fast_missile_racks
+          - key: design_torpedo_base
+            name: SHIP_DESIGN_TORPEDO_BASE
+            hull: hull_torpedo_base
+            baseSystems:
+                armor: shipslot_armor
+                computer: shipslot_computer
+                shield: shipslot_shield
+            pointDefense:
+                shipmodule: shipmodulesubtype_cannon
+                quantity: 10
+            weaponSlots:
+                - slot: shipmodulesubtype_torpedo
+                  sizePriority: 3
+                  slotCount: 1
+                  mods:
+                      - modifier_semi_guided
+                      - modifier_fast
+            specialSystems:
+                maxSlots: 1
+                moduleList:
+                  - shipmodule_heavy_armor
+          - key: design_torpedo_base_2
+            name: SHIP_DESIGN_TORPEDO_BASE
+            hull: hull_torpedo_base_2
+            baseSystems:
+                armor: shipslot_armor
+                computer: shipslot_computer
+                shield: shipslot_shield
+            pointDefense:
+                shipmodule: shipmodulesubtype_cannon
+                quantity: 20
+            weaponSlots:
+                - slot: shipmodulesubtype_torpedo
+                  sizePriority: 4
+                  slotCount: 1
+                  mods:
+                      - modifier_semi_guided
+                      - modifier_overloaded
+                      - modifier_fast
+            specialSystems:
+                maxSlots: 2
+                moduleList:
+                  - shipmodule_reinforced_hull
+                  - shipmodule_heavy_armor
+          - key: design_torpedo_base_3
+            name: SHIP_DESIGN_TORPEDO_BASE
+            hull: hull_torpedo_base_3
+            baseSystems:
+                armor: shipslot_armor
+                computer: shipslot_computer
+                shield: shipslot_shield
+            pointDefense:
+                shipmodule: shipmodulesubtype_cannon
+                quantity: 40
+            weaponSlots:
+                - slot: shipmodulesubtype_torpedo
+                  sizePriority: 5
+                  slotCount: 1
+                  mods:
+                      - modifier_semi_guided
+                      - modifier_overloaded
+                      - modifier_fast
+                      - modifier_enveloping
+            specialSystems:
+                maxSlots: 2
+                moduleList:
+                  - shipmodule_reinforced_hull
+                  - shipmodule_heavy_armor
           - key: design_beam_lancer
             name: SHIP_DESIGN_BEAM_LANCER
             hull: hull_beam_lancer

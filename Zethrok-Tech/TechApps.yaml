@@ -202,6 +202,36 @@
             tags:
                  - Defenses
          ## Custom
+          - key: techapp_torpedo_base
+            #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
+            #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/missile_base.prefab
+            unlocks:
+               - structure_torpedo_base
+            tags:
+                 - Defenses
+          - key: techapp_torpedo_base_2
+            #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
+            #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/missile_base.prefab
+            unlocks:
+               - structure_torpedo_base_2
+            tags:
+                 - Defenses
+          - key: techapp_torpedo_base_3
+            #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
+            #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
+            icon: assets/tech_apps/tech_building_military.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/missile_base.prefab
+            unlocks:
+               - structure_torpedo_base_3
+            tags:
+                 - Defenses                                  
           - key: techapp_beam_lancer
             #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
             #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
@@ -3670,6 +3700,14 @@
                - shipmodule_meson_missile
             tags:
                  - Military
+          - key: techapp_quanta_missile
+            icon: assets/tech_apps/tech_missiles.png
+            type: techapptype_shipmodule
+            hologram: ContentPrefabs/Research/pulson_missile.prefab
+            unlocks:
+               - shipmodule_quanta_missile
+            tags:
+                 - Military                 
         ## Custom - meson - mod
           - key: techapp_modifications_meson_missile
             name: Meson missile Mod
@@ -3681,6 +3719,17 @@
                - shipmodule_meson_missile
             tags:
                  - Military
+         ## Custom
+          - key: techapp_modifications_quanta_missile
+            name: Quanta missile Mod
+            description: Quanta missile mod
+            icon: assets/tech_apps/tech_modifier.png
+            type: techapptype_modifier
+            hologram: ContentPrefabs/Research/pulson_missile.prefab
+            unlocks:
+               - shipmodule_quanta_missile
+            tags:
+                 - Military                 
         ## Custom
           - key: techapp_miniaturization_weapon_2
             icon: assets/tech_apps/tech_miniaturization_lasers.png
@@ -3976,6 +4025,39 @@
             hologram: ContentPrefabs/Research/miniaturization_beams.prefab
             unlocks:
                - miniaturization_beams_3
+            tags:
+                 - Military
+          ## Custom
+          - key: techapp_miniaturization_beam_12
+            icon: assets/tech_apps/tech_miniaturization_lasers.png
+            type: techapptype_miniaturization
+            hologram: ContentPrefabs/Research/miniaturization_beams.prefab
+            unlocks:
+               - miniaturization_beam_12
+            tags:
+                 - Military
+          - key: techapp_miniaturization_cannon_12
+            icon: assets/tech_apps/tech_miniaturization_lasers.png
+            type: techapptype_miniaturization
+            hologram: ContentPrefabs/Research/miniaturization_beams.prefab
+            unlocks:
+               - miniaturization_cannon_12
+            tags:
+                 - Military
+          - key: techapp_miniaturization_torpedoes_12
+            icon: assets/tech_apps/tech_miniaturization_lasers.png
+            type: techapptype_miniaturization
+            hologram: ContentPrefabs/Research/miniaturization_beams.prefab
+            unlocks:
+               - miniaturization_torpedoes_12
+            tags:
+                 - Military
+          - key: techapp_miniaturization_missile_12
+            icon: assets/tech_apps/tech_miniaturization_lasers.png
+            type: techapptype_miniaturization
+            hologram: ContentPrefabs/Research/miniaturization_beams.prefab
+            unlocks:
+               - miniaturization_missile_12
             tags:
                  - Military
           - key: techapp_miniaturization_cannons_1

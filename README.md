@@ -1,10 +1,21 @@
 # Master of Orion - Mod
 
-# Ideas for next release
-- lategame missile
-- early game beam + cannon?
-- Torpedo base
+# Ideas for next release (1.5.0)
+- lategame missile  -- done
+- early game beam + cannon? -- done
+- Torpedo base -- done
 - more tiered tech 
+
+# 1.5.0
+## Changes from 1.4.0
+- Bugfix: Added empireUnique for several buildings that increase global income
+- Upped maint. cost of cannon towers.
+- Added Torpedo Base which is another defense structure like missile base
+- Aligned miniaturization better
+- Fixed some typos
+- Added late endgame missile: Quanta Missile
+- Reduced endgame weapon Particle Beam damage and ArmorPenetration ~20%
+- Reduced pirate spawn-rate (time) ~15%
 
 # 1.4.0
 ## Changes from 1.3.1
