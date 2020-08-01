@@ -365,5 +365,52 @@
             costDecreaseFactor: 0.10
             affectedModules:
                 - shipmodule_meson_missile                                                
-
+          - key: miniaturization_beam_12
+            name: Beams - 12
+            description: Beams mini - 12
+            icon: assets/ship_modules/miniaturization_beams.png
+            spaceDecreaseFactor: 0.15
+            costDecreaseFactor: 0.15
+            affectedModules:
+                - shipmodule_fusion_beam
+                - shipmodule_ion_pulse_cannon
+                - shipmodule_plasma_cannon
+                - shipmodule_pulse_beam
+          - key: miniaturization_cannon_12
+            name: Cannons - 12
+            description: Cannons mini - 12
+            icon: assets/ship_modules/miniaturization_cannons.png
+            spaceDecreaseFactor: 0.15
+            costDecreaseFactor: 0.15
+            affectedModules:
+                - shipmodule_laser_cannon
+                - shipmodule_lazer_cannon
+                - shipmodule_neutron_blaster
+                - shipmodule_mass_driver
+                - shipmodule_graviton_beam
+                - shipmodule_phasors
+                - shipmodule_gauss_cannon
+          - key: miniaturization_torpedoes_12
+            name: Torpedoes - 12
+            description: Torpedoes Mini - 12
+            icon: assets/ship_modules/miniaturization_torpedoes.png
+            spaceDecreaseFactor: 0.15
+            costDecreaseFactor: 0.15
+            affectedModules:
+                - shipmodule_proton_torpedoes
+                - shipmodule_nuclear_torpedoes
+                - shipmodule_plasma_torpedoes
+                - shipmodule_antimatter_torpedoes
+          - key: miniaturization_missile_12
+            name: Missile - 12
+            description: Missile Mini - 12
+            icon: assets/ship_modules/miniaturization_missilies.png
+            spaceDecreaseFactor: 0.15
+            costDecreaseFactor: 0.15
+            affectedModules:
+                - shipmodule_meson_missile
+                - shipmodule_nuclear_missile
+                - shipmodule_merculite_missile
+                - shipmodule_pulson_missile                
+                - shipmodule_zeon_missile
 ...

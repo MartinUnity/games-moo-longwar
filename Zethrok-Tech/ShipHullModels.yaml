@@ -56,6 +56,15 @@
             hullType: hull_fighter_garrison
             model: fightergarrison
           ## Custom
+          - key: hullmodel_torpedo_base
+            hullType: hull_torpedo_base
+            model: missile_battery
+          - key: hullmodel_torpedo_base_2
+            hullType: hull_torpedo_base_2
+            model: missile_battery
+          - key: hullmodel_torpedo_base_3
+            hullType: hull_torpedo_base_3
+            model: missile_battery
           - key: hullmodel_beam_lancer
             hullType: hull_beam_lancer
             model: laser_battery
