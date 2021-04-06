@@ -30,9 +30,9 @@
             size: 8
             icon: assets/ship_modules/laser_cannon.png
           - key: shipmodule_particle_beam
-            name: Particle_Beam
-            shortDescription: Particle_Beam_Short_Des
-            description: Particle_Beam_Description
+            name: Particle Beam
+            shortDescription: Particle Beam
+            description: Particle Beam
             slot: shipslot_weapon
             subType: shipmodulesubtype_cannon
             weaponType: weapontype_particle_beam
@@ -240,9 +240,9 @@
             icon: assets/ship_modules/pulson_missile.png
         ## Custom - meson missile
           - key: shipmodule_meson_missile
-            name: Meson Missile - fractral
-            shortDescription: Meson Missile - COB
-            description: Meson Missile - combustionable gas
+            name: Meson Missile
+            shortDescription: Meson Missile
+            description: Meson Missile
             slot: shipslot_weapon
             subType: shipmodulesubtype_missile
             weaponType: weapontype_meson_missile
@@ -261,6 +261,17 @@
             size: 10
             icon: assets/ship_modules/zeon_missile.png
             techTreeIcon: assets/tech_apps/tech_missiles.png
+          - key: shipmodule_quanta_missile
+            name: Quanta Missile
+            shortDescription: Quanta Missile
+            description: Quanta Missile
+            slot: shipslot_weapon
+            subType: shipmodulesubtype_missile
+            weaponType: weapontype_quanta_missile
+            cost: 20
+            size: 10
+            icon: assets/ship_modules/pulson_missile.png
+            techTreeIcon: assets/tech_apps/tech_missiles.png            
         #TORPEDOES
           ## Custom - nuclear torpedo
           - key: shipmodule_nuclear_torpedoes

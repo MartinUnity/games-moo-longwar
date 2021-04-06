@@ -721,6 +721,87 @@
             weaponSlots: 7
             specialSlots: 7
             repairsFleets: false
+          - key: hull_torpedo_base
+            name: HULL_TORPEDO_BASE_NAME
+            description: SHIP_TYPE_TORPEDO_BASE_DESCRIPTION
+            cost: 160
+            space: 400
+            hp: 800
+            tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/planetary_defense.png
+            icon: assets/ships/%civ%/%type%/ship_missile_base.png
+            hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_missile_base.prefab
+            introSlot: planetary
+            flagType: defense_small
+            tacticalLong: 1.00
+            tacticalWide: 0.5
+            tacticalTall: 0.2
+            tacticalVisualScale: 5.0
+            hullClass: 3
+            isStructure: true
+            acceleration: 0.0
+            angularAcceleration: 0.0
+            maxVelocity: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.00
+            fleetSupportCost: 0
+            weaponSlots: 3
+            specialSlots: 3
+            repairsFleets: false
+          - key: hull_torpedo_base_2
+            name: HULL_TORPEDO_BASE_NAME
+            description: SHIP_TYPE_TORPEDO_BASE_DESCRIPTION
+            cost: 240
+            space: 700
+            hp: 1600
+            tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/planetary_defense.png
+            icon: assets/ships/%civ%/%type%/ship_missile_base.png
+            hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_missile_base.prefab
+            introSlot: planetary
+            flagType: defense_small
+            tacticalLong: 1.25
+            tacticalWide: 0.6
+            tacticalTall: 0.25
+            tacticalVisualScale: 5.0
+            hullClass: 3
+            isStructure: true
+            acceleration: 0.0
+            angularAcceleration: 0.0
+            maxVelocity: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.00
+            fleetSupportCost: 0
+            weaponSlots: 3
+            specialSlots: 3
+            repairsFleets: false
+          - key: hull_torpedo_base_3
+            name: HULL_TORPEDO_BASE_NAME
+            description: SHIP_TYPE_TORPEDO_BASE_DESCRIPTION
+            cost: 400
+            space: 1000
+            hp: 2400
+            tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/planetary_defense.png
+            icon: assets/ships/%civ%/%type%/ship_missile_base.png
+            hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_missile_base.prefab
+            introSlot: planetary
+            flagType: defense_small
+            tacticalLong: 1.5
+            tacticalWide: 0.7
+            tacticalTall: 0.3
+            tacticalVisualScale: 5.0
+            hullClass: 3
+            isStructure: true
+            acceleration: 0.0
+            angularAcceleration: 0.0
+            maxVelocity: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.00
+            fleetSupportCost: 0
+            weaponSlots: 3
+            specialSlots: 3
+            repairsFleets: false                   
           - key: hull_beam_lancer
             name: HULL_BEAM_LANCER_NAME
             description: SHIP_TYPE_BEAM_LANCER_DESCRIPTION
