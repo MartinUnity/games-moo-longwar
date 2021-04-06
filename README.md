@@ -8,6 +8,12 @@
 - Add note that save every turn is expensive
 - Check Tier2 tech with direct links
 
+- Cannon towers (wrong name? Tower VI?)
+- Cannon tower 1 vs ADS (ADS too strong?) (STR 4 vs 10)
+- Missile tower much stronger than ADS (58 vs 10 and 4 respectively)
+- ADS and Misslbe tower has +300X defence, cannon tower only 150X
+- New mlitary outpost types?
+
 ## 1.5.0
 
 ### Changes from 1.4.0
