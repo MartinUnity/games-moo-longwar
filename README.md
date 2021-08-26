@@ -8,11 +8,32 @@
 - Add note that save every turn is expensive
 - Check Tier2 tech with direct links
 
-- Cannon towers (wrong name? Tower VI?)
 - Cannon tower 1 vs ADS (ADS too strong?) (STR 4 vs 10)
 - Missile tower much stronger than ADS (58 vs 10 and 4 respectively)
 - ADS and Misslbe tower has +300X defence, cannon tower only 150X
 - New mlitary outpost types?
+
+- mini factory lvl1 that gives +1 prd - cheap?
+
+- add manu mini at end-game techs
+
+- more early anti pollution
+
+- ADS lategame can be empty and filled with PD weapons (no room for best weapons?)
+
+- new shiptype?
+
+Changes:
+- [change] All research cost is increased 20%; tier 14+15 reduced by ~50%
+- [change] Moved many tiers of research deeper into the tree
+- [change] Updated Cannon towers to have less PD + more special systems
+ 
+Bugs / QoL
+- [fixed] all types of planetary radioation shields now requires the version before for upgrading.
+- [fixed] remove shield piercing from particle beam
+- [fixed] quanta missile causes battle to stop
+- [fixed] torpedo base 2+3 can be built without building; now they're required to build+upgrade at a time
+- [fixed] Quantum computer changed to give +35 beam attack and moved to tier3 instead of competing with +50 BA in the existing tier4
 
 ## 1.5.0
 
@@ -52,7 +73,7 @@
 Extra:
 
 - More pirates in each wave; make sure defenses are prepared for it.
-- One also has to weave, flee and run from piratesat least initially - and again when pirate cruisers arrive
+- One also has to weave, flee and run from pirates at least initially - and again when pirate cruisers arrive
 - Pirates can easily kill an outpost until early mid-game tech makes them strong enough.
 
 ## 1.3.1

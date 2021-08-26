@@ -717,7 +717,7 @@
             costHullFactor: 1.25
             size: 0
             requiredResource: tradeable_resource_silicon
-            accuracyBonus: 65
+            accuracyBonus: 35
             icon: assets/ship_modules/cybertronic_computer.png
           - key: shipmodule_cybertronic_computer
             name: $SHIP_MODULE_CYBERTRONIC_COMPUTER_NAME

@@ -238,7 +238,7 @@
             volleySize: 1
             maxDamage: 150
             armorPenetration: 30
-            shieldPenetration: true
+            shieldPenetration: false
             rangeDissipation: false
             weaponAccuracy: 1.0
             rangeLoss: 0.5
@@ -639,7 +639,7 @@
           ## Custom
           - key: weapontype_quanta_missile
             className: TacticalMissile
-            model: quanta_missile
+            model: zeon_missile
             hasFacing: false
             visualScale: 7.0
             tacticalCooldown: 15.0

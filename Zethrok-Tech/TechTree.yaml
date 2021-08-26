@@ -95,7 +95,7 @@
           - key: technode_government
             name: TECHNOLOGY_GOVERNMENT_NAME
             description: TECHNOLOGY_GOVERNMENT_DESCRIPTION
-            cost: 55
+            cost: 66
             x: 1
             y: 0
             icon: assets/techs/advanced_government.png
@@ -107,7 +107,7 @@
           - key: technode_physics
             name: TECHNOLOGY_PHYSICS_NAME
             description: TECHNOLOGY_PHYSICS_DESCRIPTION
-            cost: 55
+            cost: 66
             x: 1
             y: 3
             icon: assets/techs/nuclear_physics.png
@@ -123,7 +123,7 @@
           - key: technode_biology
             name: TECHNOLOGY_BIOLOGY_NAME
             description: TECHNOLOGY_BIOLOGY_DESCRIPTION
-            cost: 55
+            cost: 66
             x: 1
             y: 6
             icon: assets/techs/bio_technology.png
@@ -140,7 +140,7 @@
           - key: technode_engineering
             name: TECHNOLOGY_ENGINEERING_NAME
             description: TECHNOLOGY_ENGINEERING_DESCRIPTION
-            cost: 55
+            cost: 66
             x: 1
             y: 9
             icon: assets/techs/engineering.png
@@ -155,7 +155,7 @@
           - key: technode_economics
             name: TECHNOLOGY_ECONOMICS_NAME
             description: TECHNOLOGY_ECONOMICS_DESCRIPTION
-            cost: 110
+            cost: 132
             x: 2
             y: 0
             icon: assets/techs/intergalactic_economics.png
@@ -168,7 +168,7 @@
           - key: technode_deep_space_exploration
             name: TECHNOLOGY_DEEP_SPACE_EXPLORATION_NAME
             description: TECHNOLOGY_DEEP_SPACE_EXPLORATION_DESCRIPTION
-            cost: 110
+            cost: 132
             x: 2
             y: 1
             icon: assets/techs/intergalactic_economics.png
@@ -182,7 +182,7 @@
           - key: technode_xeno_relations
             name: TECHNOLOGY_XENO_RELATIONS_NAME
             description: TECHNOLOGY_XENO_RELATIONS_DESCRIPTION
-            cost: 110
+            cost: 132
             x: 2
             y: 2
             icon: assets/techs/alien_alloys.png
@@ -196,7 +196,7 @@
           - key: technode_nuclearbombs_1
             name: Vorass Physics
             description: Weapons mini and telekinesis
-            cost: 110
+            cost: 132
             x: 2
             y: 3
             icon: assets/techs/molecular_compression.png
@@ -209,7 +209,7 @@
           - key: technode_advanced_magnetism
             name: TECHNOLOGY_ADVANCED_MAGNETISM_NAME
             description: TECHNOLOGY_ADVANCED_MAGNETISM_DESCRIPTION
-            cost: 110
+            cost: 132
             x: 2
             y: 4
             icon: assets/techs/advanced_magnetism.png
@@ -225,7 +225,7 @@
           - key: technode_electronics
             name: TECHNOLOGY_ELECTRONICS_NAME
             description: TECHNOLOGY_ELECTRONICS_DESCRIPTION
-            cost: 110
+            cost: 132
             x: 2
             y: 5
             icon: assets/techs/electronics.png
@@ -243,7 +243,7 @@
           - key: technode_nuclear_1
             name: Nuclear Optimizations
             description: TECHNOLOGY_NUCLEAR_1_DESCRIPTION
-            cost: 110
+            cost: 132
             x: 2
             y: 6
             icon: assets/techs/molecular_compression.png
@@ -257,7 +257,7 @@
           - key: technode_basicupgrades_2
             name: BasicUpgrades - 2
             description: BasicUpgrades - 2
-            cost: 110
+            cost: 132
             x: 2
             y: 7
             icon: assets/techs/bio_technology.png
@@ -274,7 +274,7 @@
           - key: technode_bio_technology
             name: TECHNOLOGY_BIO_TECHNOLOGY_NAME
             description: TECHNOLOGY_BIO_TECHNOLOGY_DESCRIPTION
-            cost: 110
+            cost: 132
             x: 2
             y: 8
             icon: assets/techs/bio_technology.png
@@ -288,7 +288,7 @@
           - key: technode_caves_2
             name: CloudPuting
             description: Universal Cloud Infra
-            cost: 110
+            cost: 132
             x: 2
             y: 9
             icon: assets/techs/molecular_compression.png
@@ -301,7 +301,7 @@
           - key: technode_molecular_manipulation
             name: TECHNOLOGY_MOLECULAR_MANIPULATION_NAME
             description: TECHNOLOGY_MOLECULAR_MANIPULATION_DESCRIPTION
-            cost: 110
+            cost: 132
             x: 2
             y: 10
             icon: assets/techs/molecular_compression.png
@@ -318,7 +318,7 @@
           #- key: technode_weapon_1
             #name: Weapon 1 - Mini
             #description: WEAPON_1_DESCRIPTION
-            #cost: 110
+            #cost: 132
             #x: 2
             #y: 11
             #icon: assets/techs/molecular_compression.png
@@ -330,7 +330,7 @@
           - key: technode_advanced_fusion
             name: TECHNOLOGY_ADVANCED_FUSION_NAME
             description: TECHNOLOGY_ADVANCED_FUSION_DESCRIPTION
-            cost: 110
+            cost: 132
             x: 2
             y: 12
             icon: assets/techs/advanced_fusion.png
@@ -343,7 +343,7 @@
           - key: technode_private_funding
             name: TECHNOLOGY_PRIVATE_FUNDING_NAME
             description: TECHNOLOGY_PRIVATE_FUNDING_DESCRIPTION
-            cost: 215
+            cost: 258
             x: 3
             y: 0
             icon: assets/techs/electronics.png
@@ -357,7 +357,7 @@
           - key: technode_tomb_3
             name: FluxTech
             description: FluxTech
-            cost: 215
+            cost: 258
             x: 3
             y: 1
             icon: assets/techs/positronics.png
@@ -371,7 +371,7 @@
           - key: technode_military_tactics
             name: TECHNOLOGY_MILITARY_TACTICS_NAME
             description: TECHNOLOGY_MILITARY_TACTICS_DESCRIPTION
-            cost: 215
+            cost: 258
             x: 3
             y: 2
             icon: assets/techs/military_tactics.png
@@ -386,7 +386,7 @@
           - key: technode_neutrino_physics
             name: TECHNOLOGY_NEUTRINO_PHYSICS_NAME
             description: TECHNOLOGY_NEUTRINO_PHYSICS_DESCRIPTION
-            cost: 215
+            cost: 258
             x: 3
             y: 3
             icon: assets/techs/neutrino_physics.png
@@ -402,7 +402,7 @@
           - key: technode_biome_extraction
             name: Biome Energy Conversion
             description: Extract and converts energy from toxic, radiated and volcanic biomes
-            cost: 215
+            cost: 258
             x: 3
             y: 4
             icon: assets/techs/bio_technology.png
@@ -416,7 +416,7 @@
           - key: technode_positron_physics
             name: TECHNOLOGY_POSITRON_PHYSICS_NAME
             description: TECHNOLOGY_POSITRON_PHYSICS_DESCRIPTION
-            cost: 215
+            cost: 258
             x: 3
             y: 5
             icon: assets/techs/positron_physics.png
@@ -431,7 +431,7 @@
           - key: technode_weapon_2_1
             name: Meson Technology
             description: Meson Technology
-            cost: 215
+            cost: 258
             x: 3
             y: 6
             icon: assets/techs/molecular_control.png
@@ -445,7 +445,7 @@
           - key: technode_xenobiotic
             name: TECHNOLOGY_XENOBIOTIC_NAME
             description: TECHNOLOGY_XENOBIOTIC_DESCRIPTION
-            cost: 215
+            cost: 258
             x: 3
             y: 7
             icon: assets/techs/alien_alloys.png
@@ -468,7 +468,7 @@
           - key: technode_basicupgrades_3
             name: BasicUpgrades - 3
             description: BasicUpgrades - 3
-            cost: 215
+            cost: 258
             x: 3
             y: 8
             icon: assets/techs/bio_technology.png
@@ -483,7 +483,7 @@
           - key: technode_genetic_engineering
             name: TECHNOLOGY_GENETIC_ENGINEERING_NAME
             description: TECHNOLOGY_GENETIC_ENGINEERING_DESCRIPTION
-            cost: 215
+            cost: 258
             x: 3
             y: 9
             icon: assets/techs/genetic_engineering.png
@@ -498,7 +498,7 @@
           - key: technode_shield_1
             name: Advanced Hyperconductors
             description: Advanced Hyperconductors
-            cost: 215
+            cost: 258
             x: 3
             y: 10
             icon: assets/techs/advanced_magnetism.png
@@ -510,7 +510,7 @@
           - key: technode_advanced_engineering
             name: TECHNOLOGY_ADVANCED_ENGINEERING_NAME
             description: TECHNOLOGY_ADVANCED_ENGINEERING_DESCRIPTION
-            cost: 215
+            cost: 258
             x: 3
             y: 11
             icon: assets/techs/advanced_engineering.png
@@ -522,11 +522,10 @@
                 - application: techapp_cruiser
                 - application: techapp_tritanium_armor
                 - application: techapp_modifications_merculite_missile
-                - application: techapp_antimatter_replicator
           - key: technode_fusion_weapons
             name: TECHNOLOGY_FUSION_WEAPONS_NAME
             description: TECHNOLOGY_FUSION_WEAPONS_DESCRIPTION
-            cost: 215
+            cost: 258
             x: 3
             y: 12
             icon: assets/techs/advanced_fusion.png
@@ -542,7 +541,7 @@
           - key: technode_macro_economics
             name: TECHNOLOGY_MACRO_ECONOMICS_NAME
             description: TECHNOLOGY_MACRO_ECONOMICS_DESCRIPTION
-            cost: 425
+            cost: 510
             x: 4
             y: 0
             icon: assets/techs/macro_economics.png
@@ -557,7 +556,7 @@
           - key: technode_basicupgrades_4
             name: BasicUpgrades - 4
             description: BasicUpgrades - 4
-            cost: 425
+            cost: 510
             x: 4
             y: 1
             icon: assets/techs/bio_technology.png
@@ -570,7 +569,7 @@
           - key: technode_xenology
             name: TECHNOLOGY_XENOLOGY_NAME
             description: TECHNOLOGY_XENOLOGY_DESCRIPTION
-            cost: 425
+            cost: 510
             x: 4
             y: 2
             icon: assets/techs/alien_alloys.png
@@ -586,7 +585,7 @@
           - key: technode_artificial_gravity
             name: TECHNOLOGY_ARTIFICIAL_GRAVITY_NAME
             description: TECHNOLOGY_ARTIFICIAL_GRAVITY_DESCRIPTION
-            cost: 425
+            cost: 510
             x: 4
             y: 3
             icon: assets/techs/artificial_gravity.png
@@ -606,7 +605,7 @@
           - key: technode_tachyon_physics
             name: TECHNOLOGY_TACHYON_PHYSICS_NAME
             description: TECHNOLOGY_TACHYON_PHYSICS_DESCRIPTION
-            cost: 425
+            cost: 510
             x: 4
             y: 4
             icon: assets/techs/tachyon_physics.png
@@ -627,10 +626,23 @@
                 - unlocks:
                      - application: techapp_tachyon_communications
         ## Custom
+          - key: technode_computer_3
+            name: Quantum Computing
+            description: Quantum Computing
+            cost: 510
+            x: 4
+            y: 5
+            icon: assets/techs/positronics.png
+            requires:
+                - technology: technode_positron_physics
+            unlocks:
+                - application: techapp_quantum_computer
+                - application: techapp_fertilitylab_2
+        ## Custom
           #- key: technode_caves_4
             #name: Multihub - 2
             #description: Multihub facilitates trade
-            #cost: 425
+            #cost: 510
             #x: 4
             #y: 5
             #icon: assets/techs/molecular_compression.png
@@ -643,7 +655,7 @@
           - key: technode_robotics
             name: TECHNOLOGY_ROBOTICS_NAME
             description: TECHNOLOGY_ROBOTICS_DESCRIPTION
-            cost: 425
+            cost: 510
             x: 4
             y: 6
             icon: assets/techs/robotics.png
@@ -658,23 +670,10 @@
                      - application: techapp_automated_repair_unit
                 - unlocks:
                      - application: techapp_dauntless_guidance_system
-        ## Custom
-          - key: technode_foodinator_1
-            name: Antimatter Replication
-            description: "AntiMatter Replication - Creates food & matter from nothing"
-            cost: 425
-            x: 4
-            y: 7
-            icon: assets/techs/bio_technology.png
-            requires:
-                - technology: technode_xenobiotic
-            unlocks:
-                - application: techapp_foodinator_1
-                - application: techapp_antimatter_replicator_2
           - key: technode_genetic_mutations
             name: TECHNOLOGY_GENETIC_MUTATIONS_NAME
             description: TECHNOLOGY_GENETIC_MUTATIONS_DESCRIPTION
-            cost: 425
+            cost: 510
             x: 4
             y: 8
             icon: assets/techs/genetic_mutations.png
@@ -688,12 +687,12 @@
                      - application: techapp_telepathic_training
                 - unlocks:
                      - application: techapp_heightened_intelligence
-                # - application: techapp_psionics
+                # - application: techapp_psionics                     
         ## Custom
           - key: technode_pulse_4
             name: Pulse Technology
             description: Pulse Technology
-            cost: 425
+            cost: 510
             x: 4
             y: 9
             icon: assets/techs/bio_technology.png
@@ -708,7 +707,7 @@
           - key: technode_advanced_construction
             name: TECHNOLOGY_ADVANCED_CONSTRUCTION_NAME
             description: TECHNOLOGY_ADVANCED_CONSTRUCTION_DESCRIPTION
-            cost: 425
+            cost: 510
             x: 4
             y: 10
             icon: assets/techs/advanced_construction.png
@@ -729,7 +728,7 @@
           - key: technode_super_alloys
             name: TECHNOLOGY_SUPER_ALLOYS_NAME
             description: TECHNOLOGY_SUPER_ALLOYS_DESCRIPTION
-            cost: 425
+            cost: 510
             x: 4
             y: 11
             icon: assets/techs/super_alloys.png
@@ -745,7 +744,7 @@
           - key: technode_ion_fission
             name: TECHNOLOGY_ION_FISSION_NAME
             description: TECHNOLOGY_ION_FISSION_DESCRIPTION
-            cost: 425
+            cost: 510
             x: 4
             y: 12
             icon: assets/techs/ion_fission.png
@@ -762,7 +761,7 @@
           - key: technode_basicupgrades_5
             name: Basic Upgrades - 5
             description: Basic Upgrades - 5
-            cost: 795
+            cost: 954
             x: 5
             y: 0
             icon: assets/techs/bio_technology.png
@@ -777,7 +776,7 @@
           - key: technode_galactic_trading
             name: TECHNOLOGY_GALACTIC_TRADING_NAME
             description: TECHNOLOGY_GALACTIC_TRADING_DESCRIPTION
-            cost: 795
+            cost: 954
             x: 5
             y: 1
             icon: assets/techs/galactic_trading.png
@@ -790,7 +789,7 @@
           - key: technode_underwater_computing
             name: Underwater Computing
             description: Underwater computing
-            cost: 795
+            cost: 954
             x: 5
             y: 2
             icon: assets/techs/tachyon_physics.png
@@ -803,7 +802,7 @@
           - key: technode_weapon_5
             name: Hyper Miniaturazation Ray
             description: Hyper Miniaturazation Ray
-            cost: 795
+            cost: 954
             x: 5
             y: 3
             icon: assets/techs/bio_technology.png
@@ -817,7 +816,7 @@
           - key: technode_magneto_gravitics
             name: TECHNOLOGY_MAGNETO_GRAVITICS_NAME
             description: TECHNOLOGY_MAGNETO_GRAVITICS_DESCRIPTION
-            cost: 795
+            cost: 954
             x: 5
             y: 4
             icon: assets/techs/magneto_gravitics.png
@@ -837,7 +836,7 @@
           - key: technode_technet_1
             name: "Technet - Research hub"
             description: Technet - research hubb
-            cost: 795
+            cost: 954
             x: 5
             y: 5
             icon: assets/techs/galactic_networking.png
@@ -849,13 +848,13 @@
           - key: technode_optronics
             name: TECHNOLOGY_OPTRONICS_NAME
             description: TECHNOLOGY_OPTRONICS_DESCRIPTION
-            cost: 795
+            cost: 954
             x: 5
             y: 6
             icon: assets/techs/optronics.png
             requires:
                - technology: technode_robotics
-               # - technology: technode_positron_physics
+               - technology: technode_computer_3
             unlocks:
                 - application: techapp_holo_simulator
             branches:
@@ -868,7 +867,7 @@
           - key: technode_cybertechnics
             name: TECHNOLOGY_CYBERTECHNICS_NAME
             description: TECHNOLOGY_CYBERTECHNICS_DESCRIPTION
-            cost: 795
+            cost: 954
             x: 5
             y: 7
             icon: assets/techs/gravitic_fields.png
@@ -883,10 +882,23 @@
                      - application: techapp_armor_barracks
                 - unlocks:
                      - application: techapp_powered_armor
+        ## Custom
+          - key: technode_foodinator_1
+            name: Antimatter Replication
+            description: "AntiMatter Replication - Creates food & matter from nothing"
+            cost: 954
+            x: 5
+            y: 8
+            icon: assets/techs/bio_technology.png
+            requires:
+                - technology: technode_genetic_mutations
+            unlocks:
+                - application: techapp_foodinator_1
+                - application: techapp_antimatter_replicator_2
           - key: technode_planetology
             name: TECHNOLOGY_PLANETOLOGY_NAME
             description: TECHNOLOGY_PLANETOLOGY_DESCRIPTION
-            cost: 795
+            cost: 954
             x: 5
             y: 9
             icon: assets/techs/planetology.png
@@ -902,36 +914,10 @@
                 - application: techapp_giant_compression
                 - application: techapp_asteroid_compression
                 - application: techapp_torpedo_base
-          - key: technode_multiversity
-            name: "Multiversity"
-            description: "Multiversity"
-            cost: 795
-            x: 5
-            y: 10
-            icon: assets/techs/intergalactic_economics.png
-            requires:
-                - technology: technode_advanced_construction
-            unlocks:
-                - application: techapp_multiversity
-                - application: techapp_missile_base_3
-          #- key: technode_city_planning_2
-            #name: "City Planning"
-            #description: "City planning"
-            #cost: 795
-            #x: 5
-            #y: 10
-            #icon: assets/techs/intergalactic_economics.png
-            #requires:
-                #- technology: technode_advanced_construction
-            #branches:
-                #- unlocks:
-                    #- application: techapp_advanced_city_planning_2
-                #- unlocks:
-                    #- application: techapp_nanobots
           - key: technode_molecular_compression
             name: TECHNOLOGY_MOLECULAR_COMPRESSION_NAME
             description: TECHNOLOGY_MOLECULAR_COMPRESSION_DESCRIPTION
-            cost: 795
+            cost: 954
             x: 5
             y: 11
             icon: assets/techs/molecular_manipulation.png
@@ -947,23 +933,10 @@
                 - unlocks:
                      - application: techapp_pulson_missile
                 #- application: techapp_urridium_fuel_cells
-        ## Custom
-          - key: technode_computer_3
-            name: Quantum Computing
-            description: Quantum Computing
-            cost: 795
-            x: 5
-            y: 12
-            icon: assets/techs/positronics.png
-            requires:
-                - technology: technode_advanced_construction
-            unlocks:
-                - application: techapp_quantum_computer
-                - application: techapp_fertilitylab_2
           - key: technode_weapon_mini_1
             name: Ray of Shrinking
             description: Ray of Shrinking
-            cost: 1330
+            cost: 1596
             x: 6
             y: 0
             icon: assets/techs/bio_technology.png
@@ -978,7 +951,7 @@
           - key: technode_teaching_methods
             name: TECHNOLOGY_TEACHING_METHODS_NAME
             description: TECHNOLOGY_TEACHING_METHODS_DESCRIPTION
-            cost: 1330
+            cost: 1596
             x: 6
             y: 1
             icon: assets/techs/teaching_methods.png
@@ -991,23 +964,10 @@
                 - unlocks:
                      - application: techapp_espionage_training_facility
                 # - application: techapp_special_units
-        ## Custom - shield iiiv
-          - key: technode_shield_2
-            name: Advanced Warp Fields
-            description: Advanced Warp Fields
-            cost: 1330
-            x: 6
-            y: 2
-            icon: assets/techs/advanced_magnetism.png
-            requires:
-                - technology: technode_magneto_gravitics
-            unlocks:
-                - application: techapp_class_iv_shield
-                - application: techapp_ground_batteries_2
           - key: technode_gravitic_fields
             name: TECHNOLOGY_GRAVITIC_FIELDS_NAME
             description: TECHNOLOGY_GRAVITIC_FIELDS_DESCRIPTION
-            cost: 1330
+            cost: 1596
             x: 6
             y: 3
             icon: assets/techs/gravitic_fields.png
@@ -1022,12 +982,23 @@
                 - application: techapp_antigrav_harness
                 - application: techapp_modifications_graviton_beam
                 # - application: techapp_inertial_stabilizer
-                #- application: techapp_gyro_destabilizer
+                #- application: techapp_gyro_destabilizer                
+          #- key: technode_cryptoexchange_3
+            #name: CryptoExchange - 3
+            #description: CryptoExchange - 3
+            #cost: 2388
+            #x: 7
+            #y: 3
+            #icon: assets/techs/advanced_government.png
+            #requires:
+                 #- technology: technode_teaching_methods
+            #unlocks:
+                #- application: techapp_cryptoexchange_3                
         ## Custom
           - key: technode_tradestation_6
             name: Automated Trading
             description: Automated Trading
-            cost: 1330
+            cost: 1596
             x: 6
             y: 4
             icon: assets/techs/molecular_compression.png
@@ -1040,7 +1011,7 @@
           - key: technode_electromagnetic_refraction
             name: TECHNOLOGY_ELECTROMAGNETIC_REFRACTION_NAME
             description: TECHNOLOGY_ELECTROMAGNETIC_REFRACTION_DESCRIPTION
-            cost: 1330
+            cost: 1596
             x: 6
             y: 5
             icon: assets/techs/electromagnetic_refraction.png
@@ -1062,7 +1033,7 @@
           - key: technode_weapon_6
             name: Lazer Tech
             description: Lazer Tech
-            cost: 1330
+            cost: 1596
             x: 6
             y: 6
             icon: assets/techs/bio_technology.png
@@ -1075,7 +1046,7 @@
           - key: technode_cybertronics
             name: TECHNOLOGY_CYBERTRONICS_NAME
             description: TECHNOLOGY_CYBERTRONICS_DESCRIPTION
-            cost: 1330
+            cost: 1596
             x: 6
             y: 7
             icon: assets/techs/cybertronics.png
@@ -1092,7 +1063,7 @@
           - key: technode_astro_biology
             name: TECHNOLOGY_ASTRO_BIOLOGY_NAME
             description: TECHNOLOGY_ASTRO_BIOLOGY_DESCRIPTION
-            cost: 1330
+            cost: 1596
             x: 6
             y: 8
             icon: assets/techs/astro_construction.png
@@ -1107,10 +1078,22 @@
                 # - application: techapp_biomorphic_fungi
                     # - application: techapp_underground_storage # removed 1.2
                 # - application: techapp_anaerobic_colonies
+          - key: technode_multiversity
+            name: "Multiversity"
+            description: "Multiversity"
+            cost: 1596
+            x: 6
+            y: 9
+            icon: assets/techs/intergalactic_economics.png
+            requires:
+                - technology: technode_technet_1
+            unlocks:
+                - application: techapp_multiversity
+                - application: techapp_missile_base_3     
           - key: technode_astro_engineering
             name: TECHNOLOGY_ASTRO_ENGINEERING_NAME
             description: TECHNOLOGY_ASTRO_ENGINEERING_DESCRIPTION
-            cost: 1330
+            cost: 1596
             x: 6
             y: 10
             icon: assets/techs/advanced_construction.png
@@ -1128,7 +1111,7 @@
           #- key: technode_tomb_6
             #name: Tomb of Money - 2
             #description: Tomb of Money
-            #cost: 1330
+            #cost: 1596
             #x: 6
             #y: 11
             #icon: assets/techs/positronics.png
@@ -1139,12 +1122,13 @@
           - key: technode_anti_matter_fission
             name: TECHNOLOGY_ANTI_MATTER_FISSION_NAME
             description: TECHNOLOGY_ANTI_MATTER_FISSION_DESCRIPTION
-            cost: 1330
+            cost: 1596
             x: 6
             y: 12
             icon: assets/techs/anti_matter_fission.png
             requires:
                 - technology: technode_computer_3
+                - technology: technode_molecular_compression
             unlocks:
                 - application: techapp_miniaturization_bombs_2
                 - application: techapp_antimatter_drive
@@ -1157,7 +1141,7 @@
           - key: technode_advanced_government
             name: TECHNOLOGY_ADVANCED_GOVERNMENT_NAME
             description: TECHNOLOGY_ADVANCED_GOVERNMENT_DESCRIPTION
-            cost: 1990
+            cost: 2388
             x: 7
             y: 0
             icon: assets/techs/advanced_government.png
@@ -1177,7 +1161,7 @@
           - key: technode_basicupgrades_6
             name: Basic Upgrades - 6
             description: Basic Upgrades - 6
-            cost: 1990
+            cost: 2388
             x: 7
             y: 1
             icon: assets/techs/bio_technology.png
@@ -1190,7 +1174,7 @@
           - key: technode_subspace_physics
             name: TECHNOLOGY_SUBSPACE_PHYSICS_NAME
             description: TECHNOLOGY_SUBSPACE_PHYSICS_DESCRIPTION
-            cost: 1990
+            cost: 2388
             x: 7
             y: 2
             icon: assets/techs/inspired_weaponry.png
@@ -1203,21 +1187,23 @@
                 - application: techapp_phasors
                 - application: techapp_subspace_communications
                 - application: techapp_cannon_tower_4
-          #- key: technode_cryptoexchange_3
-            #name: CryptoExchange - 3
-            #description: CryptoExchange - 3
-            #cost: 1990
-            #x: 7
-            #y: 3
-            #icon: assets/techs/advanced_government.png
-            #requires:
-                 #- technology: technode_teaching_methods
-            #unlocks:
-                #- application: techapp_cryptoexchange_3
+        ## Custom - shield iiiv
+          - key: technode_shield_2
+            name: Advanced Warp Fields
+            description: Advanced Warp Fields
+            cost: 2388
+            x: 7
+            y: 3
+            icon: assets/techs/advanced_magnetism.png
+            requires:
+                - technology: technode_weapon_mini_1
+            unlocks:
+                - application: techapp_class_iv_shield
+                - application: techapp_ground_batteries_2
           - key: technode_super_gravity
             name: TECHNOLOGY_SUPERGRAVITY_NAME
             description: TECHNOLOGY_SUPERGRAVITY_DESCRIPTION
-            cost: 1990
+            cost: 2388
             x: 7
             y: 4
             icon: assets/techs/artificial_gravity.png
@@ -1228,23 +1214,10 @@
                 - application: techapp_miniaturization_torpedoes_1
                 - application: techapp_antimatter_torpedoes
                 - application: techapp_warp_dissipater
-        ## Custom
-          - key: technode_technet_2
-            name: "Technet - 2"
-            description: Technet - research hub 2
-            cost: 1990
-            x: 7
-            y: 5
-            icon: assets/techs/galactic_networking.png
-            requires:
-                - technology: technode_electromagnetic_refraction
-            unlocks:
-                - application: techapp_technet_2
-                - application: techapp_cryptoexchange_3
           - key: technode_advanced_robotics
             name: TECHNOLOGY_ADVANCED_ROBOTICS_NAME
             description: TECHNOLOGY_ADVANCED_ROBOTICS_DESCRIPTION
-            cost: 1990
+            cost: 2388
             x: 7
             y: 7
             icon: assets/techs/advanced_robotics.png
@@ -1268,7 +1241,7 @@
           - key: technode_weapon_7
             name: Lithographic Optimizations
             description: Lithographic Optimizations
-            cost: 1990
+            cost: 2388
             x: 7
             y: 8
             icon: assets/techs/bio_technology.png
@@ -1283,7 +1256,7 @@
           - key: technode_trans_genetics
             name: TECHNOLOGY_TRANS_GENETICS_NAME
             description: TECHNOLOGY_TRANS_GENETICS_DESCRIPTION
-            cost: 1990
+            cost: 2388
             x: 7
             y: 9
             icon: assets/techs/trans_genetics.png
@@ -1301,7 +1274,7 @@
           - key: technode_nano_technology
             name: TECHNOLOGY_NANO_TECHNOLOGY_NAME
             description: TECHNOLOGY_NANO_TECHNOLOGY_DESCRIPTION
-            cost: 1990
+            cost: 2388
             x: 7
             y: 11
             icon: assets/techs/nano_technology.png
@@ -1322,7 +1295,7 @@
           - key: technode_basicupgrades_7
             name: Basic Upgrades - 7
             description: Basic Upgrades - 7
-            cost: 2990
+            cost: 3588
             x: 8
             y: 0
             icon: assets/techs/bio_technology.png
@@ -1334,7 +1307,7 @@
           - key: technode_advanced_tactics
             name: TECHNOLOGY_ADVANCED_TACTICS_NAME
             description: TECHNOLOGY_ADVANCED_TACTICS_DESCRIPTION
-            cost: 2990
+            cost: 3588
             x: 8
             y: 1
             icon: assets/techs/advanced_tactics.png
@@ -1351,7 +1324,7 @@
           - key: technode_multi_phased_physics
             name: TECHNOLOGY_MULTI_PHASED_PHYSICS_NAME
             description: TECHNOLOGY_MULTI_PHASED_PHYSICS_DESCRIPTION
-            cost: 2990
+            cost: 3588
             x: 8
             y: 2
             icon: assets/techs/multi_state_materials.png
@@ -1370,7 +1343,7 @@
           - key: technode_weapon_8
             name: Pulse Manufacturing
             description: Pulse Manufacturing
-            cost: 2990
+            cost: 3588
             x: 8
             y: 3
             icon: assets/techs/bio_technology.png
@@ -1384,7 +1357,7 @@
           - key: technode_subspace_fields
             name: TECHNOLOGY_SUBSPACE_FIELDS_NAME
             description: TECHNOLOGY_SUBSPACE_FIELDS_DESCRIPTION
-            cost: 2990
+            cost: 3588
             x: 8
             y: 4
             icon: assets/techs/warp_fields.png
@@ -1401,7 +1374,7 @@
           - key: technode_warp_fields
             name: TECHNOLOGY_WARP_FIELDS_NAME
             description: TECHNOLOGY_WARP_FIELDS_DESCRIPTION
-            cost: 2990
+            cost: 3588
             x: 8
             y: 5
             icon: assets/techs/warp_fields.png
@@ -1413,23 +1386,10 @@
                 - unlocks:
                      - application: techapp_lightning_field
                 # - application: techapp_warp_interdictor
-        ## Custom - colonial
-          - key: technode_colonial_7
-            name: Colonial Upgrade 2
-            description: Colonial Upgrade 2
-            cost: 1990
-            x: 8
-            y: 6
-            icon: assets/techs/intergalactic_economics.png
-            requires:
-                - technology: technode_technet_2
-            unlocks:
-                - application: techapp_colonial_revenue_services_2      
-                - application: techapp_voidcoinmining_4          
           - key: technode_positronics
             name: TECHNOLOGY_POSITRONICS_NAME
             description: TECHNOLOGY_POSITRONICS_DESCRIPTION
-            cost: 2990
+            cost: 3588
             x: 8
             y: 7
             icon: assets/techs/positronics.png
@@ -1448,7 +1408,7 @@
           - key: technode_artificial_life
             name: TECHNOLOGY_ARTIFICIAL_LIFE_NAME
             description: TECHNOLOGY_ARTIFICIAL_LIFE_DESCRIPTION
-            cost: 2990
+            cost: 3588
             x: 8
             y: 8
             icon: assets/techs/artificial_life.png
@@ -1460,10 +1420,23 @@
                      - application: techapp_bio_terminator
                 - unlocks:
                      - application: techapp_universal_antidote
+        ## Custom
+          - key: technode_technet_2
+            name: "Technet - 2"
+            description: Technet - research hub 2
+            cost: 3588
+            x: 8
+            y: 9
+            icon: assets/techs/galactic_networking.png
+            requires:
+                - technology: technode_advanced_government
+            unlocks:
+                - application: techapp_technet_2
+                - application: techapp_cryptoexchange_3                     
           - key: technode_astro_construction
             name: TECHNOLOGY_ASTRO_CONSTRUCTION_NAME
             description: TECHNOLOGY_ASTRO_CONSTRUCTION_DESCRIPTION
-            cost: 2990
+            cost: 3588
             x: 8
             y: 10
             icon: assets/techs/astro_construction.png
@@ -1478,7 +1451,7 @@
             name: TECHNOLOGY_HIGH_ENERGY_DISTRIBUTION_NAME
             description: TECHNOLOGY_HIGH_ENERGY_DISTRIBUTION_DESCRIPTION
             icon: assets/techs/high_energy_distribution.png
-            cost: 2990
+            cost: 3588
             x: 8
             y: 12
             requires:
@@ -1494,7 +1467,7 @@
           - key: technode_galactic_economics
             name: TECHNOLOGY_GALACTIC_ECONOMICS_NAME
             description: TECHNOLOGY_GALACTIC_ECONOMICS_DESCRIPTION
-            cost: 3990
+            cost: 4788
             x: 9
             y: 1
             icon: assets/techs/intergalactic_economics.png
@@ -1512,7 +1485,7 @@
           - key: technode_technet_3
             name: "Technet - 3"
             description: Technet - research hub 3
-            cost: 3990
+            cost: 4788
             x: 9
             y: 2
             icon: assets/techs/galactic_networking.png
@@ -1520,11 +1493,11 @@
                 - technology: technode_advanced_tactics
             unlocks:
                 - application: techapp_technet_3
-                - application: techapp_missile_base_5
+                - application: techapp_missile_base_5                
           - key: technode_plasma_physics
             name: TECHNOLOGY_PLASMA_PHYSICS_NAME
             description: TECHNOLOGY_PLASMA_PHYSICS_DESCRIPTION
-            cost: 3990
+            cost: 4788
             x: 9
             y: 3
             icon: assets/techs/plasma_physics.png
@@ -1540,10 +1513,23 @@
                      - application: techapp_plasma_torpedoes
                 - unlocks:
                      - application: techapp_plasma_web
+        ## Custom - colonial
+          - key: technode_colonial_7
+            name: Colonial Upgrade 2
+            description: Colonial Upgrade 2
+            cost: 4788
+            x: 9
+            y: 4
+            icon: assets/techs/intergalactic_economics.png
+            requires:
+                - technology: technode_advanced_tactics
+            unlocks:
+                - application: techapp_colonial_revenue_services_2      
+                - application: techapp_voidcoinmining_4                     
           - key: technode_distortion_fields
             name: TECHNOLOGY_DISTORTION_FIELDS_NAME
             description: TECHNOLOGY_DISTORTION_FIELDS_DESCRIPTION
-            cost: 3990
+            cost: 4788
             x: 9
             y: 5
             icon: assets/techs/distortion_fields.png
@@ -1564,7 +1550,7 @@
           - key: technode_artificial_intelligence
             name: TECHNOLOGY_ARTIFICIAL_INTELLIGENCE_NAME
             description: TECHNOLOGY_ARTIFICIAL_INTELLIGENCE_DESCRIPTION
-            cost: 3990
+            cost: 4788
             x: 9
             y: 7
             icon: assets/techs/artificial_intelligence.png
@@ -1586,7 +1572,7 @@
             name: TECHNOLOGY_MOLECULAR_CONTROL_NAME
             description: TECHNOLOGY_MOLECULAR_CONTROL_DESCRIPTION
             icon: assets/techs/molecular_control.png
-            cost: 3990
+            cost: 4788
             x: 9
             y: 9
             requires:
@@ -1603,7 +1589,7 @@
           - key: technode_tectonic_engineering
             name: TECHNOLOGY_TECTONIC_ENGINEERING_NAME
             description: TECHNOLOGY_TECTONIC_ENGINEERING_DESCRIPTION
-            cost: 3990
+            cost: 4788
             x: 9
             y: 10
             icon: assets/techs/tectonic_engineering.png
@@ -1622,7 +1608,7 @@
           - key: technode_hyper_dimensional_fission
             name: TECHNOLOGY_HYPER_DIMENSIONAL_FISSION_NAME
             description: TECHNOLOGY_HYPER_DIMENSIONAL_FISSION_DESCRIPTION
-            cost: 3990
+            cost: 4788
             x: 9
             y: 12
             icon: assets/techs/matter_energy_transformation.png
@@ -1648,7 +1634,7 @@
           - key: technode_tradestation_9
             name: Tradestation 2
             description: Tradestation 2
-            cost: 5980
+            cost: 7176
             x: 10
             y: 0
             icon: assets/techs/molecular_compression.png
@@ -1661,7 +1647,7 @@
           #- key: technode_cryptoexchange_10
             #name: CryptoExchange 4
             #description: CryptoExchange 4
-            #cost: 5980
+            #cost: 7176
             #x: 10
             #y: 1
             #icon: assets/techs/molecular_compression.png
@@ -1672,7 +1658,7 @@
           - key: technode_multi_dimensional_physics
             name: TECHNOLOGY_MULTI_DIMENSIONAL_PHYSICS_NAME
             description: TECHNOLOGY_MULTI_DIMENSIONAL_PHYSICS_DESCRIPTION
-            cost: 5980
+            cost: 7176
             x: 10
             y: 2
             icon: assets/techs/advanced_tactics.png
@@ -1692,7 +1678,7 @@
           - key: technode_quantum_fields
             name: TECHNOLOGY_QUANTUM_FIELDS_NAME
             description: TECHNOLOGY_QUANTUM_FIELDS_DESCRIPTION
-            cost: 5980
+            cost: 7176
             x: 10
             y: 4
             icon: assets/techs/quantum_fields.png
@@ -1716,7 +1702,7 @@
           - key: technode_basicupgrades_10
             name: Basic Upgrades - 10
             description: Basic Upgrades - 10
-            cost: 5980
+            cost: 7176
             x: 10
             y: 5
             icon: assets/techs/artificial_life.png
@@ -1728,22 +1714,10 @@
                 - application: techapp_soil_enrichment_2
                 - application: techapp_hydroponic_farm_4
                 - application: techapp_biospheres_4
-          - key: technode_eco_2
-            name: Advanced FluxTech
-            description: Advanced FluxTech
-            cost: 5980
-            x: 10
-            y: 6
-            icon: assets/techs/artificial_life.png
-            requires:
-                - technology: technode_molecular_control
-            unlocks:
-                - application: techapp_space_port_2
-                - application: techapp_fluxtube_2
           - key: technode_moleculartronics
             name: TECHNOLOGY_MOLECULARTRONICS_NAME
             description: TECHNOLOGY_MOLECULARTRONICS_DESCRIPTION
-            cost: 5980
+            cost: 7176
             x: 10
             y: 8
             icon: assets/techs/moleculartronics.png
@@ -1763,7 +1737,7 @@
           - key: technode_superscalar_construction
             name: TECHNOLOGY_SUPERSCALAR_CONSTRUCTION_NAME
             description: TECHNOLOGY_SUPERSCALAR_CONSTRUCTION_DESCRIPTION
-            cost: 5980
+            cost: 7176
             x: 10
             y: 10
             icon: assets/techs/superscalar_construction.png
@@ -1782,7 +1756,7 @@
           - key: technode_interphased_fission
             name: TECHNOLOGY_INTERPHASED_FISSION_NAME
             description: TECHNOLOGY_INTERPHASED_FISSION_DESCRIPTION
-            cost: 5980
+            cost: 7176
             x: 10
             y: 11
             icon: assets/techs/interphased_fission.png
@@ -1802,7 +1776,7 @@
           - key: technode_galactic_networking
             name: TECHNOLOGY_GALACTIC_NETWORKING_NAME
             description: TECHNOLOGY_GALACTIC_NETWORKING_DESCRIPTION
-            cost: 7980
+            cost: 9576
             x: 11
             y: 1
             icon: assets/techs/galactic_networking.png
@@ -1819,7 +1793,7 @@
           - key: technode_temporal_physics
             name: TECHNOLOGY_TEMPORAL_PHYSICS_NAME
             description: TECHNOLOGY_TEMPORAL_PHYSICS_DESCRIPTION
-            cost: 7980
+            cost: 9576
             x: 11
             y: 3
             icon: assets/techs/time_space_paradoxes.png
@@ -1841,7 +1815,7 @@
           - key: technode_transwarp_fields
             name: TECHNOLOGY_TRANSWARP_FIELDS_NAME
             description: TECHNOLOGY_TRANSWARP_FIELDS_DESCRIPTION
-            cost: 7980
+            cost: 9576
             x: 11
             y: 5
             icon: assets/techs/transwarp_fields.png
@@ -1854,12 +1828,24 @@
                 - application: techapp_beam_lancer_4
                 #- unlocks:
                 #     - application: techapp_stasis_field
+          - key: technode_eco_2
+            name: Advanced FluxTech
+            description: Advanced FluxTech
+            cost: 9576
+            x: 11
+            y: 7
+            icon: assets/techs/artificial_life.png
+            requires:
+                - technology: technode_moleculartronics
+            unlocks:
+                - application: techapp_space_port_2
+                - application: techapp_fluxtube_2                
           - key: technode_artificial_conciousness
             name: TECHNOLOGY_ARTIFICIAL_CONCIOUSNESS_NAME
             description: TECHNOLOGY_ARTIFICIAL_CONCIOUSNESS_DESCRIPTION
-            cost: 7980
+            cost: 9576
             x: 11
-            y: 8
+            y: 9
             icon: assets/techs/artificial_conciousness.png
             requires:
                 - technology: technode_moleculartronics
@@ -1874,9 +1860,9 @@
           - key: technode_planetoid_construction
             name: TECHNOLOGY_PLANETOID_CONSTRUCTION_NAME
             description: TECHNOLOGY_PLANETOID_CONSTRUCTION_DESCRIPTION
-            cost: 7980
+            cost: 9576
             x: 11
-            y: 10
+            y: 11
             icon: assets/techs/planetoid_construction.png
             requires:
                 #- technology: technode_temporal_fields
@@ -1893,7 +1879,7 @@
           - key: technode_temporal_fields
             name: TECHNOLOGY_TEMPORAL_FIELDS_NAME
             description: TECHNOLOGY_TEMPORAL_FIELDS_DESCRIPTION
-            cost: 11950
+            cost: 14340
             x: 12
             y: 3
             icon: assets/techs/temporal_fields.png
@@ -1916,7 +1902,7 @@
           - key: technode_caves_12
             name: Advanced Quantum Modulation
             description: Advanced Quantum Modulation
-            cost: 11950
+            cost: 14340
             x: 12
             y: 6
             icon: assets/techs/molecular_compression.png
@@ -1929,7 +1915,7 @@
           - key: technode_planar_transcendence
             name: TECHNOLOGY_PLANAR_TRANSCENDENCE_NAME
             description: TECHNOLOGY_PLANAR_TRANSCENDENCE_DESCRIPTION
-            cost: 11950
+            cost: 14340
             x: 12
             y: 9
             icon: assets/techs/planar_transcendence.png
@@ -2017,7 +2003,7 @@
           - key: technode_growth_75
             name: Self Replication
             description: Self Replication - 75% growth
-            cost: 60000
+            cost: 32000
             x: 14
             y: 2
             icon: assets/techs/bio_technology.png
@@ -2028,7 +2014,7 @@
           - key: technode_particle_drive
             name: Particle Drive
             description: Particle Drive
-            cost: 60000
+            cost: 32000
             x: 14
             y: 4
             icon: assets/techs/advanced_fusion.png
@@ -2039,7 +2025,7 @@
           - key: technode_basicupgrades_14
             name: Basic Upgrades - 11
             description: Basic Upgrades - 11
-            cost: 60000
+            cost: 32000
             x: 14
             y: 6
             icon: assets/techs/artificial_life.png
@@ -2052,7 +2038,7 @@
           - key: technode_shield_14
             name: Dark Matter
             description: Dark Matter
-            cost: 60000
+            cost: 32000
             x: 14
             y: 8
             icon: assets/techs/temporal_fields.png
@@ -2063,7 +2049,7 @@
           - key: technode_armor_15
             name: Aeon Tech
             description: Aeon Tech
-            cost: 120000
+            cost: 50000
             x: 15
             y: 3
             icon: assets/techs/matter_energy_transformation.png
@@ -2146,7 +2132,7 @@
         # - technology: &technode_evolutionary_genetics
             # name: TECHNOLOGY_EVOLUTIONARY_GENETICS_NAME
             # description: TECHNOLOGY_EVOLUTIONARY_GENETICS_DESCRIPTION
-            # cost: 550
+            # cost: 660
             # x: 8
             # y: 1
             # requires:

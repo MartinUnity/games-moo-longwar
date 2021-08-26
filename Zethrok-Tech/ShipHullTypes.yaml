@@ -914,8 +914,8 @@
             name: HULL_CANNON_TOWER_NAME
             description: SHIP_TYPE_CANNON_TOWER_DESCRIPTION
             cost: 60
-            space: 125
-            hp: 300
+            space: 250
+            hp: 500
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/planetary_defense.png
             icon: assets/ships/%civ%/%type%/ship_ground_batteries.png
             hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_ground_batteries.prefab
@@ -934,15 +934,15 @@
             velocityFriction: 0.00
             angularFriction: 0.00
             fleetSupportCost: 0
-            weaponSlots: 3
-            specialSlots: 3
+            weaponSlots: 4
+            specialSlots: 4
             repairsFleets: false
           - key: hull_cannon_tower_2
             name: HULL_CANNON_TOWER_NAME
             description: SHIP_TYPE_CANNON_TOWER_DESCRIPTION
             cost: 120
-            space: 300
-            hp: 600
+            space: 500
+            hp: 800
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/planetary_defense.png
             icon: assets/ships/%civ%/%type%/ship_ground_batteries.png
             hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_ground_batteries.prefab
@@ -961,14 +961,14 @@
             velocityFriction: 0.00
             angularFriction: 0.00
             fleetSupportCost: 0
-            weaponSlots: 3
-            specialSlots: 3
+            weaponSlots: 4
+            specialSlots: 4
             repairsFleets: false
           - key: hull_cannon_tower_3
             name: HULL_CANNON_TOWER_NAME
             description: SHIP_TYPE_CANNON_TOWER_DESCRIPTION
             cost: 180
-            space: 500
+            space: 750
             hp: 1200
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/planetary_defense.png
             icon: assets/ships/%civ%/%type%/ship_ground_batteries.png
@@ -988,14 +988,14 @@
             velocityFriction: 0.00
             angularFriction: 0.00
             fleetSupportCost: 0
-            weaponSlots: 3
-            specialSlots: 3
+            weaponSlots: 4
+            specialSlots: 4
             repairsFleets: false
           - key: hull_cannon_tower_4
             name: HULL_CANNON_TOWER_NAME
             description: SHIP_TYPE_CANNON_TOWER_DESCRIPTION
             cost: 300
-            space: 750
+            space: 1000
             hp: 1800
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/planetary_defense.png
             icon: assets/ships/%civ%/%type%/ship_ground_batteries.png
@@ -1015,14 +1015,14 @@
             velocityFriction: 0.00
             angularFriction: 0.00
             fleetSupportCost: 0
-            weaponSlots: 3
-            specialSlots: 3
+            weaponSlots: 4
+            specialSlots: 4
             repairsFleets: false                                    
           - key: hull_cannon_tower_5
             name: HULL_CANNON_TOWER_NAME
             description: SHIP_TYPE_CANNON_TOWER_DESCRIPTION
             cost: 400
-            space: 1000
+            space: 1250
             hp: 2400
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/planetary_defense.png
             icon: assets/ships/%civ%/%type%/ship_ground_batteries.png
@@ -1042,8 +1042,8 @@
             velocityFriction: 0.00
             angularFriction: 0.00
             fleetSupportCost: 0
-            weaponSlots: 3
-            specialSlots: 3
+            weaponSlots: 4
+            specialSlots: 4
             repairsFleets: false                
           - key: hull_ground_batteries
             name: HULL_GROUND_BATTERIES_NAME
