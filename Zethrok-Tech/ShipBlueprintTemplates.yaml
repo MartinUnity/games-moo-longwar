@@ -1039,7 +1039,7 @@
                 shield: shipslot_shield
             pointDefense:
                 shipmodule: shipmodulesubtype_cannon
-                quantity: 10
+                quantity: 4
             weaponSlots:
                 - slot: shipmodulesubtype_torpedo
                   sizePriority: 3
@@ -1060,7 +1060,7 @@
                 shield: shipslot_shield
             pointDefense:
                 shipmodule: shipmodulesubtype_cannon
-                quantity: 20
+                quantity: 6
             weaponSlots:
                 - slot: shipmodulesubtype_torpedo
                   sizePriority: 4
@@ -1083,7 +1083,7 @@
                 shield: shipslot_shield
             pointDefense:
                 shipmodule: shipmodulesubtype_cannon
-                quantity: 40
+                quantity: 8
             weaponSlots:
                 - slot: shipmodulesubtype_torpedo
                   sizePriority: 5
@@ -1199,12 +1199,12 @@
                 shield: shipslot_shield
             pointDefense:
                 shipmodule: shipmodulesubtype_cannon
-                quantity: 5
+                quantity: 3
             weaponSlots:
                 - slot: shipmodulesubtype_cannon
                   prioritizeMods: true
                   sizePriority: 5
-                  slotCount: 2
+                  slotCount: 3
                   mods:
                       - modifier_heavy_mount
             specialSystems:
@@ -1222,12 +1222,12 @@
                 shield: shipslot_shield
             pointDefense:
                 shipmodule: shipmodulesubtype_cannon
-                quantity: 10
+                quantity: 6
             weaponSlots:
                 - slot: shipmodulesubtype_cannon
                   prioritizeMods: true
                   sizePriority: 8
-                  slotCount: 2
+                  slotCount: 3
                   mods:
                       - modifier_heavy_mount
             specialSystems:
@@ -1245,12 +1245,12 @@
                 shield: shipslot_shield
             pointDefense:
                 shipmodule: shipmodulesubtype_cannon
-                quantity: 20
+                quantity: 10
             weaponSlots:
                 - slot: shipmodulesubtype_cannon
                   prioritizeMods: true
                   sizePriority: 12
-                  slotCount: 2
+                  slotCount: 3
                   mods:
                       - modifier_heavy_mount
             specialSystems:
@@ -1268,20 +1268,21 @@
                 shield: shipslot_shield
             pointDefense:
                 shipmodule: shipmodulesubtype_cannon
-                quantity: 30
+                quantity: 12
             weaponSlots:
                 - slot: shipmodulesubtype_cannon
                   prioritizeMods: true
                   sizePriority: 18
-                  slotCount: 2
+                  slotCount: 3
                   mods:
                       - modifier_heavy_mount
             specialSystems:
-                maxSlots: 3
+                maxSlots: 4
                 moduleList:
                   - shipmodule_battle_scanner
                   - shipmodule_rangemaster_targeting_unit
                   - shipmodule_highenergy_focus           
+                  - shipmodule_heavy_armor           
           - key: design_cannon_tower_5
             name: SHIP_DESIGN_CANNON_TOWER
             hull: hull_cannon_tower_5
@@ -1291,20 +1292,22 @@
                 shield: shipslot_shield
             pointDefense:
                 shipmodule: shipmodulesubtype_cannon
-                quantity: 40
+                quantity: 14
             weaponSlots:
                 - slot: shipmodulesubtype_cannon
                   prioritizeMods: true
                   sizePriority: 25
-                  slotCount: 2
+                  slotCount: 3
                   mods:
                       - modifier_heavy_mount
             specialSystems:
-                maxSlots: 3
+                maxSlots: 5
                 moduleList:
                   - shipmodule_battle_scanner
                   - shipmodule_rangemaster_targeting_unit
-                  - shipmodule_highenergy_focus                                                                               
+                  - shipmodule_highenergy_focus
+                  - shipmodule_heavy_armor           
+                  - shipmodule_reinforced_hull                  
           - key: design_ground_batteries
             name: SHIP_DESIGN_GROUND_BATTERIES
             hull: hull_ground_batteries

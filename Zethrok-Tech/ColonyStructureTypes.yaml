@@ -1001,6 +1001,8 @@
             icon:  assets/structures/missile_base.png
             cost: 120
             upkeep: 4
+            upgrades: structure_torpedo_base
+            requires: structure_torpedo_base
             shipTemplate: design_torpedo_base_2
             structureTypes:
                 - 5
@@ -1011,6 +1013,8 @@
             icon:  assets/structures/missile_base.png
             cost: 160
             upkeep: 6
+            upgrades: structure_torpedo_base_2
+            requires: structure_torpedo_base_2
             shipTemplate: design_torpedo_base_3
             structureTypes:
                 - 5
@@ -2383,6 +2387,7 @@
             name: COLONY_STRUCTURE_PLANETARY_FLUX_SHIELD_NAME
             description: COLONY_STRUCTURE_PLANETARY_FLUX_SHIELD_DESCRIPTION
             icon: assets/structures/planetary_flux_shield.png
+            requires: structure_planetary_radiation_shield
             upgrades: structure_planetary_radiation_shield
             cost: 300
             upkeep: 6
@@ -2394,6 +2399,7 @@
             name: COLONY_STRUCTURE_PLANETARY_BARRIER_SHIELD_NAME
             description: COLONY_STRUCTURE_PLANETARY_BARRIER_SHIELD_DESCRIPTION
             icon: assets/structures/planetary_barrier_shield.png
+            requires: structure_planetary_flux_shield
             upgrades: structure_planetary_flux_shield
             cost: 500
             upkeep: 10
@@ -2405,6 +2411,7 @@
             name: Planetary Aeon Shield
             description: Planetary Aeon Shield
             icon: assets/structures/planetary_radiation_shield.png
+            requires: structure_planetary_barrier_shield
             upgrades: structure_planetary_barrier_shield
             cost: 1000
             upkeep: 20
