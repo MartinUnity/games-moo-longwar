@@ -1,7 +1,22 @@
 # Master of Orion - Mod
 
-## Ideas for next release (1.5.0)
+## 1.6.0
 
+### Changes from 1.5.1
+
+Changes:
+- [change] All research cost is increased 20%; tier 14+15 reduced by ~50%
+- [change] Moved many tiers of research deeper into the tree
+- [change] Updated Cannon towers to have less PD + more special systems
+
+Bugs / QoL
+- [fixed] all types of planetary radioation shields now requires the version before for upgrading.
+- [fixed] remove shield piercing from particle beam
+- [fixed] quanta missile causes battle to stop
+- [fixed] torpedo base 2+3 can be built without building; now they're required to build+upgrade at a time
+- [fixed] Quantum computer changed to give +35 beam attack and moved to tier3 instead of competing with +50 BA in the existing tier4
+
+## Ideas for next release (1.7.0)
 - more tiered tech
 - Add +100% research time for all?
 - Split tiers of tech to be much deeper
@@ -22,18 +37,6 @@
 - ADS lategame can be empty and filled with PD weapons (no room for best weapons?)
 
 - new shiptype?
-
-Changes:
-- [change] All research cost is increased 20%; tier 14+15 reduced by ~50%
-- [change] Moved many tiers of research deeper into the tree
-- [change] Updated Cannon towers to have less PD + more special systems
- 
-Bugs / QoL
-- [fixed] all types of planetary radioation shields now requires the version before for upgrading.
-- [fixed] remove shield piercing from particle beam
-- [fixed] quanta missile causes battle to stop
-- [fixed] torpedo base 2+3 can be built without building; now they're required to build+upgrade at a time
-- [fixed] Quantum computer changed to give +35 beam attack and moved to tier3 instead of competing with +50 BA in the existing tier4
 
 ## 1.5.0
 
