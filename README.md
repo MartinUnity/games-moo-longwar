@@ -1,5 +1,15 @@
 # Master of Orion - Mod
 
+## 1.6.1
+
+- Soil Enrichment 2 relies on soil enrichment 1 (which is a tech to pick)
+- CryptoExchange is listed as food (not as BC) - should be like TradeStation
+- Void Coin Mining is alos listed food, not BC - should be like TradeStation
+
+### Changes from 1.6.0
+
+- [change] Research - Tier4 - Soil Enrichment 2
+
 ## 1.6.0
 
 ### Changes from 1.5.1
