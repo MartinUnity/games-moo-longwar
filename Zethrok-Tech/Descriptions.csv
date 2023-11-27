@@ -66,3 +66,5 @@ COLONY_STRUCTURE_TORPEDO_BASE_DESCRIPTION,,"Torpedo Base - Orbital Torpedo Defen
 SHIP_DESIGN_TORPEDO_BASE,,"Torpedo Base",,,,,,,,,,,
 SHIP_TYPE_TORPEDO_BASE_DESCRIPTION,,"Torpedo Base",,,,,,,,,,,
 HULL_TORPEDO_BASE_NAME,,"Torpedo Base",,,,,,,,,,,
+
+COLONY_STRUCTURE_AUTOMATED_FACTORY_NAME_0,,"Automated Factory - Mini",,,,,,,,,,,
