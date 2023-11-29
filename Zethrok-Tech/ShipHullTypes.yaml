@@ -925,7 +925,7 @@
             tacticalWide: 0.75
             tacticalTall: 0.2
             tacticalVisualScale: 3.0
-            hullClass: 3
+            hullClass: 4
             isStructure: true
             acceleration: 0.0
             angularAcceleration: 0.0
@@ -952,7 +952,7 @@
             tacticalWide: 0.85
             tacticalTall: 0.3
             tacticalVisualScale: 3.0
-            hullClass: 3
+            hullClass: 4
             isStructure: true
             acceleration: 0.0
             angularAcceleration: 0.0
@@ -979,7 +979,7 @@
             tacticalWide: 1.0
             tacticalTall: 0.4
             tacticalVisualScale: 4.0
-            hullClass: 3
+            hullClass: 4
             isStructure: true
             acceleration: 0.0
             angularAcceleration: 0.0
@@ -1006,7 +1006,7 @@
             tacticalWide: 1.55
             tacticalTall: 0.5
             tacticalVisualScale: 5.0
-            hullClass: 3
+            hullClass: 4
             isStructure: true
             acceleration: 0.0
             angularAcceleration: 0.0
@@ -1033,7 +1033,7 @@
             tacticalWide: 1.55
             tacticalTall: 0.5
             tacticalVisualScale: 5.0
-            hullClass: 3
+            hullClass: 4
             isStructure: true
             acceleration: 0.0
             angularAcceleration: 0.0
@@ -1250,10 +1250,37 @@
             icon: assets/ships/%civ%/%type%/ship_starbase.png
             hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_starbase.prefab
             introSlot: starbase
-            tacticalLong: 2
-            tacticalWide: 2
+            tacticalLong: 1.3
+            tacticalWide: 1.3
             tacticalTall: 1
             tacticalVisualScale: 1.5
+            hullClass: 4
+            tacticalVictoryDelay: 5.0
+            isStructure: true
+            acceleration: 0.0
+            angularAcceleration: 0.0
+            maxVelocity: 0.0
+            maxAngularVelocity: 0.0
+            velocityFriction: 0.00
+            angularFriction: 0.00
+            flagType: defense_large
+            weaponSlots: 4
+            specialSlots: 3
+            repairsFleets: true
+          - key: hull_orbit_ads_2
+            name: HULL_ORBIT_ADS_NAME
+            description: SHIP_TYPE_ORBIT_ADS_DESCRIPTION
+            cost: 60
+            space: 500
+            hp: 700
+            tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/starbase.png
+            icon: assets/ships/%civ%/%type%/ship_starbase.png
+            hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_starbase.prefab
+            introSlot: starbase
+            tacticalLong: 1.75
+            tacticalWide: 1.75
+            tacticalTall: 1.2
+            tacticalVisualScale: 2.0
             hullClass: 4
             tacticalVictoryDelay: 5.0
             isStructure: true
@@ -1267,20 +1294,20 @@
             weaponSlots: 5
             specialSlots: 3
             repairsFleets: true
-          - key: hull_orbit_ads_2
+          - key: hull_orbit_ads_3
             name: HULL_ORBIT_ADS_NAME
             description: SHIP_TYPE_ORBIT_ADS_DESCRIPTION
-            cost: 60
-            space: 500
-            hp: 700
+            cost: 90
+            space: 650
+            hp: 1100
             tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/starbase.png
             icon: assets/ships/%civ%/%type%/ship_starbase.png
             hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_starbase.prefab
             introSlot: starbase
-            tacticalLong: 2.5
-            tacticalWide: 2.5
-            tacticalTall: 1.25
-            tacticalVisualScale: 2.0
+            tacticalLong: 2
+            tacticalWide: 2
+            tacticalTall: 1.4
+            tacticalVisualScale: 2.5
             hullClass: 4
             tacticalVictoryDelay: 5.0
             isStructure: true
@@ -1294,33 +1321,6 @@
             weaponSlots: 6
             specialSlots: 4
             repairsFleets: true
-          - key: hull_orbit_ads_3
-            name: HULL_ORBIT_ADS_NAME
-            description: SHIP_TYPE_ORBIT_ADS_DESCRIPTION
-            cost: 90
-            space: 650
-            hp: 1100
-            tacticalHPIcon: ContentPrefabs/Tactical/HealthBarIcons/starbase.png
-            icon: assets/ships/%civ%/%type%/ship_starbase.png
-            hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_starbase.prefab
-            introSlot: starbase
-            tacticalLong: 3
-            tacticalWide: 3
-            tacticalTall: 1.5
-            tacticalVisualScale: 2.5
-            hullClass: 4
-            tacticalVictoryDelay: 5.0
-            isStructure: true
-            acceleration: 0.0
-            angularAcceleration: 0.0
-            maxVelocity: 0.0
-            maxAngularVelocity: 0.0
-            velocityFriction: 0.00
-            angularFriction: 0.00
-            flagType: defense_large
-            weaponSlots: 7
-            specialSlots: 5
-            repairsFleets: true
           - key: hull_orbit_ads_4
             name: HULL_ORBIT_ADS_NAME
             description: SHIP_TYPE_ORBIT_ADS_DESCRIPTION
@@ -1331,9 +1331,9 @@
             icon: assets/ships/%civ%/%type%/ship_starbase.png
             hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_starbase.prefab
             introSlot: starbase
-            tacticalLong: 3.5
-            tacticalWide: 3.5
-            tacticalTall: 1.75
+            tacticalLong: 2.3
+            tacticalWide: 2.3
+            tacticalTall: 1.6
             tacticalVisualScale: 3.0
             hullClass: 4
             tacticalVictoryDelay: 5.0
@@ -1345,8 +1345,8 @@
             velocityFriction: 0.00
             angularFriction: 0.00
             flagType: defense_large
-            weaponSlots: 8
-            specialSlots: 6
+            weaponSlots: 7
+            specialSlots: 4
             repairsFleets: true
           - key: hull_orbit_ads_5
             name: HULL_ORBIT_ADS_NAME
@@ -1358,9 +1358,9 @@
             icon: assets/ships/%civ%/%type%/ship_starbase.png
             hologram: /ContentPrefabs/Tactical/Holographic_Ships/%civ%/hologram_%civ%_starbase.prefab
             introSlot: starbase
-            tacticalLong: 4.0
-            tacticalWide: 4.0
-            tacticalTall: 2.0
+            tacticalLong: 2.75
+            tacticalWide: 2.75
+            tacticalTall: 1.8
             tacticalVisualScale: 3.5
             hullClass: 4
             tacticalVictoryDelay: 5.0
@@ -1372,8 +1372,8 @@
             velocityFriction: 0.00
             angularFriction: 0.00
             flagType: defense_large
-            weaponSlots: 9
-            specialSlots: 7
+            weaponSlots: 8
+            specialSlots: 4
             repairsFleets: true
           - key: hull_starbase
             name: HULL_STAR_BASE_NAME

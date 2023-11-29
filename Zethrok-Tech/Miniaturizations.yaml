@@ -213,7 +213,7 @@
             affectedModules:
                 - shipmodule_mass_driver
                 - shipmodule_proton_torpedoes
-                - shipmodule_nuclear_torpedoes                
+                - shipmodule_nuclear_torpedoes
           - key: miniaturization_weapon_4
             name: Weapon 4 - Miniaturization
             description: Weapon 4 - Miniaturization
@@ -364,7 +364,7 @@
             spaceDecreaseFactor: 0.10
             costDecreaseFactor: 0.10
             affectedModules:
-                - shipmodule_meson_missile                                                
+                - shipmodule_meson_missile
           - key: miniaturization_beam_12
             name: Beams - 12
             description: Beams mini - 12
@@ -411,6 +411,6 @@
                 - shipmodule_meson_missile
                 - shipmodule_nuclear_missile
                 - shipmodule_merculite_missile
-                - shipmodule_pulson_missile                
+                - shipmodule_pulson_missile
                 - shipmodule_zeon_missile
 ...

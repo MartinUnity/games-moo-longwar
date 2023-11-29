@@ -1190,6 +1190,7 @@
                   - shipmodule_battle_scanner
                   - shipmodule_rangemaster_targeting_unit
                   - shipmodule_highenergy_focus
+        ## Cannon Tower - (5W/3S)
           - key: design_cannon_tower
             name: SHIP_DESIGN_CANNON_TOWER
             hull: hull_cannon_tower
@@ -1213,6 +1214,7 @@
                   - shipmodule_battle_scanner
                   - shipmodule_rangemaster_targeting_unit
                   - shipmodule_highenergy_focus
+        ## Cannon Tower - 2 (5W/3S)
           - key: design_cannon_tower_2
             name: SHIP_DESIGN_CANNON_TOWER
             hull: hull_cannon_tower_2
@@ -1236,6 +1238,7 @@
                   - shipmodule_battle_scanner
                   - shipmodule_rangemaster_targeting_unit
                   - shipmodule_highenergy_focus
+        ## Cannon Tower - 3 (5W/3S)
           - key: design_cannon_tower_3
             name: SHIP_DESIGN_CANNON_TOWER
             hull: hull_cannon_tower_3
@@ -1259,6 +1262,7 @@
                   - shipmodule_battle_scanner
                   - shipmodule_rangemaster_targeting_unit
                   - shipmodule_highenergy_focus
+        ## Cannon Tower - 4 (5W/3S)
           - key: design_cannon_tower_4
             name: SHIP_DESIGN_CANNON_TOWER
             hull: hull_cannon_tower_4
@@ -1283,6 +1287,7 @@
                   - shipmodule_rangemaster_targeting_unit
                   - shipmodule_highenergy_focus
                   - shipmodule_heavy_armor
+        ## Cannon Tower - 5 (5W/3S)
           - key: design_cannon_tower_5
             name: SHIP_DESIGN_CANNON_TOWER
             hull: hull_cannon_tower_5
@@ -1543,7 +1548,7 @@
                 - slot: shipmodulesubtype_missile
                   prioritizeMods: true
                   sizePriority: 4
-                  slotCount: 2
+                  slotCount: 1
                   mods:
                       - modifier_fast
                       - modifier_mirv
@@ -1553,6 +1558,7 @@
                   - shipmodule_military_upgrade
                   - shipmodule_battle_scanner
                   - shipmodule_highenergy_focus
+        ## Orbit - ADS -2 (5W/3S)
           - key: design_orbit_ads_2
             name: SHIP_DESIGN_ORBIT_ADS
             hull: hull_orbit_ads_2
@@ -1568,7 +1574,7 @@
                 - slot: shipmodulesubtype_beam
                   prioritizeMods: true
                   sizePriority: 5
-                  slotCount: 2
+                  slotCount: 1
                   facing: any
                   mods:
                       - modifier_heavy_mount
@@ -1594,6 +1600,7 @@
                   - shipmodule_military_upgrade
                   - shipmodule_battle_scanner
                   - shipmodule_highenergy_focus
+        ## Orbit - ADS -3 (6W/4S)
           - key: design_orbit_ads_3
             name: SHIP_DESIGN_ORBIT_ADS
             hull: hull_orbit_ads_3
@@ -1617,7 +1624,7 @@
                 - slot: shipmodulesubtype_cannon
                   prioritizeMods: true
                   sizePriority: 10
-                  slotCount: 2
+                  slotCount: 1
                   facing: any
                   mods:
                       - modifier_heavy_mount
@@ -1636,6 +1643,7 @@
                   - shipmodule_battle_scanner
                   - shipmodule_highenergy_focus
                   - shipmodule_heavy_armor
+        ## Orbit - ADS - 4 (7W/4S)
           - key: design_orbit_ads_4
             name: SHIP_DESIGN_ORBIT_ADS
             hull: hull_orbit_ads_4
@@ -1667,7 +1675,7 @@
                 - slot: shipmodulesubtype_missile
                   prioritizeMods: true
                   sizePriority: 6
-                  slotCount: 3
+                  slotCount: 2
                   mods:
                       - modifier_fast
                       - modifier_mirv
@@ -1678,6 +1686,7 @@
                   - shipmodule_battle_scanner
                   - shipmodule_highenergy_focus
                   - shipmodule_heavy_armor
+        ## Orbit - ADS - 5 (8W/4S)
           - key: design_orbit_ads_5
             name: SHIP_DESIGN_ORBIT_ADS
             hull: hull_orbit_ads_5
@@ -1693,7 +1702,7 @@
                 - slot: shipmodulesubtype_beam
                   prioritizeMods: true
                   sizePriority: 8
-                  slotCount: 3
+                  slotCount: 2
                   facing: any
                   mods:
                       - modifier_heavy_mount
