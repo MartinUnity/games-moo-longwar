@@ -12,6 +12,30 @@
 
 ## Should do
 
+shipmodule_nuclear_missile: 0.3+0.05+0.05+0.08+0.08+0.09+0.15 = 80%
+shipmodule_merculite_missile: 0.2+0.05+0.15 = 40%
+shipmodule_pulson_missile: 0.1+0.15 = 25%
+shipmodule_meson_missile: 0.10+0.10+0.10+0.10+0.15 = 55%
+shipmodule_zeon_missile: 0.15 = 15%
+shipmodule_nuclear_bomb: 0.3+0.10+0.10 = 50%
+shipmodule_fusion_bomb: 0.2 = 20%
+shipmodule_antimatter_bomb: 0.1 = 10%
+shipmodule_proton_torpedoes: 0.3+0.05+0.05+0.15 = 55%
+shipmodule_nuclear_torpedoes:  0.3+0.05+0.05+0.05+0.10+0.08+0.09+0.15 = 87%
+shipmodule_antimatter_torpedoes: 0.1+0.15 = 25%
+shipmodule_plasma_torpedoes: 0.15 = 15%
+shipmodule_fusion_beam: 0.3+0.15 = 45%
+shipmodule_ion_pulse_cannon: 0.2+0.15 = 35%
+shipmodule_plasma_cannon: 0.1+0.15 = 25%
+shipmodule_laser_cannon: 0.5+0.05+0.05+0.15 = 75%
+shipmodule_neutron_blaster: 0.5+0.05+0.15 = 70%
+shipmodule_mass_driver: 0.4+0.05+0.05+0.15 = 65%
+shipmodule_graviton_beam: 0.3+0.15 = 45%
+shipmodule_phasors: 0.2+0.15 = 35%
+shipmodule_gauss_cannon: 0.1+0.15 = 25%
+shipmodule_lazer_cannon: 0.1+0.10+0.10+0.15 = 45%
+shipmodule_pulse_beam: 0.05+0.05+0.05+0.05+0.08+0.07+0.15 = 50%
+
 Move techtree:
 tier3
 Cloudputing -> next tier (basic upgrades -3 dep -- remove)
