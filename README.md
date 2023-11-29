@@ -10,6 +10,60 @@
 
 - [change] Research - Tier4 - Soil Enrichment 2
 
+## Should do
+
+Move techtree:
+tier3
+Cloudputing -> next tier (basic upgrades -3 dep -- remove)
+
+tier4
+Fluxtech -> next tier (has engineering dep - remove; change req to Advanced Engineering)
+
+tier5
+Move Artificial Gravity to where fluxtech was (has dep on neturon physics - remove; change req to vorass physics)
+
+tier6
+Move Underwater computing -> next tier (remove dep from macro economics; relink with optronics)
+Move Technet - research hub -> next tier (remove dep from tachyon physics; relink with Antimatter replication)
+Move Planetology -> earlier tier
+
+tier7
+Move automated trading -> next tier (remove dep on optronics, relink with teaching methods)
+Move Multiversity -> next tier (keep req on technet)
+
+tier8
+Nothing
+
+tier9
+Astro Construction -> next tier (remove dep on nano tech; relink to pulse manufactoring)
+
+tier10
+Galatic economics -> remove choise for city planning (no deps)
+Move technet - 3 -> next tier (no deps)
+Move colonial upgrade 2 -> next tier (no deps)
+
+tier11
+Move tradestation 2 -> next tier (galatic networking dep)
+
+tier12
+Move galactic networking -> next tier (temporal fields dep)
+Move advanced fluxtech -> next tier (no deps)
+
+tier13
+Move advanced quantum modulation -> next tier (compressed neutronium dep)
+Move particle beam -> next tier (particle drive dep)
+Move compressed neutronium -> next tier (basic upgrades - 11 dep)
+Move evolving tech -> next tier
+
+tier14
+Move particle drive -> next tier
+Move dark matter -> next tier (relink dep to Aeon tech from basic upgrades - 11)
+Move
+
+tier15
+Move Aoen tech -> next tier (change dep to dark matter)
+
+
 ## 1.6.0
 
 ### Changes from 1.5.1
