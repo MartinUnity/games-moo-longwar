@@ -52,7 +52,7 @@ Move advanced fluxtech -> next tier (no deps)
 tier13
 Move advanced quantum modulation -> next tier (compressed neutronium dep)
 Move particle beam -> next tier (particle drive dep)
-Move compressed neutronium -> next tier (basic upgrades - 11 dep)
+NO - Move compressed neutronium -> next tier (basic upgrades - 11 dep)
 Move evolving tech -> next tier
 
 tier14
