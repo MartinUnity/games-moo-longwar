@@ -491,7 +491,7 @@
         ## Custom - crust
           - key: structure_antimatter_replicator
             name: "Antimatter Replicator"
-            description: "Antimatter replicator - %-based %Production increase on colony (works on absurd_poor as well)"
+            description: "Antimatter replicator - %-based %Production increase on colony"
             icon: assets/structures/crust_prospecting.png
             cost: 60
             upkeep: 2
@@ -506,7 +506,7 @@
             workingStatus: true
           - key: structure_antimatter_replicator_2
             name: "Antimatter Replicator 2"
-            description: "Antimatter replicator 2 - %-based %Production increase on colony (works on absurd_poor as well)"
+            description: "Antimatter replicator 2 - %-based %Production increase on colony"
             icon: assets/structures/crust_prospecting.png
             cost: 120
             upkeep: 2
@@ -523,7 +523,7 @@
             workingStatus: true
           - key: structure_rock_disintegrator
             name: "Rock Disintegrator"
-            description: "Rock Disintegrator (works on absurd_poor as well)"
+            description: "Rock Disintegrator"
             icon: assets/structures/crust_prospecting.png
             cost: 30
             upkeep: 1
@@ -538,7 +538,7 @@
             workingStatus: true
           - key: structure_rock_disintegrator_2
             name: "Rock Disintegrator 2"
-            description: "Rock Disintegrator 2 (works on absurd_poor as well)"
+            description: "Rock Disintegrator 2"
             icon: assets/structures/crust_prospecting.png
             cost: 120
             upkeep: 3
@@ -1103,10 +1103,9 @@
             cost: 60
             ## 2 normal
             upkeep: 1
-            # pollutionMultiplierReduction: 0.25
             ## Normal 5
-            pollutionCleaningRate: 7
-            pollutionMultiplierReduction: 0.025
+            pollutionCleaningRate: 10
+            ## setting pollutionMultiplierReduction does _not_ work -- can only be fixed by cleaning rate
             structureTypes:
                - 6
             workingStatus: true
@@ -1118,8 +1117,7 @@
             upkeep: 2
             upgrades: structure_atmospheric_renewer
             requires: structure_atmospheric_renewer
-            pollutionMultiplierReduction: 0.05
-            pollutionCleaningRate: 15
+            pollutionCleaningRate: 22
             structureTypes:
                - 6
             workingStatus: true
@@ -1131,8 +1129,7 @@
             upkeep: 3
             upgrades: structure_atmospheric_renewer_1
             requires: structure_atmospheric_renewer_1
-            pollutionMultiplierReduction: 0.075
-            pollutionCleaningRate: 30
+            pollutionCleaningRate: 40
             structureTypes:
                 - 6
             workingStatus: true
@@ -1144,8 +1141,7 @@
             upkeep: 5
             upgrades: structure_atmospheric_renewer_2
             requires: structure_atmospheric_renewer_2
-            pollutionMultiplierReduction: 0.10
-            pollutionCleaningRate: 50
+            pollutionCleaningRate: 65
             structureTypes:
                 - 6
             workingStatus: true
@@ -1157,8 +1153,7 @@
             upkeep: 10
             upgrades: structure_atmospheric_renewer_3
             requires: structure_atmospheric_renewer_3
-            pollutionMultiplierReduction: 0.20
-            pollutionCleaningRate: 125
+            pollutionCleaningRate: 175
             structureTypes:
                 - 6
             workingStatus: true
@@ -1169,9 +1164,8 @@
             cost: 500
             upkeep: 5
             #upgrades: structure_pollution_processor
-            # pollutionMultiplierReduction: 1
             ## Was 150
-            pollutionCleaningRate: 75
+            pollutionCleaningRate: 100
             structureTypes:
                 - 6
             workingStatus: true
@@ -1335,7 +1329,17 @@
             icon: assets/structures/weather_controller.png
             cost: 100
             upkeep: 2
-            totalFoodMultiplierBonus: 0.125
+            totalFoodMultiplierBonus: 0.15
+            structureTypes:
+                - 1
+            workingStatus: true
+          - key: structure_foodinator_2
+            name: Foodinator - 2
+            description: Foodinator creates food from waste
+            icon: assets/structures/weather_controller.png
+            cost: 320
+            upkeep: 5
+            totalFoodMultiplierBonus: 0.30
             structureTypes:
                 - 1
             workingStatus: true
@@ -2051,7 +2055,7 @@
             creditIncomeBonus: 1
             baseProductionBonus: 1
             baseResearchBonus: 1
-            pollutionMultiplierReduction: 0.025
+            pollutionCleaningRate: 3
             moraleMultiplierBonusSystem: 0.025
             populationGrowthMultiplierBonus: 0.05
             workingStatus: true
@@ -2069,7 +2073,7 @@
             researchTileBonus: 1
             moraleMultiplierBonusSystem: 0.05
             populationGrowthMultiplierBonus: 0.1
-            pollutionMultiplierReduction: 0.05
+            pollutionCleaningRate: 6
             baseResearchBonus: 2
             baseLifeSupportBonus: 2
             baseProductionBonus: 2
@@ -2089,7 +2093,7 @@
             productionTileBonus: 1
             moraleMultiplierBonusSystem: 0.075
             populationGrowthMultiplierBonus: 0.15
-            pollutionMultiplierReduction: 0.075
+            pollutionCleaningRate: 10
             baseResearchBonus: 4
             baseLifeSupportBonus: 4
             baseProductionBonus: 4
@@ -2234,7 +2238,7 @@
             upkeep: 2
             structureTypes:
                 - 1
-            populationGrowthMultiplierBonus: 0.10
+            populationGrowthMultiplierBonus: 0.15
             workingStatus: true
         ## Custom - Fertility lab 2
           - key: structure_fertilitylab_2
@@ -2245,7 +2249,7 @@
             upkeep: 4
             structureTypes:
                 - 1
-            populationGrowthMultiplierBonus: 0.20
+            populationGrowthMultiplierBonus: 0.30
             upgrades: structure_fertilitylab_1
             requires: structure_fertilitylab_1
             workingStatus: true
@@ -2257,7 +2261,7 @@
             upkeep: 6
             structureTypes:
                 - 1
-            populationGrowthMultiplierBonus: 0.50
+            populationGrowthMultiplierBonus: 0.75
             workingStatus: true
           - key: structure_cloning_center
             name: COLONY_STRUCTURE_CLONING_CENTER_NAME
@@ -2360,8 +2364,20 @@
             icon: assets/structures/toxics_processor.png
             cost: 160
             upkeep: 3
-            # pollutionMultiplierReduction: 0.25
-            pollutionCleaningRate: 12
+            pollutionCleaningRate: 15
+            structureTypes:
+                - 6
+            workingStatus: true
+          ## Custom
+          - key: structure_toxics_processor_2
+            name: COLONY_STRUCTURE_TOXICS_PROCESSOR_NAME_2
+            description: COLONY_STRUCTURE_TOXICS_PROCESSOR_DESCRIPTION
+            icon: assets/structures/toxics_processor.png
+            cost: 380
+            upkeep: 6
+            upgrades: structure_toxics_processor
+            requires: structure_toxics_processor
+            pollutionCleaningRate: 40
             structureTypes:
                 - 6
             workingStatus: true

@@ -775,6 +775,14 @@
                - structure_foodinator_1
             tags:
                  - Population
+          - key: techapp_foodinator_2
+            icon: assets/tech_apps/tech_building_food.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/neutron_collider.prefab
+            unlocks:
+               - structure_foodinator_2
+            tags:
+                 - Population
         ## Custom - Fertility lab
           - key: techapp_fertilitylab_1
             icon: assets/tech_apps/tech_building_food.png
@@ -1189,6 +1197,14 @@
                - shipmodule_bomber_bays
             tags:
                  - Military
+          - key: techapp_advanced_city_planning_2
+            icon: assets/tech_apps/tech_achievement_population.png
+            type: techapptype_techachievement
+            hologram: ContentPrefabs/Research/advanced_city_planning.prefab
+            unlocks:
+               - techachievement_advanced_city_planning_2
+            tags:
+                 - Population
           - key: techapp_advanced_city_planning
             icon: assets/tech_apps/tech_achievement_population.png
             type: techapptype_techachievement
@@ -3216,6 +3232,16 @@
             hologram: ContentPrefabs/Research/toxics_processor.prefab
             unlocks:
                - structure_toxics_processor
+            tags:
+                 - Pollution
+          - key: techapp_toxics_processor_2
+            #name: TECH_APPLICATION_TYPE_TOXICS_PROCESSOR_NAME
+            #description: TECH_APPLICATION_TYPE_TOXICS_PROCESSOR_DESCRIPTION
+            icon: assets/tech_apps/tech_building_pollution.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/toxics_processor.prefab
+            unlocks:
+               - structure_toxics_processor_2
             tags:
                  - Pollution
           - key: techapp_pollution_processor

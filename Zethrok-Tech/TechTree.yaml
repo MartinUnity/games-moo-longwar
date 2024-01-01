@@ -398,6 +398,7 @@
             requires:
                 - technology: technode_advanced_fusion
             unlocks:
+                - application: techapp_fertilitylab_1
                 - application: techapp_radiation_converter
                 - application: techapp_toxic_converter
                 - application: techapp_volcanic_converter
@@ -557,22 +558,25 @@
             unlocks:
                 - application: techapp_crust_prospecting_1
                 - application: techapp_rock_disintegrator_2
-          - key: technode_xenology
-            name: TECHNOLOGY_XENOLOGY_NAME
-            description: TECHNOLOGY_XENOLOGY_DESCRIPTION
+          - key: technode_planetology
+            name: TECHNOLOGY_PLANETOLOGY_NAME
+            description: TECHNOLOGY_PLANETOLOGY_DESCRIPTION
             cost: 510
             x: 4
             y: 2
-            icon: assets/techs/alien_alloys.png
+            icon: assets/techs/planetology.png
             requires:
-                #- technology: technode_galactic_trading
-                # - technology: technode_xenobiotic
-                - technology: technode_military_tactics
-            branches:
-                - unlocks:
-                     - application: techapp_alien_management_center
-                - unlocks:
-                     - application: techapp_xeno_psychology
+                # - technology: technode_genetic_engineering
+                - technology: technode_advanced_engineering
+                - technology: technode_positron_physics
+            unlocks:
+                # - application: techapp_terraforming
+                #- application: techapp_psionics
+                #- application: techapp_heightened_intelligence
+                - application: techapp_biodome_3
+                - application: techapp_giant_compression
+                - application: techapp_asteroid_compression
+                - application: techapp_torpedo_base
           - key: technode_genetic_engineering
             name: TECHNOLOGY_GENETIC_ENGINEERING_NAME
             description: TECHNOLOGY_GENETIC_ENGINEERING_DESCRIPTION
@@ -669,7 +673,6 @@
             unlocks:
                 - application: techapp_tomb_1
                 - application: techapp_fluxtube_1
-                - application: techapp_fertilitylab_1
                 - application: techapp_fungal_farms_2
           - key: technode_genetic_mutations
             name: TECHNOLOGY_GENETIC_MUTATIONS_NAME
@@ -757,25 +760,6 @@
                 # - application: techapp_ion_pulse_cannon
                 - application: techapp_modifications_fusion_beam
                 # - application: techapp_highenergy_focus
-          - key: technode_planetology
-            name: TECHNOLOGY_PLANETOLOGY_NAME
-            description: TECHNOLOGY_PLANETOLOGY_DESCRIPTION
-            cost: 510
-            x: 4
-            y: 13
-            icon: assets/techs/planetology.png
-            requires:
-                # - technology: technode_genetic_engineering
-                - technology: technode_genetic_mutations
-                - technology: technode_advanced_construction
-            unlocks:
-                # - application: techapp_terraforming
-                #- application: techapp_psionics
-                #- application: techapp_heightened_intelligence
-                - application: techapp_biodome_3
-                - application: techapp_giant_compression
-                - application: techapp_asteroid_compression
-                - application: techapp_torpedo_base
         ## Custom
          #### Tier5
           - key: technode_basicupgrades_5
@@ -802,10 +786,25 @@
             icon: assets/techs/galactic_trading.png
             requires:
                 - technology: technode_macro_economics
-                - technology: technode_xenology
             unlocks:
                 - application: techapp_space_port
                 - application: techapp_worker_2
+          - key: technode_xenology
+            name: TECHNOLOGY_XENOLOGY_NAME
+            description: TECHNOLOGY_XENOLOGY_DESCRIPTION
+            cost: 954
+            x: 5
+            y: 2
+            icon: assets/techs/alien_alloys.png
+            requires:
+                #- technology: technode_galactic_trading
+                # - technology: technode_xenobiotic
+                - technology: technode_tachyon_physics
+            branches:
+                - unlocks:
+                     - application: techapp_alien_management_center
+                - unlocks:
+                     - application: techapp_xeno_psychology
         ## Custom
           - key: technode_weapon_5
             name: Hyper Miniaturazation Ray
@@ -973,6 +972,23 @@
                 - application: techapp_modifications_graviton_beam
                 # - application: techapp_inertial_stabilizer
                 #- application: techapp_gyro_destabilizer
+          - key: technode_advanced_government
+            name: TECHNOLOGY_ADVANCED_GOVERNMENT_NAME
+            description: TECHNOLOGY_ADVANCED_GOVERNMENT_DESCRIPTION
+            cost: 1596
+            x: 6
+            y: 4
+            icon: assets/techs/advanced_government.png
+            requires:
+                 - technology: technode_galactic_trading
+                 - technology: technode_xenology
+            unlocks:
+                - application: techapp_export
+                - application: techapp_metro
+                - application: techapp_interplanetary_security_transmitter
+                - application: techapp_advanced_colony_ship
+                # - application: techapp_stock_exchange
+                #- application: techapp_interstellar_stock_exchange
           #- key: technode_cryptoexchange_3
             #name: CryptoExchange - 3
             #description: CryptoExchange - 3
@@ -1054,6 +1070,17 @@
                 # - application: techapp_biomorphic_fungi
                     # - application: techapp_underground_storage # removed 1.2
                 # - application: techapp_anaerobic_colonies
+          - key: technode_toxic_processor_2
+            name: "Toxic Processor - 2"
+            description: "Toxic Processor - 2"
+            cost: 1596
+            x: 6
+            y: 9
+            icon: assets/techs/galactic_trading.png
+            requires:
+                - technology: technode_molecular_compression
+            unlocks:
+                - application: techapp_toxics_processor_2
           - key: technode_astro_engineering
             name: TECHNOLOGY_ASTRO_ENGINEERING_NAME
             description: TECHNOLOGY_ASTRO_ENGINEERING_DESCRIPTION
@@ -1115,25 +1142,6 @@
                 - unlocks:
                      - application: techapp_antimatter_bomb
          #### Tier7
-          - key: technode_advanced_government
-            name: TECHNOLOGY_ADVANCED_GOVERNMENT_NAME
-            description: TECHNOLOGY_ADVANCED_GOVERNMENT_DESCRIPTION
-            cost: 2388
-            x: 7
-            y: 0
-            icon: assets/techs/advanced_government.png
-            requires:
-                 - technology: technode_teaching_methods
-                 # - technology: technode_galactic_trading
-                 # - technology: technode_xenology
-                #- technology: technode_xenobiotic
-            unlocks:
-                - application: techapp_export
-                - application: techapp_metro
-                - application: techapp_interplanetary_security_transmitter
-                - application: techapp_advanced_colony_ship
-                # - application: techapp_stock_exchange
-                #- application: techapp_interstellar_stock_exchange
         ## Custom
           - key: technode_basicupgrades_6
             name: Basic Upgrades - 6
@@ -1274,6 +1282,18 @@
                 # - application: techapp_weather_controller
                 # - application: techapp_biomorphic_fungi
                 #- application: techapp_evolutionary_mutation
+        ## Custom
+          - key: technode_foodinator_2
+            name: "Antimatter Recombobulator"
+            description: "AntiMatter Recombobulator - Inverts antimatter quarks to create food"
+            cost: 2388
+            x: 7
+            y: 10
+            icon: assets/techs/bio_technology.png
+            requires:
+                - technology: technode_toxic_processor_2
+            unlocks:
+                - application: techapp_foodinator_2
           - key: technode_nano_technology
             name: TECHNOLOGY_NANO_TECHNOLOGY_NAME
             description: TECHNOLOGY_NANO_TECHNOLOGY_DESCRIPTION
@@ -1317,7 +1337,7 @@
             icon: assets/techs/advanced_tactics.png
             requires:
                 - technology: technode_subspace_physics
-                - technology: technode_advanced_government
+                - technology: technode_multiversity
             unlocks:
                 - application: techapp_troop_pods
             branches:
@@ -1433,7 +1453,7 @@
             y: 9
             icon: assets/techs/galactic_networking.png
             requires:
-                - technology: technode_advanced_government
+                - technology: technode_multiversity
             unlocks:
                 - application: techapp_technet_2
                 - application: techapp_cryptoexchange_3
@@ -1650,7 +1670,7 @@
             y: 3
             icon: assets/techs/galactic_networking.png
             requires:
-                - technology: technode_technet_2
+                - technology: technode_artificial_intelligence
             unlocks:
                 - application: techapp_technet_3
                 - application: techapp_missile_base_5
@@ -2051,7 +2071,7 @@
             y: 6
             icon: assets/techs/temporal_fields.png
             requires:
-                - technology: technode_shield_13
+                - technology: technode_growth_75
             unlocks:
                 - application: techapp_class_xx_shield
          #### Tier16

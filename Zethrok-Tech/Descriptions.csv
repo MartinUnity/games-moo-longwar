@@ -68,3 +68,8 @@ SHIP_TYPE_TORPEDO_BASE_DESCRIPTION,,"Torpedo Base",,,,,,,,,,,
 HULL_TORPEDO_BASE_NAME,,"Torpedo Base",,,,,,,,,,,
 
 COLONY_STRUCTURE_AUTOMATED_FACTORY_NAME_0,,"Automated Factory - Mini",,,,,,,,,,,
+
+COLONY_STRUCTURE_TOXICS_PROCESSOR_NAME_2,,"Toxic Processor - 2",,,,,,,,,,,
+COLONY_STRUCTURE_TOXICS_PROCESSOR_DESCRIPTION_2,,"Toxic Processor - upgraded filtering based on DeNero theorem",,,,,,,,,,,
+
+TECHNOLOGY_NUCLEAR_1_DESCRIPTION,,"Nuclear Optimizations - havesting inner leptons",,,,,,,,,,,
