@@ -1074,6 +1074,17 @@
                - structure_deep_core_mine
             tags:
                  - Production
+         ## Custom
+          - key: techapp_quantum_mine
+            #name: TECH_APPLICATION_TYPE_DEEP_CORE_MINE_NAME
+            #description: TECH_APPLICATION_TYPE_DEEP_CORE_MINE_DESCRIPTION
+            icon: assets/tech_apps/tech_building_production.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/deep_core_mine.prefab
+            unlocks:
+               - structure_quantum_mine
+            tags:
+                 - Production
           - key: techapp_recyclotron
             #name: TECH_APPLICATION_TYPE_RECYCLOTRON_NAME
             #description: TECH_APPLICATION_TYPE_RECYCLOTRON_DESCRIPTION

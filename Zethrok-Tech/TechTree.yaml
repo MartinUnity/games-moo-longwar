@@ -1511,7 +1511,7 @@
             branches:
                 - unlocks:
                      - application: techapp_gauss_cannon
-                - application: techapp_cannon_tower_5
+                     - application: techapp_cannon_tower_5
                 - unlocks:
                      - application: techapp_cloaking_device
                 # - application: techapp_multiwave_ecm_jammer
@@ -1836,6 +1836,17 @@
                 - application: techapp_beam_lancer_4
                 #- unlocks:
                 #     - application: techapp_stasis_field
+          - key: technode_quantum_mining
+            name: TECHNOLOGY_QUANTUM_MINING_NAME
+            description: TECHNOLOGY_QUANTUM_MINING_DESCRIPTION
+            cost: 9576
+            x: 11
+            y: 7
+            icon: assets/techs/tectonic_engineering.png
+            requires:
+                - technology: technode_galactic_economics
+            unlocks:
+                - application: techapp_quantum_mine
           - key: technode_artificial_conciousness
             name: TECHNOLOGY_ARTIFICIAL_CONCIOUSNESS_NAME
             description: TECHNOLOGY_ARTIFICIAL_CONCIOUSNESS_DESCRIPTION

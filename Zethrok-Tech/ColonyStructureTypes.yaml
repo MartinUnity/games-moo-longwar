@@ -614,8 +614,7 @@
             upgrades: structure_crust_prospecting_2
             requires: structure_crust_prospecting_2
             baseProductionBonus: 6
-            # productionTileBonus: 1
-            # creditIncomeBonus: 8
+            workerYieldMultiplierBonus: 0.05
             structureTypes:
                - 0
             compatibleRichness:
@@ -632,8 +631,7 @@
             upgrades: structure_crust_prospecting_3
             requires: structure_crust_prospecting_3
             baseProductionBonus: 8
-            # productionTileBonus: 1
-            # creditIncomeBonus: 8
+            workerYieldMultiplierBonus: 0.10
             structureTypes:
                - 0
             compatibleRichness:
@@ -650,8 +648,8 @@
             upgrades: structure_crust_prospecting_4
             requires: structure_crust_prospecting_4
             baseProductionBonus: 10
-            # productionTileBonus: 1
-            # creditIncomeBonus: 8
+            productionTileBonus: 1
+            workerYieldMultiplierBonus: 0.15
             structureTypes:
                - 0
             compatibleRichness:
@@ -837,8 +835,9 @@
             icon: assets/structures/robo_miners.png
             cost: 360
             upkeep: 10
-            baseProductionBonus: 7
+            baseProductionBonus: 6
             productionTileBonus: 1
+            workerYieldMultiplierBonus: 0.10
             upgrades: structure_robominers
             requires: structure_robominers
             structureTypes:
@@ -853,6 +852,18 @@
             buyoutCostModifier: -0.2
             structureTypes:
                 - 3
+            workingStatus: true
+            ## Custom
+          - key: structure_quantum_mine
+            name: COLONY_STRUCTURE_QUANTUM_MINE_NAME
+            description: COLONY_STRUCTURE_QUANTUM_MINE_DESCRIPTION
+            icon: assets/structures/deep_core_mine.png
+            cost: 660
+            upkeep: 20
+            productionTileBonus: 3
+            workerYieldMultiplierBonus: 0.15
+            structureTypes:
+                - 0
             workingStatus: true
           - key: structure_deep_core_mine
             name: COLONY_STRUCTURE_DEEP_CORE_MINE_NAME
@@ -1339,6 +1350,8 @@
             icon: assets/structures/weather_controller.png
             cost: 320
             upkeep: 5
+            upgrades: structure_foodinator_1
+            requires: structure_foodinator_1
             totalFoodMultiplierBonus: 0.30
             structureTypes:
                 - 1
