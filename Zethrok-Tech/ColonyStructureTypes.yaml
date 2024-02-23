@@ -448,6 +448,7 @@
             workerYieldMultiplierBonus: 0.25
             compatibleBiomes:
                 - biome_volcanic
+                - biome_inferno
             structureTypes:
                 - 0
             workingStatus: true
@@ -485,6 +486,7 @@
             researchTileBonus: 2
             compatibleBiomes:
                 - biome_volcanic
+                - biome_inferno
             structureTypes:
                 - 0
             workingStatus: true
@@ -2297,7 +2299,6 @@
             compatibleBiomes:
                 - biome_gaia
                 - biome_grassland
-                - biome_inferno
                 - biome_tropical
                 - biome_cavernous
                 - biome_terran
@@ -2323,7 +2324,6 @@
             compatibleBiomes:
                 - biome_gaia
                 - biome_grassland
-                - biome_inferno
                 - biome_tropical
                 - biome_cavernous
                 - biome_terran
@@ -2349,7 +2349,6 @@
             compatibleBiomes:
                 - biome_gaia
                 - biome_grassland
-                - biome_inferno
                 - biome_tropical
                 - biome_cavernous
                 - biome_terran
