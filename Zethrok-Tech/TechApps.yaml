@@ -312,14 +312,14 @@
                - structure_cannon_tower_4
             tags:
                  - Defenses
-          - key: techapp_cannon_tower_4
+          - key: techapp_cannon_tower_5
             #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
             #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
             icon: assets/tech_apps/tech_building_military.png
             type: techapptype_structure
             hologram: ContentPrefabs/Research/ground_batteries.prefab
             unlocks:
-               - structure_cannon_tower_4
+               - structure_cannon_tower_5
             tags:
                  - Defenses
           - key: techapp_ground_batteries

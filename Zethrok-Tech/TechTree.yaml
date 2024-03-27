@@ -355,8 +355,11 @@
                 - technology: technode_electronics
             unlocks:
                 - application: techapp_caves
-                - application: techapp_civnet
-                - application: techapp_voidcoinmining
+            branches:
+                - unlocks:
+                    - application: techapp_civnet
+                - unlocks:
+                    - application: techapp_voidcoinmining
           - key: technode_military_tactics
             name: TECHNOLOGY_MILITARY_TACTICS_NAME
             description: TECHNOLOGY_MILITARY_TACTICS_DESCRIPTION
@@ -428,10 +431,13 @@
             requires:
                 - technology: technode_nuclear_1
             unlocks:
-                - application: techapp_meson_missile
-                - application: techapp_meson_drive
                 - application: techapp_miniaturization_weapon_2
                 - application: techapp_modifications_nuclear_torpedoes
+            branches:
+                - unlocks:
+                    - application: techapp_meson_drive
+                - unlocks:
+                    - application: techapp_meson_missile
           - key: technode_xenobiotic
             name: TECHNOLOGY_XENOBIOTIC_NAME
             description: TECHNOLOGY_XENOBIOTIC_DESCRIPTION
@@ -495,9 +501,11 @@
             icon: assets/techs/advanced_magnetism.png
             requires:
                 - technology: technode_basicupgrades_2
-            unlocks:
-                 - application: techapp_class_ii_shield
-                 - application: techapp_fleethub
+            branches:
+                - unlocks:
+                     - application: techapp_class_ii_shield
+                - unlocks:
+                     - application: techapp_fleethub
           - key: technode_advanced_engineering
             name: TECHNOLOGY_ADVANCED_ENGINEERING_NAME
             description: TECHNOLOGY_ADVANCED_ENGINEERING_DESCRIPTION
@@ -703,10 +711,13 @@
                 - technology: technode_positron_physics
                 - technology: technode_weapon_2_1
             unlocks:
-                - application: techapp_pulse_beam
-                - application: techapp_modifications_meson_missile
                 - application: techapp_caves_2
                 - application: techapp_beam_lancer
+            branches:
+                - unlocks:
+                    - application: techapp_pulse_beam
+                - unlocks:
+                    - application: techapp_modifications_meson_missile
           - key: technode_advanced_construction
             name: TECHNOLOGY_ADVANCED_CONSTRUCTION_NAME
             description: TECHNOLOGY_ADVANCED_CONSTRUCTION_DESCRIPTION
@@ -816,10 +827,13 @@
             requires:
                 - technology: technode_tachyon_physics
             unlocks:
-                - application: techapp_miniaturization_weapon_3
                 - application: techapp_miniaturization_nuclearbombs_2
-                - application: techapp_miniaturization_pulse_1
-                - application: techapp_miniaturization_meson_1
+            branches:
+                - unlocks:
+                    - application: techapp_miniaturization_weapon_3
+                    - application: techapp_miniaturization_pulse_1
+                - unlocks:
+                    - application: techapp_miniaturization_meson_1
           - key: technode_magneto_gravitics
             name: TECHNOLOGY_MAGNETO_GRAVITICS_NAME
             description: TECHNOLOGY_MAGNETO_GRAVITICS_DESCRIPTION
@@ -833,11 +847,15 @@
                 - technology: technode_ion_fission
                 # - technology: technode_gravitic_fields
             unlocks:
-                - application: techapp_miniaturization_cannons_2
-                - application: techapp_graviton_beam
-                - application: techapp_class_iii_shield
                 - application: techapp_planetary_radiation_shield
                 - application: techapp_cannon_tower_3
+            branches:
+                - unlocks:
+                    - application: techapp_miniaturization_cannons_2
+                - unlocks:
+                    - application: techapp_graviton_beam
+                - unlocks:
+                    - application: techapp_class_iii_shield
                 #- application: techapp_tractor_beam
         ## Custom
           - key: technode_optronics
@@ -876,7 +894,7 @@
                 - unlocks:
                      - application: techapp_armor_barracks
                 - unlocks:
-                     - application: techapp_powered_armor
+                    - application: techapp_powered_armor
         ## Custom
           - key: technode_foodinator_1
             name: Antimatter Replication
@@ -901,13 +919,13 @@
                 - technology: technode_super_alloys
                 - technology: technode_ion_fission
             unlocks:
-                - application: techapp_miniaturization_missiles_2
                 - application: techapp_pollution_processor
             branches:
                 - unlocks:
-                     - application: techapp_neutronium_armor
+                    - application: techapp_neutronium_armor
                 - unlocks:
-                     - application: techapp_pulson_missile
+                    - application: techapp_pulson_missile
+                    - application: techapp_miniaturization_missiles_2
                 #- application: techapp_urridium_fuel_cells
          #### Tier6
           - key: technode_weapon_mini_1
