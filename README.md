@@ -1,5 +1,47 @@
 # Master of Orion - Mod
 
+## 1.6.1
+
+### Changes from 1.6.0
+
+Changes:
+- [change] Galaxy - Bumped max population of all planets by +2
+- [change] Research - moved research in tiers around to better reflect gameplay/needs based on super/extremely slow modes - more in list below
+- [change] Research - Tier10 - Added Soil Cultivation
+- [change] Structure - added Mini Factory (+1 prduction) to tier 0
+- [change] Structure - added Quantum Mine to tier 11 - like an improved core mining
+- [change] Structure - added Foodinator - 2 as an upgrade path
+- [change] Structure - added Toxic Processor - 2 for more pollution cleanup endgame
+- [change] Structure - Changed all pollution settings for `pollutionMultiplierReduction` -> `pollutionCleaningRate` as the former does not work
+- [change] Bumped miniaturization values ~20% and aligned all endgame values - ie nuclear weapons will now max out at ~80% endgame, mercual at ~70% etc
+- [change] Minor adjustment of weaponry + specials for all stationary platforms
+
+#### Research tier movements
+
+|Tier |Movement       |
+|-----|---------------|
+|3    |Cloudputing -> next tier (basic upgrades -3 dep -- remove)|
+|4    |Fluxtech -> next tier (has engineering dep - remove; change req to Advanced Engineering)|
+|5    |Move Artificial Gravity to where fluxtech was (has dep on neturon physics - remove; change req to vorass physics)|
+|6    |Move Underwater computing -> next tier (remove dep from macro economics; relink with optronics)|
+|6    |Move Technet - research hub -> next tier (remove dep from tachyon physics; relink with Antimatter replication)|
+|6    |Move Planetology -> earlier tier|
+|7    |Move automated trading -> next tier (remove dep on optronics, relink with teaching methods)|
+|7    |Move Multiversity -> next tier (keep req on technet)|
+|9    |Astro Construction -> next tier (remove dep on nano tech; relink to pulse manufactoring)|
+|10   |Galatic economics -> remove choise for city planning (no deps)|
+|10   |Move technet - 3 -> next tier (no deps)|
+|10   |Move colonial upgrade 2 -> next tier (no deps)|
+|11   |Move tradestation 2 -> next tier (galatic networking dep)|
+|12   |Move galactic networking -> next tier (temporal fields dep)|
+|12   |Move advanced fluxtech -> next tier (no deps)|
+|13   |Move advanced quantum modulation -> next tier (compressed neutronium dep)|
+|13   |Move particle beam -> next tier (particle drive dep)|
+|13   |Move evolving tech -> next tier|
+|14   |Move particle drive -> next tier|
+|14   |Move dark matter -> next tier (relink dep to Aeon tech from basic upgrades - 11)|
+|15   |Move Aoen tech -> next tier (change dep to dark matter)|
+
 ## 1.6.0
 
 ### Changes from 1.5.1

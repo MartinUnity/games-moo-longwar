@@ -31,7 +31,7 @@
             allowsBattleshipsConstruction: true
             structureTypes:
                 - 5
-            workingStatus: true            
+            workingStatus: true
           - key: structure_orbit_ads_2
             name: COLONY_STRUCTURE_ORBIT_ADS_NAME_2
             description: COLONY_STRUCTURE_ORBIT_ADS_DESCRIPTION
@@ -48,7 +48,7 @@
             allowsBattleshipsConstruction: true
             structureTypes:
                 - 5
-            workingStatus: true       
+            workingStatus: true
           - key: structure_orbit_ads_3
             name: COLONY_STRUCTURE_ORBIT_ADS_NAME_3
             description: COLONY_STRUCTURE_ORBIT_ADS_DESCRIPTION
@@ -65,7 +65,7 @@
             allowsBattleshipsConstruction: true
             structureTypes:
                 - 5
-            workingStatus: true       
+            workingStatus: true
           - key: structure_orbit_ads_4
             name: COLONY_STRUCTURE_ORBIT_ADS_NAME_4
             description: COLONY_STRUCTURE_ORBIT_ADS_DESCRIPTION
@@ -82,7 +82,7 @@
             allowsBattleshipsConstruction: true
             structureTypes:
                 - 5
-            workingStatus: true   
+            workingStatus: true
           - key: structure_orbit_ads_5
             name: COLONY_STRUCTURE_ORBIT_ADS_NAME_5
             description: COLONY_STRUCTURE_ORBIT_ADS_DESCRIPTION
@@ -99,7 +99,7 @@
             allowsBattleshipsConstruction: true
             structureTypes:
                 - 5
-            workingStatus: true                                                          
+            workingStatus: true
           - key: structure_battlestation
             name: COLONY_STRUCTURE_BATTLE_STATION_NAME
             description: COLONY_STRUCTURE_BATTLE_STATION_DESCRIPTION
@@ -149,7 +149,7 @@
             allowsBattleshipsConstruction: true
             structureTypes:
                 - 5
-            workingStatus: true            
+            workingStatus: true
           - key: structure_scientific_victory_1
             name: COLONY_STRUCTURE_SCIENTIFIC_VICTORY_1_NAME
             description: COLONY_STRUCTURE_SCIENTIFIC_VICTORY_1_DESCRIPTION
@@ -269,6 +269,17 @@
             structureTypes:
                 - 0
             workingStatus: true
+          ## Custom - v1.6.1
+          - key: structure_automated_factory_0
+            name: COLONY_STRUCTURE_AUTOMATED_FACTORY_NAME_0
+            description: COLONY_STRUCTURE_AUTOMATED_FACTORY_DESCRIPTION
+            icon: assets/structures/automated_factory.png
+            cost: 25
+            upkeep: 1
+            baseProductionBonus: 1
+            structureTypes:
+                - 0
+            workingStatus: true
             ## Custom
           - key: structure_fleethub
             name: Fleethub
@@ -280,7 +291,7 @@
             fleetSupportBonus: 2
             structureTypes:
                 - 5
-            workingStatus: true            
+            workingStatus: true
         ## Custom - automated_factory
           - key: structure_automated_factory_1
             name: Automated Factory 1
@@ -301,7 +312,7 @@
             cost: 200
             upkeep: 4
             upgrades: structure_automated_factory_1
-            requires: structure_automated_factory_1            
+            requires: structure_automated_factory_1
             baseProductionBonus: 5
             structureTypes:
                 - 0
@@ -313,7 +324,7 @@
             cost: 400
             upkeep: 5
             upgrades: structure_automated_factory_2
-            requires: structure_automated_factory_2            
+            requires: structure_automated_factory_2
             baseProductionBonus: 6
             structureTypes:
                 - 0
@@ -325,7 +336,7 @@
             cost: 800
             upkeep: 6
             upgrades: structure_automated_factory_3
-            requires: structure_automated_factory_3            
+            requires: structure_automated_factory_3
             baseProductionBonus: 8
             structureTypes:
                 - 0
@@ -400,7 +411,7 @@
             shipTemplate: design_missile_base_6
             structureTypes:
                 - 5
-            workingStatus: true                                                
+            workingStatus: true
           - key: structure_colonial_revenue_services
             name: COLONY_STRUCTURE_COLONIAL_REVENUE_SERVICES_NAME
             description: COLONY_STRUCTURE_COLONIAL_REVENUE_SERVICES_DESCRIPTION
@@ -421,7 +432,7 @@
             upkeep: 0
             workerIncomeBonus: 1
             upgrades: structure_colonial_revenue_services
-            requires: structure_colonial_revenue_services            
+            requires: structure_colonial_revenue_services
             #creditIncomeBonus: 4
             # requires: structure_government_building
             structureTypes:
@@ -437,9 +448,10 @@
             workerYieldMultiplierBonus: 0.25
             compatibleBiomes:
                 - biome_volcanic
+                - biome_inferno
             structureTypes:
                 - 0
-            workingStatus: true            
+            workingStatus: true
           - key: structure_toxic_converter
             name: "Toxic ReFilter"
             description: "Toxic Sludge ReFilter - energizes toxic gas"
@@ -451,7 +463,7 @@
                 - biome_toxic
             structureTypes:
                 - 0
-            workingStatus: true      
+            workingStatus: true
           - key: structure_radiation_converter
             name: "Radiation Converter"
             description: "Radiation Converter - Converts Radioation into Pure Energy"
@@ -463,7 +475,7 @@
                 - biome_radiated
             structureTypes:
                 - 0
-            workingStatus: true                              
+            workingStatus: true
           - key: structure_volcanic_research
             name: "Inferno Research"
             description: "Research facility dedicated to harnessing infernal dynamics"
@@ -474,13 +486,14 @@
             researchTileBonus: 2
             compatibleBiomes:
                 - biome_volcanic
+                - biome_inferno
             structureTypes:
                 - 0
-            workingStatus: true            
+            workingStatus: true
         ## Custom - crust
           - key: structure_antimatter_replicator
             name: "Antimatter Replicator"
-            description: "Antimatter replicator - %-based %Production increase on colony (works on absurd_poor as well)"
+            description: "Antimatter replicator - %-based %Production increase on colony"
             icon: assets/structures/crust_prospecting.png
             cost: 60
             upkeep: 2
@@ -488,14 +501,14 @@
             structureTypes:
                - 0
             compatibleRichness:
-               - planetmineralrichness_abundant            
+               - planetmineralrichness_abundant
                - planetmineralrichness_poor
                - planetmineralrichness_ultra_poor
                - planetmineralrichness_absurd_poor
-            workingStatus: true          
+            workingStatus: true
           - key: structure_antimatter_replicator_2
             name: "Antimatter Replicator 2"
-            description: "Antimatter replicator 2 - %-based %Production increase on colony (works on absurd_poor as well)"
+            description: "Antimatter replicator 2 - %-based %Production increase on colony"
             icon: assets/structures/crust_prospecting.png
             cost: 120
             upkeep: 2
@@ -505,14 +518,14 @@
             structureTypes:
                - 0
             compatibleRichness:
-               - planetmineralrichness_abundant            
+               - planetmineralrichness_abundant
                - planetmineralrichness_poor
                - planetmineralrichness_ultra_poor
-               - planetmineralrichness_absurd_poor            
-            workingStatus: true          
+               - planetmineralrichness_absurd_poor
+            workingStatus: true
           - key: structure_rock_disintegrator
             name: "Rock Disintegrator"
-            description: "Rock Disintegrator (works on absurd_poor as well)"
+            description: "Rock Disintegrator"
             icon: assets/structures/crust_prospecting.png
             cost: 30
             upkeep: 1
@@ -523,11 +536,11 @@
             compatibleRichness:
                - planetmineralrichness_poor
                - planetmineralrichness_ultra_poor
-               - planetmineralrichness_absurd_poor            
-            workingStatus: true        
+               - planetmineralrichness_absurd_poor
+            workingStatus: true
           - key: structure_rock_disintegrator_2
             name: "Rock Disintegrator 2"
-            description: "Rock Disintegrator 2 (works on absurd_poor as well)"
+            description: "Rock Disintegrator 2"
             icon: assets/structures/crust_prospecting.png
             cost: 120
             upkeep: 3
@@ -540,7 +553,7 @@
             compatibleRichness:
                - planetmineralrichness_poor
                - planetmineralrichness_ultra_poor
-               - planetmineralrichness_absurd_poor            
+               - planetmineralrichness_absurd_poor
             workingStatus: true
           - key: structure_crust_prospecting
             name: COLONY_STRUCTURE_CRUST_PROSPECTING_NAME
@@ -603,8 +616,7 @@
             upgrades: structure_crust_prospecting_2
             requires: structure_crust_prospecting_2
             baseProductionBonus: 6
-            # productionTileBonus: 1
-            # creditIncomeBonus: 8
+            workerYieldMultiplierBonus: 0.05
             structureTypes:
                - 0
             compatibleRichness:
@@ -621,8 +633,7 @@
             upgrades: structure_crust_prospecting_3
             requires: structure_crust_prospecting_3
             baseProductionBonus: 8
-            # productionTileBonus: 1
-            # creditIncomeBonus: 8
+            workerYieldMultiplierBonus: 0.10
             structureTypes:
                - 0
             compatibleRichness:
@@ -639,15 +650,15 @@
             upgrades: structure_crust_prospecting_4
             requires: structure_crust_prospecting_4
             baseProductionBonus: 10
-            # productionTileBonus: 1
-            # creditIncomeBonus: 8
+            productionTileBonus: 1
+            workerYieldMultiplierBonus: 0.15
             structureTypes:
                - 0
             compatibleRichness:
                - planetmineralrichness_poor
                - planetmineralrichness_ultra_poor
                - planetmineralrichness_absurd_poor
-            workingStatus: true            
+            workingStatus: true
           - key: structure_tradestation
             name: TradeStation
             description: TradeStation
@@ -684,7 +695,7 @@
             creditIncomeBonus: 3
             structureTypes:
                 - 3
-            workingStatus: true            
+            workingStatus: true
           - key: structure_space_port
             name: COLONY_STRUCTURE_SPACE_PORT_NAME
             description: COLONY_STRUCTURE_SPACE_PORT_DESCRIPTION
@@ -826,13 +837,14 @@
             icon: assets/structures/robo_miners.png
             cost: 360
             upkeep: 10
-            baseProductionBonus: 7
+            baseProductionBonus: 6
             productionTileBonus: 1
+            workerYieldMultiplierBonus: 0.10
             upgrades: structure_robominers
-            requires: structure_robominers            
+            requires: structure_robominers
             structureTypes:
                - 0
-            workingStatus: true            
+            workingStatus: true
           - key: structure_geosynchronic_wharf
             name: COLONY_STRUCTURE_GEOSYNCHRONIC_WHARF_NAME
             description: COLONY_STRUCTURE_GEOSYNCHRONIC_WHARF_DESCRIPTION
@@ -842,6 +854,18 @@
             buyoutCostModifier: -0.2
             structureTypes:
                 - 3
+            workingStatus: true
+            ## Custom
+          - key: structure_quantum_mine
+            name: COLONY_STRUCTURE_QUANTUM_MINE_NAME
+            description: COLONY_STRUCTURE_QUANTUM_MINE_DESCRIPTION
+            icon: assets/structures/deep_core_mine.png
+            cost: 660
+            upkeep: 20
+            productionTileBonus: 3
+            workerYieldMultiplierBonus: 0.15
+            structureTypes:
+                - 0
             workingStatus: true
           - key: structure_deep_core_mine
             name: COLONY_STRUCTURE_DEEP_CORE_MINE_NAME
@@ -871,7 +895,7 @@
             cost: 140
             upkeep: 4
             ## 25 normaly
-            pollutionCleaningRate: 35 
+            pollutionCleaningRate: 35
             structureTypes:
                 - 6
             workingStatus: true
@@ -925,7 +949,7 @@
             shipTemplate: design_beam_lancer_4
             structureTypes:
                 - 5
-            workingStatus: true                                            
+            workingStatus: true
           - key: structure_cannon_tower
             name: COLONY_STRUCTURE_CANNON_TOWER_NAME
             description: COLONY_STRUCTURE_CANNON_TOWER_DESCRIPTION
@@ -947,7 +971,7 @@
             shipTemplate: design_cannon_tower_2
             structureTypes:
                 - 5
-            workingStatus: true   
+            workingStatus: true
           - key: structure_cannon_tower_3
             name: COLONY_STRUCTURE_CANNON_TOWER_NAME_3
             description: COLONY_STRUCTURE_CANNON_TOWER_DESCRIPTION
@@ -959,7 +983,7 @@
             shipTemplate: design_cannon_tower_3
             structureTypes:
                 - 5
-            workingStatus: true 
+            workingStatus: true
           - key: structure_cannon_tower_4
             name: COLONY_STRUCTURE_CANNON_TOWER_NAME_4
             description: COLONY_STRUCTURE_CANNON_TOWER_DESCRIPTION
@@ -971,7 +995,7 @@
             shipTemplate: design_cannon_tower_4
             structureTypes:
                 - 5
-            workingStatus: true         
+            workingStatus: true
           - key: structure_cannon_tower_5
             name: COLONY_STRUCTURE_CANNON_TOWER_NAME_5
             description: COLONY_STRUCTURE_CANNON_TOWER_DESCRIPTION
@@ -983,7 +1007,7 @@
             shipTemplate: design_cannon_tower_5
             structureTypes:
                 - 5
-            workingStatus: true                                        
+            workingStatus: true
           ## Custom
           - key: structure_torpedo_base
             name: COLONY_STRUCTURE_TORPEDO_BASE_NAME
@@ -1018,7 +1042,7 @@
             shipTemplate: design_torpedo_base_3
             structureTypes:
                 - 5
-            workingStatus: true                        
+            workingStatus: true
           - key: structure_ground_batteries
             name: COLONY_STRUCTURE_GROUND_BATTERIES_NAME
             description: COLONY_STRUCTURE_GROUND_BATTERIES_DESCRIPTION
@@ -1092,10 +1116,9 @@
             cost: 60
             ## 2 normal
             upkeep: 1
-            # pollutionMultiplierReduction: 0.25
             ## Normal 5
-            pollutionCleaningRate: 7
-            pollutionMultiplierReduction: 0.025
+            pollutionCleaningRate: 10
+            ## setting pollutionMultiplierReduction does _not_ work -- can only be fixed by cleaning rate
             structureTypes:
                - 6
             workingStatus: true
@@ -1107,8 +1130,7 @@
             upkeep: 2
             upgrades: structure_atmospheric_renewer
             requires: structure_atmospheric_renewer
-            pollutionMultiplierReduction: 0.05
-            pollutionCleaningRate: 15 
+            pollutionCleaningRate: 22
             structureTypes:
                - 6
             workingStatus: true
@@ -1120,8 +1142,7 @@
             upkeep: 3
             upgrades: structure_atmospheric_renewer_1
             requires: structure_atmospheric_renewer_1
-            pollutionMultiplierReduction: 0.075
-            pollutionCleaningRate: 30
+            pollutionCleaningRate: 40
             structureTypes:
                 - 6
             workingStatus: true
@@ -1133,8 +1154,7 @@
             upkeep: 5
             upgrades: structure_atmospheric_renewer_2
             requires: structure_atmospheric_renewer_2
-            pollutionMultiplierReduction: 0.10
-            pollutionCleaningRate: 50
+            pollutionCleaningRate: 65
             structureTypes:
                 - 6
             workingStatus: true
@@ -1146,11 +1166,10 @@
             upkeep: 10
             upgrades: structure_atmospheric_renewer_3
             requires: structure_atmospheric_renewer_3
-            pollutionMultiplierReduction: 0.20
-            pollutionCleaningRate: 125
+            pollutionCleaningRate: 175
             structureTypes:
                 - 6
-            workingStatus: true            
+            workingStatus: true
           - key: structure_core_waste_dump
             name: COLONY_STRUCTURE_CORE_WASTE_DUMP_NAME
             description: COLONY_STRUCTURE_CORE_WASTE_DUMP_DESCRIPTION
@@ -1158,9 +1177,8 @@
             cost: 500
             upkeep: 5
             #upgrades: structure_pollution_processor
-            # pollutionMultiplierReduction: 1
             ## Was 150
-            pollutionCleaningRate: 75
+            pollutionCleaningRate: 100
             structureTypes:
                 - 6
             workingStatus: true
@@ -1213,7 +1231,7 @@
             #workerResearchBonus: 0.60
             structureTypes:
                 - 1
-            workingStatus: true            
+            workingStatus: true
         ## Custom - hydroponic_farm
           - key: structure_hydroponic_farm_1
             name: Hydroponic Farm 1
@@ -1274,7 +1292,7 @@
             baseLifeSupportBonus: 8
             structureTypes:
                 - 1
-            workingStatus: true            
+            workingStatus: true
           - key: structure_subterranean_farms
             name: COLONY_STRUCTURE_SUBTERRANEAN_FARMS_NAME
             description: COLONY_STRUCTURE_SUBTERRANEAN_FARMS_DESCRIPTION
@@ -1296,7 +1314,7 @@
             #foodCarryoverRatio: 0.25
             #structureTypes:
                 #- 1
-            #workingStatus: true            
+            #workingStatus: true
           - key: structure_matter_converter
             name: COLONY_STRUCTURE_MATTER_CONVERTER_NAME
             description: COLONY_STRUCTURE_MATTER_CONVERTER_DESCRIPTION
@@ -1324,7 +1342,19 @@
             icon: assets/structures/weather_controller.png
             cost: 100
             upkeep: 2
-            totalFoodMultiplierBonus: 0.125
+            totalFoodMultiplierBonus: 0.15
+            structureTypes:
+                - 1
+            workingStatus: true
+          - key: structure_foodinator_2
+            name: Foodinator - 2
+            description: Foodinator creates food from waste
+            icon: assets/structures/weather_controller.png
+            cost: 320
+            upkeep: 5
+            upgrades: structure_foodinator_1
+            requires: structure_foodinator_1
+            totalFoodMultiplierBonus: 0.30
             structureTypes:
                 - 1
             workingStatus: true
@@ -1355,7 +1385,7 @@
             empireUnique: true
             structureTypes:
                - 5
-            workingStatus: false            
+            workingStatus: false
           - key: structure_space_academy
             name: COLONY_STRUCTURE_SPACE_ACADEMY_NAME
             description: COLONY_STRUCTURE_SPACE_ACADEMY_DESCRIPTION
@@ -1437,7 +1467,7 @@
             spyTrainingTimeModifier: 0.15
             startingSpyLvl: 2
             # spyCapacity: 15
-            requires: structure_spy_center            
+            requires: structure_spy_center
           - key: structure_interplanetary_security_transmitter
             name: COLONY_STRUCTURE_INTERPLANETARY_SECURITY_TRANSMITTER_NAME
             description: COLONY_STRUCTURE_INTERPLANETARY_SECURITY_TRANSMITTER_DESCRIPTION
@@ -1636,14 +1666,14 @@
             upkeep: 5
             baseResearchBonus: 6
             requires: structure_deep_sea_cooling
-            upgrades: structure_deep_sea_cooling            
+            upgrades: structure_deep_sea_cooling
             compatibleBiomes:
                 - biome_gaia
                 - biome_terran
                 - biome_ocean
             structureTypes:
                 - 2
-            workingStatus: true            
+            workingStatus: true
           - key: structure_galactic_cybernet_node
             name: COLONY_STRUCTURE_GALACTIC_CYBERNET_NODE_NAME
             description: COLONY_STRUCTURE_GALACTIC_CYBERNET_NODE_DESCRIPTION
@@ -1810,11 +1840,11 @@
             upkeep: 5
             # baseResearchBonus: 2
             upgrades: structure_advance_data_center
-            requires: structure_advance_data_center            
+            requires: structure_advance_data_center
             researchTileBonus: 2
             structureTypes:
                 - 2
-            workingStatus: true            
+            workingStatus: true
           - key: structure_high_orbit_sonar
             name: COLONY_STRUCTURE_HIGH_ORBIT_SONAR_NAME
             description: COLONY_STRUCTURE_HIGH_ORBIT_SONAR_DESCRIPTION
@@ -1909,7 +1939,7 @@
             cost: 240
             upkeep: 4
             upgrades: structure_fungal_farms_2
-            requires: structure_fungal_farms_2            
+            requires: structure_fungal_farms_2
             baseLifeSupportBonus: 4
             compatibleBiomes:
                 - biome_tundra
@@ -1944,7 +1974,7 @@
             cost: 40
             upkeep: 2
             upgrades: structure_biodome_1
-            requires: structure_biodome_1            
+            requires: structure_biodome_1
             baseLifeSupportBonus: 3
             compatibleBiomes:
                 - biome_volcanic
@@ -1961,7 +1991,7 @@
             cost: 80
             upkeep: 3
             upgrades: structure_biodome_2
-            requires: structure_biodome_2            
+            requires: structure_biodome_2
             baseLifeSupportBonus: 4
             compatibleBiomes:
                 - biome_volcanic
@@ -1969,7 +1999,7 @@
                 - biome_radiated
             structureTypes:
                 - 1
-            workingStatus: true            
+            workingStatus: true
           - key: structure_moon_laboratory
             name: COLONY_STRUCTURE_MOON_LABORATORY_NAME
             description: COLONY_STRUCTURE_MOON_LABORATORY_DESCRIPTION
@@ -2040,7 +2070,7 @@
             creditIncomeBonus: 1
             baseProductionBonus: 1
             baseResearchBonus: 1
-            pollutionMultiplierReduction: 0.025
+            pollutionCleaningRate: 3
             moraleMultiplierBonusSystem: 0.025
             populationGrowthMultiplierBonus: 0.05
             workingStatus: true
@@ -2058,7 +2088,7 @@
             researchTileBonus: 1
             moraleMultiplierBonusSystem: 0.05
             populationGrowthMultiplierBonus: 0.1
-            pollutionMultiplierReduction: 0.05
+            pollutionCleaningRate: 6
             baseResearchBonus: 2
             baseLifeSupportBonus: 2
             baseProductionBonus: 2
@@ -2078,7 +2108,7 @@
             productionTileBonus: 1
             moraleMultiplierBonusSystem: 0.075
             populationGrowthMultiplierBonus: 0.15
-            pollutionMultiplierReduction: 0.075
+            pollutionCleaningRate: 10
             baseResearchBonus: 4
             baseLifeSupportBonus: 4
             baseProductionBonus: 4
@@ -2089,13 +2119,13 @@
             #icon: assets/structures/cloning_center.png
             #cost: 10
             #upkeep: 1
-            #bonusTiles: 
+            #bonusTiles:
               #- industry:
                 #- 1
-              #- 
+              #-
             #structureTypes:
                 #- 0
-            #workingStatus: true            
+            #workingStatus: true
         ## Custom - cryptoexchange
           - key: structure_cryptoexchange_1
             name: CryptoExchange
@@ -2104,7 +2134,7 @@
             cost: 50
             upkeep: 0
             structureTypes:
-                - 1
+                - 3
             workerIncomeBonus: 0.25
             creditIncomeBonus: 1
             workingStatus: true
@@ -2116,7 +2146,7 @@
             cost: 100
             upkeep: 0
             structureTypes:
-                - 1
+                - 3
             workerIncomeBonus: 0.5
             creditIncomeBonus: 2
             upgrades: structure_cryptoexchange_1
@@ -2130,7 +2160,7 @@
             cost: 200
             upkeep: 0
             structureTypes:
-                - 1
+                - 3
             workerIncomeBonus: 0.75
             creditIncomeBonus: 3
             upgrades: structure_cryptoexchange_2
@@ -2144,7 +2174,7 @@
             cost: 400
             upkeep: 0
             structureTypes:
-                - 1
+                - 3
             creditIncomeBonus: 4
             workerIncomeBonus: 1
             upgrades: structure_cryptoexchange_3
@@ -2157,12 +2187,12 @@
             cost: 1200
             upkeep: 0
             structureTypes:
-                - 1
+                - 3
             creditIncomeBonus: 6
             workerIncomeBonus: 1.5
             upgrades: structure_cryptoexchange_4
             requires: structure_cryptoexchange_4
-            workingStatus: true            
+            workingStatus: true
             ## Custom - VoidCoin Mining
           - key: structure_voidcoin_mining
             name: Void Coin Mining
@@ -2171,10 +2201,10 @@
             cost: 60
             upkeep: 0
             structureTypes:
-                - 1
+                - 3
             creditIncomeBonus: 3
             systemUnique: true
-            workingStatus: true            
+            workingStatus: true
           - key: structure_voidcoin_mining_2
             name: Void Coin Mining
             description: "Void Coin Mining 2 - Automatic %Credits generation using system AI cluster"
@@ -2184,10 +2214,10 @@
             upgrades: structure_voidcoin_mining
             requires: structure_voidcoin_mining
             structureTypes:
-                - 1
+                - 3
             creditIncomeBonus: 6
             systemUnique: true
-            workingStatus: true            
+            workingStatus: true
           - key: structure_voidcoin_mining_3
             name: Void Coin Mining
             description: "Void Coin Mining 3 - Automatic %Credits generation using system AI cluster"
@@ -2197,10 +2227,10 @@
             upgrades: structure_voidcoin_mining_2
             requires: structure_voidcoin_mining_2
             structureTypes:
-                - 1
+                - 3
             creditIncomeBonus: 9
             systemUnique: true
-            workingStatus: true            
+            workingStatus: true
           - key: structure_voidcoin_mining_4
             name: Void Coin Mining
             description: "Void Coin Mining 4 - Automatic %Credits generation using system AI cluster"
@@ -2210,10 +2240,10 @@
             upgrades: structure_voidcoin_mining_3
             requires: structure_voidcoin_mining_3
             structureTypes:
-                - 1
+                - 3
             creditIncomeBonus: 12
             systemUnique: true
-            workingStatus: true            
+            workingStatus: true
         ## Custom - Fertility lab 1
           - key: structure_fertilitylab_1
             name: Fertility Lab - 1
@@ -2223,7 +2253,7 @@
             upkeep: 2
             structureTypes:
                 - 1
-            populationGrowthMultiplierBonus: 0.10
+            populationGrowthMultiplierBonus: 0.15
             workingStatus: true
         ## Custom - Fertility lab 2
           - key: structure_fertilitylab_2
@@ -2234,7 +2264,7 @@
             upkeep: 4
             structureTypes:
                 - 1
-            populationGrowthMultiplierBonus: 0.20
+            populationGrowthMultiplierBonus: 0.30
             upgrades: structure_fertilitylab_1
             requires: structure_fertilitylab_1
             workingStatus: true
@@ -2246,7 +2276,7 @@
             upkeep: 6
             structureTypes:
                 - 1
-            populationGrowthMultiplierBonus: 0.50
+            populationGrowthMultiplierBonus: 0.75
             workingStatus: true
           - key: structure_cloning_center
             name: COLONY_STRUCTURE_CLONING_CENTER_NAME
@@ -2269,7 +2299,6 @@
             compatibleBiomes:
                 - biome_gaia
                 - biome_grassland
-                - biome_inferno
                 - biome_tropical
                 - biome_cavernous
                 - biome_terran
@@ -2295,7 +2324,6 @@
             compatibleBiomes:
                 - biome_gaia
                 - biome_grassland
-                - biome_inferno
                 - biome_tropical
                 - biome_cavernous
                 - biome_terran
@@ -2308,20 +2336,19 @@
             structureTypes:
                 - 1
             workingStatus: true
-          - key: structure_soil_enrichment_2
-            name: Soil Enrichment 2
-            description: Soil Enrichment 2
+          - key: structure_soil_cultivation
+            name: Soil Cultivation
+            description: Soil Cultivation
             icon: assets/structures/soil_enrichment.png
             cost: 760
             upkeep: 15
-            upgrades: structure_soil_enrichment_1
-            requires: structure_soil_enrichment_1
+            #upgrades: structure_soil_enrichment_1
+            #requires: structure_soil_enrichment_1
             foodTileBonus: 3
             #baseLifeSupportBonus: 2
             compatibleBiomes:
                 - biome_gaia
                 - biome_grassland
-                - biome_inferno
                 - biome_tropical
                 - biome_cavernous
                 - biome_terran
@@ -2333,7 +2360,7 @@
                 - biome_barren
             structureTypes:
                 - 1
-            workingStatus: true            
+            workingStatus: true
         # - structure: &structure_dimensional_portal
             # name: COLONY_STRUCTURE_DIMENSIONAL_PORTAL_NAME
             # icon: assets/structures/notfound.png
@@ -2349,8 +2376,20 @@
             icon: assets/structures/toxics_processor.png
             cost: 160
             upkeep: 3
-            # pollutionMultiplierReduction: 0.25
-            pollutionCleaningRate: 12
+            pollutionCleaningRate: 15
+            structureTypes:
+                - 6
+            workingStatus: true
+          ## Custom
+          - key: structure_toxics_processor_2
+            name: COLONY_STRUCTURE_TOXICS_PROCESSOR_NAME_2
+            description: COLONY_STRUCTURE_TOXICS_PROCESSOR_DESCRIPTION
+            icon: assets/structures/toxics_processor.png
+            cost: 380
+            upkeep: 6
+            upgrades: structure_toxics_processor
+            requires: structure_toxics_processor
+            pollutionCleaningRate: 40
             structureTypes:
                 - 6
             workingStatus: true
@@ -2418,7 +2457,7 @@
             planetDefense: 100
             structureTypes:
                 - 5
-            workingStatus: false            
+            workingStatus: false
           - key: structure_jump_gate
             name: COLONY_STRUCTURE_JUMP_GATE_NAME
             description: COLONY_STRUCTURE_JUMP_GATE_DESCRIPTION

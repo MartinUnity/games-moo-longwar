@@ -271,7 +271,7 @@
             cost: 20
             size: 10
             icon: assets/ship_modules/pulson_missile.png
-            techTreeIcon: assets/tech_apps/tech_missiles.png            
+            techTreeIcon: assets/tech_apps/tech_missiles.png
         #TORPEDOES
           ## Custom - nuclear torpedo
           - key: shipmodule_nuclear_torpedoes
@@ -672,8 +672,8 @@
             shieldCooldown: 5.0
             icon: assets/ship_modules/class_v_shield.png
           - key: shipmodule_class_xx_shield
-            name: Shield XX 
-            shortDescription: Shield XX 
+            name: Shield XX
+            shortDescription: Shield XX
             description: Shield XX
             slot: shipslot_shield
             baseCost: 60
@@ -684,7 +684,7 @@
             shieldDamageAbsorption: 40
             shieldRechargeRate: 6.25
             shieldCooldown: 5.0
-            icon: assets/ship_modules/class_v_shield.png            
+            icon: assets/ship_modules/class_v_shield.png
         #COMPUTERS
           - key: shipmodule_electronic_computer
             name: $SHIP_MODULE_ELECTRONIC_COMPUTER_NAME
@@ -711,7 +711,7 @@
           - key: shipmodule_quantum_computer
             name: Quantum Computer
             shortDescription: Quantum Computer of Quantum
-            description: Quantum Computer of Quantumness 
+            description: Quantum Computer of Quantumness
             slot: shipslot_computer
             baseCost: 8
             costHullFactor: 1.25
@@ -814,7 +814,7 @@
             sizeHullFactor: 1.8
             impulseFactor: 1.00
             travelSpeed: 6.5
-            icon: assets/ship_modules/fusion_drive.png            
+            icon: assets/ship_modules/fusion_drive.png
           - key: shipmodule_ion_drive
             name: $SHIP_MODULE_ION_DRIVE_NAME
             shortDescription: $SHIP_MODULE_ION_DRIVE_DESCRIPTION_SHORT
@@ -978,7 +978,7 @@
             sizeHullFactor: 0
             isPassive: true
             isUnique: true
-            icon: assets/ship_modules/reinforced_hull.png            
+            icon: assets/ship_modules/reinforced_hull.png
           - key: shipmodule_liquid_armor
             name: $SHIP_MODULE_LIQUID_ARMOR_NAME
             shortDescription: $SHIP_MODULE_LIQUID_ARMOR_DESCRIPTION_SHORT
@@ -993,7 +993,7 @@
             resilienceMultiplier: 1.5
             isPassive: true
             isUnique: true
-            icon: assets/ship_modules/heavy_armor.png            
+            icon: assets/ship_modules/heavy_armor.png
           - key: shipmodule_mini_pods
         #Expands 'space' capacity
             name: Battle Mini Pods
@@ -1009,7 +1009,7 @@
             isPassive: true
             singularShip: false
             isUnique: true
-            icon: assets/ship_modules/battle_pods.png            
+            icon: assets/ship_modules/battle_pods.png
           - key: shipmodule_battle_pods
         #Expands 'space' capacity
             name: $SHIP_MODULE_BATTLE_PODS_NAME
@@ -1179,7 +1179,7 @@
             isPassive: true
             singularShip: false
             isUnique: true
-            icon: assets/ship_modules/hyperx_capacitors.png            
+            icon: assets/ship_modules/hyperx_capacitors.png
           - key: shipmodule_hyperx_capacitors
         #reduces energy weapons size requirements
             name: $SHIP_MODULE_HYPER_X_CAPACITORS_NAME
@@ -1516,7 +1516,7 @@
             isPassive: true
             singularShip: false
             isUnique: true
-            icon: assets/ship_modules/hard_shield.png            
+            icon: assets/ship_modules/hard_shield.png
           - key: shipmodule_hard_shield
         #negates shield piercing and increases damage mitigation
             name: $SHIP_MODULE_HARD_SHIELD_NAME

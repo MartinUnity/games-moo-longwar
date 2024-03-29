@@ -19,7 +19,7 @@
             unlocks:
                - structure_orbit_ads
             tags:
-                 - Defenses           
+                 - Defenses
           - key: techapp_orbit_ads_2
             icon: assets/tech_apps/tech_building_military.png
             type: techapptype_structure
@@ -27,7 +27,7 @@
             unlocks:
                - structure_orbit_ads_2
             tags:
-                 - Defenses       
+                 - Defenses
           - key: techapp_orbit_ads_3
             icon: assets/tech_apps/tech_building_military.png
             type: techapptype_structure
@@ -35,7 +35,7 @@
             unlocks:
                - structure_orbit_ads_3
             tags:
-                 - Defenses       
+                 - Defenses
           - key: techapp_orbit_ads_4
             icon: assets/tech_apps/tech_building_military.png
             type: techapptype_structure
@@ -43,7 +43,7 @@
             unlocks:
                - structure_orbit_ads_4
             tags:
-                 - Defenses                                                                
+                 - Defenses
           - key: techapp_orbit_ads_5
             icon: assets/tech_apps/tech_building_military.png
             type: techapptype_structure
@@ -51,7 +51,7 @@
             unlocks:
                - structure_orbit_ads_5
             tags:
-                 - Defenses                        
+                 - Defenses
           - key: techapp_star_base
             #name: TECH_APPLICATION_TYPE_STAR_BASE_NAME
             #description: TECH_APPLICATION_TYPE_STAR_BASE_DESCRIPTION
@@ -92,7 +92,7 @@
             unlocks:
                - structure_immovable_object
             tags:
-                 - Defenses                 
+                 - Defenses
           - key: techapp_warp_interdictor
             #name: TECH_APPLICATION_TYPE_WARP_INTERDICTOR_NAME
             #description: TECH_APPLICATION_TYPE_WARP_INTERDICTOR_DESCRIPTION
@@ -231,7 +231,7 @@
             unlocks:
                - structure_torpedo_base_3
             tags:
-                 - Defenses                                  
+                 - Defenses
           - key: techapp_beam_lancer
             #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
             #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
@@ -251,7 +251,7 @@
             unlocks:
                - structure_beam_lancer_2
             tags:
-                 - Defenses           
+                 - Defenses
           - key: techapp_beam_lancer_3
             #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
             #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
@@ -261,7 +261,7 @@
             unlocks:
                - structure_beam_lancer_3
             tags:
-                 - Defenses           
+                 - Defenses
           - key: techapp_beam_lancer_4
             #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
             #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
@@ -271,7 +271,7 @@
             unlocks:
                - structure_beam_lancer_4
             tags:
-                 - Defenses                                                              
+                 - Defenses
           - key: techapp_cannon_tower
             #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
             #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
@@ -281,7 +281,7 @@
             unlocks:
                - structure_cannon_tower
             tags:
-                 - Defenses        
+                 - Defenses
           - key: techapp_cannon_tower_2
             #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
             #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
@@ -291,7 +291,7 @@
             unlocks:
                - structure_cannon_tower_2
             tags:
-                 - Defenses   
+                 - Defenses
           - key: techapp_cannon_tower_3
             #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
             #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
@@ -301,7 +301,7 @@
             unlocks:
                - structure_cannon_tower_3
             tags:
-                 - Defenses   
+                 - Defenses
           - key: techapp_cannon_tower_4
             #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
             #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
@@ -311,17 +311,17 @@
             unlocks:
                - structure_cannon_tower_4
             tags:
-                 - Defenses                                                                     
-          - key: techapp_cannon_tower_4
+                 - Defenses
+          - key: techapp_cannon_tower_5
             #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
             #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
             icon: assets/tech_apps/tech_building_military.png
             type: techapptype_structure
             hologram: ContentPrefabs/Research/ground_batteries.prefab
             unlocks:
-               - structure_cannon_tower_4
+               - structure_cannon_tower_5
             tags:
-                 - Defenses                 
+                 - Defenses
           - key: techapp_ground_batteries
             #name: TECH_APPLICATION_TYPE_GROUND_BATTERIES_NAME
             #description: TECH_APPLICATION_TYPE_GROUND_BATTERIES_DESCRIPTION
@@ -362,7 +362,7 @@
             unlocks:
                - structure_ground_batteries_4
             tags:
-                 - Defenses                                  
+                 - Defenses
           - key: techapp_battleoids
             icon: assets/tech_apps/tech_battleoids.png
             type: techapptype_planetdefense
@@ -499,7 +499,7 @@
             unlocks:
                - structure_planetary_aeon_shield
             tags:
-                 - Defenses                 
+                 - Defenses
           - key: techapp_marine_transport
             #name: TECH_APPLICATION_TYPE_MARINE_TRANSPORT_NAME
             #description: TECH_APPLICATION_TYPE_MARINE_TRANSPORT_DESCRIPTION
@@ -560,7 +560,7 @@
             unlocks:
                - shipmodule_liquid_armor
             tags:
-                 - Military                 
+                 - Military
           - key: techapp_heavy_armor
             #name: TECH_APPLICATION_TYPE_HEAVY_ARMOR_NAME
             #description: TECH_APPLICATION_TYPE_HEAVY_ARMOR_DESCRIPTION
@@ -640,7 +640,7 @@
             unlocks:
                - structure_tradestation_3
             tags:
-                 - Economy                 
+                 - Economy
         ## Custom - VoidCoinMining
           - key: techapp_voidcoinmining
             icon: assets/tech_apps/tech_building_credits.png
@@ -649,7 +649,7 @@
             unlocks:
                - structure_voidcoin_mining
             tags:
-                 - Economy    
+                 - Economy
         ## Custom - VoidCoinMining-2
           - key: techapp_voidcoinmining_2
             icon: assets/tech_apps/tech_building_credits.png
@@ -658,7 +658,7 @@
             unlocks:
                - structure_voidcoin_mining_2
             tags:
-                 - Economy        
+                 - Economy
         ## Custom - VoidCoinMining-3
           - key: techapp_voidcoinmining_3
             icon: assets/tech_apps/tech_building_credits.png
@@ -667,7 +667,7 @@
             unlocks:
                - structure_voidcoin_mining_3
             tags:
-                 - Economy        
+                 - Economy
         ## Custom - VoidCoinMining-4
           - key: techapp_voidcoinmining_4
             icon: assets/tech_apps/tech_building_credits.png
@@ -676,7 +676,7 @@
             unlocks:
                - structure_voidcoin_mining_4
             tags:
-                 - Economy                                                                        
+                 - Economy
         ## Custom - CryptoExchange
           - key: techapp_cryptoexchange_1
             icon: assets/tech_apps/tech_building_credits.png
@@ -720,7 +720,7 @@
             unlocks:
                - structure_cryptoexchange_5
             tags:
-                 - Economy                 
+                 - Economy
         ## Custom - Biodome - 1
           - key: techapp_biodome_1
             icon: assets/tech_apps/tech_building_food.png
@@ -747,7 +747,7 @@
             unlocks:
                - structure_biodome_3
             tags:
-                 - Population                 
+                 - Population
         ## Custom - tomb
           - key: techapp_tomb_1
             icon: assets/tech_apps/tech_building_credits.png
@@ -773,6 +773,14 @@
             hologram: ContentPrefabs/Research/neutron_collider.prefab
             unlocks:
                - structure_foodinator_1
+            tags:
+                 - Population
+          - key: techapp_foodinator_2
+            icon: assets/tech_apps/tech_building_food.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/neutron_collider.prefab
+            unlocks:
+               - structure_foodinator_2
             tags:
                  - Population
         ## Custom - Fertility lab
@@ -819,7 +827,7 @@
             unlocks:
                - structure_technet_3
             tags:
-                 - Research 
+                 - Research
         ## Custom - technet
           - key: techapp_technet_4
             icon: assets/tech_apps/tech_building_research.png
@@ -828,7 +836,7 @@
             unlocks:
                - structure_technet_4
             tags:
-                 - Research                                 
+                 - Research
         ## Custom - fluxtube
           - key: techapp_fluxtube_1
             icon: assets/tech_apps/tech_building_production.png
@@ -997,7 +1005,7 @@
             tags:
                  - Production
           - key: techapp_androidminers
-            #name: TECH_APPLICATION_TYPE_ROBO_MINERS_NAME 
+            #name: TECH_APPLICATION_TYPE_ROBO_MINERS_NAME
             #description: TECH_APPLICATION_TYPE_ROBO_MINERS_DESCRIPTION
             icon: assets/tech_apps/tech_building_production.png
             type: techapptype_structure
@@ -1005,7 +1013,7 @@
             unlocks:
                - structure_androidminers
             tags:
-                 - Production                 
+                 - Production
           - key: techapp_space_factory
             #name: TECH_APPLICATION_TYPE_SPACE_FACTORY_NAME
             #description: TECH_APPLICATION_TYPE_SPACE_FACTORY_DESCRIPTION
@@ -1064,6 +1072,17 @@
             hologram: ContentPrefabs/Research/deep_core_mine.prefab
             unlocks:
                - structure_deep_core_mine
+            tags:
+                 - Production
+         ## Custom
+          - key: techapp_quantum_mine
+            #name: TECH_APPLICATION_TYPE_DEEP_CORE_MINE_NAME
+            #description: TECH_APPLICATION_TYPE_DEEP_CORE_MINE_DESCRIPTION
+            icon: assets/tech_apps/tech_building_production.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/deep_core_mine.prefab
+            unlocks:
+               - structure_quantum_mine
             tags:
                  - Production
           - key: techapp_recyclotron
@@ -1189,6 +1208,14 @@
                - shipmodule_bomber_bays
             tags:
                  - Military
+          - key: techapp_advanced_city_planning_2
+            icon: assets/tech_apps/tech_achievement_population.png
+            type: techapptype_techachievement
+            hologram: ContentPrefabs/Research/advanced_city_planning.prefab
+            unlocks:
+               - techachievement_advanced_city_planning_2
+            tags:
+                 - Population
           - key: techapp_advanced_city_planning
             icon: assets/tech_apps/tech_achievement_population.png
             type: techapptype_techachievement
@@ -1361,7 +1388,7 @@
             unlocks:
                - shipmodule_particle_drive
             tags:
-                 - Military                 
+                 - Military
           - key: techapp_fusion_drive
             #name: TECH_APPLICATION_TYPE_FUSION_DRIVE_NAME
             #description: TECH_APPLICATION_TYPE_FUSION_DRIVE_DESCRIPTION
@@ -1584,7 +1611,7 @@
             tags:
                  - Military
           - key: techapp_hyperx_capacitors
-            #name: TECH_APPLICATION_TYPE_HYPER_X_CAPACITORS_NAME 
+            #name: TECH_APPLICATION_TYPE_HYPER_X_CAPACITORS_NAME
             #description: TECH_APPLICATION_TYPE_HYPER_X_CAPACITORS_DESCRIPTION
             icon: assets/tech_apps/tech_special_module.png
             type: techapptype_shipmodule
@@ -1593,7 +1620,7 @@
                - shipmodule_hyperx_capacitors
             ## Custom
           - key: techapp_flux_capacitor
-            #name: TECH_APPLICATION_TYPE_HYPER_X_CAPACITORS_NAME 
+            #name: TECH_APPLICATION_TYPE_HYPER_X_CAPACITORS_NAME
             #description: TECH_APPLICATION_TYPE_HYPER_X_CAPACITORS_DESCRIPTION
             icon: assets/tech_apps/tech_special_module.png
             type: techapptype_shipmodule
@@ -1802,7 +1829,7 @@
             unlocks:
                - shipmodule_aeon_armor
             tags:
-                 - Military                 
+                 - Military
           - key: techapp_hyperadvanced_chemistry
             #name: TECH_APPLICATION_TYPE_HYPER_ADVANCED_EXPLOIT_NAME
             #description: TECH_APPLICATION_TYPE_HYPER_ADVANCED_EXPLOIT_DESCRIPTION
@@ -1918,7 +1945,7 @@
             unlocks:
                - techachievement_neural_scanner
             tags:
-                 - Espionage                 
+                 - Espionage
         ## Custom - telekinesis
           - key: techapp_telekinesis
             icon: assets/tech_apps/tech_building_research.png
@@ -2012,7 +2039,7 @@
             unlocks:
                - structure_deep_sea_cooling_1
             tags:
-                 - Research                 
+                 - Research
           - key: techapp_astro_university
             #name: TECH_APPLICATION_TYPE_ASTRO_UNIVERSITY_NAME
             #description: TECH_APPLICATION_TYPE_ASTRO_UNIVERSITY_DESCRIPTION
@@ -2321,7 +2348,7 @@
             #unlocks:
                #- structure_caves_4
             #tags:
-                 #- Population                 
+                 #- Population
           - key: techapp_cloning_center
             #name: TECH_APPLICATION_TYPE_CLONING_CENTER_NAME
             #description: TECH_APPLICATION_TYPE_CLONING_CENTER_DESCRIPTION
@@ -2426,7 +2453,7 @@
             #unlocks:
                #- structure_foodie
             #tags:
-                 #- Population                 
+                 #- Population
           - key: techapp_matter_converter
             #name: TECH_APPLICATION_TYPE_MATTER_CONVERTER_NAME
             #description: TECH_APPLICATION_TYPE_MATTER_CONVERTER_DESCRIPTION
@@ -2985,7 +3012,7 @@
             unlocks:
                - shipmodule_class_xx_shield
             tags:
-                 - Military                 
+                 - Military
           - key: techapp_class_iii_shield
             #name: TECH_APPLICATION_TYPE_CLASS_III_SHIELD_NAME
             #description: TECH_APPLICATION_TYPE_CLASS_III_SHIELD_DESCRIPTION
@@ -3198,7 +3225,7 @@
             unlocks:
                - structure_cloud
             tags:
-                 - Research                 
+                 - Research
           - key: techapp_pollution_cleanup
             #name: TECH_APPLICATION_TYPE_POLLUTION_CLEANUP_NAME
             #description: TECH_APPLICATION_TYPE_POLLUTION_CLEANUP_DESCRIPTION
@@ -3216,6 +3243,16 @@
             hologram: ContentPrefabs/Research/toxics_processor.prefab
             unlocks:
                - structure_toxics_processor
+            tags:
+                 - Pollution
+          - key: techapp_toxics_processor_2
+            #name: TECH_APPLICATION_TYPE_TOXICS_PROCESSOR_NAME
+            #description: TECH_APPLICATION_TYPE_TOXICS_PROCESSOR_DESCRIPTION
+            icon: assets/tech_apps/tech_building_pollution.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/toxics_processor.prefab
+            unlocks:
+               - structure_toxics_processor_2
             tags:
                  - Pollution
           - key: techapp_pollution_processor
@@ -3369,7 +3406,7 @@
             hologram: ContentPrefabs/Research/fast_missile_racks.prefab
             unlocks:
                - shipmodule_fast_missile_racks
-        ## Custom stuff - TESTING 
+        ## Custom stuff - TESTING
           - key: techapp_test
             icon: assets/tech_apps/tech_building_food.png
             type: techapptype_structure
@@ -3377,7 +3414,7 @@
             unlocks:
                - structure_test
             tags:
-                 - Population               
+                 - Population
         ## Custom stuff
           - key: techapp_hydroponic_farm_1
             icon: assets/tech_apps/tech_building_food.png
@@ -3418,8 +3455,8 @@
             unlocks:
                - structure_hydroponic_farm_5
             tags:
-                 - Population                 
-        ## Custom stuff 
+                 - Population
+        ## Custom stuff
         ## Custom - structure_fleethub
           - key: techapp_fleethub
             icon: assets/tech_apps/tech_building_military.png
@@ -3428,7 +3465,15 @@
             unlocks:
                - structure_fleethub
             tags:
-                 - Military        
+                 - Military
+          - key: techapp_automated_factory_0
+            icon: assets/tech_apps/tech_building_production.png
+            type: techapptype_structure
+            hologram: ContentPrefabs/Research/automated_factory.prefab
+            unlocks:
+               - structure_automated_factory_0
+            tags:
+                 - Production
           - key: techapp_automated_factory_1
             icon: assets/tech_apps/tech_building_production.png
             type: techapptype_structure
@@ -3461,7 +3506,7 @@
                - structure_automated_factory_4
             tags:
                  - Production
-        ## Custom 
+        ## Custom
           - key: techapp_volcanic_converter
             icon: assets/tech_apps/tech_building_production.png
             type: techapptype_structure
@@ -3473,11 +3518,11 @@
           - key: techapp_volcanic_research
             icon: assets/tech_apps/tech_building_research.png
             type: techapptype_structure
-            hologram: ContentPrefabs/Research/research_laboratory.prefab            
+            hologram: ContentPrefabs/Research/research_laboratory.prefab
             unlocks:
                - structure_volcanic_research
             tags:
-                 - Research                 
+                 - Research
           - key: techapp_radiation_converter
             icon: assets/tech_apps/tech_building_production.png
             type: techapptype_structure
@@ -3493,7 +3538,7 @@
             unlocks:
                - structure_toxic_converter
             tags:
-                 - Production                                          
+                 - Production
           - key: techapp_antimatter_replicator
             icon: assets/tech_apps/tech_building_production.png
             type: techapptype_structure
@@ -3517,7 +3562,7 @@
             unlocks:
                - structure_rock_disintegrator
             tags:
-                 - Production        
+                 - Production
           - key: techapp_rock_disintegrator_2
             icon: assets/tech_apps/tech_building_production.png
             type: techapptype_structure
@@ -3565,7 +3610,7 @@
             unlocks:
                - structure_crust_prospecting_5
             tags:
-                 - Production                 
+                 - Production
         ## Custom - Research lab.
           - key: techapp_research_laboratory_1
             icon: assets/tech_apps/tech_building_research.png
@@ -3662,7 +3707,7 @@
             unlocks:
                - structure_atmospheric_renewer_3
             tags:
-                 - Pollution                 
+                 - Pollution
         ## Custom - soil_enrichment
           - key: techapp_soil_enrichment_1
             icon: assets/tech_apps/tech_building_food.png
@@ -3672,15 +3717,15 @@
                - structure_soil_enrichment_1
             tags:
                  - Population
-        ## Custom - soil_enrichment
-          - key: techapp_soil_enrichment_2
+        ## Custom - soul_cultivation
+          - key: techapp_soil_cultivation
             icon: assets/tech_apps/tech_building_food.png
             type: techapptype_structure
             hologram: ContentPrefabs/Research/soil_enrichment.prefab
             unlocks:
-               - structure_soil_enrichment_2
+               - structure_soil_cultivation
             tags:
-                 - Population                 
+                 - Population
         ##MINIATURIZATION
         ## Custom - nuclear torpedoes -
           - key: techapp_nuclear_torpedoes
@@ -3707,7 +3752,7 @@
             unlocks:
                - shipmodule_quanta_missile
             tags:
-                 - Military                 
+                 - Military
         ## Custom - meson - mod
           - key: techapp_modifications_meson_missile
             name: Meson missile Mod
@@ -3729,7 +3774,7 @@
             unlocks:
                - shipmodule_quanta_missile
             tags:
-                 - Military                 
+                 - Military
         ## Custom
           - key: techapp_miniaturization_weapon_2
             icon: assets/tech_apps/tech_miniaturization_lasers.png
@@ -3909,7 +3954,7 @@
             unlocks:
                - miniaturization_meson_4
             tags:
-                 - Military                 
+                 - Military
         ## Custom
           - key: techapp_miniaturization_weapon_1
             icon: assets/tech_apps/tech_miniaturization_missiles.png
@@ -4300,7 +4345,7 @@
             unlocks:
                - shipmodule_nuclear_torpedoes
             tags:
-                 - Military         
+                 - Military
           - key: techapp_modifications_proton_torpedoes
             name: TECH_APPLICATION_TYPE_MODS_PROTON_TORPEDOES_NAME
             description: TECH_APPLICATION_TYPE_MODS_PROTON_TORPEDOES_DESCRIPTION

@@ -66,3 +66,15 @@ COLONY_STRUCTURE_TORPEDO_BASE_DESCRIPTION,,"Torpedo Base - Orbital Torpedo Defen
 SHIP_DESIGN_TORPEDO_BASE,,"Torpedo Base",,,,,,,,,,,
 SHIP_TYPE_TORPEDO_BASE_DESCRIPTION,,"Torpedo Base",,,,,,,,,,,
 HULL_TORPEDO_BASE_NAME,,"Torpedo Base",,,,,,,,,,,
+
+COLONY_STRUCTURE_AUTOMATED_FACTORY_NAME_0,,"Automated Factory - Mini",,,,,,,,,,,
+
+COLONY_STRUCTURE_TOXICS_PROCESSOR_NAME_2,,"Toxic Processor - 2",,,,,,,,,,,
+COLONY_STRUCTURE_TOXICS_PROCESSOR_DESCRIPTION_2,,"Toxic Processor - upgraded filtering based on DeNero theorem",,,,,,,,,,,
+
+TECHNOLOGY_NUCLEAR_1_DESCRIPTION,,"Nuclear Optimizations - havesting inner leptons",,,,,,,,,,,
+
+COLONY_STRUCTURE_QUANTUM_MINE_NAME,,"Quantum Mine",,,,,,,,,,,
+COLONY_STRUCTURE_QUANTUM_MINE_DESCRIPTION,,"Quantum Mine - Small quatumites re-particle nonfissured rays of enlightenment",,,,,,,,,,,
+TECHNOLOGY_QUANTUM_MINING_DESCRIPTION,,"Quantum Mining - Quantomizing particles near you",,,,,,,,,,,
+TECHNOLOGY_QUANTUM_MINING_NAME,,"Quantum Mining",,,,,,,,,,,
