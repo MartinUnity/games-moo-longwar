@@ -389,7 +389,6 @@
                 - application: techapp_neutron_collider
                 - application: techapp_mass_driver
                 - application: techapp_neutron_rifle
-                - application: techapp_cannon_tower_2
         ## Custom
           - key: technode_biome_extraction
             name: Biome Energy Conversion
@@ -455,8 +454,6 @@
                 - application: techapp_uber_ocean
                 - application: techapp_toxics_processor
                 - application: techapp_biodome_2
-                - application: techapp_soil_enrichment
-                - application: techapp_deep_sea_cooling
         ## Custom
           - key: technode_basicupgrades_3
             name: BasicUpgrades - 3
@@ -501,6 +498,8 @@
             icon: assets/techs/advanced_magnetism.png
             requires:
                 - technology: technode_basicupgrades_2
+            unlocks:
+                - application: techapp_cannon_tower_2
             branches:
                 - unlocks:
                      - application: techapp_class_ii_shield
@@ -1728,7 +1727,7 @@
             unlocks:
                 - application: techapp_crust_prospecting_4
                 - application: techapp_atmospheric_renewer_2
-                - application: techapp_soil_enrichment_2
+                - application: techapp_soil_cultivation
                 - application: techapp_hydroponic_farm_4
                 - application: techapp_biospheres_4
         ## Custom - colonial

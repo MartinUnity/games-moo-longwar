@@ -2336,14 +2336,14 @@
             structureTypes:
                 - 1
             workingStatus: true
-          - key: structure_soil_enrichment_2
-            name: Soil Enrichment 2
-            description: Soil Enrichment 2
+          - key: structure_soil_cultivation
+            name: Soil Cultivation
+            description: Soil Cultivation
             icon: assets/structures/soil_enrichment.png
             cost: 760
             upkeep: 15
-            upgrades: structure_soil_enrichment_1
-            requires: structure_soil_enrichment_1
+            #upgrades: structure_soil_enrichment_1
+            #requires: structure_soil_enrichment_1
             foodTileBonus: 3
             #baseLifeSupportBonus: 2
             compatibleBiomes:
