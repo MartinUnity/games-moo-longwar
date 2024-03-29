@@ -5,12 +5,16 @@
 ### Changes from 1.6.0
 
 Changes:
+- [change] Galaxy - Bumped max population of all planets by +2
 - [change] Research - moved research in tiers around to better reflect gameplay/needs based on super/extremely slow modes - more in list below
 - [change] Research - Tier10 - Added Soil Cultivation
-- [change] Structures - added Mini Factory (+1 prduction) to tier 0
-
-Bugs/QoL
-- [fixed]
+- [change] Structure - added Mini Factory (+1 prduction) to tier 0
+- [change] Structure - added Quantum Mine to tier 11 - like an improved core mining
+- [change] Structure - added Foodinator - 2 as an upgrade path
+- [change] Structure - added Toxic Processor - 2 for more pollution cleanup endgame
+- [change] Structure - Changed all pollution settings for `pollutionMultiplierReduction` -> `pollutionCleaningRate` as the former does not work
+- [change] Bumped miniaturization values ~20% and aligned all endgame values - ie nuclear weapons will now max out at ~80% endgame, mercual at ~70% etc
+- [change] Minor adjustment of weaponry + specials for all stationary platforms
 
 #### Research tier movements
 
